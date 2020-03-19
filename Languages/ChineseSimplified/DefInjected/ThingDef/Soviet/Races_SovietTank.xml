@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <ra2_Tank_Rhino.label>犀牛坦克</ra2_Tank_Rhino.label>
+  <ra2_Tank_Rhino.description>苏联生产的坦克。</ra2_Tank_Rhino.description>
+  <ra2_Tank_Rhino.tools.0.label>车身</ra2_Tank_Rhino.tools.0.label>
+  <!-- Flesh Type: Mechanoid -->
+  <ra2_Tank_Rhino_Corpse.label>犀牛坦克残骸</ra2_Tank_Rhino_Corpse.label>
+  <ra2_Tank_Rhino_Corpse.description>犀牛坦克残骸</ra2_Tank_Rhino_Corpse.description>
+
+
+  <!-- Scyther -->
+
+  <ra2_Tank_Apo.label>天启坦克</ra2_Tank_Apo.label>
+  <ra2_Tank_Apo.description>苏联的天启巨兽，别想着和他对抗，快跑吧。</ra2_Tank_Apo.description>
+  <ra2_Tank_Apo.tools.0.label>车身</ra2_Tank_Apo.tools.0.label>
+  <!-- Flesh Type: Mechanoid -->
+  <ra2_Tank_Apo_Corpse.label>天启坦克残骸</ra2_Tank_Apo_Corpse.label>
+  <ra2_Tank_Apo_Corpse.description>天启坦克残骸</ra2_Tank_Apo_Corpse.description>
+
+
+</LanguageData>

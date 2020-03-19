@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <PawnKindDef>
+    <defName>ra2_RhinoTank</defName>
+    <label>Rhino Heavy Tank</label>
+    <race>ra2_Tank_Rhino</race>
+    <combatPower>240</combatPower>
+    <defaultFactionType>ra2_Soviet</defaultFactionType>
+    <aiAvoidCover>true</aiAvoidCover>
+    <itemQuality>Good</itemQuality>
+	<isFighter>false</isFighter>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>ra2/Things/Pawn/Soviet/Tank/ra2_tank_Rhino</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>8</drawSize>
+          <shadowData>
+            <volume>(0.3, 0.6, 0.3)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+    <weaponMoney>
+      <min>8000</min>
+      <max>8000</max>
+    </weaponMoney>
+    <weaponTags>
+      <li>RhinoGun</li>
+    </weaponTags>
+  </PawnKindDef>
+  
+  <PawnKindDef>
+    <defName>ra2_ApoTank</defName>
+    <label>apocalypse tank</label>
+    <race>ra2_Tank_Apo</race>
+    <combatPower>1000</combatPower>
+    <defaultFactionType>ra2_Soviet</defaultFactionType>
+    <aiAvoidCover>true</aiAvoidCover>
+    <itemQuality>Good</itemQuality>
+	<isFighter>false</isFighter>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>ra2/Things/Pawn/Soviet/Tank/ra2_tank_Apo</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>12</drawSize>
+          <shadowData>
+            <volume>(0.3, 0.6, 0.3)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+    <weaponMoney>
+      <min>8000</min>
+      <max>8000</max>
+    </weaponMoney>
+    <weaponTags>
+      <li>ApoTankGun</li>
+    </weaponTags>
+  </PawnKindDef>
+</Defs>

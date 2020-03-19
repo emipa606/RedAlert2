@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <TraderKindDef>
+    <defName>ra2_Trader_Expensive_Allied</defName>
+    <label>rare trader</label>
+    <commonality>1.2</commonality>
+    <stockGenerators>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Silver</thingDef>
+        <countRange>
+          <min>1000</min>
+          <max>1800</max>
+        </countRange>
+      </li>
+      <!--Special-->
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>ra2_AlliedTechCore</thingDef>
+	    <price>Expensive</price>
+        <countRange>
+          <min>1</min>
+          <max>1</max>
+        </countRange>
+      </li>
+
+
+      <!--vanilla-->
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>ComponentIndustrial</thingDef>
+        <countRange>
+          <min>10</min>
+          <max>50</max>
+        </countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>ComponentSpacer</thingDef>
+        <countRange>
+          <min>0</min>
+          <max>16</max>
+        </countRange>
+      </li>
+
+
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Beer</thingDef>
+        <totalPriceRange>
+          <min>0</min>
+          <max>100</max>
+        </totalPriceRange>
+      </li>
+
+
+      <li Class="StockGenerator_BuyWeirdOrganic" />
+      <li Class="StockGenerator_WeaponsRanged" />
+      <li Class="StockGenerator_BuyExpensiveSimple" />
+
+    </stockGenerators>
+  </TraderKindDef>
+  
+  
+  
+  
+  
+    <TraderKindDef>
+    <defName>ra2_Trader_Resources_Allied</defName>
+    <label>resources trader</label>
+    <commonality>1.2</commonality>
+    <stockGenerators>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Silver</thingDef>
+        <countRange>
+          <min>1200</min>
+          <max>2800</max>
+        </countRange>
+      </li>
+      <!--vanilla-->
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>ComponentIndustrial</thingDef>
+        <countRange>
+          <min>10</min>
+          <max>50</max>
+        </countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>MedicineIndustrial</thingDef>
+        <countRange>
+          <min>5</min>
+          <max>15</max>
+        </countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Steel</thingDef>
+        <countRange>
+          <min>200</min>
+          <max>600</max>
+        </countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Plasteel</thingDef>
+        <countRange>
+          <min>50</min>
+          <max>280</max>
+        </countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Gold</thingDef>
+        <countRange>
+          <min>10</min>
+          <max>200</max>
+        </countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Cloth</thingDef>
+        <countRange>
+          <min>100</min>
+          <max>200</max>
+        </countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Chemfuel</thingDef>
+        <countRange>
+          <min>150</min>
+          <max>600</max>
+        </countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Neutroamine</thingDef>
+        <countRange>
+          <min>70</min>
+          <max>260</max>
+        </countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Beer</thingDef>
+        <totalPriceRange>
+          <min>30</min>
+          <max>100</max>
+        </totalPriceRange>
+      </li>
+
+
+      <li Class="StockGenerator_Clothes">
+        <countRange>
+          <min>3</min>
+          <max>10</max>
+        </countRange>
+      </li>
+      <li Class="StockGenerator_Category">
+        <categoryDef>Drugs</categoryDef>
+      </li>
+
+
+      <li Class="StockGenerator_BuyArt" />
+      <li Class="StockGenerator_BuyWeirdOrganic" />
+
+      <li Class="StockGenerator_WeaponsRanged" />
+
+
+
+    </stockGenerators>
+  </TraderKindDef>
+</Defs>

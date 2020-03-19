@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <ra2_Tank_Grizzly.label>灰熊坦克</ra2_Tank_Grizzly.label>
+  <ra2_Tank_Grizzly.description>盟军生产的坦克。</ra2_Tank_Grizzly.description>
+  <ra2_Tank_Grizzly.tools.0.label>车身</ra2_Tank_Grizzly.tools.0.label>
+  <!-- Flesh Type: Mechanoid -->
+  <ra2_Tank_Grizzly_Corpse.label>灰熊坦克残骸</ra2_Tank_Grizzly_Corpse.label>
+  <ra2_Tank_Grizzly_Corpse.description>灰熊坦克残骸</ra2_Tank_Grizzly_Corpse.description>
+
+
+
+
+</LanguageData>

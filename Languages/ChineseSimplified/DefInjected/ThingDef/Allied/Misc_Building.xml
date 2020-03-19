@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <ra2_AlliedTech.label>盟军科技仪</ra2_AlliedTech.label>
+  <ra2_AlliedTech.description>含有盟军科技的仪器。</ra2_AlliedTech.description>
+  <ra2_AlliedTech_Blueprint.label>盟军科技仪（蓝图）</ra2_AlliedTech_Blueprint.label>
+  <ra2_AlliedTech_Frame.label>盟军科技仪（建造中）</ra2_AlliedTech_Frame.label>
+  <ra2_AlliedTech_Frame.description>含有盟军科技的仪器。</ra2_AlliedTech_Frame.description>
+  
+  <ra2_AlliedBarracks.label>盟军兵营</ra2_AlliedBarracks.label>
+  <ra2_AlliedBarracks.description>可训练盟军士兵。</ra2_AlliedBarracks.description>
+  <ra2_AlliedBarracks_Blueprint.label>盟军兵营（蓝图）</ra2_AlliedBarracks_Blueprint.label>
+  <ra2_AlliedBarracks_Frame.label>盟军兵营（建造中）</ra2_AlliedBarracks_Frame.label>
+  <ra2_AlliedBarracks_Frame.description>可训练盟军士兵。</ra2_AlliedBarracks_Frame.description>
+  
+  <ra2_AlliedSuperWeapon.label>天气控制仪</ra2_AlliedSuperWeapon.label>
+  <ra2_AlliedSuperWeapon.description>可以制造闪电风暴</ra2_AlliedSuperWeapon.description>
+  <ra2_AlliedSuperWeapon_Blueprint.label>天气控制仪(蓝图)</ra2_AlliedSuperWeapon_Blueprint.label>
+  <ra2_AlliedSuperWeapon_Frame.label>天气控制仪(建造中)</ra2_AlliedSuperWeapon_Frame.label>
+  <ra2_AlliedSuperWeapon_Frame.description>可以制造闪电风暴</ra2_AlliedSuperWeapon_Frame.description>
+  
+</LanguageData>

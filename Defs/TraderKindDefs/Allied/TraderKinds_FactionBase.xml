@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <TraderKindDef>
+    <defName>ra2_Trader_FactionBase_Allied</defName>
+    <stockGenerators>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Silver</thingDef>
+        <countRange>
+          <min>20000</min>
+          <max>30000</max>
+        </countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>ra2_AlliedTechCore</thingDef>
+        <price>Expensive</price>
+        <countRange>
+          <min>1</min>
+          <max>1</max>
+        </countRange>
+      </li>
+      <!--base-->
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>ComponentIndustrial</thingDef>
+        <countRange>
+          <min>100</min>
+          <max>400</max>
+        </countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Steel</thingDef>
+        <countRange>
+          <min>1000</min>
+          <max>1500</max>
+        </countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Plasteel</thingDef>
+        <countRange>
+          <min>300</min>
+          <max>1200</max>
+        </countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Gold</thingDef>
+        <countRange>
+          <min>500</min>
+          <max>2000</max>
+        </countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Chemfuel</thingDef>
+        <countRange>
+          <min>200</min>
+          <max>600</max>
+        </countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Beer</thingDef>
+        <totalPriceRange>
+          <min>-700</min>
+          <max>2000</max>
+        </totalPriceRange>
+      </li>
+      <li Class="StockGenerator_WeaponsRanged">
+        <countRange>
+          <min>4</min>
+          <max>8</max>
+        </countRange>
+      </li>
+      <li Class="StockGenerator_Category">
+        <categoryDef>WeaponsMelee</categoryDef>
+        <thingDefCountRange>
+          <min>3</min>
+          <max>5</max>
+        </thingDefCountRange>
+        <totalPriceRange>
+          <min>800</min>
+          <max>2500</max>
+        </totalPriceRange>
+      </li>
+      <li Class="StockGenerator_Armor">
+        <countRange>
+          <min>4</min>
+          <max>10</max>
+        </countRange>
+      </li>
+      <li Class="StockGenerator_Slaves">
+        <countRange>
+          <min>-1</min>
+          <max>2</max>
+        </countRange>
+      </li>
+      <li Class="StockGenerator_BuyExpensiveSimple" />
+      <li Class="StockGenerator_BuyWeirdOrganic" />
+      <li Class="StockGenerator_Category">
+        <categoryDef>Weapons</categoryDef>
+      </li>
+    </stockGenerators>
+  </TraderKindDef>
+</Defs>

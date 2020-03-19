@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <ra2_Pillbox_A.label>Pillbox</ra2_Pillbox_A.label>
+  <ra2_Pillbox_A.description>The basic defense architecture of the Allied,can effectively control enemy infantry units.</ra2_Pillbox_A.description>
+  <ra2_Pillbox_A_Blueprint.label>Pillbox(BluePrint)</ra2_Pillbox_A_Blueprint.label>
+  <ra2_Pillbox_A_Frame.label>Pillbox(Building)</ra2_Pillbox_A_Frame.label>
+  <ra2_Pillbox_A_Frame.description>The basic defense architecture of the Allied,can effectively control enemy infantry units.</ra2_Pillbox_A_Frame.description>
+  
+  <ra2_AlliedAirDefense.label>Patriot missile</ra2_AlliedAirDefense.label>
+  <ra2_AlliedAirDefense.description>The basic defense architecture of the Allied,can shot down mortar shell and drop pod.</ra2_AlliedAirDefense.description>
+  <ra2_AlliedAirDefense_Blueprint.label>Patriot missile(BluePrint)</ra2_AlliedAirDefense_Blueprint.label>
+  <ra2_AlliedAirDefense_Frame.label>Patriot missile(Building)</ra2_AlliedAirDefense_Frame.label>
+  <ra2_AlliedAirDefense_Frame.description>The basic defense architecture of the Allied,can shot down mortar shell and drop pod.</ra2_AlliedAirDefense_Frame.description>
+  
+  <ra2_Prism.label>Prism Tower</ra2_Prism.label>
+  <ra2_Prism.description>The Allied's defensive weapons.</ra2_Prism.description>
+  <ra2_Prism_Blueprint.label>Prism Tower(BluePrint)</ra2_Prism_Blueprint.label>
+  <ra2_Prism_Frame.label>Prism Tower(Building)</ra2_Prism_Frame.label>
+  <ra2_Prism_Frame.description>The Allied's defensive weapons.</ra2_Prism_Frame.description>
+  
+  
+  <ra2_GrandCannon.label>Grand Cannon</ra2_GrandCannon.label>
+  <ra2_GrandCannon.description>The Allied's defensive weapons,can launch huge shells and cause extensive damage.Can cross the fence to attack the enemy.</ra2_GrandCannon.description>
+  <ra2_GrandCannon_Blueprint.label>Grand Cannon(BluePrint)</ra2_GrandCannon_Blueprint.label>
+  <ra2_GrandCannon_Frame.label>Grand Cannon(Building)</ra2_GrandCannon_Frame.label>
+  <ra2_GrandCannon_Frame.description>The Allied's defensive weapons,can launch huge shells and cause extensive damage.Can cross the fence to attack the enemy.</ra2_GrandCannon_Frame.description>
+  
+</LanguageData>

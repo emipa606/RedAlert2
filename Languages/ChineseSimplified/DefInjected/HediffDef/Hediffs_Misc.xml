@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+
+  <!-- Injuries -->
+
+  <Hediffs_DesolatorGun.label>辐射伤害</Hediffs_DesolatorGun.label>
+  <Hediffs_DesolatorGun.comps.0.labelTendedWell>已包扎</Hediffs_DesolatorGun.comps.0.labelTendedWell>
+  <Hediffs_DesolatorGun.comps.0.labelTendedWellInner>已缝合</Hediffs_DesolatorGun.comps.0.labelTendedWellInner>
+  <Hediffs_DesolatorGun.comps.0.labelSolidTendedWell>已固定</Hediffs_DesolatorGun.comps.0.labelSolidTendedWell>
+  <Hediffs_DesolatorGun.comps.2.oldLabel>辐射疤痕</Hediffs_DesolatorGun.comps.2.oldLabel>
+  <Hediffs_DesolatorGun.injuryProps.destroyedLabel>被烧毁</Hediffs_DesolatorGun.injuryProps.destroyedLabel>
+  <Hediffs_DesolatorGun.injuryProps.destroyedOutLabel>被烧掉</Hediffs_DesolatorGun.injuryProps.destroyedOutLabel>
+
+  <Hediffs_DownToDie.label>倒地即死</Hediffs_DownToDie.label>
+  
+</LanguageData>

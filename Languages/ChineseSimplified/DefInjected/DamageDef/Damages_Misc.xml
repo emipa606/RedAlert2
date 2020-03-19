@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <DesolatorGun.label>辐射</DesolatorGun.label>
+  <DesolatorGun.deathMessage>{0}死于辐射。</DesolatorGun.deathMessage>
+
+  <TanyaGun.label>谭雅枪伤</TanyaGun.label>
+  <TanyaGun.deathMessage>{0}被谭雅杀死了。</TanyaGun.deathMessage>
+
+  <ApoDamage.label>天启炮伤</ApoDamage.label>
+  <ApoDamage.deathMessage>{0}被天启坦克炸死了。</ApoDamage.deathMessage>
+
+  <Nuclear.label>核爆</Nuclear.label>
+  <Nuclear.deathMessage>{0}死于核反应堆爆炸。</Nuclear.deathMessage>
+  
+  <Earthquake.label>地震</Earthquake.label>
+  <Earthquake.deathMessage>{0}死于地震。</Earthquake.deathMessage>
+</LanguageData>

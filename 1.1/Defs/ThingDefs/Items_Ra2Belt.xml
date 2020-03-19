@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+   <ThingDef ParentName="ApparelBase">
+    <thingClass>ra2.AmazingBelt</thingClass>
+    <defName>ra2_Belt</defName>
+    <label>amazing belt</label>
+    <description>It can kill the wearer when he downed!amazing!</description>
+    <techLevel>Industrial</techLevel>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/SmokepopBelt/SmokepopBelt</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <tickerType>Normal</tickerType>
+    <statBases>
+      <WorkToMake>3500</WorkToMake>
+      <Mass>3</Mass>
+    </statBases>
+    <menuHidden>true</menuHidden>
+    <destroyOnDrop>true</destroyOnDrop>
+	<useHitPoints>true</useHitPoints>
+    <tradeability>None</tradeability>
+    <thingCategories>
+      <li>Apparel</li>
+    </thingCategories>
+		<generateAllowChance>0.15</generateAllowChance>
+    <apparel>
+      <bodyPartGroups>
+        <li>Waist</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Belt</li>
+      </layers>
+      <tags>
+        <li>Ra2Belt</li>
+      </tags>
+    </apparel>
+    <comps>
+      <li Class="ra2.CompProperties_DownToDie" />
+    </comps>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>10</weight>
+          <only>RGBA(0.6,0.4,0.4,1)</only>
+        </li>
+        <li>
+          <weight>10</weight>
+          <only>RGBA(0.6,0.6,0.4,1)</only>
+        </li>
+        <li>
+          <weight>6</weight>
+          <min>RGBA(0.3,0.3,0.3,1)</min>
+          <max>RGBA(0.5,0.5,0.5,1)</max>
+        </li>
+        <li>
+          <weight>10</weight>
+          <only>RGBA(0.33,0.33,0.33,1)</only>
+        </li>
+      </options>
+    </colorGenerator>
+  </ThingDef>
+
+
+</Defs>

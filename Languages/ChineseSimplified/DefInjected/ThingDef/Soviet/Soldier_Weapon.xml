@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <ra2_Bullet_Desolator.label>辐射波</ra2_Bullet_Desolator.label>
+
+  <ra2_Gun_Desolator.label>辐射光束武器</ra2_Gun_Desolator.label>
+  <ra2_Gun_Desolator.description>强力的辐射波能杀死任何生物。对于机械生物与坦克的伤害也很高，缺点是无法伤害建筑。</ra2_Gun_Desolator.description>
+  
+  <ra2_Bullet_conscript.label>PPSh-41子弹</ra2_Bullet_conscript.label>
+
+  <ra2_Gun_Conscript.label>PPSh-41</ra2_Gun_Conscript.label>
+  <ra2_Gun_Conscript.description>动员兵标配武器。伤害低。</ra2_Gun_Conscript.description>
+  
+  <ra2_Bullet_TeslaTrooper.label>磁能波</ra2_Bullet_TeslaTrooper.label>
+
+  <ra2_Gun_TeslaTrooper.label>可携式磁爆线圈</ra2_Gun_TeslaTrooper.label>
+  <ra2_Gun_TeslaTrooper.description>可携式磁爆线圈,伤害低于磁暴线圈。</ra2_Gun_TeslaTrooper.description>
+  
+   <ra2_Gun_Apo_Type.label>可携式天启坦克炮</ra2_Gun_Apo_Type.label>
+  <ra2_Gun_Apo_Type.description>可携式天启坦克炮。</ra2_Gun_Apo_Type.description>
+  
+</LanguageData>

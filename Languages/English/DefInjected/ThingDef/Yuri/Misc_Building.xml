@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <ra2_YuriTech.label>Yuri Tech Table</ra2_YuriTech.label>
+  <ra2_YuriTech.description>containing Yuri Technology</ra2_YuriTech.description>
+  <ra2_YuriTech_Blueprint.label>Yuri Tech Table(BluePrint)</ra2_YuriTech_Blueprint.label>
+  <ra2_YuriTech_Frame.label>Yuri Tech Table(Building)</ra2_YuriTech_Frame.label>
+  <ra2_YuriTech_Frame.description>containing Yuri Technology</ra2_YuriTech_Frame.description>
+  
+  <ra2_YuriBarracks.label>Yuri Barracks</ra2_YuriBarracks.label>
+  <ra2_YuriBarracks.description>It can train Yuri soldiers.</ra2_YuriBarracks.description>
+  <ra2_YuriBarracks_Blueprint.label>Yuri Barracks(BluePrint)</ra2_YuriBarracks_Blueprint.label>
+  <ra2_YuriBarracks_Frame.label>Yuri Barracks(Building)</ra2_YuriBarracks_Frame.label>
+  <ra2_YuriBarracks_Frame.description>It can train Yuri soldiers.</ra2_YuriBarracks_Frame.description>
+  
+  <ra2_YuriGrinder.label>Grinder</ra2_YuriGrinder.label>
+  <ra2_YuriGrinder.description>Can decompose pawn</ra2_YuriGrinder.description>
+  <ra2_YuriGrinder_Blueprint.label>Grinder(BluePrint)</ra2_YuriGrinder_Blueprint.label>
+  <ra2_YuriGrinder_Frame.label>Grinder(Building)</ra2_YuriGrinder_Frame.label>
+  <ra2_YuriGrinder_Frame.description>Can decompose pawn</ra2_YuriGrinder_Frame.description>
+  
+</LanguageData>

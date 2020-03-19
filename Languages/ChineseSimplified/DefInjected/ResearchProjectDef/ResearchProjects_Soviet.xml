@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Tier 1: pre-electricity -->
+
+  <Ra2SovietPillbox.label>苏联哨戒机炮</Ra2SovietPillbox.label>
+  <Ra2SovietPillbox.description>解锁苏联哨戒机炮建设权限。</Ra2SovietPillbox.description>
+
+  <Ra2SovietTesla.label>苏联磁暴线圈</Ra2SovietTesla.label>
+  <Ra2SovietTesla.description>解锁苏联磁暴线圈建设权限。</Ra2SovietTesla.description>
+
+  <Ra2SovietEarthHammer.label>苏联地锤防御装置</Ra2SovietEarthHammer.label>
+  <Ra2SovietEarthHammer.description>解锁苏联地锤防御装置建设权限。</Ra2SovietEarthHammer.description>
+
+  <Ra2SovietDesolatorSuit.label>苏联辐射工兵套装</Ra2SovietDesolatorSuit.label>
+  <Ra2SovietDesolatorSuit.description>学习制作辐射工兵套装，全套免疫辐射伤害。</Ra2SovietDesolatorSuit.description>
+
+  <Ra2SovietApoTankGun.label>可携式天启坦克炮</Ra2SovietApoTankGun.label>
+  <Ra2SovietApoTankGun.description>学习制作可携式天启坦克炮。</Ra2SovietApoTankGun.description>
+  
+  <Ra2SovietApoTankGunTurret.label>?启##克%@台</Ra2SovietApoTankGunTurret.label>
+  <Ra2SovietApoTankGunTurret.description>[数据删除](未完成)。</Ra2SovietApoTankGunTurret.description>
+  
+  <Ra2SovietTeslaTech.label>苏联特斯拉技术</Ra2SovietTeslaTech.label>
+  <Ra2SovietTeslaTech.description>解锁苏联特斯拉技术。</Ra2SovietTeslaTech.description>
+  
+  <Ra2SovietNuclearTech.label>苏联核技术</Ra2SovietNuclearTech.label>
+  <Ra2SovietNuclearTech.description>解锁苏联核技术。</Ra2SovietNuclearTech.description>
+  
+  <Ra2SovietADA.label>苏联防空炮</Ra2SovietADA.label>
+  <Ra2SovietADA.description>解锁苏联防空炮建设权限。</Ra2SovietADA.description>
+  
+  <Ra2SovietBarracks.label>苏联兵营</Ra2SovietBarracks.label>
+  <Ra2SovietBarracks.description>解锁苏联兵营建设权限。</Ra2SovietBarracks.description>
+  
+  <Ra2SovietNuclearMissle.label>苏联超级武器</Ra2SovietNuclearMissle.label>
+  <Ra2SovietNuclearMissle.description>解锁核弹发射井</Ra2SovietNuclearMissle.description>
+</LanguageData>

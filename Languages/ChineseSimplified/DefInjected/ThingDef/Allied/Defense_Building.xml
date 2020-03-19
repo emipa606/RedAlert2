@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <ra2_Pillbox_A.label>机枪碉堡</ra2_Pillbox_A.label>
+  <ra2_Pillbox_A.description>盟军基本的防卫建筑，可有效的克制敌军的步兵单位。</ra2_Pillbox_A.description>
+  <ra2_Pillbox_A_Blueprint.label>机枪碉堡（蓝图）</ra2_Pillbox_A_Blueprint.label>
+  <ra2_Pillbox_A_Frame.label>机枪碉堡（建造中）</ra2_Pillbox_A_Frame.label>
+  <ra2_Pillbox_A_Frame.description>盟军基本的防卫建筑，可有效的克制敌军的步兵单位。</ra2_Pillbox_A_Frame.description>
+  
+  <ra2_AlliedAirDefense.label>爱国者飞弹</ra2_AlliedAirDefense.label>
+  <ra2_AlliedAirDefense.description>盟军基本的防卫建筑，可击落空中的炮弹和空投仓。</ra2_AlliedAirDefense.description>
+  <ra2_AlliedAirDefense_Blueprint.label>爱国者飞弹（蓝图）</ra2_AlliedAirDefense_Blueprint.label>
+  <ra2_AlliedAirDefense_Frame.label>爱国者飞弹（建造中）</ra2_AlliedAirDefense_Frame.label>
+  <ra2_AlliedAirDefense_Frame.description>盟军基本的防卫建筑，可击落空中的炮弹和空投仓。</ra2_AlliedAirDefense_Frame.description>
+  
+  <ra2_Prism.label>光棱塔</ra2_Prism.label>
+  <ra2_Prism.description>盟军阵营防御武器。</ra2_Prism.description>
+  <ra2_Prism_Blueprint.label>光棱塔（蓝图）</ra2_Prism_Blueprint.label>
+  <ra2_Prism_Frame.label>光棱塔（建造中）</ra2_Prism_Frame.label>
+  <ra2_Prism_Frame.description>盟军阵营防御武器。</ra2_Prism_Frame.description>
+  
+  
+  <ra2_GrandCannon.label>巨炮</ra2_GrandCannon.label>
+  <ra2_GrandCannon.description>盟军阵营防御武器，可以发射巨大炮弹，造成大面积破坏。可越过围墙攻击敌人。</ra2_GrandCannon.description>
+  <ra2_GrandCannon_Blueprint.label>巨炮（蓝图）</ra2_GrandCannon_Blueprint.label>
+  <ra2_GrandCannon_Frame.label>巨炮（建造中）</ra2_GrandCannon_Frame.label>
+  <ra2_GrandCannon_Frame.description>盟军阵营防御武器，可以发射巨大炮弹，造成大面积破坏。可越过围墙攻击敌人。</ra2_GrandCannon_Frame.description>
+  
+</LanguageData>

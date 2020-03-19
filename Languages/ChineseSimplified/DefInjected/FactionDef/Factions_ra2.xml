@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+
+
+  <ra2_Soviet.label>苏联</ra2_Soviet.label>
+  <ra2_Soviet.description>势不可挡的红色力量。</ra2_Soviet.description>
+  <ra2_Soviet.fixedName>苏联</ra2_Soviet.fixedName>
+  <ra2_Soviet.pawnsPlural>苏联军队</ra2_Soviet.pawnsPlural>
+
+  <ra2_Allied.label>盟军</ra2_Allied.label>
+  <ra2_Allied.description>势不可挡的自由力量。</ra2_Allied.description>
+  <ra2_Allied.fixedName>盟军</ra2_Allied.fixedName>
+  <ra2_Allied.pawnsPlural>盟军军队</ra2_Allied.pawnsPlural>
+  
+  <ra2_Yuri.label>尤里</ra2_Yuri.label>
+  <ra2_Yuri.description>服从尤里</ra2_Yuri.description>
+  <ra2_Yuri.fixedName>尤里</ra2_Yuri.fixedName>
+  <ra2_Yuri.pawnsPlural>尤里军队</ra2_Yuri.pawnsPlural>
+
+  
+</LanguageData>

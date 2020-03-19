@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+
+  <ra2_YuriInitiate.label>尤里新兵</ra2_YuriInitiate.label>
+  <ra2_YuriInitiate.labelPlural>尤里新兵</ra2_YuriInitiate.labelPlural>
+  
+  <ra2_YuriEngineer.label>工程师</ra2_YuriEngineer.label>
+  <ra2_YuriEngineer.labelPlural>工程师</ra2_YuriEngineer.labelPlural>
+
+  <ra2_YuriBrute.label>狂兽人</ra2_YuriBrute.label>
+  <ra2_YuriBrute.labelPlural>狂兽人</ra2_YuriBrute.labelPlural>
+  
+  <ra2_YuriYuri.label>尤里复制人</ra2_YuriYuri.label>
+  <ra2_YuriYuri.labelPlural>尤里复制人</ra2_YuriYuri.labelPlural>
+  
+
+</LanguageData>

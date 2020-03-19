@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="ra2BuildingBase">
+    <defName>ra2_Tesla</defName>
+    <label>Tesla coil</label>
+    <thingClass>ra2.Building_CustomTurretGun</thingClass>
+    <graphicData>
+      <texPath>ra2/Building/ra2_tesla</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(9,9)</drawSize>
+      <damageData>
+        <rect>(0.2,0.2,0.6,0.6)</rect>
+      </damageData>
+    </graphicData>
+
+    <altitudeLayer>BuildingOnTop</altitudeLayer>
+    <stealable>false</stealable>
+    <rotatable>false</rotatable>
+    <size>(3,3)</size>
+    <statBases>
+      <MaxHitPoints>1000</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <WorkToBuild>2800</WorkToBuild>
+      <Mass>400</Mass>
+      <Beauty>-20</Beauty>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <comps>
+      <li Class="ra2.CompProperties_TeslaCoil">
+        <compClass>ra2.CompTeslaCoil</compClass>
+		<size>(1.5,2.5)</size>
+		<speed>4</speed>
+      </li>
+      <li Class="CompProperties_Forbiddable"/>
+      <li Class="CompProperties_Explosive">
+                <explosiveRadius>2</explosiveRadius>
+                <explosiveDamageType>Bomb</explosiveDamageType>
+      </li>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>450</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+ 
+    </comps>
+    <description>Soviet tesla coil.</description>
+    <passability>Impassable</passability>
+    <pathCost>50</pathCost>
+    <fillPercent>0.4</fillPercent>
+    <castEdgeShadows>true</castEdgeShadows>
+    <staticSunShadowHeight>0.6</staticSunShadowHeight>
+    <hasTooltip>true</hasTooltip>
+    <costList>
+	  <ra2_GoldBar>1000</ra2_GoldBar>
+    </costList>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <designationCategory>Security</designationCategory>
+    <specialDisplayRadius>29</specialDisplayRadius>
+    <building>
+			<ai_combatDangerous>true</ai_combatDangerous>
+      <turretGunDef>ra2_Gun_Tesla</turretGunDef>
+      <turretBurstCooldownTime>3</turretBurstCooldownTime>
+      <turretTopGraphicPath>ra2/Building/ra2_tesla_top</turretTopGraphicPath>
+    </building>
+    <designationHotKey>Misc2</designationHotKey>
+    <researchPrerequisites>
+      <li>Ra2SovietTesla</li>
+    </researchPrerequisites>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>ra2_Bullet_Tesla</defName>
+    <label>electric arc</label>
+    <thingClass>ra2.Projectile_BuildingLine</thingClass>
+    <graphicData>
+      <texPath>ra2/Projectile/Lighting</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+    <projectile>
+      <speed>200</speed>
+      <damageDef>Burn</damageDef>
+      <damageAmountBase>15</damageAmountBase>
+
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="ra2_CanGetGunBase">
+    <defName>ra2_Gun_Tesla</defName>
+    <label>tesla coil</label>
+    <description>tesla coil</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/ChargeRifle</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <menuHidden>true</menuHidden>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <tradeability>None</tradeability>
+    <destroyOnDrop>true</destroyOnDrop>
+    <statBases>
+      <Mass>1</Mass>
+      <AccuracyTouch>1.00</AccuracyTouch>
+      <AccuracyShort>1.00</AccuracyShort>
+      <AccuracyMedium>1.00</AccuracyMedium>
+      <AccuracyLong>1.00</AccuracyLong>
+      <RangedWeapon_Cooldown>6.00</RangedWeapon_Cooldown>
+    </statBases>
+    <techLevel>Industrial</techLevel>
+    <weaponTags>
+      <li>Gun</li>
+      <li>TurretGun</li>
+    </weaponTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>ra2_Bullet_Tesla</defaultProjectile>
+        <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+        <burstShotCount>3</burstShotCount>
+        <accuracyTouch>1.00</accuracyTouch>
+        <accuracyShort>0.90</accuracyShort>
+        <accuracyMedium>0.85</accuracyMedium>
+        <accuracyLong>0.80</accuracyLong>
+        <warmupTime>3</warmupTime>
+        <range>29</range>
+        <soundCast>ra2_tesla</soundCast>
+        <soundCastTail>ra2_tesla_tail</soundCastTail>
+        <muzzleFlashScale>14</muzzleFlashScale>
+        <requireLineOfSight>false</requireLineOfSight>
+      </li>
+    </verbs>
+  </ThingDef>
+  
+</Defs>

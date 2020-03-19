@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <AirDefenseHit>Hit Target!</AirDefenseHit>
+  <Beshotdown>Be shot down!</Beshotdown>
+  <BeshotdownMsg>Oh,no!One or more of our colonists were shot down by {0}'s Antiaircraft gun:</BeshotdownMsg>
+  <restoreBullet>Restore Bullet</restoreBullet>
+  <restoreProgress>Progress</restoreProgress>
+  <ADAUnderRoof>Error: Under Roof!</ADAUnderRoof>
+  
+  <Dangerousunit>Dangerous unit!</Dangerousunit>
+  <DangerousunitMsg>Warning!{0}'s elite unit,{1},has arrived!</DangerousunitMsg>
+  <TanyaWeaponUse>Her Weapon is</TanyaWeaponUse>
+  <Adams>Adams</Adams>
+  <TanyaChangeWeapon>Change Tanya's Weapon</TanyaChangeWeapon>
+  <ChronoNotToBuild>Can not teleport to building</ChronoNotToBuild>
+  <ChronoTeleport>Teleport</ChronoTeleport>
+  <YuriExpTitle>Psychic shock wave</YuriExpTitle>
+  <GrinderHelpInfo>Tip:It will kill every pawn in the circle</GrinderHelpInfo>
+  <GrinderAction>Decompose pawn around</GrinderAction>
+  
+  <MustPlaceOnGoldMineral>Must place on Gold Mineral!</MustPlaceOnGoldMineral>
+  <GoldMinerProgress>Mining Progress</GoldMinerProgress>
+  <GoldMineralStore>Gold Store</GoldMineralStore>
+  <MessageGoldMineralLifeOut>One of Gold Mineral has dried up.</MessageGoldMineralLifeOut>
+  
+  <DroppodCargoDropPercentage>Droppod Cargo Drop Percentage</DroppodCargoDropPercentage>
+  <DroppodCargoDropPercentageDesc>how many cargo will drop out when a droppod was shot down?(0 = none,100 = all)</DroppodCargoDropPercentageDesc>
+  
+  <RA2UseGameSpeed>Use Ra2's Training Speed</RA2UseGameSpeed>
+  <RA2UseGameSpeedDesc>Ra2's Training speed is faster than default</RA2UseGameSpeedDesc>
+  
+  <BarracksTraining>You are training </BarracksTraining>
+  <BarracksEmpty>Not training</BarracksEmpty>
+  <BarracksLeft>Remain</BarracksLeft>
+  <ra2_Train>Train </ra2_Train>
+  
+  <LeftSuperWeaponTime>Left Time</LeftSuperWeaponTime>
+  <ReadytoLaunch>Ready!</ReadytoLaunch>
+  <SuperWeaponDesc.Soviet>Launch nuclear missle</SuperWeaponDesc.Soviet>
+  <SuperWeaponDesc.Allied>Create lightning storm</SuperWeaponDesc.Allied>
+  <SWeaponDestoryBase>Done!</SWeaponDestoryBase>
+</LanguageData>

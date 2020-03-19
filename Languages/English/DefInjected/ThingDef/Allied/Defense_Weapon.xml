@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <ra2_Bullet_pillbox_A.label>Pillbox Bullet</ra2_Bullet_pillbox_A.label>
+
+  <ra2_Gun_pillbox_A.label>Pillbox Weapon</ra2_Gun_pillbox_A.label>
+  <ra2_Gun_pillbox_A.description>Pillbox Weapon</ra2_Gun_pillbox_A.description>
+  
+  <ra2_Bullet_Prism.label>Prism</ra2_Bullet_Prism.label>
+
+  <ra2_Gun_Prism.label>Prism Tower Weapon</ra2_Gun_Prism.label>
+  <ra2_Gun_Prism.description>Powerful Prism attack</ra2_Gun_Prism.description>
+  
+  <ra2_Bullet_GrandCannon.label>Grand Cannon</ra2_Bullet_GrandCannon.label>
+
+  <ra2_Gun_GrandCannon.label>Grand Cannon</ra2_Gun_GrandCannon.label>
+  <ra2_Gun_GrandCannon.description>Powerful Grand Cannon。</ra2_Gun_GrandCannon.description>
+  
+</LanguageData>

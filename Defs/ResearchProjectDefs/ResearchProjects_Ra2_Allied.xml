@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ResearchProjectDef>
+    <tab>RA2</tab>
+    <defName>Ra2AlliedBarracks</defName>
+    <label>Aiiled Barracks</label>
+    <description>Learn to build allied barracks.</description>
+    <baseCost>1000</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>Ra2BaseResearch</li>
+    </prerequisites>
+    <researchViewX>0.5</researchViewX>
+    <researchViewY>1.5</researchViewY>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+	  <li>ra2_AlliedTech</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>  
+  
+  <ResearchProjectDef>
+    <tab>RA2</tab>
+    <defName>Ra2AlliedPillbox</defName>
+    <label>Allied Pillbox</label>
+    <description>Learn to build Allied pillbox.</description>
+    <baseCost>800</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>Ra2AlliedBarracks</li>
+    </prerequisites>
+    <researchViewX>1</researchViewX>
+    <researchViewY>2</researchViewY>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+	  <li>ra2_AlliedTech</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  
+
+  
+  <ResearchProjectDef>
+    <tab>RA2</tab>
+    <defName>Ra2AlliedADA</defName>
+    <label>Aiiled Patriot Missiles</label>
+    <description>Learn to build allied patriot missiles.</description>
+    <baseCost>1300</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>Ra2AlliedBarracks</li>
+    </prerequisites>
+    <researchViewX>1</researchViewX>
+    <researchViewY>1.5</researchViewY>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+	  <li>ra2_AlliedTech</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+    <tab>RA2</tab>
+    <defName>Ra2AlliedPrism</defName>
+    <label>Allied Prism Tower</label>
+    <description>Learn to build Allied Prism Tower.</description>
+    <baseCost>1600</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>Ra2AlliedPillbox</li>
+    </prerequisites>
+    <researchViewX>2</researchViewX>
+    <researchViewY>2</researchViewY>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+	  <li>ra2_AlliedTech</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+    <tab>RA2</tab>
+    <defName>Ra2AlliedGrandCannon</defName>
+    <label>Allied GrandCannon</label>
+    <description>Learn to build Allied GrandCannon.</description>
+    <baseCost>3200</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>Ra2AlliedPrism</li>
+    </prerequisites>
+    <researchViewX>3</researchViewX>
+    <researchViewY>2</researchViewY>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+	  <li>ra2_AlliedTech</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+    <tab>RA2</tab>
+    <defName>Ra2AlliedWeatherTech</defName>
+    <label>Allied Weather Tech</label>
+    <description>Learn Weather Tech.</description>
+    <baseCost>1000</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>Ra2AlliedPrism</li>
+    </prerequisites>
+    <researchViewX>2</researchViewX>
+    <researchViewY>1.5</researchViewY>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+	  <li>ra2_AlliedTech</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+    <tab>RA2</tab>
+    <defName>Ra2AlliedWeatherMachine</defName>
+    <label>Allied Super Weapon</label>
+    <description>Learn to build weather machine.</description>
+    <baseCost>4000</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>Ra2AlliedWeatherTech</li>
+    </prerequisites>
+    <researchViewX>3</researchViewX>
+    <researchViewY>1.5</researchViewY>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+	  <li>ra2_AlliedTech</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  
+  
+  
+  
+  
+  
+  <ResearchProjectDef>
+    <tab>RA2</tab>
+    <defName>Ra2AlliedTanya</defName>
+    <label>Allied Tanya</label>
+    <description>Learn to Train Tanya(Limit 1).</description>
+    <baseCost>3200</baseCost>
+    <techLevel>Industrial</techLevel>
+    <researchViewX>1</researchViewX>
+    <researchViewY>2.5</researchViewY>
+    <requiredResearchBuilding>SteamGeyser</requiredResearchBuilding>
+  </ResearchProjectDef>
+  
+
+  
+</Defs>

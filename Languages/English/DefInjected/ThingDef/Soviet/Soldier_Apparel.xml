@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <ra2_Hat_Desolator.label>Desolator's Helmet</ra2_Hat_Desolator.label>
+  <ra2_Hat_Desolator.description>Resistant to radiation</ra2_Hat_Desolator.description>
+
+  <ra2_Parka_Desolator.label>Desolator's Suit (top)</ra2_Parka_Desolator.label>
+  <ra2_Parka_Desolator.description>Resistant to radiation</ra2_Parka_Desolator.description>
+
+  <ra2_Pants_Desolator.label>Desolator's Suit (below)</ra2_Pants_Desolator.label>
+  <ra2_Pants_Desolator.description>Resistant to radiation</ra2_Pants_Desolator.description>
+  
+  
+  <ra2_Hat_Conscript.label>Conscript's Hat</ra2_Hat_Conscript.label>
+  <ra2_Hat_Conscript.description>Conscript's standard Hat</ra2_Hat_Conscript.description>
+
+  <ra2_Parka_Conscript.label>Conscript's coat</ra2_Parka_Conscript.label>
+  <ra2_Parka_Conscript.description>Conscript's standard clothes</ra2_Parka_Conscript.description>
+  
+  <ra2_Shirt_Conscript.label>Conscript's clothes</ra2_Shirt_Conscript.label>
+  <ra2_Shirt_Conscript.description>Conscript's standard clothes</ra2_Shirt_Conscript.description>
+
+  <ra2_Pants_Conscript.label>Conscript's pants</ra2_Pants_Conscript.label>
+  <ra2_Pants_Conscript.description>Conscript's standard clothes</ra2_Pants_Conscript.description>
+  
+  
+  <ra2_Hat_TeslaTrooper.label>Tesla Trooper's Helmet</ra2_Hat_TeslaTrooper.label>
+  <ra2_Hat_TeslaTrooper.description>Tesla Trooper's standard Helmet。</ra2_Hat_TeslaTrooper.description>
+  
+  <ra2_Parka_TeslaTrooper.label>Tesla Trooper's Suit (top)</ra2_Parka_TeslaTrooper.label>
+  <ra2_Parka_TeslaTrooper.description>Tesla Trooper's standard clothes</ra2_Parka_TeslaTrooper.description>
+
+  <ra2_Pants_TeslaTrooper.label>Tesla Trooper's Suit (below)</ra2_Pants_TeslaTrooper.label>
+  <ra2_Pants_TeslaTrooper.description>Tesla Trooper's standard clothes</ra2_Pants_TeslaTrooper.description>
+  
+  
+  <ra2_Hat_Engineer.label>Engineer's Hat</ra2_Hat_Engineer.label>
+  <ra2_Hat_Engineer.description>Engineer's standard Hat</ra2_Hat_Engineer.description>
+
+  <ra2_Parka_Engineer.label>Engineer's coat</ra2_Parka_Engineer.label>
+  <ra2_Parka_Engineer.description>Engineer's standard clothes</ra2_Parka_Engineer.description>
+  
+  <ra2_Shirt_Engineer.label>Engineer's clothes</ra2_Shirt_Engineer.label>
+  <ra2_Shirt_Engineer.description>Engineer's standard clothes</ra2_Shirt_Engineer.description>
+
+  <ra2_Pants_Engineer.label>Engineer's pants</ra2_Pants_Engineer.label>
+  <ra2_Pants_Engineer.description>Engineer's standard clothes</ra2_Pants_Engineer.description>
+  
+
+</LanguageData>

@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <ProjectGuid>{8B3FCED8-1009-4682-A942-B5D4086AED38}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <AssemblyName>ra2</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+    <TargetFrameworkProfile />
+    <RootNamespace>ra2</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\1.1\Assemblies\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="0Harmony, Version=2.0.0.8, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Lib.Harmony.2.0.0.8\lib\net472\0Harmony.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="HugsLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\UnlimitedHugs.Rimworld.HugsLib.7.1.0\lib\net472\HugsLib.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.IMGUIModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AlliedStormCondition.cs" />
+    <Compile Include="Building_AirDefense.cs" />
+    <Compile Include="Building_CustomTurretGun.cs" />
+    <Compile Include="Building_GoldMiner.cs" />
+    <Compile Include="Building_GoldMineral.cs" />
+    <Compile Include="Building_SuperWeapon.cs" />
+    <Compile Include="BulletStore.cs" />
+    <Compile Include="Command_TargetPlus.cs" />
+    <Compile Include="CompBarracks.cs" />
+    <Compile Include="CompDownToDie.cs" />
+    <Compile Include="CompGoldMiner.cs" />
+    <Compile Include="CompAlliedSuperWeapon.cs" />
+    <Compile Include="CompSovietSuperWeapon.cs" />
+    <Compile Include="CompProperties_Barracks.cs" />
+    <Compile Include="CompProperties_GoldMiner.cs" />
+    <Compile Include="CompProperties_SovietPower.cs" />
+    <Compile Include="CompProperties_TeslCoil.cs" />
+    <Compile Include="CompSovietPower.cs" />
+    <Compile Include="CompTeslaCoil.cs" />
+    <Compile Include="CompPrismTower.cs" />
+    <Compile Include="CompProperties_DownToDie.cs" />
+    <Compile Include="CompProperties_PrismTower.cs" />
+    <Compile Include="CompProperties_TurretTopSize.cs" />
+    <Compile Include="CompTurretTopSize.cs" />
+    <Compile Include="CompUseEffect_TanyaNote.cs" />
+    <Compile Include="HarmonyTest.cs" />
+    <Compile Include="Harmony_Projectile_Add.cs" />
+    <Compile Include="Harmony_Projectile_Die.cs" />
+    <Compile Include="Harmony_Raidenemy_Ra2.cs" />
+    <Compile Include="Harmony_Tank_WeaponDraw.cs" />
+    <Compile Include="HediffCompProperties_DownToDie.cs" />
+    <Compile Include="HediffComp_DownToDie.cs" />
+    <Compile Include="IncidentWorker_Ra2RaidEnemy.cs" />
+    <Compile Include="IntermittentGoldMiner.cs" />
+    <Compile Include="ModBaseRa2.cs" />
+    <Compile Include="Yuri\Command_YuriAction.cs" />
+    <Compile Include="Yuri\CompGrinder.cs" />
+    <Compile Include="Yuri\Controlstorage.cs" />
+    <Compile Include="Yuri\Harmony_Yuri.cs" />
+    <Compile Include="Yuri\InitiateBullet.cs" />
+    <Compile Include="Yuri\PlaceWorker_ShowGrinderRadius.cs" />
+    <Compile Include="Yuri\Verb_Yuri.cs" />
+    <Compile Include="PlaceWorker_OnGoldMineral.cs" />
+    <Compile Include="ProjectileEnd.cs" />
+    <Compile Include="Projectile_Custom.cs" />
+    <Compile Include="Projectile_Desolator.cs" />
+    <Compile Include="Projectile_BuildingLine.cs" />
+    <Compile Include="Projectile_line.cs" />
+    <Compile Include="Projectile_SiegeCadre.cs" />
+    <Compile Include="Projectile_Sniper.cs" />
+    <Compile Include="Projectile_Tanya.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Settings.cs" />
+    <Compile Include="SovietNuclearLeaving.cs" />
+    <Compile Include="SovietNuclearFallen.cs" />
+    <Compile Include="SovietNuclearStrike.cs" />
+    <Compile Include="StartUp.cs" />
+    <Compile Include="AmazingBelt.cs" />
+    <Compile Include="SuperWeaponAction.cs" />
+    <Compile Include="TurretTop_CustomSize.cs" />
+    <Compile Include="ChronoBeam.cs" />
+    <Compile Include="ChronoMoteMaker.cs" />
+    <Compile Include="Comp_RemovingGun.cs" />
+    <Compile Include="Verb_Chrono.cs" />
+    <Compile Include="WeatherObject_Thunder.cs" />
+    <Compile Include="Yuri\YuriSoldierMakeUp.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

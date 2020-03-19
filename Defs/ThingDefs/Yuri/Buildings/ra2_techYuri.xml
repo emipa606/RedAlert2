@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ThingDef ParentName="ra2BuildingBase">
+    <defName>ra2_YuriTech</defName>
+    <label>Yuri tech machine</label>
+    <description>Increases research speed. Needs to be placed near hi-tech research bench. One research bench can be linked to only one multi-analyzer.</description>
+    <graphicData>
+      <texPath>ra2/Building/ra2_yuri_tech</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <damageData>
+        <rect>(0.15,0.15,1.7,1.7)</rect>
+      </damageData>
+    </graphicData>
+    <researchPrerequisites><li>Ra2BaseResearch</li></researchPrerequisites>
+    <size>(2,2)</size>
+    <rotatable>false</rotatable>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <castEdgeShadows>true</castEdgeShadows>
+    <fillPercent>0.5</fillPercent>
+    <designationHotKey>Misc4</designationHotKey>
+    <designationCategory>Misc</designationCategory>
+
+    <canOverlapZones>false</canOverlapZones>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <WorkToBuild>5000</WorkToBuild>
+      <Mass>100</Mass>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <costList>
+      <Steel>400</Steel>
+      <Plasteel>150</Plasteel>
+      <ra2_YuriTechCore>1</ra2_YuriTechCore>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <shortCircuitInRain>true</shortCircuitInRain>
+        <basePowerConsumption>200</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Facility">
+        <statOffsets>
+          <ResearchSpeedFactor>0.1</ResearchSpeedFactor>
+        </statOffsets>
+        <maxSimultaneous>1</maxSimultaneous>
+      </li>
+    </comps>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+    <constructionSkillPrerequisite>10</constructionSkillPrerequisite>
+  </ThingDef>
+
+  
+</Defs>

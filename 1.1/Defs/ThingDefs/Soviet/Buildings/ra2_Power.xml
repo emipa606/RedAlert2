@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+   <ThingDef ParentName="ra2BuildingBase">
+    <defName>ra2_SovietGenerator</defName>
+    <label>tesla reactor</label>
+    <description>Produces electricity from sunlight. Does not work in the dark or under artificial light.</description>
+    <thingClass>Building</thingClass>
+    <graphicData>
+      <texPath>ra2/Building/ra2_SovietPower1</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(5.5,6)</drawSize>
+      <shadowData>
+        <volume>(3.5,0.75,3.4)</volume>
+        <offset>(0,0,0)</offset>
+      </shadowData>
+      <damageData>
+        <rect>(0,0.6,4,2.8)</rect>
+      </damageData>
+    </graphicData>
+    <castEdgeShadows>true</castEdgeShadows>
+    <rotatable>false</rotatable>
+    <altitudeLayer>BuildingOnTop</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>70</pathCost>
+    <fillPercent>0.5</fillPercent>
+    <canOverlapZones>false</canOverlapZones>
+    <statBases>
+      <MaxHitPoints>300</MaxHitPoints>
+      <WorkToBuild>2500</WorkToBuild>
+      <Flammability>0.7</Flammability>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <size>(5,2)</size>
+    <costList>
+      <ra2_GoldBar>600</ra2_GoldBar>
+      <ComponentIndustrial>6</ComponentIndustrial>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>ra2.CompSovietPower</compClass>
+        <basePowerConsumption>-800</basePowerConsumption>
+        <transmitsPower>true</transmitsPower>
+      </li>
+      <li Class="CompProperties_Breakdownable"/>
+      <li Class="CompProperties_Glower">
+        <glowRadius>4</glowRadius>
+        <glowColor>(217,217,240,0)</glowColor>
+      </li>
+    </comps>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <designationCategory>Power</designationCategory>
+    <designationHotKey>Misc5</designationHotKey>
+    <constructEffect>ConstructMetal</constructEffect>
+    <researchPrerequisites>
+      <li>Electricity</li>
+      <li>Ra2SovietTeslaTech</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+  </ThingDef>
+
+
+   <ThingDef ParentName="ra2BuildingBase">
+    <defName>ra2_SovietGenerator_Nuclear</defName>
+    <label>Nuclear Reactor</label>
+    <description>Produces electricity from sunlight. Does not work in the dark or under artificial light.</description>
+    <thingClass>Building</thingClass>
+    <graphicData>
+      <texPath>ra2/Building/ra2_SovietPower2</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(12,12)</drawSize>
+      <shadowData>
+        <volume>(3.5,0.75,3.4)</volume>
+        <offset>(0,0,0)</offset>
+      </shadowData>
+      <damageData>
+        <rect>(0,0.6,4,2.8)</rect>
+      </damageData>
+    </graphicData>
+    <castEdgeShadows>false</castEdgeShadows>
+    <rotatable>false</rotatable>
+    <altitudeLayer>BuildingOnTop</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>70</pathCost>
+    <fillPercent>0.5</fillPercent>
+    <canOverlapZones>false</canOverlapZones>
+    <statBases>
+      <MaxHitPoints>2500</MaxHitPoints>
+      <WorkToBuild>2500</WorkToBuild>
+      <Flammability>0.7</Flammability>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <size>(12,12)</size>
+
+    <costList>
+      <ra2_GoldBar>1500</ra2_GoldBar>
+	  <Uranium>250</Uranium>
+      <ComponentSpacer>10</ComponentSpacer>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerPlant</compClass>
+        <basePowerConsumption>-10000</basePowerConsumption>
+        <transmitsPower>true</transmitsPower>
+      </li>
+      <li Class="CompProperties_Explosive">
+                <explosiveRadius>18</explosiveRadius>
+                <explosiveDamageType>Nuclear</explosiveDamageType>
+      </li>
+      <li Class="CompProperties_Breakdownable"/>
+      <li Class="CompProperties_Glower">
+        <glowRadius>6</glowRadius>
+        <glowColor>(75,217,110,0)</glowColor>
+      </li>
+    </comps>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <designationCategory>Power</designationCategory>
+    <designationHotKey>Misc5</designationHotKey>
+    <constructEffect>ConstructMetal</constructEffect>
+    <researchPrerequisites>
+      <li>Electricity</li>
+      <li>Ra2SovietNuclearTech</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+  </ThingDef>
+  
+</Defs>

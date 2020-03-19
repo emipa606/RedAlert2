@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <ra2_YuriTech.label>尤里科技仪</ra2_YuriTech.label>
+  <ra2_YuriTech.description>含有尤里科技的仪器。</ra2_YuriTech.description>
+  <ra2_YuriTech_Blueprint.label>尤里科技仪（蓝图）</ra2_YuriTech_Blueprint.label>
+  <ra2_YuriTech_Frame.label>尤里科技仪（建造中）</ra2_YuriTech_Frame.label>
+  <ra2_YuriTech_Frame.description>含有尤里科技的仪器。</ra2_YuriTech_Frame.description>
+  
+  <ra2_YuriBarracks.label>尤里兵营</ra2_YuriBarracks.label>
+  <ra2_YuriBarracks.description>可训练尤里士兵。</ra2_YuriBarracks.description>
+  <ra2_YuriBarracks_Blueprint.label>尤里兵营（蓝图）</ra2_YuriBarracks_Blueprint.label>
+  <ra2_YuriBarracks_Frame.label>尤里兵营（建造中）</ra2_YuriBarracks_Frame.label>
+  <ra2_YuriBarracks_Frame.description>可训练尤里士兵。</ra2_YuriBarracks_Frame.description>
+  
+  <ra2_YuriGrinder.label>回收机</ra2_YuriGrinder.label>
+  <ra2_YuriGrinder.description>可以把生物回收成金条</ra2_YuriGrinder.description>
+  <ra2_YuriGrinder_Blueprint.label>回收机(蓝图)</ra2_YuriGrinder_Blueprint.label>
+  <ra2_YuriGrinder_Frame.label>回收机(建造中)</ra2_YuriGrinder_Frame.label>
+  <ra2_YuriGrinder_Frame.description>可以把生物回收成金条</ra2_YuriGrinder_Frame.description>
+  
+</LanguageData>

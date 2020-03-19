@@ -1,0 +1,357 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<MapGenerator.MapGeneratorBaseBlueprintDef Name="AlliedFactionT3">
+		<defName>AlliedFactionT3</defName>
+		<createdBy>AKreedz</createdBy>
+		<techLevelRequired>Ultra</techLevelRequired>
+		<factionDef>ra2_Allied</factionDef>
+		<chance>60</chance>
+		<size>(51, 51)</size>
+		<canHaveHoles>False</canHaveHoles>
+		<createTrigger>False</createTrigger>
+		<buildingData>
+aaaaaaaaeaaaaaaaaaaaaaa.aaaaaaaaaaaaaaaaaeaaaaaaaaa
+a.................................................a
+a.................................................a
+a.................................................a
+a.................................................a
+a.................................................a
+a.................................................a
+a.................................................a
+a.................................................a
+a...t.c.......................................t.c.a
+a..............d.c......d.c.......d.c.............b
+b.................................................a
+a.................................................a
+a.................................................a
+a..........f.c..cc....f.c...f.c...cc...f.c........a
+a............gggggggg.........gggggggg............a
+a............g......g.........g......g............a
+a............g......g.........g......g............a
+a.....d.c....g......g.........g......g......d.c...a
+a............g..i...c.........c..i...g............a
+a............g......g.........g......g............a
+a............g......c.........c......g............a
+.............gggggggg.........gggggggg.............
+a..........f.........aaaaaaaaa.........f.c........a
+a....................aaaaaaaaa....................a
+a....................aaaaaaaaa....................a
+a....................aaa...aaa....................b
+b.....d.c............aaaajaaaa..............d.c...a
+a....................aaaajaaaa....................a
+a..........f.....cc..aaaajaaaa...cc....f.c........a
+a............gggggggg.........gggggggg............a
+a............g......g.........g......g............a
+a............g......g.........g......g............a
+a............g......c.........c......g............a
+a............g..i...g.........g..i...g............a
+a.....d.c....g......c.........c......g......d.c...a
+a............g......g.........g......g............a
+b............gggggggg.........gggggggg............a
+a..........f.c........f.c...f.c........f.c........b
+a.................................................a
+a..............................hhh................a
+aaaaaaaaeaaaaa....................................a
+a............a....................................a
+a............a.d.c.......d.c.......d.c............a
+a............a....................................a
+a............b....................................a
+a............a....................................a
+a............a..............................t.c...a
+a....t.c.....a....................................a
+a............a....................................a
+aaaaaaaaaeaaaaaaaaaaaaaaa.eaaaaaaaaaaaaeaaaaaaaaaaa
+</buildingData>
+		<buildingLegend>
+			<li>
+				<key>a</key>
+				<value>Wall</value>
+			</li>
+			<li>
+				<key>b</key>
+				<value>Autodoor</value>
+			</li>
+			<li>
+				<key>c</key>
+				<value>VanometricPowerCell</value>
+			</li>
+			<li>
+				<key>d</key>
+				<value>ra2_Pillbox_A</value>
+			</li>
+			<li>
+				<key>e</key>
+				<value>Autodoor</value>
+			</li>
+			<li>
+				<key>f</key>
+				<value>ra2_Prism</value>
+			</li>
+			<li>
+				<key>g</key>
+				<value>Sandbags</value>
+			</li>
+			<li>
+				<key>h</key>
+				<value>Battery</value>
+			</li>
+			<li>
+				<key>i</key>
+				<value>ra2_GrandCannon</value>
+			</li>
+			<li>
+				<key>j</key>
+				<value>Door</value>
+			</li>
+			<li>
+				<key>t</key>
+				<value>ra2_AlliedAirDefense</value>
+			</li>
+		</buildingLegend>
+		<rotationLegend>
+			<li>
+				<key>a</key>
+				<value>0</value>
+			</li>
+			<li>
+				<key>b</key>
+				<value>1</value>
+			</li>
+			<li>
+				<key>c</key>
+				<value>0</value>
+			</li>
+			<li>
+				<key>d</key>
+				<value>0</value>
+			</li>
+			<li>
+				<key>e</key>
+				<value>0</value>
+			</li>
+			<li>
+				<key>f</key>
+				<value>0</value>
+			</li>
+			<li>
+				<key>g</key>
+				<value>0</value>
+			</li>
+			<li>
+				<key>h</key>
+				<value>0</value>
+			</li>
+			<li>
+				<key>i</key>
+				<value>0</value>
+			</li>
+			<li>
+				<key>j</key>
+				<value>0</value>
+			</li>
+		</rotationLegend>
+		<floorData>
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaabbbaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaabaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaabaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaabaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+</floorData>
+		<floorLegend>
+			<li>
+				<key>a</key>
+				<value>TileSandstone</value>
+			</li>
+			<li>
+				<key>b</key>
+				<value>SterileTile</value>
+			</li>
+		</floorLegend>
+		<itemData>
+aaaaaaaaeaaaaaaaaaaaaaaeaaaaaaaaaaaaaaaaaeaaaaaaaaa
+a.................................................a
+a.................................................a
+a.................................................a
+a.................................................a
+a............hhh..................................a
+a.................................................a
+a.....c....................................c......a
+a.................................................a
+a.................................................a
+a..............d........d.........d...............b
+b.................................................a
+a.................................................a
+a.................................................a
+a..........f..........f.....f..........f..........a
+a............gggggggg.........gggggggg............a
+a............g......g.........g......g............a
+a............g......g.........g......g............a
+a.....d......g......g.........g......g......d.....a
+a............g..i...g.........g..i...g............a
+a............g......g.........g......g............a
+a............g......g.........g......g............a
+a............gggggggg.........gggggggg............a
+a..........f.........aaaaaaaaa.........f..........a
+a....................aaaaaaaaa....................a
+a....................aaaaaaaaa....................a
+a....................aaazxyaaa....................b
+b.....d..............aaaajaaaa..............d.....a
+a....................aaaajaaaa....................a
+a..........f.........aaaajaaaa.........f..........a
+a............gggggggg.........gggggggg............a
+a............g......g.........g......g............a
+a............g......g.........g......g............a
+a............g......g.........g......g............a
+a............g..i...g.........g..i...g............a
+a.....d......g......g.........g......g......d.....a
+a............g......g.........g......g............a
+b............gggggggg.........gggggggg............a
+a..........f..........f.....f..........f..........b
+a.................................................a
+a..............................hhh................a
+aaaaaaaaeaaaaa....................................a
+awwwwwwwwwwwwa....................................a
+a..vvvvv...a.d.........d.........d..............a
+a............a....................................a
+a....vvvvvv..b....................................a
+a............a....................................a
+a..uuuu......a....................................a
+a......uuuu..a....................................a
+a..tttt......a....................................a
+aaaaaaaaaeaaaaaaaaaaaaaaaaeaaaaaaaaaaaaeaaaaaaaaaaa
+</itemData>
+		<itemLegend>
+			<li>
+				<key>z</key>
+				<value>ra2_AlliedTechCore</value>
+			</li>
+
+			<li>
+				<key>y</key>
+				<value>TechprofSubpersonaCore</value>
+			</li>
+			<li>
+				<key>w</key>
+				<value>Silver</value>
+			</li>
+			<li>
+				<key>v</key>
+				<value>Gold</value>
+			</li>
+			<li>
+				<key>u</key>
+				<value>Steel</value>
+			</li>
+			<li>
+				<key>t</key>
+				<value>Chemfuel</value>
+			</li>
+		</itemLegend>
+		<itemSpawnChance>100</itemSpawnChance>
+		<pawnData>
+aaaaaaaaeaaaaaaaaaaaaaaeaaaaaaaaaaaaaaaaaeaaaaaaaaa
+a.................................................a
+a.................................................a
+a.................................................a
+a.................................................a
+a............hhh..................................a
+a.................................................a
+a.....c....................................c......a
+a.................................................a
+a.................................................a
+a..............d........d.........d...............b
+b.................................................a
+a.................................................a
+a.................................................a
+a..........f..........f.....f..........f..........a
+a............gggggggg.........gggggggg............a
+a............g......g.........g......g............a
+a............g......g.........g......g............a
+a.....d......g......g.........g......g......d.....a
+a............g..i...g.........g..i...g............a
+a............g......g.........g......g............a
+a............g......g....x....g......g............a
+a............gggggggg.........gggggggg............a
+a..........f.........aaaaaaaaa.........f..........a
+a....................aaaaaaaaa....................a
+a....................aaaaaaaaa....................a
+a...............x....aaa...aaa....x...............b
+b.....d..............aaaajaaaa..............d.....a
+a....................aaaajaaaa....................a
+a..........f.........aaaajaaaa.........f..........a
+a............gggggggg.........gggggggg............a
+a............g......g.........g......g............a
+a............g......g.........g......g............a
+a............g......g.........g......g............a
+a............g..i...g.........g..i...g............a
+a.....d......g......g....x....g......g......d.....a
+a............g......g.........g......g............a
+b............gggggggg.........gggggggg............a
+a..........f..........f.....f..........f..........b
+a.................................................a
+a..............................hhh................a
+aaaaaaaaeaaaaa....................................a
+a............a....................................a
+a............a.d.........d.........d..............a
+a............a....................................a
+a............b....................................a
+a............a....................................a
+a............a....................................a
+a............a....................................a
+a............a....................................a
+aaaaaaaaaeaaaaaaaaaaaaaaaaeaaaaaaaaaaaaeaaaaaaaaaaa
+</pawnData>
+		<pawnLegend>
+			<li>
+				<key>x</key>
+				<value>ra2_AlliedSniper</value>
+			</li>
+		</pawnLegend>
+	</MapGenerator.MapGeneratorBaseBlueprintDef>
+</Defs>

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <DamageDef ParentName="Bomb">
+    <defName>Nuclear</defName>
+    <label>Nuclear</label>
+    <workerClass>DamageWorker_AddInjury</workerClass>
+    <externalViolence>true</externalViolence>
+    <isExplosive>true</isExplosive>
+    <deathMessage>{0} has died in an Nuclear Explode.</deathMessage>
+    <hediff>Shredded</hediff>
+    <hediffSolid>Crack</hediffSolid>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <impactSoundType>Blunt</impactSoundType>
+    <armorCategory>Sharp</armorCategory>
+    <minDamageToFragment>15</minDamageToFragment>
+    <defaultDamage>80</defaultDamage>
+    <defaultStoppingPower>0.5</defaultStoppingPower>
+    <defaultArmorPenetration>0.10</defaultArmorPenetration>
+    <buildingDamageFactor>4</buildingDamageFactor>
+    <plantDamageFactor>4</plantDamageFactor>
+    <explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
+    <explosionHeatEnergyPerCell>5</explosionHeatEnergyPerCell>
+    <explosionCellMote>Mote_BlastDry</explosionCellMote>
+    <explosionColorCenter>(1, 0.2, 0)</explosionColorCenter>
+    <explosionColorEdge>(0.9, 0.2, 0)</explosionColorEdge>
+    <soundExplosion>ra2_NuclearExplode</soundExplosion>
+    <combatLogRules>Damage_Bomb</combatLogRules>
+  </DamageDef>
+</Defs>

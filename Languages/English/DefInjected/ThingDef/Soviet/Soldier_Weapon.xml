@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <ra2_Bullet_Desolator.label>Radiation wave</ra2_Bullet_Desolator.label>
+
+  <ra2_Gun_Desolator.label>Radiation beam weapon</ra2_Gun_Desolator.label>
+  <ra2_Gun_Desolator.description>Powerful radiation waves can kill any living creature. The damage to mechanical organisms and tanks is also very high. The drawback is that it can't hurt buildings.</ra2_Gun_Desolator.description>
+  
+  <ra2_Bullet_conscript.label>PPSh-41 bullet</ra2_Bullet_conscript.label>
+
+  <ra2_Gun_Conscript.label>PPSh-41</ra2_Gun_Conscript.label>
+  <ra2_Gun_Conscript.description>Conscript's weapon,low damage</ra2_Gun_Conscript.description>
+  
+  <ra2_Bullet_TeslaTrooper.label>Tesla wave</ra2_Bullet_TeslaTrooper.label>
+
+  <ra2_Gun_TeslaTrooper.label>Portable tesla coil</ra2_Gun_TeslaTrooper.label>
+  <ra2_Gun_TeslaTrooper.description>Portable tesla coil,the damage is less than Tesla Coil</ra2_Gun_TeslaTrooper.description>
+  
+   <ra2_Gun_Apo_Type.label>Portable Apocalypse Tank Gun</ra2_Gun_Apo_Type.label>
+  <ra2_Gun_Apo_Type.description>Portable Apocalypse Tank Gun</ra2_Gun_Apo_Type.description>
+  
+</LanguageData>

@@ -1,0 +1,301 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <PawnKindDef Name="ra2_AlliedHumanBase" Abstract="True">
+    <race>Human</race>
+    <defaultFactionType>ra2_Allied</defaultFactionType>
+    <backstoryCategories>
+	   <li>Civil</li>
+	</backstoryCategories>
+    <chemicalAddictionChance>0</chemicalAddictionChance>
+	<baseRecruitDifficulty>1.0</baseRecruitDifficulty>
+    <invNutrition>4.8</invNutrition>
+    <itemQuality>Normal</itemQuality>
+    <backstoryCryptosleepCommonality>0.25</backstoryCryptosleepCommonality>
+    <maxGenerationAge>45</maxGenerationAge>
+    <gearHealthRange>
+      <min>1.5</min>
+      <max>3.5</max>
+    </gearHealthRange>
+    <apparelTags>
+      <li></li>
+    </apparelTags>
+    <apparelMoney>
+      <min>20000</min>
+      <max>60000</max>
+    </apparelMoney>
+    <combatEnhancingDrugsCount>
+      <min>0</min>
+      <max>2</max>
+    </combatEnhancingDrugsCount>
+    <combatEnhancingDrugsChance>0</combatEnhancingDrugsChance>
+
+    <inventoryOptions>
+      <skipChance>0.7</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>Silver</thingDef>
+          <countRange>
+            <min>120</min>
+            <max>480</max>
+          </countRange>
+        </li>
+        <li>
+          <thingDef>MedicineIndustrial</thingDef>
+          <countRange>
+            <min>1</min>
+            <max>2</max>
+          </countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+    <apparelRequired>
+      <li>ra2_Belt</li>
+    </apparelRequired>
+    <aiAvoidCover>true</aiAvoidCover>
+    <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+
+  </PawnKindDef>
+  
+  
+  
+  
+  
+  
+
+  
+  <PawnKindDef ParentName="ra2_AlliedHumanBase">
+    <defName>ra2_AlliedGI</defName>
+    <label>GI</label>
+    <combatPower>10</combatPower>
+    <weaponMoney>
+      <min>999999</min>
+      <max>999999</max>
+    </weaponMoney>
+    <weaponTags>
+      <li>ra2_Gun_GI</li>
+    </weaponTags>
+    <apparelRequired>
+      <li>ra2_Hat_GI</li>
+      <li>ra2_Parka_GI</li>
+	  <li>ra2_Shirt_GI</li>
+	  <li>ra2_Pants_GI</li>
+    </apparelRequired>
+    <forceNormalGearQuality>true</forceNormalGearQuality>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="ra2_AlliedHumanBase">
+    <defName>ra2_AlliedSiegeCadre</defName>
+    <label>SiegeCadre</label>
+    <combatPower>60</combatPower>
+    <weaponMoney>
+      <min>999999</min>
+      <max>999999</max>
+    </weaponMoney>
+    <weaponTags>
+      <li>ra2_Gun_SiegeCadre</li>
+    </weaponTags>
+    <apparelRequired>
+      <li>ra2_Hat_SiegeCadre</li>
+      <li>ra2_Parka_SiegeCadre</li>
+	  <li>ra2_Pants_SiegeCadre</li>
+    </apparelRequired>
+    <forceNormalGearQuality>true</forceNormalGearQuality>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="ra2_AlliedHumanBase">
+    <defName>ra2_AlliedSniper</defName>
+    <label>Sniper</label>
+    <combatPower>100</combatPower>
+    <weaponMoney>
+      <min>999999</min>
+      <max>999999</max>
+    </weaponMoney>
+    <weaponTags>
+      <li>ra2_Gun_Sniper</li>
+    </weaponTags>
+    <apparelRequired>
+      <li>ra2_Hat_Sniper</li>
+      <li>ra2_Parka_Sniper</li>
+	  <li>ra2_Pants_Sniper</li>
+    </apparelRequired>
+    <forceNormalGearQuality>true</forceNormalGearQuality>
+  </PawnKindDef>
+  
+  
+  <PawnKindDef ParentName="ra2_AlliedHumanBase">
+    <defName>ra2_AlliedChrono</defName>
+    <label>Chrono</label>
+    <combatPower>100</combatPower>
+    <weaponMoney>
+      <min>999999</min>
+      <max>999999</max>
+    </weaponMoney>
+    <weaponTags>
+      <li>ra2_Gun_Chrono</li>
+    </weaponTags>
+    <apparelRequired>
+      <li>ra2_Hat_Chrono</li>
+      <li>ra2_Parka_Chrono</li>
+	  <li>ra2_Pants_Chrono</li>
+    </apparelRequired>
+    <forceNormalGearQuality>true</forceNormalGearQuality>
+  </PawnKindDef>
+  
+  
+  <PawnKindDef Name="ra2_AlliedEngineerBase" Abstract="True">
+    <race>Human</race>
+    <defaultFactionType>ra2_Allied</defaultFactionType>
+    <backstoryCategories>
+	   <li>Civil</li>
+	</backstoryCategories>
+    <chemicalAddictionChance>0</chemicalAddictionChance>
+	<baseRecruitDifficulty>1.0</baseRecruitDifficulty>
+    <invNutrition>4.8</invNutrition>
+    <itemQuality>Normal</itemQuality>
+    <backstoryCryptosleepCommonality>0.25</backstoryCryptosleepCommonality>
+    <maxGenerationAge>45</maxGenerationAge>
+    <gearHealthRange>
+      <min>1.5</min>
+      <max>3.5</max>
+    </gearHealthRange>
+    <apparelTags>
+      <li></li>
+    </apparelTags>
+    <apparelMoney>
+      <min>20000</min>
+      <max>60000</max>
+    </apparelMoney>
+    <techHediffsChance>2.00</techHediffsChance>
+    <techHediffsTags>
+      <li>Poor</li>
+    </techHediffsTags>
+    <techHediffsMoney>
+      <min>3000</min>
+      <max>3000</max>
+    </techHediffsMoney>
+    <combatEnhancingDrugsCount>
+      <min>0</min>
+      <max>2</max>
+    </combatEnhancingDrugsCount>
+    <combatEnhancingDrugsChance>0</combatEnhancingDrugsChance>
+
+    <inventoryOptions>
+      <skipChance>0.5</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>Silver</thingDef>
+          <countRange>
+            <min>120</min>
+            <max>480</max>
+          </countRange>
+        </li>
+        <li>
+          <thingDef>ra2_AlliedTechCore</thingDef>
+          <countRange>
+            <min>0</min>
+            <max>1</max>
+          </countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+    <apparelRequired>
+      <li>ra2_Belt</li>
+    </apparelRequired>
+    <aiAvoidCover>true</aiAvoidCover>
+    <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+    <factionLeader>true</factionLeader>
+  </PawnKindDef>
+  
+  
+  <PawnKindDef ParentName="ra2_AlliedEngineerBase">
+    <defName>ra2_AlliedEngineer</defName>
+    <label>soviet engineer</label>
+    <combatPower>10</combatPower>
+    <weaponMoney>
+      <min>60</min>
+      <max>200</max>
+    </weaponMoney>
+    <weaponTags>
+      <li>NeolithicMeleeBasic</li>
+    </weaponTags>
+    <trader>true</trader>
+    <apparelRequired>
+      <li>ra2_Hat_Engineer_A</li>
+      <li>ra2_Parka_Engineer_A</li>
+	  <li>ra2_Shirt_Engineer_A</li>
+	  <li>ra2_Pants_Engineer_A</li>
+    </apparelRequired>
+
+    <forceNormalGearQuality>true</forceNormalGearQuality>
+  </PawnKindDef>
+  
+  
+  <PawnKindDef Name="ra2_AlliedTanyaBase" Abstract="True">
+    <race>Human</race>
+    <defaultFactionType>ra2_Allied</defaultFactionType>
+    <backstoryCategories>
+	   <li>Civil</li>
+	</backstoryCategories>
+    <chemicalAddictionChance>0</chemicalAddictionChance>
+	<baseRecruitDifficulty>1.0</baseRecruitDifficulty>
+    <invNutrition>4.8</invNutrition>
+    <itemQuality>Normal</itemQuality>
+    <backstoryCryptosleepCommonality>0.25</backstoryCryptosleepCommonality>
+    <maxGenerationAge>45</maxGenerationAge>
+    <gearHealthRange>
+      <min>1.5</min>
+      <max>3.5</max>
+    </gearHealthRange>
+    <apparelTags>
+      <li></li>
+    </apparelTags>
+    <apparelMoney>
+      <min>20000</min>
+      <max>60000</max>
+    </apparelMoney>
+    <combatEnhancingDrugsCount>
+      <min>0</min>
+      <max>2</max>
+    </combatEnhancingDrugsCount>
+    <combatEnhancingDrugsChance>0</combatEnhancingDrugsChance>
+    <inventoryOptions>
+      <skipChance>0</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>ra2_AlliedTanyaNote</thingDef>
+          <countRange>
+            <min>1</min>
+            <max>1</max>
+          </countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+    <apparelRequired>
+      <li>ra2_Belt</li>
+    </apparelRequired>
+    <aiAvoidCover>true</aiAvoidCover>
+    <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="ra2_AlliedTanyaBase">
+    <defName>ra2_AlliedTanya</defName>
+	<race>Tanya</race>
+    <label>Tanya</label>
+    <combatPower>1000</combatPower>
+    <weaponMoney>
+      <min>999999</min>
+      <max>999999</max>
+    </weaponMoney>
+    <weaponTags>
+      <li>TanyaGun</li>
+    </weaponTags>
+    <apparelRequired>
+      <li>Apparel_FlakVest</li>
+	  <li>Apparel_FlakPants</li>
+    </apparelRequired>
+
+    <forceNormalGearQuality>true</forceNormalGearQuality>
+  </PawnKindDef>
+
+</Defs>

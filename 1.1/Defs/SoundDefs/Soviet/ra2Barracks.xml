@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <SoundDef>
+    <defName>ra2_SovietBarracks_Training</defName>
+    <context>MapOnly</context>
+    <eventNames />
+    <maxVoices>4</maxVoices>
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <onCamera>True</onCamera>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>ra2/Soviet/Barracks/ra2Training</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>70</min>
+          <max>85</max>
+        </volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>ra2_SovietBarracks_UnitReady</defName>
+    <context>MapOnly</context>
+    <eventNames />
+    <maxVoices>4</maxVoices>
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <onCamera>True</onCamera>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>ra2/Soviet/Barracks/ra2UnitReady</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>70</min>
+          <max>85</max>
+        </volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>  
+  
+  <SoundDef>
+    <defName>ra2_SovietBarracks_UnitLost</defName>
+    <context>MapOnly</context>
+    <eventNames />
+    <maxVoices>4</maxVoices>
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <onCamera>True</onCamera>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>ra2/Soviet/Barracks/ra2UnitLost</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>70</min>
+          <max>85</max>
+        </volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>  
+
+</Defs>

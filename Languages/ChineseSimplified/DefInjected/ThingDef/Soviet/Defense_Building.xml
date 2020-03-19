@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <ra2_Pillbox.label>哨戒机炮</ra2_Pillbox.label>
+  <ra2_Pillbox.description>苏联基本的防卫建筑，可有效的克制敌军的步兵单位。</ra2_Pillbox.description>
+  <ra2_Pillbox_Blueprint.label>哨戒机炮（蓝图）</ra2_Pillbox_Blueprint.label>
+  <ra2_Pillbox_Frame.label>哨戒机炮（建造中）</ra2_Pillbox_Frame.label>
+  <ra2_Pillbox_Frame.description>苏联基本的防卫建筑，可有效的克制敌军的步兵单位。</ra2_Pillbox_Frame.description>
+  
+  <ra2_SovietAirDefense.label>防空炮</ra2_SovietAirDefense.label>
+  <ra2_SovietAirDefense.description>苏联基本的防卫建筑，可击落空中的炮弹和空投仓。</ra2_SovietAirDefense.description>
+  <ra2_SovietAirDefense_Blueprint.label>防空炮（蓝图）</ra2_SovietAirDefense_Blueprint.label>
+  <ra2_SovietAirDefense_Frame.label>防空炮（建造中）</ra2_SovietAirDefense_Frame.label>
+  <ra2_SovietAirDefense_Frame.description>苏联基本的防卫建筑，可击落空中的炮弹和空投仓。</ra2_SovietAirDefense_Frame.description>
+  
+  <ra2_Tesla.label>磁暴线圈</ra2_Tesla.label>
+  <ra2_Tesla.description>苏联阵营防御武器，又称特斯拉线圈。</ra2_Tesla.description>
+  <ra2_Tesla_Blueprint.label>磁暴线圈（蓝图）</ra2_Tesla_Blueprint.label>
+  <ra2_Tesla_Frame.label>磁暴线圈（建造中）</ra2_Tesla_Frame.label>
+  <ra2_Tesla_Frame.description>苏联阵营防御武器，又称特斯拉线圈。</ra2_Tesla_Frame.description>
+  
+  
+  <ra2_EarthHammer.label>地锤防御装置</ra2_EarthHammer.label>
+  <ra2_EarthHammer.description>苏联阵营防御武器，可以在目标处产生地震，造成大面积破坏。可越过围墙攻击敌人。</ra2_EarthHammer.description>
+  <ra2_EarthHammer_Blueprint.label>地锤防御装置（蓝图）</ra2_EarthHammer_Blueprint.label>
+  <ra2_EarthHammer_Frame.label>地锤防御装置（建造中）</ra2_EarthHammer_Frame.label>
+  <ra2_EarthHammer_Frame.description>苏联阵营防御武器，可以在目标处产生地震，造成大面积破坏。可越过围墙攻击敌人。</ra2_EarthHammer_Frame.description>
+  
+</LanguageData>

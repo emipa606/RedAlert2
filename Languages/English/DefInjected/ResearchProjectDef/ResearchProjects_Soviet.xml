@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Tier 1: pre-electricity -->
+
+  <Ra2SovietPillbox.label>Soviet sentinel gun</Ra2SovietPillbox.label>
+  <Ra2SovietPillbox.description>Unlock Soviet sentinel gun</Ra2SovietPillbox.description>
+
+  <Ra2SovietTesla.label>Soviet tesla coil</Ra2SovietTesla.label>
+  <Ra2SovietTesla.description>Unlock Soviet tesla coil</Ra2SovietTesla.description>
+
+  <Ra2SovietEarthHammer.label>Soviet Earth-Hammer System</Ra2SovietEarthHammer.label>
+  <Ra2SovietEarthHammer.description>Unlock Soviet Earth-Hammer System</Ra2SovietEarthHammer.description>
+  
+  <Ra2SovietDesolatorSuit.label>Soviet Desolator Suit</Ra2SovietDesolatorSuit.label>
+  <Ra2SovietDesolatorSuit.description>You can sewing desolator suit now.Desolator Suit can immune radiation damage</Ra2SovietDesolatorSuit.description>
+  
+    <Ra2SovietApoTankGun.label>Portable Apocalypse Tank Gun</Ra2SovietApoTankGun.label>
+  <Ra2SovietApoTankGun.description>Unlock Portable Apocalypse Tank Gun</Ra2SovietApoTankGun.description>
+  
+    <Ra2SovietApoTankGunTurret.label>Apo###se T@#k T@@r#t</Ra2SovietApoTankGunTurret.label>
+  <Ra2SovietApoTankGunTurret.description>[Data deletion](unfinished)。</Ra2SovietApoTankGunTurret.description>
+  
+  <Ra2SovietTeslaTech.label>Soviet Tesla Tech</Ra2SovietTeslaTech.label>
+  <Ra2SovietTeslaTech.description>Unlock Soviet Tesla Tech。</Ra2SovietTeslaTech.description>
+  
+  <Ra2SovietNuclearTech.label>Soviet Nuclear tech</Ra2SovietNuclearTech.label>
+  <Ra2SovietNuclearTech.description>Unlock Soviet Nuclear tech。</Ra2SovietNuclearTech.description>
+  
+  <Ra2SovietADA.label>Soviet Flak Cannon</Ra2SovietADA.label>
+  <Ra2SovietADA.description>Unlock Soviet Flak Cannon</Ra2SovietADA.description>
+  
+  <Ra2SovietBarracks.label>Soviet Barracks</Ra2SovietBarracks.label>
+  <Ra2SovietBarracks.description>Unlock Soviet Barracks</Ra2SovietBarracks.description>
+  
+  <Ra2SovietNuclearMissle.label>Soviet Super Weapon</Ra2SovietNuclearMissle.label>
+  <Ra2SovietNuclearMissle.description>Unlock Soviet Nuclear Silo</Ra2SovietNuclearMissle.description>
+
+</LanguageData>

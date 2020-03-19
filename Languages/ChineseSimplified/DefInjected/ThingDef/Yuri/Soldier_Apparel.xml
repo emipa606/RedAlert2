@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <ra2_Hat_Initiate.label>新兵头盔</ra2_Hat_Initiate.label>
+  <ra2_Hat_Initiate.description>新兵标配衣物。</ra2_Hat_Initiate.description>
+
+  <ra2_Parka_Initiate.label>新兵套装(上)</ra2_Parka_Initiate.label>
+  <ra2_Parka_Initiate.description>新兵标配衣物。</ra2_Parka_Initiate.description>
+
+  <ra2_Pants_Initiate.label>新兵套装(下)</ra2_Pants_Initiate.label>
+  <ra2_Pants_Initiate.description>新兵标配衣物。</ra2_Pants_Initiate.description>
+  
+  
+
+
+  <ra2_Parka_Yuri.label>尤里复制人外衣</ra2_Parka_Yuri.label>
+  <ra2_Parka_Yuri.description>尤里复制人标配服装。</ra2_Parka_Yuri.description>
+  
+  <ra2_Shirt_Yuri.label>尤里复制人衣服</ra2_Shirt_Yuri.label>
+  <ra2_Shirt_Yuri.description>尤里复制人标配服装。</ra2_Shirt_Yuri.description>
+
+  <ra2_Pants_Yuri.label>尤里复制人裤子</ra2_Pants_Yuri.label>
+  <ra2_Pants_Yuri.description>尤里复制人标配服装。</ra2_Pants_Yuri.description>
+  
+  
+
+
+  <ra2_Pants_Brute.label>狂兽人套装(下)</ra2_Pants_Brute.label>
+  <ra2_Pants_Brute.description>狂兽人标配服装。</ra2_Pants_Brute.description>
+  
+  
+  <ra2_Hat_Engineer_Y.label>工程师帽子</ra2_Hat_Engineer_Y.label>
+  <ra2_Hat_Engineer_Y.description>工程师标配帽子。</ra2_Hat_Engineer_Y.description>
+
+  <ra2_Parka_Engineer_Y.label>工程师外衣</ra2_Parka_Engineer_Y.label>
+  <ra2_Parka_Engineer_Y.description>工程师标配服装。</ra2_Parka_Engineer_Y.description>
+  
+  <ra2_Shirt_Engineer_Y.label>工程师衣服</ra2_Shirt_Engineer_Y.label>
+  <ra2_Shirt_Engineer_Y.description>工程师标配服装。</ra2_Shirt_Engineer_Y.description>
+
+  <ra2_Pants_Engineer_Y.label>工程师裤子</ra2_Pants_Engineer_Y.label>
+  <ra2_Pants_Engineer_Y.description>工程师标配服装。</ra2_Pants_Engineer_Y.description>
+  
+
+</LanguageData>

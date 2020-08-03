@@ -1,13 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-
   <ra2_GoldMineral.label>金矿脉</ra2_GoldMineral.label>
   <ra2_GoldMineral.description>天然的金矿源。</ra2_GoldMineral.description>
-
   <ra2_GoldMiner.label>矿石精炼厂</ra2_GoldMiner.label>
   <ra2_GoldMiner.description>可以从金矿脉开采建设所需要的金矿并加工成金条。</ra2_GoldMiner.description>
   <ra2_GoldMiner_Blueprint.label>矿石精炼厂（蓝图）</ra2_GoldMiner_Blueprint.label>
   <ra2_GoldMiner_Frame.label>矿石精炼厂（建造中）</ra2_GoldMiner_Frame.label>
   <ra2_GoldMiner_Frame.description>可以从金矿脉开采建设所需要的金矿并加工成金条。</ra2_GoldMiner_Frame.description>
-
 </LanguageData>

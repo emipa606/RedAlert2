@@ -1,16 +1,12 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-  
-
-
-  
-   <DamageDef>
+  <DamageDef>
     <defName>DesolatorGun</defName>
     <label>desolator gun</label>
     <workerClass>DamageWorker_AddInjury</workerClass>
     <externalViolence>true</externalViolence>
     <deathMessage>{0} died of radiation.</deathMessage>
-     <hediff>Hediffs_DesolatorGun</hediff>
+    <hediff>Hediffs_DesolatorGun</hediff>
     <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
     <impactSoundType>Bullet</impactSoundType>
     <armorCategory>Sharp</armorCategory>
@@ -27,5 +23,4 @@
     <soundExplosion>Thunder_OnMap</soundExplosion>
     <combatLogRules>Damage_Bomb</combatLogRules>
   </DamageDef>
-  
 </Defs>

@@ -1,11 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-
   <!-- Tier 1: pre-electricity -->
-
-  <Ra2BaseResearch.label>Ra2 base research</Ra2BaseResearch.label>
-  <Ra2BaseResearch.description>Unlock subsequent projects.</Ra2BaseResearch.description>
-
-
+  <!--<Ra2BaseResearch.label>Ra2 base research</Ra2BaseResearch.label>-->
+  <!--<Ra2BaseResearch.description>Unlock subsequent projects.</Ra2BaseResearch.description>-->
 
 </LanguageData>

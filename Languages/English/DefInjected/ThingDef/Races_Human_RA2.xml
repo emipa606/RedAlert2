@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <ra2Human.label>ra2human</ra2Human.label>
+  <ra2Human.description>A baseline human, mostly unmodified by gene engineering and mostly unchanged by evolutionary pressures on non-Earth planets.</ra2Human.description>
+  <ra2Human.tools.0.label>left fist</ra2Human.tools.0.label>
+  <ra2Human.tools.1.label>right fist</ra2Human.tools.1.label>
+  <ra2Human.tools.2.label>teeth</ra2Human.tools.2.label>
+  <ra2Human.tools.3.label>head</ra2Human.tools.3.label>
+
+
+</LanguageData>

@@ -1,13 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
+  <!--<ra2_AlliedTechCore.label>Allied tech core</ra2_AlliedTechCore.label>-->
+  <!--<ra2_AlliedTechCore.description>Including Allied core technology</ra2_AlliedTechCore.description>-->
+  <!--<ra2_AlliedTanyaNote.label>Tanya Note</ra2_AlliedTanyaNote.label>-->
+  <!--<ra2_AlliedTanyaNote.description>Recording Tanya's info.(Unlock Barracks Tanya)</ra2_AlliedTanyaNote.description>-->
 
-
-
-  <ra2_AlliedTechCore.label>Allied tech core</ra2_AlliedTechCore.label>
-  <ra2_AlliedTechCore.description>Including Allied core technology</ra2_AlliedTechCore.description>
-  
-  <ra2_AlliedTanyaNote.label>Tanya Note</ra2_AlliedTanyaNote.label>
-  <ra2_AlliedTanyaNote.description>Recording Tanya's info.(Unlock Barracks Tanya)</ra2_AlliedTanyaNote.description>
-
-  
 </LanguageData>

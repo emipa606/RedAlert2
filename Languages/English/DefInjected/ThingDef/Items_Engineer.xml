@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <ra2_Hat_Engineer_A.label>Engineer's Hat</ra2_Hat_Engineer_A.label>
+  <ra2_Hat_Engineer_A.description>Engineer's standard Hat。</ra2_Hat_Engineer_A.description>
+
+  <ra2_Parka_Engineer_A.label>Engineer's coat</ra2_Parka_Engineer_A.label>
+  <ra2_Parka_Engineer_A.description>Engineer's standard clothes</ra2_Parka_Engineer_A.description>
+
+  <ra2_Shirt_Engineer_A.label>Engineer's clothes</ra2_Shirt_Engineer_A.label>
+  <ra2_Shirt_Engineer_A.description>Engineer's standard clothes</ra2_Shirt_Engineer_A.description>
+
+  <ra2_Pants_Engineer_A.label>Engineer's pants</ra2_Pants_Engineer_A.label>
+  <ra2_Pants_Engineer_A.description>Engineer's standard clothes</ra2_Pants_Engineer_A.description>
+
+  <ra2_Hat_Engineer.label>Engineer's Hat</ra2_Hat_Engineer.label>
+  <ra2_Hat_Engineer.description>Engineer's standard Hat</ra2_Hat_Engineer.description>
+
+  <ra2_Parka_Engineer.label>Engineer's coat</ra2_Parka_Engineer.label>
+  <ra2_Parka_Engineer.description>Engineer's standard clothes</ra2_Parka_Engineer.description>
+
+  <ra2_Shirt_Engineer.label>Engineer's clothes</ra2_Shirt_Engineer.label>
+  <ra2_Shirt_Engineer.description>Engineer's standard clothes</ra2_Shirt_Engineer.description>
+
+  <ra2_Pants_Engineer.label>Engineer's pants</ra2_Pants_Engineer.label>
+  <ra2_Pants_Engineer.description>Engineer's standard clothes</ra2_Pants_Engineer.description>
+
+  <ra2_Hat_Engineer_Y.label>Engineer's Hat</ra2_Hat_Engineer_Y.label>
+  <ra2_Hat_Engineer_Y.description>Engineer's standard Hat。</ra2_Hat_Engineer_Y.description>
+
+  <ra2_Parka_Engineer_Y.label>Engineer's coat</ra2_Parka_Engineer_Y.label>
+  <ra2_Parka_Engineer_Y.description>Engineer's standard clothes</ra2_Parka_Engineer_Y.description>
+
+  <ra2_Shirt_Engineer_Y.label>Engineer's clothes</ra2_Shirt_Engineer_Y.label>
+  <ra2_Shirt_Engineer_Y.description>Engineer's standard clothes</ra2_Shirt_Engineer_Y.description>
+
+  <ra2_Pants_Engineer_Y.label>Engineer's pants</ra2_Pants_Engineer_Y.label>
+  <ra2_Pants_Engineer_Y.description>Engineer's standard clothes</ra2_Pants_Engineer_Y.description>
+
+
+</LanguageData>

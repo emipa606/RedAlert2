@@ -1,7 +1,6 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-
-   <ThingDef ParentName="ApparelBase">
+  <ThingDef ParentName="ApparelBase">
     <thingClass>ra2.AmazingBelt</thingClass>
     <defName>ra2_Belt</defName>
     <label>amazing belt</label>
@@ -18,12 +17,12 @@
     </statBases>
     <menuHidden>true</menuHidden>
     <destroyOnDrop>true</destroyOnDrop>
-	<useHitPoints>true</useHitPoints>
+    <useHitPoints>true</useHitPoints>
     <tradeability>None</tradeability>
     <thingCategories>
       <li>Apparel</li>
     </thingCategories>
-		<generateAllowChance>0.15</generateAllowChance>
+    <generateAllowChance>0.15</generateAllowChance>
     <apparel>
       <bodyPartGroups>
         <li>Waist</li>
@@ -60,6 +59,4 @@
       </options>
     </colorGenerator>
   </ThingDef>
-
-
 </Defs>

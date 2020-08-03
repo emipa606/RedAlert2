@@ -1,6 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-
   <ResearchProjectDef>
     <tab>RA2</tab>
     <defName>Ra2YuriBarracks</defName>
@@ -15,11 +14,9 @@
     <researchViewY>3</researchViewY>
     <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
     <requiredResearchFacilities>
-	  <li>ra2_YuriTech</li>
+      <li>ra2_YuriTech</li>
     </requiredResearchFacilities>
-  </ResearchProjectDef>  
-  
-  
+  </ResearchProjectDef>
   <ResearchProjectDef>
     <tab>RA2</tab>
     <defName>Ra2YuriPsychicTech</defName>
@@ -34,10 +31,7 @@
     <researchViewY>3.5</researchViewY>
     <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
     <requiredResearchFacilities>
-	  <li>ra2_YuriTech</li>
+      <li>ra2_YuriTech</li>
     </requiredResearchFacilities>
   </ResearchProjectDef>
-  
-
-  
 </Defs>

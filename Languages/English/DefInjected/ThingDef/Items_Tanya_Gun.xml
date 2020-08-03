@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <ra2_Bullet_Tanya.label>Tanya Bullet</ra2_Bullet_Tanya.label>
+
+  <ra2_Gun_Tanya.label>Tanya Gun</ra2_Gun_Tanya.label>
+  <ra2_Gun_Tanya.description>One shot,one kill</ra2_Gun_Tanya.description>
+  <ra2_Gun_Tanya.tools.0.label>grip</ra2_Gun_Tanya.tools.0.label>
+  <ra2_Gun_Tanya.tools.1.label>barrel</ra2_Gun_Tanya.tools.1.label>
+
+
+  <!-- C - 4 -->
+
+  <ra2_TanyaC4Bomb.label>C-4</ra2_TanyaC4Bomb.label>
+  <ra2_TanyaC4Bomb.description>matchless power</ra2_TanyaC4Bomb.description>
+  <ra2_TanyaC4Bomb.verbs.0.label>place Cfour</ra2_TanyaC4Bomb.verbs.0.label>
+
+  <Proj_C4Bomb.label>C-4</Proj_C4Bomb.label>
+
+
+</LanguageData>

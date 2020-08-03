@@ -1,14 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-
   <ra2_Bullet_rhino.label>犀牛坦克炮弹</ra2_Bullet_rhino.label>
-
   <ra2_Gun_Rhino.label>犀牛坦克炮</ra2_Gun_Rhino.label>
   <ra2_Gun_Rhino.description>犀牛坦克装载的主炮。</ra2_Gun_Rhino.description>
-  
   <ra2_Bullet_apo.label>天启坦克炮弹</ra2_Bullet_apo.label>
-
   <ra2_Gun_Apo.label>天启坦克炮</ra2_Gun_Apo.label>
   <ra2_Gun_Apo.description>天启坦克装载的主炮。</ra2_Gun_Apo.description>
-  
 </LanguageData>

@@ -1,19 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-
   <ra2_Bullet_pillbox_A.label>机枪碉堡子弹</ra2_Bullet_pillbox_A.label>
-
   <ra2_Gun_pillbox_A.label>机枪碉堡武器</ra2_Gun_pillbox_A.label>
   <ra2_Gun_pillbox_A.description>三连发武器。</ra2_Gun_pillbox_A.description>
-  
   <ra2_Bullet_Prism.label>光棱</ra2_Bullet_Prism.label>
-
   <ra2_Gun_Prism.label>光棱塔武器</ra2_Gun_Prism.label>
   <ra2_Gun_Prism.description>强力光棱攻击。</ra2_Gun_Prism.description>
-  
   <ra2_Bullet_GrandCannon.label>巨炮</ra2_Bullet_GrandCannon.label>
-
   <ra2_Gun_GrandCannon.label>巨炮</ra2_Gun_GrandCannon.label>
   <ra2_Gun_GrandCannon.description>强力巨炮。</ra2_Gun_GrandCannon.description>
-  
 </LanguageData>

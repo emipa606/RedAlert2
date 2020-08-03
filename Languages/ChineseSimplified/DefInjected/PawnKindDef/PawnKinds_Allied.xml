@@ -1,25 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-
   <ra2_GrizzlyTank.label>灰熊坦克</ra2_GrizzlyTank.label>
   <ra2_GrizzlyTank.labelPlural>灰熊坦克</ra2_GrizzlyTank.labelPlural>
-  
   <ra2_AlliedTanya.label>谭雅</ra2_AlliedTanya.label>
   <ra2_AlliedTanya.labelPlural>谭雅</ra2_AlliedTanya.labelPlural>
-
   <ra2_AlliedGI.label>盟军大兵</ra2_AlliedGI.label>
   <ra2_AlliedGI.labelPlural>盟军大兵</ra2_AlliedGI.labelPlural>
-  
   <ra2_AlliedEngineer.label>工程师</ra2_AlliedEngineer.label>
   <ra2_AlliedEngineer.labelPlural>工程师</ra2_AlliedEngineer.labelPlural>
-
   <ra2_AlliedSiegeCadre.label>光棱攻城兵</ra2_AlliedSiegeCadre.label>
   <ra2_AlliedSiegeCadre.labelPlural>光棱攻城兵</ra2_AlliedSiegeCadre.labelPlural>
-  
   <ra2_AlliedSniper.label>狙击手</ra2_AlliedSniper.label>
   <ra2_AlliedSniper.labelPlural>狙击手</ra2_AlliedSniper.labelPlural>
-  
   <ra2_AlliedChrono.label>超时空军团兵</ra2_AlliedChrono.label>
   <ra2_AlliedChrono.labelPlural>超时空军团兵</ra2_AlliedChrono.labelPlural>
-
 </LanguageData>

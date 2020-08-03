@@ -1,30 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-
   <!-- Tier 1: pre-electricity -->
+  <!--<Ra2AlliedPillbox.label>Allied Pillbox</Ra2AlliedPillbox.label>-->
+  <!--<Ra2AlliedPillbox.description>Unlock Allied Pillbox</Ra2AlliedPillbox.description>-->
+  <!--<Ra2AlliedPrism.label>Allied Prism Tower</Ra2AlliedPrism.label>-->
+  <!--<Ra2AlliedPrism.description>Unlock Allied Prism Tower</Ra2AlliedPrism.description>-->
+  <!--<Ra2AlliedGrandCannon.label>Allied Grand Cannon</Ra2AlliedGrandCannon.label>-->
+  <!--<Ra2AlliedGrandCannon.description>Unlock Allied Grand Cannon</Ra2AlliedGrandCannon.description>-->
+  <!--<Ra2AlliedADA.label>Allied Patriot missile</Ra2AlliedADA.label>-->
+  <!--<Ra2AlliedADA.description>Unlock Allied Patriot missile</Ra2AlliedADA.description>-->
+  <!--<Ra2AlliedBarracks.label>Allied Barracks</Ra2AlliedBarracks.label>-->
+  <!--<Ra2AlliedBarracks.description>Unlock Allied Barracks</Ra2AlliedBarracks.description>-->
+  <!--<Ra2AlliedWeatherTech.label>Allied Weather Tech</Ra2AlliedWeatherTech.label>-->
+  <!--<Ra2AlliedWeatherTech.description>Unlock Allied Weather Tech</Ra2AlliedWeatherTech.description>-->
+  <!--<Ra2AlliedWeatherMachine.label>Allied Super Weapon</Ra2AlliedWeatherMachine.label>-->
+  <!--<Ra2AlliedWeatherMachine.description>Unlock Allied Weather Machine</Ra2AlliedWeatherMachine.description>-->
+  <!--<Ra2AlliedTanya.label>Allied Tanya</Ra2AlliedTanya.label>-->
+  <!--<Ra2AlliedTanya.description>Unlock Allied Tanya(Limit 1,need the item drop by enemy's Tanya to unlock)</Ra2AlliedTanya.description>-->
 
-  <Ra2AlliedPillbox.label>Allied Pillbox</Ra2AlliedPillbox.label>
-  <Ra2AlliedPillbox.description>Unlock Allied Pillbox</Ra2AlliedPillbox.description>
-
-  <Ra2AlliedPrism.label>Allied Prism Tower</Ra2AlliedPrism.label>
-  <Ra2AlliedPrism.description>Unlock Allied Prism Tower</Ra2AlliedPrism.description>
-
-  <Ra2AlliedGrandCannon.label>Allied Grand Cannon</Ra2AlliedGrandCannon.label>
-  <Ra2AlliedGrandCannon.description>Unlock Allied Grand Cannon</Ra2AlliedGrandCannon.description>
-  
-  <Ra2AlliedADA.label>Allied Patriot missile</Ra2AlliedADA.label>
-  <Ra2AlliedADA.description>Unlock Allied Patriot missile</Ra2AlliedADA.description>
-  
-  <Ra2AlliedBarracks.label>Allied Barracks</Ra2AlliedBarracks.label>
-  <Ra2AlliedBarracks.description>Unlock Allied Barracks</Ra2AlliedBarracks.description>
-  
-  <Ra2AlliedWeatherTech.label>Allied Weather Tech</Ra2AlliedWeatherTech.label>
-  <Ra2AlliedWeatherTech.description>Unlock Allied Weather Tech</Ra2AlliedWeatherTech.description>
-  
-  <Ra2AlliedWeatherMachine.label>Allied Super Weapon</Ra2AlliedWeatherMachine.label>
-  <Ra2AlliedWeatherMachine.description>Unlock Allied Weather Machine</Ra2AlliedWeatherMachine.description>
-
-  <Ra2AlliedTanya.label>Allied Tanya</Ra2AlliedTanya.label>
-  <Ra2AlliedTanya.description>Unlock Allied Tanya(Limit 1,need the item drop by enemy's Tanya to unlock)</Ra2AlliedTanya.description>
-  
 </LanguageData>

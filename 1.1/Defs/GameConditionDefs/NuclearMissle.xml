@@ -1,6 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-
   <ThingDef Name="ra2MissleBase" Abstract="True">
     <category>Projectile</category>
     <tickerType>Normal</tickerType>
@@ -12,7 +11,6 @@
       <shaderType>Transparent</shaderType>
     </graphicData>
   </ThingDef>
-  
   <ThingDef ParentName="ra2MissleBase">
     <defName>SovietNuclearFallen</defName>
     <label>nuclear missle (fallen)</label>
@@ -25,7 +23,6 @@
       <drawSize>(2.5,7)</drawSize>
     </graphicData>
   </ThingDef>
-  
   <ThingDef ParentName="ra2MissleBase">
     <defName>SovietNuclearLeaving</defName>
     <label>nuclear missle (leaving)</label>
@@ -38,7 +35,6 @@
       <drawSize>(2.5,7)</drawSize>
     </graphicData>
   </ThingDef>
-  
   <ThingDef ParentName="EtherealThingBase">
     <defName>SovietNuclearStrike</defName>
     <label>nuclear missle Strike</label>
@@ -58,9 +54,7 @@
       </li>
     </comps>
   </ThingDef>
-  
-  
-   <ThingDef ParentName="ra2BuildingBase">
+  <ThingDef ParentName="ra2BuildingBase">
     <defName>ra2_SovietSuperWeapon</defName>
     <label>Nuclear Silo</label>
     <description>Super Weapon.</description>
@@ -104,7 +98,7 @@
         <compClass>CompPowerTrader</compClass>
         <basePowerConsumption>4000</basePowerConsumption>
       </li>
-      <li Class="CompProperties_Breakdownable"/>
+      <li Class="CompProperties_Breakdownable" />
       <li>
         <compClass>ra2.CompSovietSuperWeapon</compClass>
       </li>
@@ -115,5 +109,4 @@
     <constructEffect>ConstructMetal</constructEffect>
     <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
   </ThingDef>
-
 </Defs>

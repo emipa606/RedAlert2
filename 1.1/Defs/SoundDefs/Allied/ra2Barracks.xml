@@ -1,6 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-
   <SoundDef>
     <defName>ra2_AlliedBarracks_Training</defName>
     <context>MapOnly</context>
@@ -22,7 +21,6 @@
       </li>
     </subSounds>
   </SoundDef>
-  
   <SoundDef>
     <defName>ra2_AlliedBarracks_UnitReady</defName>
     <context>MapOnly</context>
@@ -43,8 +41,7 @@
         </volumeRange>
       </li>
     </subSounds>
-  </SoundDef>  
-
+  </SoundDef>
   <SoundDef>
     <defName>ra2_AlliedBarracks_UnitLost</defName>
     <context>MapOnly</context>
@@ -65,6 +62,5 @@
         </volumeRange>
       </li>
     </subSounds>
-  </SoundDef>  
-  
+  </SoundDef>
 </Defs>

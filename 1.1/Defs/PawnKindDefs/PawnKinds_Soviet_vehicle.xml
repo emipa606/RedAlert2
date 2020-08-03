@@ -8,7 +8,7 @@
     <defaultFactionType>ra2_Soviet</defaultFactionType>
     <aiAvoidCover>true</aiAvoidCover>
     <itemQuality>Good</itemQuality>
-	<isFighter>false</isFighter>
+    <isFighter>false</isFighter>
     <lifeStages>
       <li>
         <bodyGraphicData>
@@ -29,7 +29,6 @@
       <li>RhinoGun</li>
     </weaponTags>
   </PawnKindDef>
-  
   <PawnKindDef>
     <defName>ra2_ApoTank</defName>
     <label>apocalypse tank</label>
@@ -38,7 +37,7 @@
     <defaultFactionType>ra2_Soviet</defaultFactionType>
     <aiAvoidCover>true</aiAvoidCover>
     <itemQuality>Good</itemQuality>
-	<isFighter>false</isFighter>
+    <isFighter>false</isFighter>
     <lifeStages>
       <li>
         <bodyGraphicData>

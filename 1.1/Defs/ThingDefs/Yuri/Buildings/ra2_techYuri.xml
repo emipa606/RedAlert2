@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-
   <ThingDef ParentName="ra2BuildingBase">
     <defName>ra2_YuriTech</defName>
     <label>Yuri tech machine</label>
@@ -13,7 +12,9 @@
         <rect>(0.15,0.15,1.7,1.7)</rect>
       </damageData>
     </graphicData>
-    <researchPrerequisites><li>Ra2BaseResearch</li></researchPrerequisites>
+    <researchPrerequisites>
+      <li>Ra2BaseResearch</li>
+    </researchPrerequisites>
     <size>(2,2)</size>
     <rotatable>false</rotatable>
     <altitudeLayer>Building</altitudeLayer>
@@ -22,7 +23,6 @@
     <fillPercent>0.5</fillPercent>
     <designationHotKey>Misc4</designationHotKey>
     <designationCategory>Misc</designationCategory>
-
     <canOverlapZones>false</canOverlapZones>
     <statBases>
       <MaxHitPoints>200</MaxHitPoints>
@@ -41,7 +41,7 @@
         <shortCircuitInRain>true</shortCircuitInRain>
         <basePowerConsumption>200</basePowerConsumption>
       </li>
-      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Flickable" />
       <li Class="CompProperties_Facility">
         <statOffsets>
           <ResearchSpeedFactor>0.1</ResearchSpeedFactor>
@@ -49,11 +49,9 @@
         <maxSimultaneous>1</maxSimultaneous>
       </li>
     </comps>
-		<placeWorkers>
-			<li>PlaceWorker_ShowFacilitiesConnections</li>
-		</placeWorkers>
+    <placeWorkers>
+      <li>PlaceWorker_ShowFacilitiesConnections</li>
+    </placeWorkers>
     <constructionSkillPrerequisite>10</constructionSkillPrerequisite>
   </ThingDef>
-
-  
 </Defs>

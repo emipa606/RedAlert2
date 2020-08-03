@@ -1,8 +1,5 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-
-
-
   <HediffDef>
     <defName>Hediffs_DownToDie</defName>
     <hediffClass>HediffWithComps</hediffClass>
@@ -13,6 +10,5 @@
     <comps>
       <li Class="ra2.HediffCompProperties_DownToDie" />
     </comps>
-
   </HediffDef>
 </Defs>

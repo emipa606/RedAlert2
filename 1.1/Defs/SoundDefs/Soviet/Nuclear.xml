@@ -1,6 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-
   <SoundDef>
     <defName>ra2_NuclearExplode</defName>
     <context>MapOnly</context>
@@ -9,7 +8,7 @@
     <maxSimultaneous>1</maxSimultaneous>
     <subSounds>
       <li>
-	          <onCamera>True</onCamera>  
+        <onCamera>True</onCamera>
         <grains>
           <li Class="AudioGrain_Clip">
             <clipPath>ra2/Soviet/Nuclear/snukexpl</clipPath>
@@ -22,7 +21,6 @@
       </li>
     </subSounds>
   </SoundDef>
-  
   <SoundDef>
     <defName>ra2_NuclearExpBefore</defName>
     <context>MapOnly</context>
@@ -31,7 +29,7 @@
     <maxSimultaneous>1</maxSimultaneous>
     <subSounds>
       <li>
-        <onCamera>True</onCamera>   
+        <onCamera>True</onCamera>
         <grains>
           <li Class="AudioGrain_Clip">
             <clipPath>ra2/Soviet/Nuclear/snukintr</clipPath>
@@ -44,7 +42,6 @@
       </li>
     </subSounds>
   </SoundDef>
-  
   <SoundDef>
     <defName>ra2_NuclearRead</defName>
     <context>MapOnly</context>
@@ -65,7 +62,6 @@
       </li>
     </subSounds>
   </SoundDef>
-  
   <SoundDef>
     <defName>ra2_NuclearAlert</defName>
     <context>MapOnly</context>
@@ -74,7 +70,7 @@
     <maxSimultaneous>1</maxSimultaneous>
     <subSounds>
       <li>
-        <onCamera>True</onCamera>   
+        <onCamera>True</onCamera>
         <grains>
           <li Class="AudioGrain_Clip">
             <clipPath>ra2/Soviet/Nuclear/snuksire</clipPath>
@@ -87,8 +83,6 @@
       </li>
     </subSounds>
   </SoundDef>
-  
-  
   <SoundDef>
     <defName>ra2_NuclearLaunch</defName>
     <context>MapOnly</context>
@@ -96,8 +90,8 @@
     <maxVoices>2</maxVoices>
     <maxSimultaneous>1</maxSimultaneous>
     <subSounds>
-      <li> 
-        <onCamera>True</onCamera>   
+      <li>
+        <onCamera>True</onCamera>
         <grains>
           <li Class="AudioGrain_Clip">
             <clipPath>ra2/Soviet/Nuclear/snuklaun</clipPath>
@@ -110,5 +104,4 @@
       </li>
     </subSounds>
   </SoundDef>
-  
 </Defs>

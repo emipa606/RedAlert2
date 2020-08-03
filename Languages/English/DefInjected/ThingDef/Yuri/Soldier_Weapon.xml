@@ -1,23 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
+  <!--<ra2_Bullet_Initiate.label>Initiate Bullet</ra2_Bullet_Initiate.label>-->
+  <!--<ra2_Gun_Initiate.label>Yuri Initiate Gun</ra2_Gun_Initiate.label>-->
+  <!--<ra2_Gun_Initiate.description>Can cast fire.</ra2_Gun_Initiate.description>-->
+  <!--<ra2_Gun_Brute.label>Monster Fist</ra2_Gun_Brute.label>-->
+  <!--<ra2_Gun_Brute.description>Yuri Brute's powerful fist</ra2_Gun_Brute.description>-->
+  <!--<ra2_Gun_Yuri.label>Mind Controler</ra2_Gun_Yuri.label>-->
+  <!--<ra2_Gun_Yuri.description>Can control pawn</ra2_Gun_Yuri.description>-->
 
-  <ra2_Bullet_Initiate.label>Initiate Bullet</ra2_Bullet_Initiate.label>
-
-  <ra2_Gun_Initiate.label>Yuri Initiate Gun</ra2_Gun_Initiate.label>
-  <ra2_Gun_Initiate.description>Can cast fire.</ra2_Gun_Initiate.description>
-  
-
-
-  <ra2_Gun_Brute.label>Monster Fist</ra2_Gun_Brute.label>
-  <ra2_Gun_Brute.description>Yuri Brute's powerful fist</ra2_Gun_Brute.description>
-  
-
-
-  <ra2_Gun_Yuri.label>Mind Controler</ra2_Gun_Yuri.label>
-  <ra2_Gun_Yuri.description>Can control pawn</ra2_Gun_Yuri.description>
-  
-
-
-
- 
 </LanguageData>

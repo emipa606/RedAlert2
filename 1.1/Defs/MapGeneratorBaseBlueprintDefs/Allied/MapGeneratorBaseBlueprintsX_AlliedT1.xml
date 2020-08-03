@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<MapGenerator.MapGeneratorBaseBlueprintDef Name="AlliedFactionT1">
-		<defName>AlliedFactionT1</defName>
-		<createdBy>AKreedz</createdBy>
-		<techLevelRequired>Ultra</techLevelRequired>
-		<factionDef>ra2_Allied</factionDef>
-		<chance>110</chance>
-		<size>(51, 45)</size>
-		<canHaveHoles>False</canHaveHoles>
-		<createTrigger>False</createTrigger>
-		<buildingData>
+  <MapGenerator.MapGeneratorBaseBlueprintDef Name="AlliedFactionT1">
+    <defName>AlliedFactionT1</defName>
+    <createdBy>AKreedz</createdBy>
+    <techLevelRequired>Ultra</techLevelRequired>
+    <factionDef>ra2_Allied</factionDef>
+    <chance>110</chance>
+    <size>(51, 45)</size>
+    <canHaveHoles>False</canHaveHoles>
+    <createTrigger>False</createTrigger>
+    <buildingData>
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 a.................................................a
 a.....b....................................b......a
@@ -56,71 +56,71 @@ a.................................................a
 a.....b....................................b......a
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 </buildingData>
-		<buildingLegend>
-			<li>
-				<key>t</key>
-				<value>ra2_AlliedAirDefense</value>
-			</li>
-			<li>
-				<key>a</key>
-				<value>Sandbags</value>
-			</li>
-			<li>
-				<key>b</key>
-				<value>ra2_Pillbox_A</value>
-			</li>
-			<li>
-				<key>c</key>
-				<value>Wall</value>
-			</li>
-			<li>
-				<key>d</key>
-				<value>Door</value>
-			</li>
-			<li>
-				<key>e</key>
-				<value>VanometricPowerCell</value>
-			</li>
-			<li>
-				<key>f</key>
-				<value>Battery</value>
-			</li>
-			<li>
-				<key>g</key>
-				<value>Door</value>
-			</li>
-		</buildingLegend>
-		<rotationLegend>
-			<li>
-				<key>a</key>
-				<value>0</value>
-			</li>
-			<li>
-				<key>b</key>
-				<value>0</value>
-			</li>
-			<li>
-				<key>c</key>
-				<value>0</value>
-			</li>
-			<li>
-				<key>d</key>
-				<value>0</value>
-			</li>
-			<li>
-				<key>e</key>
-				<value>0</value>
-			</li>
-			<li>
-				<key>f</key>
-				<value>0</value>
-			</li>
-			<li>
-				<key>g</key>
-				<value>1</value>
-			</li>
-		</rotationLegend>
-		<nonbuildingData>
+    <buildingLegend>
+      <li>
+        <key>t</key>
+        <value>ra2_AlliedAirDefense</value>
+      </li>
+      <li>
+        <key>a</key>
+        <value>Sandbags</value>
+      </li>
+      <li>
+        <key>b</key>
+        <value>ra2_Pillbox_A</value>
+      </li>
+      <li>
+        <key>c</key>
+        <value>Wall</value>
+      </li>
+      <li>
+        <key>d</key>
+        <value>Door</value>
+      </li>
+      <li>
+        <key>e</key>
+        <value>VanometricPowerCell</value>
+      </li>
+      <li>
+        <key>f</key>
+        <value>Battery</value>
+      </li>
+      <li>
+        <key>g</key>
+        <value>Door</value>
+      </li>
+    </buildingLegend>
+    <rotationLegend>
+      <li>
+        <key>a</key>
+        <value>0</value>
+      </li>
+      <li>
+        <key>b</key>
+        <value>0</value>
+      </li>
+      <li>
+        <key>c</key>
+        <value>0</value>
+      </li>
+      <li>
+        <key>d</key>
+        <value>0</value>
+      </li>
+      <li>
+        <key>e</key>
+        <value>0</value>
+      </li>
+      <li>
+        <key>f</key>
+        <value>0</value>
+      </li>
+      <li>
+        <key>g</key>
+        <value>1</value>
+      </li>
+    </rotationLegend>
+    <nonbuildingData>
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 a.................................................a
 a.....b....................................b......a
@@ -167,13 +167,13 @@ a......................a..........................a
 a.....b................a...................b......a
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 </nonbuildingData>
-		<nonbuildingLegend>
-			<li>
-				<key>a</key>
-				<value>PowerConduit</value>
-			</li>
-		</nonbuildingLegend>
-		<floorData>
+    <nonbuildingLegend>
+      <li>
+        <key>a</key>
+        <value>PowerConduit</value>
+      </li>
+    </nonbuildingLegend>
+    <floorData>
 ...................................................
 ...................................................
 ...................................................
@@ -220,13 +220,13 @@ aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 ...................................................
 ...................................................
 </floorData>
-		<floorLegend>
-			<li>
-				<key>a</key>
-				<value>CarpetBlue</value>
-			</li>
-		</floorLegend>
-		<itemData>
+    <floorLegend>
+      <li>
+        <key>a</key>
+        <value>CarpetBlue</value>
+      </li>
+    </floorLegend>
+    <itemData>
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 a.................................................a
 a.....b....................................b......a
@@ -273,26 +273,26 @@ a.................................................a
 a.....b....................................b......a
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 </itemData>
-		<itemLegend>
-			<li>
-				<key>j</key>
-				<value>ra2_AlliedTechCore</value>
-			</li>
-			<li>
-				<key>z</key>
-				<value>Steel</value>
-			</li>
-			<li>
-				<key>x</key>
-				<value>Silver</value>
-			</li>
-			<li>
-				<key>y</key>
-				<value>Chemfuel</value>
-			</li>
-		</itemLegend>
-		<itemSpawnChance>50</itemSpawnChance>
-		<pawnData>
+    <itemLegend>
+      <li>
+        <key>j</key>
+        <value>ra2_AlliedTechCore</value>
+      </li>
+      <li>
+        <key>z</key>
+        <value>Steel</value>
+      </li>
+      <li>
+        <key>x</key>
+        <value>Silver</value>
+      </li>
+      <li>
+        <key>y</key>
+        <value>Chemfuel</value>
+      </li>
+    </itemLegend>
+    <itemSpawnChance>50</itemSpawnChance>
+    <pawnData>
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 a.................................................a
 a.....b....................................b......a
@@ -339,11 +339,11 @@ a.................................................a
 a.....b....................................b......a
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 </pawnData>
-		<pawnLegend>
-			<li>
-				<key>x</key>
-				<value>ra2_AlliedSiegeCadre</value>
-			</li>
-		</pawnLegend>
-	</MapGenerator.MapGeneratorBaseBlueprintDef>
+    <pawnLegend>
+      <li>
+        <key>x</key>
+        <value>ra2_AlliedSiegeCadre</value>
+      </li>
+    </pawnLegend>
+  </MapGenerator.MapGeneratorBaseBlueprintDef>
 </Defs>

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <ra2_Bullet_Initiate.label>Initiate Bullet</ra2_Bullet_Initiate.label>
+
+  <ra2_Gun_Initiate.label>Yuri Initiate Gun</ra2_Gun_Initiate.label>
+  <ra2_Gun_Initiate.description>Can cast fire.</ra2_Gun_Initiate.description>
+  <ra2_Gun_Initiate.tools.0.label>grip</ra2_Gun_Initiate.tools.0.label>
+  <ra2_Gun_Initiate.tools.1.label>barrel</ra2_Gun_Initiate.tools.1.label>
+
+  <ra2_Hat_Initiate.label>Initiate's Helmet</ra2_Hat_Initiate.label>
+  <ra2_Hat_Initiate.description>Initiate's standard clothes</ra2_Hat_Initiate.description>
+
+  <ra2_Parka_Initiate.label>Initiate's Suit (top)</ra2_Parka_Initiate.label>
+  <ra2_Parka_Initiate.description>Initiate's standard clothes</ra2_Parka_Initiate.description>
+
+  <ra2_Pants_Initiate.label>Initiate's Suit (below)</ra2_Pants_Initiate.label>
+  <ra2_Pants_Initiate.description>Initiate's standard clothes</ra2_Pants_Initiate.description>
+
+
+</LanguageData>

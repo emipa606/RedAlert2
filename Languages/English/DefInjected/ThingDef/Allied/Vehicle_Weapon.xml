@@ -1,11 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
+  <!--<ra2_Bullet_grizzly.label>Grizzly tank shells</ra2_Bullet_grizzly.label>-->
+  <!--<ra2_Gun_grizzly.label>Grizzly tank gun</ra2_Gun_grizzly.label>-->
+  <!--<ra2_Gun_grizzly.description>Grizzly tank gun</ra2_Gun_grizzly.description>-->
 
-  <ra2_Bullet_grizzly.label>Grizzly tank shells</ra2_Bullet_grizzly.label>
-
-  <ra2_Gun_grizzly.label>Grizzly tank gun</ra2_Gun_grizzly.label>
-  <ra2_Gun_grizzly.description>Grizzly tank gun</ra2_Gun_grizzly.description>
-  
- 
-  
 </LanguageData>

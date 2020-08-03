@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<MapGenerator.MapGeneratorBaseBlueprintDef Name="AlliedFactionT2">
-		<defName>AlliedFactionT2</defName>
-		<createdBy>AKreedz</createdBy>
-		<techLevelRequired>Ultra</techLevelRequired>
-		<factionDef>ra2_Allied</factionDef>
-		<chance>80</chance>
-		<size>(51, 51)</size>
-		<canHaveHoles>False</canHaveHoles>
-		<createTrigger>False</createTrigger>
-		<buildingData>
+  <MapGenerator.MapGeneratorBaseBlueprintDef Name="AlliedFactionT2">
+    <defName>AlliedFactionT2</defName>
+    <createdBy>AKreedz</createdBy>
+    <techLevelRequired>Ultra</techLevelRequired>
+    <factionDef>ra2_Allied</factionDef>
+    <chance>80</chance>
+    <size>(51, 51)</size>
+    <canHaveHoles>False</canHaveHoles>
+    <createTrigger>False</createTrigger>
+    <buildingData>
 ..........................aaaaaaaaaaaaaaaaaaaaaaaaa
 ..........................a....a....a....a........a
 ..........................af.f.af.f.af.f.af.f...d.a
@@ -62,125 +62,123 @@ a...........................................a.....a
 a...........................................a.....c
 aaaaeaaaaeaaaaaaaaaaaaaaaeaaaaaaaaaaaaaeaaaaaaaeaab
 </buildingData>
-		<buildingLegend>
-			<li>
-				<key>a</key>
-				<value>Wall</value>
-			</li>
-
-			<li>
-				<key>c</key>
-				<value>Door</value>
-			</li>
-			<li>
-				<key>d</key>
-				<value>ra2_Prism</value>
-			</li>
-			<li>
-				<key>e</key>
-				<value>Door</value>
-			</li>
-			<li>
-				<key>f</key>
-				<value>ra2_Pillbox_A</value>
-			</li>
-			<li>
-				<key>g</key>
-				<value>SolarGenerator</value>
-			</li>
-			<li>
-				<key>h</key>
-				<value>Battery</value>
-			</li>
-			<li>
-				<key>i</key>
-				<value>Sandbags</value>
-			</li>
-			<li>
-				<key>k</key>
-				<value>TrapSpike</value>
-			</li>
-			<li>
-				<key>l</key>
-				<value>StandingLamp</value>
-			</li>
-			<li>
-				<key>m</key>
-				<value>Bed</value>
-			</li>
-			<li>
-				<key>n</key>
-				<value>Bed</value>
-			</li>
-			<li>
-				<key>x</key>
-				<value>VanometricPowerCell</value>
-			</li>
-			<li>
-				<key>t</key>
-				<value>ra2_AlliedAirDefense</value>
-			</li>
-		</buildingLegend>
-		<rotationLegend>
-			<li>
-				<key>a</key>
-				<value>0</value>
-			</li>
-			<li>
-				<key>b</key>
-				<value>0</value>
-			</li>
-			<li>
-				<key>c</key>
-				<value>1</value>
-			</li>
-			<li>
-				<key>d</key>
-				<value>0</value>
-			</li>
-			<li>
-				<key>e</key>
-				<value>0</value>
-			</li>
-			<li>
-				<key>f</key>
-				<value>0</value>
-			</li>
-			<li>
-				<key>g</key>
-				<value>0</value>
-			</li>
-			<li>
-				<key>h</key>
-				<value>0</value>
-			</li>
-			<li>
-				<key>i</key>
-				<value>0</value>
-			</li>
-			<li>
-				<key>j</key>
-				<value>0</value>
-			</li>
-			<li>
-				<key>k</key>
-				<value>0</value>
-			</li>
-			<li>
-				<key>l</key>
-				<value>0</value>
-			</li>
-			<li>
-				<key>m</key>
-				<value>1</value>
-			</li>
-			<li>
-				<key>n</key>
-				<value>3</value>
-			</li>
-		</rotationLegend>
-		
-		<nonbuildingData>
+    <buildingLegend>
+      <li>
+        <key>a</key>
+        <value>Wall</value>
+      </li>
+      <li>
+        <key>c</key>
+        <value>Door</value>
+      </li>
+      <li>
+        <key>d</key>
+        <value>ra2_Prism</value>
+      </li>
+      <li>
+        <key>e</key>
+        <value>Door</value>
+      </li>
+      <li>
+        <key>f</key>
+        <value>ra2_Pillbox_A</value>
+      </li>
+      <li>
+        <key>g</key>
+        <value>SolarGenerator</value>
+      </li>
+      <li>
+        <key>h</key>
+        <value>Battery</value>
+      </li>
+      <li>
+        <key>i</key>
+        <value>Sandbags</value>
+      </li>
+      <li>
+        <key>k</key>
+        <value>TrapSpike</value>
+      </li>
+      <li>
+        <key>l</key>
+        <value>StandingLamp</value>
+      </li>
+      <li>
+        <key>m</key>
+        <value>Bed</value>
+      </li>
+      <li>
+        <key>n</key>
+        <value>Bed</value>
+      </li>
+      <li>
+        <key>x</key>
+        <value>VanometricPowerCell</value>
+      </li>
+      <li>
+        <key>t</key>
+        <value>ra2_AlliedAirDefense</value>
+      </li>
+    </buildingLegend>
+    <rotationLegend>
+      <li>
+        <key>a</key>
+        <value>0</value>
+      </li>
+      <li>
+        <key>b</key>
+        <value>0</value>
+      </li>
+      <li>
+        <key>c</key>
+        <value>1</value>
+      </li>
+      <li>
+        <key>d</key>
+        <value>0</value>
+      </li>
+      <li>
+        <key>e</key>
+        <value>0</value>
+      </li>
+      <li>
+        <key>f</key>
+        <value>0</value>
+      </li>
+      <li>
+        <key>g</key>
+        <value>0</value>
+      </li>
+      <li>
+        <key>h</key>
+        <value>0</value>
+      </li>
+      <li>
+        <key>i</key>
+        <value>0</value>
+      </li>
+      <li>
+        <key>j</key>
+        <value>0</value>
+      </li>
+      <li>
+        <key>k</key>
+        <value>0</value>
+      </li>
+      <li>
+        <key>l</key>
+        <value>0</value>
+      </li>
+      <li>
+        <key>m</key>
+        <value>1</value>
+      </li>
+      <li>
+        <key>n</key>
+        <value>3</value>
+      </li>
+    </rotationLegend>
+    <nonbuildingData>
 ..........................aaaaaaaaaaaaaaaaaaaaaaaaa
 ..........................a....a....a....a........a
 ..........................af.f.af.f.af.f.af.f...d.a
@@ -233,21 +231,21 @@ a.................a...g....g...g............a.....a
 a.................a.........................a.....c
 aaaaeaaaaeaaaaaaaaaaaaaaaeaaaaaaaaaaaaaeaaaaaaaeaab
 </nonbuildingData>
-		<nonbuildingLegend>
-			<li>
-				<key>a</key>
-				<value>PowerConduit</value>
-			</li>
-			<li>
-				<key>b</key>
-				<value>PowerConduit</value>
-			</li>
-			<li>
-				<key>c</key>
-				<value>PowerConduit</value>
-			</li>
-	    </nonbuildingLegend>
-		<floorData>
+    <nonbuildingLegend>
+      <li>
+        <key>a</key>
+        <value>PowerConduit</value>
+      </li>
+      <li>
+        <key>b</key>
+        <value>PowerConduit</value>
+      </li>
+      <li>
+        <key>c</key>
+        <value>PowerConduit</value>
+      </li>
+    </nonbuildingLegend>
+    <floorData>
 ..........................aaaaaaaaaaaaaaaaaaaaaaaaa
 ..........................aaaaaaaaaaaaaaaaaaaaaaaaa
 ..........................aaaaaaaaaaaaaaaaaaaaaaaaa
@@ -300,17 +298,17 @@ aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 </floorData>
-		<floorLegend>
-			<li>
-				<key>a</key>
-				<value>TileSandstone</value>
-			</li>
-			<li>
-				<key>b</key>
-				<value>SterileTile</value>
-			</li>
-		</floorLegend>
-		<itemData>
+    <floorLegend>
+      <li>
+        <key>a</key>
+        <value>TileSandstone</value>
+      </li>
+      <li>
+        <key>b</key>
+        <value>SterileTile</value>
+      </li>
+    </floorLegend>
+    <itemData>
 ..........................aaaaaaaaaaaaaaaaaaaaaaaaa
 ..........................a....a....a....a........a
 ..........................af.f.af.f.af.f.af.f...d.a
@@ -363,26 +361,26 @@ a.................g...g....g...g............a.....b
 a...........................................a.....b
 aaaaeaaaaeaaaaaaaaaaaaaaabaaaaaaaaaaaaaeaaaaaaaeaab
 </itemData>
-		<itemLegend>
-			<li>
-				<key>j</key>
-				<value>ra2_AlliedTechCore</value>
-			</li>
-			<li>
-				<key>z</key>
-				<value>Silver</value>
-			</li>
-			<li>
-				<key>x</key>
-				<value>Steel</value>
-			</li>
-			<li>
-				<key>y</key>
-				<value>Chemfuel</value>
-			</li>
-		</itemLegend>
-		<itemSpawnChance>80</itemSpawnChance>
-		<pawnData>
+    <itemLegend>
+      <li>
+        <key>j</key>
+        <value>ra2_AlliedTechCore</value>
+      </li>
+      <li>
+        <key>z</key>
+        <value>Silver</value>
+      </li>
+      <li>
+        <key>x</key>
+        <value>Steel</value>
+      </li>
+      <li>
+        <key>y</key>
+        <value>Chemfuel</value>
+      </li>
+    </itemLegend>
+    <itemSpawnChance>80</itemSpawnChance>
+    <pawnData>
 ..........................aaaaaaaaaaaaaaaaaaaaaaaaa
 ..........................a....a....a....a........a
 ..........................af.f.af.f.af.f.af.f...d.a
@@ -435,11 +433,11 @@ a.................g...g....g...g............a.....b
 a...........................................a.....b
 aaaaeaaaaeaaaaaaaaaaaaaaabaaaaaaaaaaaaaeaaaaaaaeaab
 </pawnData>
-		<pawnLegend>
-			<li>
-				<key>t</key>
-				<value>ra2_AlliedSiegeCadre</value>
-			</li>
-		</pawnLegend>
-	</MapGenerator.MapGeneratorBaseBlueprintDef>
+    <pawnLegend>
+      <li>
+        <key>t</key>
+        <value>ra2_AlliedSiegeCadre</value>
+      </li>
+    </pawnLegend>
+  </MapGenerator.MapGeneratorBaseBlueprintDef>
 </Defs>

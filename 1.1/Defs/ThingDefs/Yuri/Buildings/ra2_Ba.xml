@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
- <ThingDef ParentName="ra2BuildingBase">
+  <ThingDef ParentName="ra2BuildingBase">
     <defName>ra2_YuriBarracks</defName>
     <label>Yuri Barracks</label>
     <description>Barracks.</description>
@@ -19,7 +19,7 @@
         <rect>(0.3,0.1,2.4,1.8)</rect>
       </damageData>
     </graphicData>
-	<tickerType>Normal</tickerType>
+    <tickerType>Normal</tickerType>
     <costList>
       <ra2_GoldBar>500</ra2_GoldBar>
       <ComponentIndustrial>3</ComponentIndustrial>
@@ -44,8 +44,8 @@
         <compClass>CompPowerTrader</compClass>
         <basePowerConsumption>250</basePowerConsumption>
       </li>
-      <li Class="CompProperties_Flickable"/>
-	  <li Class="ra2.CompProperties_Barracks"/>
+      <li Class="CompProperties_Flickable" />
+      <li Class="ra2.CompProperties_Barracks" />
       <li Class="CompProperties_Refuelable">
         <fuelLabel>Gold Bar Store</fuelLabel>
         <fuelGizmoLabel>Gold Bar</fuelGizmoLabel>
@@ -61,7 +61,7 @@
         <autoRefuelPercent>100</autoRefuelPercent>
         <showFuelGizmo>true</showFuelGizmo>
         <drawOutOfFuelOverlay>true</drawOutOfFuelOverlay>
-		<drawFuelGaugeInMap>false</drawFuelGaugeInMap>
+        <drawFuelGaugeInMap>false</drawFuelGaugeInMap>
       </li>
     </comps>
     <designationHotKey>Misc5</designationHotKey>

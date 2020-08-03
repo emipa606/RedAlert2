@@ -1,22 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
+  <!--<ra2_AlliedTech.label>Allied Tech Table</ra2_AlliedTech.label>-->
+  <!--<ra2_AlliedTech.description>containing Allied Technology</ra2_AlliedTech.description>-->
+  <!--<ra2_AlliedTech_Blueprint.label>Allied Tech Table(BluePrint)</ra2_AlliedTech_Blueprint.label>-->
+  <!--<ra2_AlliedTech_Frame.label>Allied Tech Table(Building)</ra2_AlliedTech_Frame.label>-->
+  <!--<ra2_AlliedTech_Frame.description>containing Allied Technology</ra2_AlliedTech_Frame.description>-->
+  <!--<ra2_AlliedBarracks.label>Allied Barracks</ra2_AlliedBarracks.label>-->
+  <!--<ra2_AlliedBarracks.description>It can train Allied soldiers.</ra2_AlliedBarracks.description>-->
+  <!--<ra2_AlliedBarracks_Blueprint.label>Allied Barracks(BluePrint)</ra2_AlliedBarracks_Blueprint.label>-->
+  <!--<ra2_AlliedBarracks_Frame.label>Allied Barracks(Building)</ra2_AlliedBarracks_Frame.label>-->
+  <!--<ra2_AlliedBarracks_Frame.description>It can train Allied soldiers.</ra2_AlliedBarracks_Frame.description>-->
+  <!--<ra2_AlliedSuperWeapon.label>Weather Machine</ra2_AlliedSuperWeapon.label>-->
+  <!--<ra2_AlliedSuperWeapon.description>Can create Lightning storm</ra2_AlliedSuperWeapon.description>-->
+  <!--<ra2_AlliedSuperWeapon_Blueprint.label>Weather Machine(BluePrint)</ra2_AlliedSuperWeapon_Blueprint.label>-->
+  <!--<ra2_AlliedSuperWeapon_Frame.label>Weather Machine(Building)</ra2_AlliedSuperWeapon_Frame.label>-->
+  <!--<ra2_AlliedSuperWeapon_Frame.description>Can create Lightning storm</ra2_AlliedSuperWeapon_Frame.description>-->
 
-  <ra2_AlliedTech.label>Allied Tech Table</ra2_AlliedTech.label>
-  <ra2_AlliedTech.description>containing Allied Technology</ra2_AlliedTech.description>
-  <ra2_AlliedTech_Blueprint.label>Allied Tech Table(BluePrint)</ra2_AlliedTech_Blueprint.label>
-  <ra2_AlliedTech_Frame.label>Allied Tech Table(Building)</ra2_AlliedTech_Frame.label>
-  <ra2_AlliedTech_Frame.description>containing Allied Technology</ra2_AlliedTech_Frame.description>
-  
-  <ra2_AlliedBarracks.label>Allied Barracks</ra2_AlliedBarracks.label>
-  <ra2_AlliedBarracks.description>It can train Allied soldiers.</ra2_AlliedBarracks.description>
-  <ra2_AlliedBarracks_Blueprint.label>Allied Barracks(BluePrint)</ra2_AlliedBarracks_Blueprint.label>
-  <ra2_AlliedBarracks_Frame.label>Allied Barracks(Building)</ra2_AlliedBarracks_Frame.label>
-  <ra2_AlliedBarracks_Frame.description>It can train Allied soldiers.</ra2_AlliedBarracks_Frame.description>
-  
-  <ra2_AlliedSuperWeapon.label>Weather Machine</ra2_AlliedSuperWeapon.label>
-  <ra2_AlliedSuperWeapon.description>Can create Lightning storm</ra2_AlliedSuperWeapon.description>
-  <ra2_AlliedSuperWeapon_Blueprint.label>Weather Machine(BluePrint)</ra2_AlliedSuperWeapon_Blueprint.label>
-  <ra2_AlliedSuperWeapon_Frame.label>Weather Machine(Building)</ra2_AlliedSuperWeapon_Frame.label>
-  <ra2_AlliedSuperWeapon_Frame.description>Can create Lightning storm</ra2_AlliedSuperWeapon_Frame.description>
-  
 </LanguageData>

@@ -1,35 +1,30 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
+  <!--<ra2_SovietTech.label>Soviet Tech Table</ra2_SovietTech.label>-->
+  <!--<ra2_SovietTech.description>containing Soviet Technology</ra2_SovietTech.description>-->
+  <!--<ra2_SovietTech_Blueprint.label>Soviet Tech Table(BluePrint)</ra2_SovietTech_Blueprint.label>-->
+  <!--<ra2_SovietTech_Blueprint_Install.label>Soviet Tech Table(BluePrint)</ra2_SovietTech_Blueprint_Install.label>-->
+  <!--<ra2_SovietTech_Frame.label>Soviet Tech Table(Building)</ra2_SovietTech_Frame.label>-->
+  <!--<ra2_SovietTech_Frame.description>containing Soviet Technology</ra2_SovietTech_Frame.description>-->
+  <!--<ra2_SovietBarracks.label>Soviet Barracks</ra2_SovietBarracks.label>-->
+  <!--<ra2_SovietBarracks.description>It can train Soviet soldiers.</ra2_SovietBarracks.description>-->
+  <!--<ra2_SovietBarracks_Blueprint.label>Soviet Barracks(BluePrint)</ra2_SovietBarracks_Blueprint.label>-->
+  <!--<ra2_SovietBarracks_Frame.label>Soviet Barracks(Building)</ra2_SovietBarracks_Frame.label>-->
+  <!--<ra2_SovietBarracks_Frame.description>It can train Soviet soldiers.</ra2_SovietBarracks_Frame.description>-->
+  <!--<ra2_SovietGenerator.label>tesla reactor</ra2_SovietGenerator.label>-->
+  <!--<ra2_SovietGenerator.description>It can generate electricity.</ra2_SovietGenerator.description>-->
+  <!--<ra2_SovietGenerator_Blueprint.label>tesla reactor(BluePrint)</ra2_SovietGenerator_Blueprint.label>-->
+  <!--<ra2_SovietGenerator_Frame.label>tesla reactor(Building)</ra2_SovietGenerator_Frame.label>-->
+  <!--<ra2_SovietGenerator_Frame.description>It can generate electricity.</ra2_SovietGenerator_Frame.description>-->
+  <!--<ra2_SovietGenerator_Nuclear.label>Nuclear Reactor</ra2_SovietGenerator_Nuclear.label>-->
+  <!--<ra2_SovietGenerator_Nuclear.description>It can generate electricity.It will explode after destruction.</ra2_SovietGenerator_Nuclear.description>-->
+  <!--<ra2_SovietGenerator_Nuclear_Blueprint.label>Nuclear Reactor(BluePrint)</ra2_SovietGenerator_Nuclear_Blueprint.label>-->
+  <!--<ra2_SovietGenerator_Nuclear_Frame.label>Nuclear Reactor(Building)</ra2_SovietGenerator_Nuclear_Frame.label>-->
+  <!--<ra2_SovietGenerator_Nuclear_Frame.description>It can generate electricity.It will explode after destruction.</ra2_SovietGenerator_Nuclear_Frame.description>-->
+  <!--<ra2_SovietSuperWeapon.label>Nuclear Silo</ra2_SovietSuperWeapon.label>-->
+  <!--<ra2_SovietSuperWeapon.description>Can launch nuclear missle</ra2_SovietSuperWeapon.description>-->
+  <!--<ra2_SovietSuperWeapon_Blueprint.label>Nuclear Silo(BluePrint)</ra2_SovietSuperWeapon_Blueprint.label>-->
+  <!--<ra2_SovietSuperWeapon_Frame.label>Nuclear Silo(Building)</ra2_SovietSuperWeapon_Frame.label>-->
+  <!--<ra2_SovietSuperWeapon_Frame.description>Can launch nuclear missle</ra2_SovietSuperWeapon_Frame.description>-->
 
-  <ra2_SovietTech.label>Soviet Tech Table</ra2_SovietTech.label>
-  <ra2_SovietTech.description>containing Soviet Technology</ra2_SovietTech.description>
-  <ra2_SovietTech_Blueprint.label>Soviet Tech Table(BluePrint)</ra2_SovietTech_Blueprint.label>
-  <ra2_SovietTech_Blueprint_Install.label>Soviet Tech Table(BluePrint)</ra2_SovietTech_Blueprint_Install.label>
-  <ra2_SovietTech_Frame.label>Soviet Tech Table(Building)</ra2_SovietTech_Frame.label>
-  <ra2_SovietTech_Frame.description>containing Soviet Technology</ra2_SovietTech_Frame.description>
-  
-  <ra2_SovietBarracks.label>Soviet Barracks</ra2_SovietBarracks.label>
-  <ra2_SovietBarracks.description>It can train Soviet soldiers.</ra2_SovietBarracks.description>
-  <ra2_SovietBarracks_Blueprint.label>Soviet Barracks(BluePrint)</ra2_SovietBarracks_Blueprint.label>
-  <ra2_SovietBarracks_Frame.label>Soviet Barracks(Building)</ra2_SovietBarracks_Frame.label>
-  <ra2_SovietBarracks_Frame.description>It can train Soviet soldiers.</ra2_SovietBarracks_Frame.description>
-  
-  <ra2_SovietGenerator.label>tesla reactor</ra2_SovietGenerator.label>
-  <ra2_SovietGenerator.description>It can generate electricity.</ra2_SovietGenerator.description>
-  <ra2_SovietGenerator_Blueprint.label>tesla reactor(BluePrint)</ra2_SovietGenerator_Blueprint.label>
-  <ra2_SovietGenerator_Frame.label>tesla reactor(Building)</ra2_SovietGenerator_Frame.label>
-  <ra2_SovietGenerator_Frame.description>It can generate electricity.</ra2_SovietGenerator_Frame.description>
-  
-  <ra2_SovietGenerator_Nuclear.label>Nuclear Reactor</ra2_SovietGenerator_Nuclear.label>
-  <ra2_SovietGenerator_Nuclear.description>It can generate electricity.It will explode after destruction.</ra2_SovietGenerator_Nuclear.description>
-  <ra2_SovietGenerator_Nuclear_Blueprint.label>Nuclear Reactor(BluePrint)</ra2_SovietGenerator_Nuclear_Blueprint.label>
-  <ra2_SovietGenerator_Nuclear_Frame.label>Nuclear Reactor(Building)</ra2_SovietGenerator_Nuclear_Frame.label>
-  <ra2_SovietGenerator_Nuclear_Frame.description>It can generate electricity.It will explode after destruction.</ra2_SovietGenerator_Nuclear_Frame.description>
-  
-  <ra2_SovietSuperWeapon.label>Nuclear Silo</ra2_SovietSuperWeapon.label>
-  <ra2_SovietSuperWeapon.description>Can launch nuclear missle</ra2_SovietSuperWeapon.description>
-  <ra2_SovietSuperWeapon_Blueprint.label>Nuclear Silo(BluePrint)</ra2_SovietSuperWeapon_Blueprint.label>
-  <ra2_SovietSuperWeapon_Frame.label>Nuclear Silo(Building)</ra2_SovietSuperWeapon_Frame.label>
-  <ra2_SovietSuperWeapon_Frame.description>Can launch nuclear missle</ra2_SovietSuperWeapon_Frame.description>
-  
 </LanguageData>

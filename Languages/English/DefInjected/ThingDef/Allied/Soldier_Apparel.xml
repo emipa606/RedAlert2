@@ -1,61 +1,38 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-
-  <ra2_Hat_Sniper.label>Sniper's Helmet</ra2_Hat_Sniper.label>
-  <ra2_Hat_Sniper.description>Sniper's standard clothes</ra2_Hat_Sniper.description>
-
-  <ra2_Parka_Sniper.label>Sniper's Suit (top)</ra2_Parka_Sniper.label>
-  <ra2_Parka_Sniper.description>Sniper's standard clothes</ra2_Parka_Sniper.description>
-
-  <ra2_Pants_Sniper.label>Sniper's Suit (below)</ra2_Pants_Sniper.label>
-  <ra2_Pants_Sniper.description>Sniper's standard clothes</ra2_Pants_Sniper.description>
-  
-  
-  <ra2_Hat_GI.label>G.I.'s Hat</ra2_Hat_GI.label>
-  <ra2_Hat_GI.description>G.I.'s standard Hat。</ra2_Hat_GI.description>
-
-  <ra2_Parka_GI.label>G.I.'s coat</ra2_Parka_GI.label>
-  <ra2_Parka_GI.description>G.I.'s standard clothes</ra2_Parka_GI.description>
-  
-  <ra2_Shirt_GI.label>G.I.'s clothes</ra2_Shirt_GI.label>
-  <ra2_Shirt_GI.description>G.I.'s standard clothes</ra2_Shirt_GI.description>
-
-  <ra2_Pants_GI.label>G.I.'s pants</ra2_Pants_GI.label>
-  <ra2_Pants_GI.description>G.I.'s standard clothes</ra2_Pants_GI.description>
-  
-  
-  <ra2_Hat_SiegeCadre.label>Siege Cadre's Helmet</ra2_Hat_SiegeCadre.label>
-  <ra2_Hat_SiegeCadre.description>Siege Cadre's standard Helmet。</ra2_Hat_SiegeCadre.description>
-  
-  <ra2_Parka_SiegeCadre.label>Siege Cadre's Suit (top)</ra2_Parka_SiegeCadre.label>
-  <ra2_Parka_SiegeCadre.description>Siege Cadre's standard clothes</ra2_Parka_SiegeCadre.description>
-
-  <ra2_Pants_SiegeCadre.label>Siege Cadre's Suit (below)</ra2_Pants_SiegeCadre.label>
-  <ra2_Pants_SiegeCadre.description>Siege Cadre's standard clothes</ra2_Pants_SiegeCadre.description>
-  
-  
-  <ra2_Hat_Engineer_A.label>Engineer's Hat</ra2_Hat_Engineer_A.label>
-  <ra2_Hat_Engineer_A.description>Engineer's standard Hat。</ra2_Hat_Engineer_A.description>
-
-  <ra2_Parka_Engineer_A.label>Engineer's coat</ra2_Parka_Engineer_A.label>
-  <ra2_Parka_Engineer_A.description>Engineer's standard clothes</ra2_Parka_Engineer_A.description>
-  
-  <ra2_Shirt_Engineer_A.label>Engineer's clothes</ra2_Shirt_Engineer_A.label>
-  <ra2_Shirt_Engineer_A.description>Engineer's standard clothes</ra2_Shirt_Engineer_A.description>
-
-  <ra2_Pants_Engineer_A.label>Engineer's pants</ra2_Pants_Engineer_A.label>
-  <ra2_Pants_Engineer_A.description>Engineer's standard clothes</ra2_Pants_Engineer_A.description>
-  
-  <ra2_Hat_Chrono.label>Chrono Legionnaire's Helmet</ra2_Hat_Chrono.label>
-  <ra2_Hat_Chrono.description>Chrono Legionnaire's standard Helmet。</ra2_Hat_Chrono.description>
-  
-  <ra2_Parka_Chrono.label>Chrono Legionnaire's Suit (top)</ra2_Parka_Chrono.label>
-  <ra2_Parka_Chrono.description>Chrono Legionnaire's standard clothes</ra2_Parka_Chrono.description>
-
-  <ra2_Pants_Chrono.label>Chrono Legionnaire's Suit (below)</ra2_Pants_Chrono.label>
-  <ra2_Pants_Chrono.description>Chrono Legionnaire's standard clothes</ra2_Pants_Chrono.description>
-  
-  
-  
+  <!--<ra2_Hat_Sniper.label>Sniper's Helmet</ra2_Hat_Sniper.label>-->
+  <!--<ra2_Hat_Sniper.description>Sniper's standard clothes</ra2_Hat_Sniper.description>-->
+  <!--<ra2_Parka_Sniper.label>Sniper's Suit (top)</ra2_Parka_Sniper.label>-->
+  <!--<ra2_Parka_Sniper.description>Sniper's standard clothes</ra2_Parka_Sniper.description>-->
+  <!--<ra2_Pants_Sniper.label>Sniper's Suit (below)</ra2_Pants_Sniper.label>-->
+  <!--<ra2_Pants_Sniper.description>Sniper's standard clothes</ra2_Pants_Sniper.description>-->
+  <!--<ra2_Hat_GI.label>G.I.'s Hat</ra2_Hat_GI.label>-->
+  <!--<ra2_Hat_GI.description>G.I.'s standard Hat。</ra2_Hat_GI.description>-->
+  <!--<ra2_Parka_GI.label>G.I.'s coat</ra2_Parka_GI.label>-->
+  <!--<ra2_Parka_GI.description>G.I.'s standard clothes</ra2_Parka_GI.description>-->
+  <!--<ra2_Shirt_GI.label>G.I.'s clothes</ra2_Shirt_GI.label>-->
+  <!--<ra2_Shirt_GI.description>G.I.'s standard clothes</ra2_Shirt_GI.description>-->
+  <!--<ra2_Pants_GI.label>G.I.'s pants</ra2_Pants_GI.label>-->
+  <!--<ra2_Pants_GI.description>G.I.'s standard clothes</ra2_Pants_GI.description>-->
+  <!--<ra2_Hat_SiegeCadre.label>Siege Cadre's Helmet</ra2_Hat_SiegeCadre.label>-->
+  <!--<ra2_Hat_SiegeCadre.description>Siege Cadre's standard Helmet。</ra2_Hat_SiegeCadre.description>-->
+  <!--<ra2_Parka_SiegeCadre.label>Siege Cadre's Suit (top)</ra2_Parka_SiegeCadre.label>-->
+  <!--<ra2_Parka_SiegeCadre.description>Siege Cadre's standard clothes</ra2_Parka_SiegeCadre.description>-->
+  <!--<ra2_Pants_SiegeCadre.label>Siege Cadre's Suit (below)</ra2_Pants_SiegeCadre.label>-->
+  <!--<ra2_Pants_SiegeCadre.description>Siege Cadre's standard clothes</ra2_Pants_SiegeCadre.description>-->
+  <!--<ra2_Hat_Engineer_A.label>Engineer's Hat</ra2_Hat_Engineer_A.label>-->
+  <!--<ra2_Hat_Engineer_A.description>Engineer's standard Hat。</ra2_Hat_Engineer_A.description>-->
+  <!--<ra2_Parka_Engineer_A.label>Engineer's coat</ra2_Parka_Engineer_A.label>-->
+  <!--<ra2_Parka_Engineer_A.description>Engineer's standard clothes</ra2_Parka_Engineer_A.description>-->
+  <!--<ra2_Shirt_Engineer_A.label>Engineer's clothes</ra2_Shirt_Engineer_A.label>-->
+  <!--<ra2_Shirt_Engineer_A.description>Engineer's standard clothes</ra2_Shirt_Engineer_A.description>-->
+  <!--<ra2_Pants_Engineer_A.label>Engineer's pants</ra2_Pants_Engineer_A.label>-->
+  <!--<ra2_Pants_Engineer_A.description>Engineer's standard clothes</ra2_Pants_Engineer_A.description>-->
+  <!--<ra2_Hat_Chrono.label>Chrono Legionnaire's Helmet</ra2_Hat_Chrono.label>-->
+  <!--<ra2_Hat_Chrono.description>Chrono Legionnaire's standard Helmet。</ra2_Hat_Chrono.description>-->
+  <!--<ra2_Parka_Chrono.label>Chrono Legionnaire's Suit (top)</ra2_Parka_Chrono.label>-->
+  <!--<ra2_Parka_Chrono.description>Chrono Legionnaire's standard clothes</ra2_Parka_Chrono.description>-->
+  <!--<ra2_Pants_Chrono.label>Chrono Legionnaire's Suit (below)</ra2_Pants_Chrono.label>-->
+  <!--<ra2_Pants_Chrono.description>Chrono Legionnaire's standard clothes</ra2_Pants_Chrono.description>-->
 
 </LanguageData>

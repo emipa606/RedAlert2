@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-
   <ThingDef ParentName="BaseBullet">
     <defName>ra2_Bullet_Initiate</defName>
     <label>Initiate bullet</label>
@@ -15,15 +14,12 @@
       <speed>200</speed>
     </projectile>
   </ThingDef>
-
-
-
- <ThingDef ParentName="ra2_CanGetGunBase">
+  <ThingDef ParentName="ra2_CanGetGunBase">
     <defName>ra2_Gun_Initiate</defName>
     <label>Initiate gun</label>
     <graphicData>
       <texPath>ra2/Things/Weapon/Yuri/Soldier/InitiateGun</texPath>
-	  <drawSize>(0.1,0.1)</drawSize>
+      <drawSize>(0.1,0.1)</drawSize>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <menuHidden>true</menuHidden>
@@ -32,8 +28,8 @@
     <destroyOnDrop>true</destroyOnDrop>
     <tradeability>None</tradeability>
     <statBases>
-	  <SellPriceFactor>0.01</SellPriceFactor>
-	  <MaxHitPoints>188</MaxHitPoints>
+      <SellPriceFactor>0.01</SellPriceFactor>
+      <MaxHitPoints>188</MaxHitPoints>
       <MarketValue>150</MarketValue>
       <Mass>0.6</Mass>
       <AccuracyTouch>0.80</AccuracyTouch>
@@ -79,7 +75,6 @@
       </li>
     </tools>
   </ThingDef>
-  
   <ThingDef ParentName="HatBase">
     <defName>ra2_Hat_Initiate</defName>
     <label>Initiate hat</label>
@@ -105,7 +100,7 @@
         <li>Overhead</li>
       </layers>
       <tags>
-	    <li>ra2_Hat_Initiate</li>
+        <li>ra2_Hat_Initiate</li>
       </tags>
       <defaultOutfitTags>
         <li>Initiate</li>
@@ -120,59 +115,54 @@
       </options>
     </colorGenerator>
   </ThingDef>
-  
-  
-  	<ThingDef ParentName="Ra2ClothBase">
-		<defName>ra2_Parka_Initiate</defName>
-		<label>Initiate parka</label>
-		<description>A thick parka for staying warm in even the coldest of temperatures.</description>
-		<graphicData>
-			<texPath>Things/Pawn/Humanlike/Apparel/PowerArmor/PowerArmor</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<statBases>
-			<MaxHitPoints>180</MaxHitPoints>
-			<WorkToMake>24000</WorkToMake>
-			<Mass>3.8</Mass>
-			<ArmorRating_Sharp>0.03</ArmorRating_Sharp>
-			<ArmorRating_Heat>0.03</ArmorRating_Heat>
-			<Insulation_Cold>40</Insulation_Cold>
-			<Insulation_Heat>3</Insulation_Heat>
-		</statBases>
-		<equippedStatOffsets>
-			<MoveSpeed>-0.05</MoveSpeed>
-			<WorkSpeedGlobal>-0.20</WorkSpeedGlobal>
-		</equippedStatOffsets>
-		<apparel>
-			<bodyPartGroups>
-				<li>Torso</li>
-				<li>Shoulders</li>
-				<li>Arms</li>
-			</bodyPartGroups>
-			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/PowerArmor/PowerArmor</wornGraphicPath>
-			<layers>
-				<li>Shell</li>
-			</layers>
-			<tags>
-				<li>ra2_Parka_Initiate</li>
-			</tags>
-			<defaultOutfitTags>
-				<li>Initiate</li>
-			</defaultOutfitTags>
-		</apparel>
-		<colorGenerator Class="ColorGenerator_Options">
-			<options>
-				<li>
-					<weight>100</weight>
-					<only>RGBA(0.5,0.5,0.5,1)</only>
-				</li>
-			</options>
-		</colorGenerator>
-	</ThingDef>
-	
-  
-  
-	<ThingDef ParentName="Ra2ClothBase">
+  <ThingDef ParentName="Ra2ClothBase">
+    <defName>ra2_Parka_Initiate</defName>
+    <label>Initiate parka</label>
+    <description>A thick parka for staying warm in even the coldest of temperatures.</description>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/PowerArmor/PowerArmor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>180</MaxHitPoints>
+      <WorkToMake>24000</WorkToMake>
+      <Mass>3.8</Mass>
+      <ArmorRating_Sharp>0.03</ArmorRating_Sharp>
+      <ArmorRating_Heat>0.03</ArmorRating_Heat>
+      <Insulation_Cold>40</Insulation_Cold>
+      <Insulation_Heat>3</Insulation_Heat>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.05</MoveSpeed>
+      <WorkSpeedGlobal>-0.20</WorkSpeedGlobal>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/PowerArmor/PowerArmor</wornGraphicPath>
+      <layers>
+        <li>Shell</li>
+      </layers>
+      <tags>
+        <li>ra2_Parka_Initiate</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Initiate</li>
+      </defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>100</weight>
+          <only>RGBA(0.5,0.5,0.5,1)</only>
+        </li>
+      </options>
+    </colorGenerator>
+  </ThingDef>
+  <ThingDef ParentName="Ra2ClothBase">
     <defName>ra2_Pants_Initiate</defName>
     <label>Initiate pants</label>
     <description>A simple set of pants.</description>
@@ -180,11 +170,9 @@
       <texPath>Things/Pawn/Humanlike/Apparel/Pants/Pants</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-		
-    
     <statBases>
-			<MaxHitPoints>100</MaxHitPoints>
-			<WorkToMake>8500</WorkToMake>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToMake>8500</WorkToMake>
       <Mass>0.5</Mass>
       <ArmorRating_Blunt>0.03</ArmorRating_Blunt>
       <ArmorRating_Sharp>0.03</ArmorRating_Sharp>
@@ -204,14 +192,13 @@
         <li>Initiate</li>
       </defaultOutfitTags>
     </apparel>
-		<colorGenerator Class="ColorGenerator_Options">
-			<options>
-				<li>
-					<weight>100</weight>
-					<only>RGBA(0.74,0.6,0.41,1)</only>
-				</li>
-			</options>
-		</colorGenerator>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>100</weight>
+          <only>RGBA(0.74,0.6,0.41,1)</only>
+        </li>
+      </options>
+    </colorGenerator>
   </ThingDef>
-  
 </Defs>

@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<MapGenerator.MapGeneratorBaseBlueprintDef Name="SovietFactionT3">
-		<defName>SovietFactionT3</defName>
-		<createdBy>AKreedz</createdBy>
-		<techLevelRequired>Industrial</techLevelRequired>
-		<factionDef>ra2_Soviet</factionDef>
-		<chance>60</chance>
-		<size>(51, 51)</size>
-		<canHaveHoles>False</canHaveHoles>
-		<createTrigger>False</createTrigger>
-		<buildingData>
+  <MapGenerator.MapGeneratorBaseBlueprintDef Name="SovietFactionT3">
+    <defName>SovietFactionT3</defName>
+    <createdBy>AKreedz</createdBy>
+    <techLevelRequired>Industrial</techLevelRequired>
+    <factionDef>ra2_Soviet</factionDef>
+    <chance>60</chance>
+    <size>(51, 51)</size>
+    <canHaveHoles>False</canHaveHoles>
+    <createTrigger>False</createTrigger>
+    <buildingData>
 aaaaaaaaeaaaaaaaaaaaaaaea.aaaaaaaaaaaaaaaeaaaaaaaaa
 a.................................................a
 a.................................................a
@@ -62,99 +62,99 @@ a....t.......a...............................t....a
 a............a....................................a
 aaaaaaaaaeaaaaaaaaaaaaaaa.eaaaaaaaaaaaaeaaaaaaaaaaa
 </buildingData>
-		<buildingLegend>
-			<li>
-				<key>a</key>
-				<value>Wall</value>
-			</li>
-			<li>
-				<key>z</key>
-				<value>PowerConduit</value>
-			</li>
-			<li>
-				<key>b</key>
-				<value>Autodoor</value>
-			</li>
-			<li>
-				<key>c</key>
-				<value>ra2_SovietGenerator_Nuclear</value>
-			</li>
-			<li>
-				<key>d</key>
-				<value>ra2_Pillbox</value>
-			</li>
-			<li>
-				<key>e</key>
-				<value>Autodoor</value>
-			</li>
-			<li>
-				<key>f</key>
-				<value>ra2_Tesla</value>
-			</li>
-			<li>
-				<key>g</key>
-				<value>Sandbags</value>
-			</li>
-			<li>
-				<key>h</key>
-				<value>Battery</value>
-			</li>
-			<li>
-				<key>i</key>
-				<value>ra2_EarthHammer</value>
-			</li>
-			<li>
-				<key>j</key>
-				<value>Door</value>
-			</li>
-			<li>
-				<key>t</key>
-				<value>ra2_SovietAirDefense</value>
-			</li>
-		</buildingLegend>
-		<rotationLegend>
-			<li>
-				<key>a</key>
-				<value>0</value>
-			</li>
-			<li>
-				<key>b</key>
-				<value>1</value>
-			</li>
-			<li>
-				<key>c</key>
-				<value>0</value>
-			</li>
-			<li>
-				<key>d</key>
-				<value>0</value>
-			</li>
-			<li>
-				<key>e</key>
-				<value>0</value>
-			</li>
-			<li>
-				<key>f</key>
-				<value>0</value>
-			</li>
-			<li>
-				<key>g</key>
-				<value>0</value>
-			</li>
-			<li>
-				<key>h</key>
-				<value>0</value>
-			</li>
-			<li>
-				<key>i</key>
-				<value>0</value>
-			</li>
-			<li>
-				<key>j</key>
-				<value>0</value>
-			</li>
-		</rotationLegend>
-		<floorData>
+    <buildingLegend>
+      <li>
+        <key>a</key>
+        <value>Wall</value>
+      </li>
+      <li>
+        <key>z</key>
+        <value>PowerConduit</value>
+      </li>
+      <li>
+        <key>b</key>
+        <value>Autodoor</value>
+      </li>
+      <li>
+        <key>c</key>
+        <value>ra2_SovietGenerator_Nuclear</value>
+      </li>
+      <li>
+        <key>d</key>
+        <value>ra2_Pillbox</value>
+      </li>
+      <li>
+        <key>e</key>
+        <value>Autodoor</value>
+      </li>
+      <li>
+        <key>f</key>
+        <value>ra2_Tesla</value>
+      </li>
+      <li>
+        <key>g</key>
+        <value>Sandbags</value>
+      </li>
+      <li>
+        <key>h</key>
+        <value>Battery</value>
+      </li>
+      <li>
+        <key>i</key>
+        <value>ra2_EarthHammer</value>
+      </li>
+      <li>
+        <key>j</key>
+        <value>Door</value>
+      </li>
+      <li>
+        <key>t</key>
+        <value>ra2_SovietAirDefense</value>
+      </li>
+    </buildingLegend>
+    <rotationLegend>
+      <li>
+        <key>a</key>
+        <value>0</value>
+      </li>
+      <li>
+        <key>b</key>
+        <value>1</value>
+      </li>
+      <li>
+        <key>c</key>
+        <value>0</value>
+      </li>
+      <li>
+        <key>d</key>
+        <value>0</value>
+      </li>
+      <li>
+        <key>e</key>
+        <value>0</value>
+      </li>
+      <li>
+        <key>f</key>
+        <value>0</value>
+      </li>
+      <li>
+        <key>g</key>
+        <value>0</value>
+      </li>
+      <li>
+        <key>h</key>
+        <value>0</value>
+      </li>
+      <li>
+        <key>i</key>
+        <value>0</value>
+      </li>
+      <li>
+        <key>j</key>
+        <value>0</value>
+      </li>
+    </rotationLegend>
+    <floorData>
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
@@ -207,17 +207,17 @@ aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 </floorData>
-		<floorLegend>
-			<li>
-				<key>a</key>
-				<value>TileSandstone</value>
-			</li>
-			<li>
-				<key>b</key>
-				<value>SterileTile</value>
-			</li>
-		</floorLegend>
-		<itemData>
+    <floorLegend>
+      <li>
+        <key>a</key>
+        <value>TileSandstone</value>
+      </li>
+      <li>
+        <key>b</key>
+        <value>SterileTile</value>
+      </li>
+    </floorLegend>
+    <itemData>
 aaaaaaaaeaaaaaaaaaaaaaaeaaaaaaaaaaaaaaaaaeaaaaaaaaa
 a.................................................a
 a.................................................a
@@ -270,38 +270,38 @@ a......uuuu..a....................................a
 a..tttt......a....................................a
 aaaaaaaaaeaaaaaaaaaaaaaaaaeaaaaaaaaaaaaeaaaaaaaaaaa
 </itemData>
-		<itemLegend>
-			<li>
-				<key>z</key>
-				<value>ra2_SovietTechCore</value>
-			</li>
-			<li>
-				<key>x</key>
-				<value>ra2_SovietApoGunItem</value>
-			</li>
-			<li>
-				<key>y</key>
-				<value>TechprofSubpersonaCore</value>
-			</li>
-			<li>
-				<key>w</key>
-				<value>Silver</value>
-			</li>
-			<li>
-				<key>v</key>
-				<value>Gold</value>
-			</li>
-			<li>
-				<key>u</key>
-				<value>Steel</value>
-			</li>
-			<li>
-				<key>t</key>
-				<value>Chemfuel</value>
-			</li>
-		</itemLegend>
-		<itemSpawnChance>100</itemSpawnChance>
-		<pawnData>
+    <itemLegend>
+      <li>
+        <key>z</key>
+        <value>ra2_SovietTechCore</value>
+      </li>
+      <li>
+        <key>x</key>
+        <value>ra2_SovietApoGunItem</value>
+      </li>
+      <li>
+        <key>y</key>
+        <value>TechprofSubpersonaCore</value>
+      </li>
+      <li>
+        <key>w</key>
+        <value>Silver</value>
+      </li>
+      <li>
+        <key>v</key>
+        <value>Gold</value>
+      </li>
+      <li>
+        <key>u</key>
+        <value>Steel</value>
+      </li>
+      <li>
+        <key>t</key>
+        <value>Chemfuel</value>
+      </li>
+    </itemLegend>
+    <itemSpawnChance>100</itemSpawnChance>
+    <pawnData>
 aaaaaaaaeaaaaaaaaaaaaaaeaaaaaaaaaaaaaaaaaeaaaaaaaaa
 a.................................................a
 a.................................................a
@@ -354,11 +354,11 @@ a............a....................................a
 a............a....................................a
 aaaaaaaaaeaaaaaaaaaaaaaaaaeaaaaaaaaaaaaeaaaaaaaaaaa
 </pawnData>
-		<pawnLegend>
-			<li>
-				<key>x</key>
-				<value>ra2_SovietDesolator</value>
-			</li>
-		</pawnLegend>
-	</MapGenerator.MapGeneratorBaseBlueprintDef>
+    <pawnLegend>
+      <li>
+        <key>x</key>
+        <value>ra2_SovietDesolator</value>
+      </li>
+    </pawnLegend>
+  </MapGenerator.MapGeneratorBaseBlueprintDef>
 </Defs>

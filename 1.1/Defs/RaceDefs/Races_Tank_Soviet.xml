@@ -1,7 +1,5 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-
-
   <ThingDef ParentName="ra2_BaseTank">
     <defName>ra2_Tank_Rhino</defName>
     <label>rhino heavy tank</label>
@@ -50,11 +48,9 @@
       <Steel>240</Steel>
       <Plasteel>150</Plasteel>
       <ComponentIndustrial>6</ComponentIndustrial>
-	  <Chemfuel>600</Chemfuel>
+      <Chemfuel>600</Chemfuel>
     </butcherProducts>
   </ThingDef>
-
-
   <ThingDef ParentName="ra2_BaseTank">
     <defName>ra2_Tank_Apo</defName>
     <label>apocalypse tank</label>
@@ -103,9 +99,8 @@
       <Steel>480</Steel>
       <Plasteel>300</Plasteel>
       <ComponentIndustrial>20</ComponentIndustrial>
-	  <ra2_SovietApoGunItem>1</ra2_SovietApoGunItem>
-	  <Chemfuel>2000</Chemfuel>
+      <ra2_SovietApoGunItem>1</ra2_SovietApoGunItem>
+      <Chemfuel>2000</Chemfuel>
     </butcherProducts>
   </ThingDef>
-  
 </Defs>

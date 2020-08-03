@@ -1,24 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-  <ra2_RhinoTank.label>rhino tank</ra2_RhinoTank.label>
-  <ra2_RhinoTank.labelPlural>rhino tank</ra2_RhinoTank.labelPlural>
-  
-  <ra2_ApoTank.label>apocalypse tank</ra2_ApoTank.label>
-  <ra2_ApoTank.labelPlural>apocalypse tank</ra2_ApoTank.labelPlural>
-
   <ra2_SovietConscript.label>conscript</ra2_SovietConscript.label>
   <ra2_SovietConscript.labelPlural>conscript</ra2_SovietConscript.labelPlural>
-  
-  <ra2_SovietEngineer.label>Engineer</ra2_SovietEngineer.label>
-  <ra2_SovietEngineer.labelPlural>Engineer</ra2_SovietEngineer.labelPlural>
 
   <ra2_SovietTeslaTrooper.label>tesla trooper</ra2_SovietTeslaTrooper.label>
   <ra2_SovietTeslaTrooper.labelPlural>tesla trooper</ra2_SovietTeslaTrooper.labelPlural>
-  
+
   <ra2_SovietDesolator.label>desolator</ra2_SovietDesolator.label>
   <ra2_SovietDesolator.labelPlural>desolator</ra2_SovietDesolator.labelPlural>
-  
 
+  <ra2_SovietEngineer.label>Engineer</ra2_SovietEngineer.label>
+  <ra2_SovietEngineer.labelPlural>Engineer</ra2_SovietEngineer.labelPlural>
+
+
+  <!--<ra2_RhinoTank.label>rhino tank</ra2_RhinoTank.label>-->
+  <!--<ra2_RhinoTank.labelPlural>rhino tank</ra2_RhinoTank.labelPlural>-->
+  <!--<ra2_ApoTank.label>apocalypse tank</ra2_ApoTank.label>-->
+  <!--<ra2_ApoTank.labelPlural>apocalypse tank</ra2_ApoTank.labelPlural>-->
 
 </LanguageData>

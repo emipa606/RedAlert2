@@ -1,21 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-
-
   <ra2_YuriInitiate.label>initiate</ra2_YuriInitiate.label>
   <ra2_YuriInitiate.labelPlural>initiate</ra2_YuriInitiate.labelPlural>
-  
-  <ra2_YuriEngineer.label>Engineer</ra2_YuriEngineer.label>
-  <ra2_YuriEngineer.labelPlural>Engineer</ra2_YuriEngineer.labelPlural>
-  
+
   <ra2_YuriBrute.label>Brute</ra2_YuriBrute.label>
   <ra2_YuriBrute.labelPlural>Brute</ra2_YuriBrute.labelPlural>
+  <ra2_YuriBrute.labelMale>male brute</ra2_YuriBrute.labelMale>
+  <ra2_YuriBrute.labelMalePlural>male brutes</ra2_YuriBrute.labelMalePlural>
+  <ra2_YuriBrute.labelFemale>female brute</ra2_YuriBrute.labelFemale>
+  <ra2_YuriBrute.labelFemalePlural>female brutes</ra2_YuriBrute.labelFemalePlural>
 
   <ra2_YuriYuri.label>yuri clone</ra2_YuriYuri.label>
   <ra2_YuriYuri.labelPlural>yuri clone</ra2_YuriYuri.labelPlural>
-  
-  
+
+  <ra2_YuriEngineer.label>Engineer</ra2_YuriEngineer.label>
+  <ra2_YuriEngineer.labelPlural>Engineer</ra2_YuriEngineer.labelPlural>
 
 
 </LanguageData>

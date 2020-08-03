@@ -1,6 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-
   <ResearchProjectDef>
     <tab>RA2</tab>
     <defName>Ra2AlliedBarracks</defName>
@@ -15,10 +14,9 @@
     <researchViewY>1.5</researchViewY>
     <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
     <requiredResearchFacilities>
-	  <li>ra2_AlliedTech</li>
+      <li>ra2_AlliedTech</li>
     </requiredResearchFacilities>
-  </ResearchProjectDef>  
-  
+  </ResearchProjectDef>
   <ResearchProjectDef>
     <tab>RA2</tab>
     <defName>Ra2AlliedPillbox</defName>
@@ -33,12 +31,9 @@
     <researchViewY>2</researchViewY>
     <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
     <requiredResearchFacilities>
-	  <li>ra2_AlliedTech</li>
+      <li>ra2_AlliedTech</li>
     </requiredResearchFacilities>
   </ResearchProjectDef>
-  
-
-  
   <ResearchProjectDef>
     <tab>RA2</tab>
     <defName>Ra2AlliedADA</defName>
@@ -53,10 +48,9 @@
     <researchViewY>1.5</researchViewY>
     <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
     <requiredResearchFacilities>
-	  <li>ra2_AlliedTech</li>
+      <li>ra2_AlliedTech</li>
     </requiredResearchFacilities>
   </ResearchProjectDef>
-  
   <ResearchProjectDef>
     <tab>RA2</tab>
     <defName>Ra2AlliedPrism</defName>
@@ -71,10 +65,9 @@
     <researchViewY>2</researchViewY>
     <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
     <requiredResearchFacilities>
-	  <li>ra2_AlliedTech</li>
+      <li>ra2_AlliedTech</li>
     </requiredResearchFacilities>
   </ResearchProjectDef>
-  
   <ResearchProjectDef>
     <tab>RA2</tab>
     <defName>Ra2AlliedGrandCannon</defName>
@@ -89,10 +82,9 @@
     <researchViewY>2</researchViewY>
     <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
     <requiredResearchFacilities>
-	  <li>ra2_AlliedTech</li>
+      <li>ra2_AlliedTech</li>
     </requiredResearchFacilities>
   </ResearchProjectDef>
-  
   <ResearchProjectDef>
     <tab>RA2</tab>
     <defName>Ra2AlliedWeatherTech</defName>
@@ -107,10 +99,9 @@
     <researchViewY>1.5</researchViewY>
     <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
     <requiredResearchFacilities>
-	  <li>ra2_AlliedTech</li>
+      <li>ra2_AlliedTech</li>
     </requiredResearchFacilities>
   </ResearchProjectDef>
-  
   <ResearchProjectDef>
     <tab>RA2</tab>
     <defName>Ra2AlliedWeatherMachine</defName>
@@ -125,15 +116,9 @@
     <researchViewY>1.5</researchViewY>
     <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
     <requiredResearchFacilities>
-	  <li>ra2_AlliedTech</li>
+      <li>ra2_AlliedTech</li>
     </requiredResearchFacilities>
   </ResearchProjectDef>
-  
-  
-  
-  
-  
-  
   <ResearchProjectDef>
     <tab>RA2</tab>
     <defName>Ra2AlliedTanya</defName>
@@ -145,7 +130,4 @@
     <researchViewY>2.5</researchViewY>
     <requiredResearchBuilding>SteamGeyser</requiredResearchBuilding>
   </ResearchProjectDef>
-  
-
-  
 </Defs>

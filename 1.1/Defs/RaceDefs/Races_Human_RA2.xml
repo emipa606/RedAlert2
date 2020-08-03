@@ -1,6 +1,5 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-
   <ThingDef ParentName="BasePawn">
     <defName>ra2Human</defName>
     <label>ra2human</label>
@@ -141,5 +140,4 @@
       </hediffGiverSets>
     </race>
   </ThingDef>
-
 </Defs>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <ra2_Gun_Brute.label>Monster Fist</ra2_Gun_Brute.label>
+  <ra2_Gun_Brute.description>Yuri Brute's powerful fist</ra2_Gun_Brute.description>
+  <ra2_Gun_Brute.tools.0.label>barrel</ra2_Gun_Brute.tools.0.label>
+
+  <ra2_Pants_Brute.label>Brutes Suit (below)</ra2_Pants_Brute.label>
+  <ra2_Pants_Brute.description>Brutes standard clothes</ra2_Pants_Brute.description>
+
+
+</LanguageData>

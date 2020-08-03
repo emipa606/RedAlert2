@@ -1,17 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-
-
   <!-- Injuries -->
+  <!--<Hediffs_DesolatorGun.label>Radiation injury</Hediffs_DesolatorGun.label>-->
+  <!--<Hediffs_DesolatorGun.comps.0.labelTendedWell>bandaged</Hediffs_DesolatorGun.comps.0.labelTendedWell>-->
+  <!--<Hediffs_DesolatorGun.comps.0.labelTendedWellInner>bandaged</Hediffs_DesolatorGun.comps.0.labelTendedWellInner>-->
+  <!--<Hediffs_DesolatorGun.comps.0.labelSolidTendedWell>bandaged</Hediffs_DesolatorGun.comps.0.labelSolidTendedWell>-->
+  <!--<Hediffs_DesolatorGun.comps.2.oldLabel>bandaged</Hediffs_DesolatorGun.comps.2.oldLabel>-->
+  <!--<Hediffs_DesolatorGun.injuryProps.destroyedLabel>bandaged</Hediffs_DesolatorGun.injuryProps.destroyedLabel>-->
+  <!--<Hediffs_DesolatorGun.injuryProps.destroyedOutLabel>bandaged</Hediffs_DesolatorGun.injuryProps.destroyedOutLabel>-->
+  <!--<Hediffs_DownToDie.label>die if downed</Hediffs_DownToDie.label>-->
 
-  <Hediffs_DesolatorGun.label>Radiation injury</Hediffs_DesolatorGun.label>
-  <Hediffs_DesolatorGun.comps.0.labelTendedWell>bandaged</Hediffs_DesolatorGun.comps.0.labelTendedWell>
-  <Hediffs_DesolatorGun.comps.0.labelTendedWellInner>bandaged</Hediffs_DesolatorGun.comps.0.labelTendedWellInner>
-  <Hediffs_DesolatorGun.comps.0.labelSolidTendedWell>bandaged</Hediffs_DesolatorGun.comps.0.labelSolidTendedWell>
-  <Hediffs_DesolatorGun.comps.2.oldLabel>bandaged</Hediffs_DesolatorGun.comps.2.oldLabel>
-  <Hediffs_DesolatorGun.injuryProps.destroyedLabel>bandaged</Hediffs_DesolatorGun.injuryProps.destroyedLabel>
-  <Hediffs_DesolatorGun.injuryProps.destroyedOutLabel>bandaged</Hediffs_DesolatorGun.injuryProps.destroyedOutLabel>
-
-  <Hediffs_DownToDie.label>die if downed</Hediffs_DownToDie.label>
-  
 </LanguageData>

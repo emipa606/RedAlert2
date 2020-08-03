@@ -1,15 +1,11 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-
   <BodyPartDef ParentName="MechanicalCentipedeRingBase">
     <defName>ra2_tankarmorcore</defName>
     <label>tank armor core</label>
     <hitPoints>125</hitPoints>
   </BodyPartDef>
-
-
-  
-   <BodyPartDef>
+  <BodyPartDef>
     <defName>ra2_tankarmor</defName>
     <label>tank armor</label>
     <hitPoints>150</hitPoints>
@@ -19,9 +15,6 @@
     <bleedRate>0</bleedRate>
     <alive>false</alive>
   </BodyPartDef>
-  
-  
-  
   <BodyPartDef>
     <defName>ra2_tankinnerarmor</defName>
     <label>tank inner armor</label>
@@ -32,9 +25,6 @@
     <bleedRate>0</bleedRate>
     <alive>false</alive>
   </BodyPartDef>
-  
-  
-  
   <BodyPartDef>
     <defName>ra2_tankcore</defName>
     <label>tank core</label>
@@ -50,7 +40,4 @@
       <li>BloodFiltrationSource</li>
     </tags>
   </BodyPartDef>
-
-
-  
 </Defs>

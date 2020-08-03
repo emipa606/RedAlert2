@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <ra2_AlliedAirDefense.label>Patriot missile</ra2_AlliedAirDefense.label>
+  <ra2_AlliedAirDefense.description>The basic defense architecture of the Allied,can shot down mortar shell and drop pod.</ra2_AlliedAirDefense.description>
+
+  <ra2_SovietAirDefense.label>Flak Cannon</ra2_SovietAirDefense.label>
+  <ra2_SovietAirDefense.description>The basic defense architecture of the Soviet Union,can shot down mortar shell and drop pod.</ra2_SovietAirDefense.description>
+
+
+</LanguageData>

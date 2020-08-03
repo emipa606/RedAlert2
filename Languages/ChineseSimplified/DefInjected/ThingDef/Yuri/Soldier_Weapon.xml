@@ -1,19 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-
   <ra2_Bullet_Initiate.label>新兵子弹</ra2_Bullet_Initiate.label>
-
   <ra2_Gun_Initiate.label>尤里新兵枪</ra2_Gun_Initiate.label>
   <ra2_Gun_Initiate.description>可以制造火焰.</ra2_Gun_Initiate.description>
-  
-
-
   <ra2_Gun_Brute.label>猛兽铁拳</ra2_Gun_Brute.label>
   <ra2_Gun_Brute.description>尤里狂兽人的铁拳</ra2_Gun_Brute.description>
-  
-
-
   <ra2_Gun_Yuri.label>心灵控制者</ra2_Gun_Yuri.label>
   <ra2_Gun_Yuri.description>可以控制生物</ra2_Gun_Yuri.description>
-  
 </LanguageData>

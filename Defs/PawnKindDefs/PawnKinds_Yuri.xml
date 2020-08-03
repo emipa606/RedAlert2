@@ -1,13 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <PawnKindDef Name="ra2_YuriHumanBase" Abstract="True">
-    
     <defaultFactionType>ra2_Yuri</defaultFactionType>
     <backstoryCategories>
-	   <li>Civil</li>
-	</backstoryCategories>
+      <li>Civil</li>
+    </backstoryCategories>
     <chemicalAddictionChance>0</chemicalAddictionChance>
-	<baseRecruitDifficulty>1.0</baseRecruitDifficulty>
+    <baseRecruitDifficulty>1.0</baseRecruitDifficulty>
     <invNutrition>4.8</invNutrition>
     <itemQuality>Normal</itemQuality>
     <backstoryCryptosleepCommonality>0.25</backstoryCryptosleepCommonality>
@@ -17,7 +16,8 @@
       <max>3.5</max>
     </gearHealthRange>
     <apparelTags>
-      <li></li>
+      <li>
+      </li>
     </apparelTags>
     <apparelMoney>
       <min>20000</min>
@@ -53,10 +53,9 @@
     <aiAvoidCover>true</aiAvoidCover>
     <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
   </PawnKindDef>
-  
   <PawnKindDef ParentName="ra2_YuriHumanBase">
     <defName>ra2_YuriInitiate</defName>
-	<race>Human</race>
+    <race>Human</race>
     <label>Initiate</label>
     <combatPower>10</combatPower>
     <weaponMoney>
@@ -69,14 +68,13 @@
     <apparelRequired>
       <li>ra2_Hat_Initiate</li>
       <li>ra2_Parka_Initiate</li>
-	  <li>ra2_Pants_Initiate</li>
+      <li>ra2_Pants_Initiate</li>
     </apparelRequired>
     <forceNormalGearQuality>true</forceNormalGearQuality>
   </PawnKindDef>
-  
   <PawnKindDef ParentName="ra2_YuriHumanBase">
     <defName>ra2_YuriBrute</defName>
-	<race>Brute</race>
+    <race>Brute</race>
     <label>brute</label>
     <combatPower>60</combatPower>
     <weaponMoney>
@@ -87,11 +85,10 @@
       <li>ra2_Gun_Brute</li>
     </weaponTags>
     <apparelRequired>
-	  <li>ra2_Pants_Brute</li>
+      <li>ra2_Pants_Brute</li>
     </apparelRequired>
     <forceNormalGearQuality>true</forceNormalGearQuality>
   </PawnKindDef>
-
   <PawnKindDef ParentName="ra2_YuriHumanBase">
     <race>Human</race>
     <defName>ra2_YuriYuri</defName>
@@ -106,23 +103,19 @@
     </weaponTags>
     <apparelRequired>
       <li>ra2_Parka_Yuri</li>
-	  <li>ra2_Shirt_Yuri</li>
-	  <li>ra2_Pants_Yuri</li>
+      <li>ra2_Shirt_Yuri</li>
+      <li>ra2_Pants_Yuri</li>
     </apparelRequired>
     <forceNormalGearQuality>true</forceNormalGearQuality>
   </PawnKindDef>
-  
-  
-  
-   
   <PawnKindDef Name="ra2_YuriEngineerBase" Abstract="True">
     <race>Human</race>
     <defaultFactionType>ra2_Yuri</defaultFactionType>
     <backstoryCategories>
-	   <li>Civil</li>
-	</backstoryCategories>
+      <li>Civil</li>
+    </backstoryCategories>
     <chemicalAddictionChance>0</chemicalAddictionChance>
-	<baseRecruitDifficulty>1.0</baseRecruitDifficulty>
+    <baseRecruitDifficulty>1.0</baseRecruitDifficulty>
     <invNutrition>4.8</invNutrition>
     <itemQuality>Normal</itemQuality>
     <backstoryCryptosleepCommonality>0.25</backstoryCryptosleepCommonality>
@@ -132,7 +125,8 @@
       <max>3.5</max>
     </gearHealthRange>
     <apparelTags>
-      <li></li>
+      <li>
+      </li>
     </apparelTags>
     <apparelMoney>
       <min>20000</min>
@@ -151,7 +145,6 @@
       <max>2</max>
     </combatEnhancingDrugsCount>
     <combatEnhancingDrugsChance>0</combatEnhancingDrugsChance>
-
     <inventoryOptions>
       <skipChance>0.5</skipChance>
       <subOptionsChooseOne>
@@ -178,8 +171,6 @@
     <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
     <factionLeader>true</factionLeader>
   </PawnKindDef>
-  
-  
   <PawnKindDef ParentName="ra2_YuriEngineerBase">
     <defName>ra2_YuriEngineer</defName>
     <label>soviet engineer</label>
@@ -195,16 +186,9 @@
     <apparelRequired>
       <li>ra2_Hat_Engineer_Y</li>
       <li>ra2_Parka_Engineer_Y</li>
-	  <li>ra2_Shirt_Engineer_Y</li>
-	  <li>ra2_Pants_Engineer_Y</li>
+      <li>ra2_Shirt_Engineer_Y</li>
+      <li>ra2_Pants_Engineer_Y</li>
     </apparelRequired>
-
     <forceNormalGearQuality>true</forceNormalGearQuality>
   </PawnKindDef>
-  
-  
-  
-  
- 
-
 </Defs>

@@ -4,10 +4,10 @@
     <race>Human</race>
     <defaultFactionType>ra2_Allied</defaultFactionType>
     <backstoryCategories>
-	   <li>Civil</li>
-	</backstoryCategories>
+      <li>Civil</li>
+    </backstoryCategories>
     <chemicalAddictionChance>0</chemicalAddictionChance>
-	<baseRecruitDifficulty>1.0</baseRecruitDifficulty>
+    <baseRecruitDifficulty>1.0</baseRecruitDifficulty>
     <invNutrition>4.8</invNutrition>
     <itemQuality>Normal</itemQuality>
     <backstoryCryptosleepCommonality>0.25</backstoryCryptosleepCommonality>
@@ -17,7 +17,8 @@
       <max>3.5</max>
     </gearHealthRange>
     <apparelTags>
-      <li></li>
+      <li>
+      </li>
     </apparelTags>
     <apparelMoney>
       <min>20000</min>
@@ -28,7 +29,6 @@
       <max>2</max>
     </combatEnhancingDrugsCount>
     <combatEnhancingDrugsChance>0</combatEnhancingDrugsChance>
-
     <inventoryOptions>
       <skipChance>0.7</skipChance>
       <subOptionsChooseOne>
@@ -53,16 +53,7 @@
     </apparelRequired>
     <aiAvoidCover>true</aiAvoidCover>
     <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
-
   </PawnKindDef>
-  
-  
-  
-  
-  
-  
-
-  
   <PawnKindDef ParentName="ra2_AlliedHumanBase">
     <defName>ra2_AlliedGI</defName>
     <label>GI</label>
@@ -77,12 +68,11 @@
     <apparelRequired>
       <li>ra2_Hat_GI</li>
       <li>ra2_Parka_GI</li>
-	  <li>ra2_Shirt_GI</li>
-	  <li>ra2_Pants_GI</li>
+      <li>ra2_Shirt_GI</li>
+      <li>ra2_Pants_GI</li>
     </apparelRequired>
     <forceNormalGearQuality>true</forceNormalGearQuality>
   </PawnKindDef>
-  
   <PawnKindDef ParentName="ra2_AlliedHumanBase">
     <defName>ra2_AlliedSiegeCadre</defName>
     <label>SiegeCadre</label>
@@ -97,11 +87,10 @@
     <apparelRequired>
       <li>ra2_Hat_SiegeCadre</li>
       <li>ra2_Parka_SiegeCadre</li>
-	  <li>ra2_Pants_SiegeCadre</li>
+      <li>ra2_Pants_SiegeCadre</li>
     </apparelRequired>
     <forceNormalGearQuality>true</forceNormalGearQuality>
   </PawnKindDef>
-  
   <PawnKindDef ParentName="ra2_AlliedHumanBase">
     <defName>ra2_AlliedSniper</defName>
     <label>Sniper</label>
@@ -116,12 +105,10 @@
     <apparelRequired>
       <li>ra2_Hat_Sniper</li>
       <li>ra2_Parka_Sniper</li>
-	  <li>ra2_Pants_Sniper</li>
+      <li>ra2_Pants_Sniper</li>
     </apparelRequired>
     <forceNormalGearQuality>true</forceNormalGearQuality>
   </PawnKindDef>
-  
-  
   <PawnKindDef ParentName="ra2_AlliedHumanBase">
     <defName>ra2_AlliedChrono</defName>
     <label>Chrono</label>
@@ -136,20 +123,18 @@
     <apparelRequired>
       <li>ra2_Hat_Chrono</li>
       <li>ra2_Parka_Chrono</li>
-	  <li>ra2_Pants_Chrono</li>
+      <li>ra2_Pants_Chrono</li>
     </apparelRequired>
     <forceNormalGearQuality>true</forceNormalGearQuality>
   </PawnKindDef>
-  
-  
   <PawnKindDef Name="ra2_AlliedEngineerBase" Abstract="True">
     <race>Human</race>
     <defaultFactionType>ra2_Allied</defaultFactionType>
     <backstoryCategories>
-	   <li>Civil</li>
-	</backstoryCategories>
+      <li>Civil</li>
+    </backstoryCategories>
     <chemicalAddictionChance>0</chemicalAddictionChance>
-	<baseRecruitDifficulty>1.0</baseRecruitDifficulty>
+    <baseRecruitDifficulty>1.0</baseRecruitDifficulty>
     <invNutrition>4.8</invNutrition>
     <itemQuality>Normal</itemQuality>
     <backstoryCryptosleepCommonality>0.25</backstoryCryptosleepCommonality>
@@ -159,7 +144,8 @@
       <max>3.5</max>
     </gearHealthRange>
     <apparelTags>
-      <li></li>
+      <li>
+      </li>
     </apparelTags>
     <apparelMoney>
       <min>20000</min>
@@ -178,7 +164,6 @@
       <max>2</max>
     </combatEnhancingDrugsCount>
     <combatEnhancingDrugsChance>0</combatEnhancingDrugsChance>
-
     <inventoryOptions>
       <skipChance>0.5</skipChance>
       <subOptionsChooseOne>
@@ -205,8 +190,6 @@
     <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
     <factionLeader>true</factionLeader>
   </PawnKindDef>
-  
-  
   <PawnKindDef ParentName="ra2_AlliedEngineerBase">
     <defName>ra2_AlliedEngineer</defName>
     <label>soviet engineer</label>
@@ -222,22 +205,19 @@
     <apparelRequired>
       <li>ra2_Hat_Engineer_A</li>
       <li>ra2_Parka_Engineer_A</li>
-	  <li>ra2_Shirt_Engineer_A</li>
-	  <li>ra2_Pants_Engineer_A</li>
+      <li>ra2_Shirt_Engineer_A</li>
+      <li>ra2_Pants_Engineer_A</li>
     </apparelRequired>
-
     <forceNormalGearQuality>true</forceNormalGearQuality>
   </PawnKindDef>
-  
-  
   <PawnKindDef Name="ra2_AlliedTanyaBase" Abstract="True">
     <race>Human</race>
     <defaultFactionType>ra2_Allied</defaultFactionType>
     <backstoryCategories>
-	   <li>Civil</li>
-	</backstoryCategories>
+      <li>Civil</li>
+    </backstoryCategories>
     <chemicalAddictionChance>0</chemicalAddictionChance>
-	<baseRecruitDifficulty>1.0</baseRecruitDifficulty>
+    <baseRecruitDifficulty>1.0</baseRecruitDifficulty>
     <invNutrition>4.8</invNutrition>
     <itemQuality>Normal</itemQuality>
     <backstoryCryptosleepCommonality>0.25</backstoryCryptosleepCommonality>
@@ -247,7 +227,8 @@
       <max>3.5</max>
     </gearHealthRange>
     <apparelTags>
-      <li></li>
+      <li>
+      </li>
     </apparelTags>
     <apparelMoney>
       <min>20000</min>
@@ -275,12 +256,10 @@
     </apparelRequired>
     <aiAvoidCover>true</aiAvoidCover>
     <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
-
   </PawnKindDef>
-  
   <PawnKindDef ParentName="ra2_AlliedTanyaBase">
     <defName>ra2_AlliedTanya</defName>
-	<race>Tanya</race>
+    <race>Tanya</race>
     <label>Tanya</label>
     <combatPower>1000</combatPower>
     <weaponMoney>
@@ -292,10 +271,8 @@
     </weaponTags>
     <apparelRequired>
       <li>Apparel_FlakVest</li>
-	  <li>Apparel_FlakPants</li>
+      <li>Apparel_FlakPants</li>
     </apparelRequired>
-
     <forceNormalGearQuality>true</forceNormalGearQuality>
   </PawnKindDef>
-
 </Defs>

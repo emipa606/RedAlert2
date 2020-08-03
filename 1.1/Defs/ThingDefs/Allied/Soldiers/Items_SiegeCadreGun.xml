@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <ThingDef ParentName="BaseBullet">
     <defName>ra2_Bullet_SiegeCadre</defName>
@@ -14,9 +14,7 @@
       <damageAmountBase>30</damageAmountBase>
     </projectile>
   </ThingDef>
-
-
- <ThingDef ParentName="ra2_CanGetGunBase">
+  <ThingDef ParentName="ra2_CanGetGunBase">
     <defName>ra2_Gun_SiegeCadre</defName>
     <label>SiegeCadre gun</label>
     <graphicData>
@@ -28,13 +26,13 @@
     <soundInteract>Interact_Rifle</soundInteract>
     <tradeability>None</tradeability>
     <destroyOnDrop>true</destroyOnDrop>
-		<equippedStatOffsets>
-            <ShootingAccuracyTurret>10.0</ShootingAccuracyTurret>
-			<MoveSpeed>-0.8</MoveSpeed>
-			<WorkSpeedGlobal>-0.20</WorkSpeedGlobal>
-		</equippedStatOffsets>
+    <equippedStatOffsets>
+      <ShootingAccuracyTurret>10.0</ShootingAccuracyTurret>
+      <MoveSpeed>-0.8</MoveSpeed>
+      <WorkSpeedGlobal>-0.20</WorkSpeedGlobal>
+    </equippedStatOffsets>
     <statBases>
-	  <Flammability>0</Flammability>
+      <Flammability>0</Flammability>
       <MarketValue>150</MarketValue>
       <Mass>1</Mass>
       <AccuracyTouch>1</AccuracyTouch>
@@ -80,7 +78,6 @@
       </li>
     </tools>
   </ThingDef>
-  
   <ThingDef ParentName="HatBase">
     <defName>ra2_Hat_SiegeCadre</defName>
     <label>SiegeCadre hat</label>
@@ -89,7 +86,6 @@
       <texPath>Things/Pawn/Humanlike/Apparel/PowerArmorHelmet/PowerArmorHelmet</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-    
     <menuHidden>True</menuHidden>
     <destroyOnDrop>true</destroyOnDrop>
     <tradeability>None</tradeability>
@@ -101,7 +97,7 @@
       <Insulation_Cold>10</Insulation_Cold>
       <Insulation_Heat>2</Insulation_Heat>
     </statBases>
-		<generateCommonality>0.5</generateCommonality>
+    <generateCommonality>0.5</generateCommonality>
     <apparel>
       <bodyPartGroups>
         <li>UpperHead</li>
@@ -111,7 +107,7 @@
         <li>Overhead</li>
       </layers>
       <tags>
-	    <li>ra2_Hat_SiegeCadre</li>
+        <li>ra2_Hat_SiegeCadre</li>
       </tags>
       <defaultOutfitTags>
         <li>SiegeCadre</li>
@@ -123,67 +119,59 @@
           <weight>100</weight>
           <only>RGBA(1,1,1,1)</only>
         </li>
-
       </options>
     </colorGenerator>
   </ThingDef>
-  
-  
-  	<ThingDef ParentName="Ra2ClothBase">
-		<defName>ra2_Parka_SiegeCadre</defName>
-		<label>SiegeCadre parka</label>
-		<description>A thick parka for staying warm in even the coldest of temperatures.</description>
-		<graphicData>
-			<texPath>Things/Pawn/Humanlike/Apparel/PowerArmor/PowerArmor</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-
-		
-    
-        <tradeability>None</tradeability>
-		<statBases>
-          <WorkToMake>170000</WorkToMake>
-          <MaxHitPoints>340</MaxHitPoints>
-          <Mass>15</Mass>
-          <ArmorRating_Blunt>0.35</ArmorRating_Blunt>
-          <ArmorRating_Sharp>0.65</ArmorRating_Sharp>
-          <ArmorRating_Heat>0.30</ArmorRating_Heat>
-			<Insulation_Cold>40</Insulation_Cold>
-			<Insulation_Heat>3</Insulation_Heat>
-		</statBases>
-		<equippedStatOffsets>
-			<MoveSpeed>-0.05</MoveSpeed>
-			<WorkSpeedGlobal>-0.20</WorkSpeedGlobal>
-		</equippedStatOffsets>
-		<apparel>
-			<bodyPartGroups>
-				<li>Torso</li>
-				<li>Shoulders</li>
-				<li>Arms</li>
-			</bodyPartGroups>
-			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/PowerArmor/PowerArmor</wornGraphicPath>
-			<layers>
-				<li>Shell</li>
-			</layers>
-			<tags>
-				<li>ra2_Parka_SiegeCadre</li>
-			</tags>
-			<defaultOutfitTags>
-				<li>SiegeCadre</li>
-			</defaultOutfitTags>
-		</apparel>
-		<colorGenerator Class="ColorGenerator_Options">
-			<options>
-				<li>
-					<weight>100</weight>
-					<only>RGBA(0.15,0.43,0.64,1)</only>
-				</li>
-			</options>
-		</colorGenerator>
-	</ThingDef>
-  
-  
-	<ThingDef ParentName="Ra2ClothBase">
+  <ThingDef ParentName="Ra2ClothBase">
+    <defName>ra2_Parka_SiegeCadre</defName>
+    <label>SiegeCadre parka</label>
+    <description>A thick parka for staying warm in even the coldest of temperatures.</description>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/PowerArmor/PowerArmor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <tradeability>None</tradeability>
+    <statBases>
+      <WorkToMake>170000</WorkToMake>
+      <MaxHitPoints>340</MaxHitPoints>
+      <Mass>15</Mass>
+      <ArmorRating_Blunt>0.35</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.65</ArmorRating_Sharp>
+      <ArmorRating_Heat>0.30</ArmorRating_Heat>
+      <Insulation_Cold>40</Insulation_Cold>
+      <Insulation_Heat>3</Insulation_Heat>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.05</MoveSpeed>
+      <WorkSpeedGlobal>-0.20</WorkSpeedGlobal>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/PowerArmor/PowerArmor</wornGraphicPath>
+      <layers>
+        <li>Shell</li>
+      </layers>
+      <tags>
+        <li>ra2_Parka_SiegeCadre</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>SiegeCadre</li>
+      </defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>100</weight>
+          <only>RGBA(0.15,0.43,0.64,1)</only>
+        </li>
+      </options>
+    </colorGenerator>
+  </ThingDef>
+  <ThingDef ParentName="Ra2ClothBase">
     <defName>ra2_Pants_SiegeCadre</defName>
     <label>SiegeCadre pants</label>
     <description>A simple set of pants.</description>
@@ -191,17 +179,15 @@
       <texPath>Things/Pawn/Humanlike/Apparel/Pants/Pants</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-		
-    
     <tradeability>None</tradeability>
     <statBases>
-			<MaxHitPoints>100</MaxHitPoints>
-			<WorkToMake>8500</WorkToMake>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToMake>8500</WorkToMake>
       <Mass>0.5</Mass>
       <ArmorRating_Blunt>0.03</ArmorRating_Blunt>
       <ArmorRating_Sharp>0.03</ArmorRating_Sharp>
-			<Insulation_Cold>40</Insulation_Cold>
-			<Insulation_Heat>3</Insulation_Heat>
+      <Insulation_Cold>40</Insulation_Cold>
+      <Insulation_Heat>3</Insulation_Heat>
     </statBases>
     <apparel>
       <bodyPartGroups>
@@ -217,14 +203,13 @@
         <li>SiegeCadre</li>
       </defaultOutfitTags>
     </apparel>
-		<colorGenerator Class="ColorGenerator_Options">
-			<options>
-				<li>
-					<weight>100</weight>
-					<only>RGBA(0.66,0.33,0.33,1)</only>
-				</li>
-			</options>
-		</colorGenerator>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>100</weight>
+          <only>RGBA(0.66,0.33,0.33,1)</only>
+        </li>
+      </options>
+    </colorGenerator>
   </ThingDef>
-  
 </Defs>

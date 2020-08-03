@@ -1,7 +1,6 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-
- <ThingDef ParentName="ra2_CanGetGunBase">
+  <ThingDef ParentName="ra2_CanGetGunBase">
     <defName>ra2_Gun_Brute</defName>
     <label>Brute gun</label>
     <graphicData>
@@ -14,8 +13,8 @@
     <destroyOnDrop>true</destroyOnDrop>
     <tradeability>None</tradeability>
     <statBases>
-	  <SellPriceFactor>0.01</SellPriceFactor>
-	  <MaxHitPoints>188</MaxHitPoints>
+      <SellPriceFactor>0.01</SellPriceFactor>
+      <MaxHitPoints>188</MaxHitPoints>
       <MarketValue>150</MarketValue>
       <Mass>0.6</Mass>
       <AccuracyTouch>0.80</AccuracyTouch>
@@ -39,12 +38,7 @@
       </li>
     </tools>
   </ThingDef>
-  
-
-
-  
-  
-	<ThingDef ParentName="Ra2ClothBase">
+  <ThingDef ParentName="Ra2ClothBase">
     <defName>ra2_Pants_Brute</defName>
     <label>Brute pants</label>
     <description>A simple set of pants.</description>
@@ -52,11 +46,9 @@
       <texPath>Things/Pawn/Humanlike/Apparel/Pants/Pants</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-		
-    
     <statBases>
-			<MaxHitPoints>100</MaxHitPoints>
-			<WorkToMake>8500</WorkToMake>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToMake>8500</WorkToMake>
       <Mass>0.5</Mass>
       <ArmorRating_Blunt>0.03</ArmorRating_Blunt>
       <ArmorRating_Sharp>0.03</ArmorRating_Sharp>
@@ -76,14 +68,13 @@
         <li>Brute</li>
       </defaultOutfitTags>
     </apparel>
-		<colorGenerator Class="ColorGenerator_Options">
-			<options>
-				<li>
-					<weight>100</weight>
-					<only>RGBA(0.74,0.6,0.41,1)</only>
-				</li>
-			</options>
-		</colorGenerator>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>100</weight>
+          <only>RGBA(0.74,0.6,0.41,1)</only>
+        </li>
+      </options>
+    </colorGenerator>
   </ThingDef>
-  
 </Defs>

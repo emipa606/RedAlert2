@@ -1,12 +1,10 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-
   <SongDef>
     <defName>ra2_allied_music</defName>
     <playOnMap>false</playOnMap>
     <clipPath>ra2/ra2_allied_music</clipPath>
     <volume>1.5</volume>
-	<commonality>0</commonality>
+    <commonality>0</commonality>
   </SongDef>
-  
 </Defs>

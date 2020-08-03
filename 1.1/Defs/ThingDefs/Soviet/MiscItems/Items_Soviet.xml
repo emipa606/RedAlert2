@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-  
-  
   <ThingDef ParentName="ResourceBase">
     <defName>ra2_SovietTechCore</defName>
     <label>soviet tech core</label>
@@ -18,9 +16,9 @@
       <MarketValue>10000</MarketValue>
       <Mass>0.6</Mass>
       <Flammability>0.6</Flammability>
-			<DeteriorationRate>2.0</DeteriorationRate>
-	  <SellPriceFactor>0.01</SellPriceFactor>
-		</statBases>
+      <DeteriorationRate>2.0</DeteriorationRate>
+      <SellPriceFactor>0.01</SellPriceFactor>
+    </statBases>
     <intricate>true</intricate>
     <thingCategories>
       <li>Items</li>
@@ -29,6 +27,4 @@
       <li>ExoticMisc</li>
     </tradeTags>
   </ThingDef>
-  
-
 </Defs>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <ThingDef ParentName="ra2BuildingBase">
     <defName>ra2_Prism</defName>
@@ -29,20 +29,19 @@
     <comps>
       <li Class="ra2.CompProperties_PrismTower">
         <compClass>ra2.CompPrismTower</compClass>
-		<size>(4.5,4.5)</size>
-		<speed>4</speed>
+        <size>(4.5,4.5)</size>
+        <speed>4</speed>
       </li>
-      <li Class="CompProperties_Forbiddable"/>
+      <li Class="CompProperties_Forbiddable" />
       <li Class="CompProperties_Explosive">
-                <explosiveRadius>2</explosiveRadius>
-                <explosiveDamageType>Bomb</explosiveDamageType>
+        <explosiveRadius>2</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
       </li>
       <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>
         <basePowerConsumption>450</basePowerConsumption>
       </li>
-      <li Class="CompProperties_Flickable"/>
- 
+      <li Class="CompProperties_Flickable" />
     </comps>
     <description>Allied Prism Tower.</description>
     <passability>Impassable</passability>
@@ -52,13 +51,13 @@
     <staticSunShadowHeight>0.6</staticSunShadowHeight>
     <hasTooltip>true</hasTooltip>
     <costList>
-	  <ra2_GoldBar>1000</ra2_GoldBar>
+      <ra2_GoldBar>1000</ra2_GoldBar>
     </costList>
     <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
     <designationCategory>Security</designationCategory>
     <specialDisplayRadius>29</specialDisplayRadius>
     <building>
-			<ai_combatDangerous>true</ai_combatDangerous>
+      <ai_combatDangerous>true</ai_combatDangerous>
       <turretGunDef>ra2_Gun_Prism</turretGunDef>
       <turretBurstCooldownTime>3</turretBurstCooldownTime>
       <turretTopGraphicPath>ra2/Building/ra2_tesla_top</turretTopGraphicPath>
@@ -68,7 +67,6 @@
       <li>Ra2AlliedPrism</li>
     </researchPrerequisites>
   </ThingDef>
-  
   <ThingDef ParentName="BaseBullet">
     <defName>ra2_Bullet_Prism</defName>
     <label>prism</label>
@@ -83,7 +81,6 @@
       <damageAmountBase>45</damageAmountBase>
     </projectile>
   </ThingDef>
-
   <ThingDef ParentName="ra2_CanGetGunBase">
     <defName>ra2_Gun_Prism</defName>
     <label>Prism Tower</label>
@@ -94,7 +91,6 @@
     </graphicData>
     <menuHidden>true</menuHidden>
     <soundInteract>Interact_Rifle</soundInteract>
-
     <tradeability>None</tradeability>
     <destroyOnDrop>true</destroyOnDrop>
     <statBases>
@@ -129,5 +125,4 @@
       </li>
     </verbs>
   </ThingDef>
-  
 </Defs>

@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <BodyDef>
     <defName>ra2_Rhino_Body</defName>
@@ -45,33 +45,25 @@
               <def>SmellSensor</def>
               <coverage>0.001</coverage>
             </li>
-           </parts>
+          </parts>
         </li>
-
-
-		<li>
+        <li>
           <def>ra2_tankarmor</def>
           <coverage>1.0</coverage>
-		  <parts>
-		    <li>
-             <def>ra2_tankarmor</def>
-             <coverage>1.0</coverage>
-		     <parts>
-		       <li>
-                <def>ra2_tankarmor</def>
-                <coverage>1.0</coverage>
-               </li>
-		     </parts>
+          <parts>
+            <li>
+              <def>ra2_tankarmor</def>
+              <coverage>1.0</coverage>
+              <parts>
+                <li>
+                  <def>ra2_tankarmor</def>
+                  <coverage>1.0</coverage>
+                </li>
+              </parts>
             </li>
-		  </parts>
+          </parts>
         </li>
-
       </parts>
-
     </corePart>
   </BodyDef>
-
-
-
-  
 </Defs>

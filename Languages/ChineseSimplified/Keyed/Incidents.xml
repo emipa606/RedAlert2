@@ -1,13 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-
   <AirDefenseHit>击中目标!</AirDefenseHit>
   <Beshotdown>被击落!</Beshotdown>
   <BeshotdownMsg>哦,我的上帝啊!一个或多个我们的殖民者被 {0}的防空设施击落:</BeshotdownMsg>
   <restoreBullet>储存弹药</restoreBullet>
   <restoreProgress>储存进度</restoreProgress>
   <ADAUnderRoof>错误:位于屋顶之下!</ADAUnderRoof>
-  
   <Dangerousunit>危险单位!</Dangerousunit>
   <DangerousunitMsg>警告!{0}的精英单位,{1},已经到达战场!</DangerousunitMsg>
   <TanyaWeaponUse>她的武器是</TanyaWeaponUse>
@@ -18,23 +16,18 @@
   <YuriExpTitle>心灵冲击波</YuriExpTitle>
   <GrinderHelpInfo>注意:它会杀死圈内的小人</GrinderHelpInfo>
   <GrinderAction>分解周围的生物</GrinderAction>
-  
   <MustPlaceOnGoldMineral>必须放置于金矿脉上!</MustPlaceOnGoldMineral>
   <GoldMinerProgress>挖掘进度</GoldMinerProgress>
   <GoldMineralStore>金矿储量</GoldMineralStore>
   <MessageGoldMineralLifeOut>一个金矿脉枯竭了.</MessageGoldMineralLifeOut>
-  
   <DroppodCargoDropPercentage>掉落百分比</DroppodCargoDropPercentage>
   <DroppodCargoDropPercentageDesc>当空投仓被击毁时，多少货物会掉落?(0 = 无,100 = 所有)</DroppodCargoDropPercentageDesc>
-  
   <RA2UseGameSpeed>使用红警2的训练速度</RA2UseGameSpeed>
   <RA2UseGameSpeedDesc>红警2的训练速度比默认的快得多</RA2UseGameSpeedDesc>
-  
   <BarracksTraining>正在训练</BarracksTraining>
   <BarracksEmpty>无训练队列</BarracksEmpty>
   <BarracksLeft>剩余</BarracksLeft>
   <ra2_Train>训练 </ra2_Train>
-  
   <LeftSuperWeaponTime>剩余时间</LeftSuperWeaponTime>
   <ReadytoLaunch>准备就绪!</ReadytoLaunch>
   <SuperWeaponDesc.Soviet>发射核弹</SuperWeaponDesc.Soviet>

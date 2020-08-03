@@ -32,7 +32,7 @@
     <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
     <fillPercent>0.15</fillPercent>
     <costList>
-	  <ra2_GoldBar>700</ra2_GoldBar>
+      <ra2_GoldBar>700</ra2_GoldBar>
     </costList>
     <comps>
       <li Class="CompProperties_Power">
@@ -44,7 +44,7 @@
       <li Class="CompProperties_Breakdownable" />
       <li Class="ra2.CompProperties_TurretTopSize">
         <topSize>(3,3,3)</topSize>
-		<soundShoot>ra2_AlliedAirDefense_shot</soundShoot>
+        <soundShoot>ra2_AlliedAirDefense_shot</soundShoot>
       </li>
     </comps>
     <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
@@ -55,8 +55,7 @@
     <tickerType>Normal</tickerType>
     <constructionSkillPrerequisite>7</constructionSkillPrerequisite>
     <building>
-			<ai_combatDangerous>true</ai_combatDangerous>
-      
+      <ai_combatDangerous>true</ai_combatDangerous>
       <turretTopGraphicPath>ra2/Building/ra2_alliedAirDefense_top</turretTopGraphicPath>
     </building>
   </ThingDef>

@@ -1,6 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-
   <SoundDef>
     <defName>ra2_StormAtk</defName>
     <context>MapOnly</context>
@@ -9,7 +8,7 @@
     <maxSimultaneous>2</maxSimultaneous>
     <subSounds>
       <li>
-	    <onCamera>True</onCamera>  
+        <onCamera>True</onCamera>
         <grains>
           <li Class="AudioGrain_Folder">
             <clipFolderPath>ra2/Allied/Storm/atk</clipFolderPath>
@@ -22,7 +21,6 @@
       </li>
     </subSounds>
   </SoundDef>
-  
   <SoundDef>
     <defName>ra2_StormAppear</defName>
     <context>MapOnly</context>
@@ -31,7 +29,7 @@
     <maxSimultaneous>1</maxSimultaneous>
     <subSounds>
       <li>
-        <onCamera>True</onCamera>   
+        <onCamera>True</onCamera>
         <grains>
           <li Class="AudioGrain_Clip">
             <clipPath>ra2/Allied/Storm/sweastra</clipPath>
@@ -44,7 +42,6 @@
       </li>
     </subSounds>
   </SoundDef>
-  
   <SoundDef>
     <defName>ra2_StormRead</defName>
     <context>MapOnly</context>
@@ -65,9 +62,4 @@
       </li>
     </subSounds>
   </SoundDef>
-  
-  
-  
-
-  
 </Defs>

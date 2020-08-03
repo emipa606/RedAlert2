@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Manifest>
-  <identifier>RedAlert2(Continued)</identifier>
-  <version>1.0.0.0</version>
+  <identifier>RedAlert2</identifier>
+  <version>1.0.1.0</version>
   <dependencies />
   <incompatibleWith />
   <loadBefore />
@@ -9,5 +9,4 @@
   <manifestUri>https://raw.githubusercontent.com/emipa606/RedAlert2/master/About/Manifest.xml</manifestUri>
   <downloadUri>https://github.com/emipa606/RedAlert2/releases</downloadUri>
 </Manifest>
-
 

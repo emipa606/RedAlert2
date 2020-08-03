@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <ra2_Tesla.label>Tesla Coil</ra2_Tesla.label>
+  <ra2_Tesla.description>The Soviet Union's defensive weapons.</ra2_Tesla.description>
+
+  <ra2_Bullet_Tesla.label>Electric shock beam</ra2_Bullet_Tesla.label>
+
+  <ra2_Gun_Tesla.label>Tesla coil weapon</ra2_Gun_Tesla.label>
+  <ra2_Gun_Tesla.description>Strong electric shock attack</ra2_Gun_Tesla.description>
+
+
+</LanguageData>

@@ -1,7 +1,5 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-
-
   <ThingDef ParentName="EtherealThingBase">
     <defName>AlliedStorm</defName>
     <label>nuclear missle Strike</label>
@@ -16,8 +14,7 @@
       <drawSize>(1,1)</drawSize>
     </graphicData>
   </ThingDef>
-    
-   <ThingDef ParentName="ra2BuildingBase">
+  <ThingDef ParentName="ra2BuildingBase">
     <defName>ra2_AlliedSuperWeapon</defName>
     <label>Weather Machine</label>
     <description>Super Weapon.</description>
@@ -59,7 +56,7 @@
         <compClass>CompPowerTrader</compClass>
         <basePowerConsumption>4000</basePowerConsumption>
       </li>
-      <li Class="CompProperties_Breakdownable"/>
+      <li Class="CompProperties_Breakdownable" />
       <li>
         <compClass>ra2.CompAlliedSuperWeapon</compClass>
       </li>
@@ -70,6 +67,4 @@
     <constructEffect>ConstructMetal</constructEffect>
     <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
   </ThingDef>
-
-  
 </Defs>

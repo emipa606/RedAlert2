@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-
   <ThingDef ParentName="BaseBullet">
     <defName>ra2_Bullet_grizzly</defName>
     <label>grizzly bullet</label>
@@ -21,10 +20,7 @@
       <soundAmbient>MortarRound_Ambient</soundAmbient>
     </projectile>
   </ThingDef>
-
-
-
- <ThingDef ParentName="ra2_CanGetGunBase">
+  <ThingDef ParentName="ra2_CanGetGunBase">
     <defName>ra2_Gun_grizzly</defName>
     <label>grizzly gun</label>
     <graphicData>
@@ -35,12 +31,12 @@
     <description>grizzly's gun.</description>
     <soundInteract>Interact_Rifle</soundInteract>
     <destroyOnDrop>true</destroyOnDrop>
-	<useHitPoints>false</useHitPoints>
+    <useHitPoints>false</useHitPoints>
     <tradeability>None</tradeability>
-		<equippedStatOffsets>
-			<MoveSpeed>-0.05</MoveSpeed>
-			<WorkSpeedGlobal>-0.20</WorkSpeedGlobal>
-		</equippedStatOffsets>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.05</MoveSpeed>
+      <WorkSpeedGlobal>-0.20</WorkSpeedGlobal>
+    </equippedStatOffsets>
     <statBases>
       <MarketValue>150</MarketValue>
       <Mass>1</Mass>
@@ -70,6 +66,4 @@
       </li>
     </verbs>
   </ThingDef>
-
-  
 </Defs>

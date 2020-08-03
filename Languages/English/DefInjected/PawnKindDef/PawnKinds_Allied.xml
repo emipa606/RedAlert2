@@ -1,25 +1,30 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-  <ra2_GrizzlyTank.label>Grizzly Tank</ra2_GrizzlyTank.label>
-  <ra2_GrizzlyTank.labelPlural>Grizzly Tank</ra2_GrizzlyTank.labelPlural>
-  
-  <ra2_AlliedTanya.label>Tanya</ra2_AlliedTanya.label>
-  <ra2_AlliedTanya.labelPlural>Tanya</ra2_AlliedTanya.labelPlural>
-
   <ra2_AlliedGI.label>G.I.</ra2_AlliedGI.label>
   <ra2_AlliedGI.labelPlural>G.I.</ra2_AlliedGI.labelPlural>
-  
-  <ra2_AlliedEngineer.label>Engineer</ra2_AlliedEngineer.label>
-  <ra2_AlliedEngineer.labelPlural>Engineer</ra2_AlliedEngineer.labelPlural>
 
   <ra2_AlliedSiegeCadre.label>SiegeCadre</ra2_AlliedSiegeCadre.label>
   <ra2_AlliedSiegeCadre.labelPlural>SiegeCadre</ra2_AlliedSiegeCadre.labelPlural>
-  
+
   <ra2_AlliedSniper.label>Sniper</ra2_AlliedSniper.label>
   <ra2_AlliedSniper.labelPlural>Sniper</ra2_AlliedSniper.labelPlural>
-  
+
   <ra2_AlliedChrono.label>Chrono Legionnaire</ra2_AlliedChrono.label>
   <ra2_AlliedChrono.labelPlural>Chrono Legionnaire</ra2_AlliedChrono.labelPlural>
+
+  <ra2_AlliedEngineer.label>Engineer</ra2_AlliedEngineer.label>
+  <ra2_AlliedEngineer.labelPlural>Engineer</ra2_AlliedEngineer.labelPlural>
+
+  <ra2_AlliedTanya.label>Tanya</ra2_AlliedTanya.label>
+  <ra2_AlliedTanya.labelPlural>Tanya</ra2_AlliedTanya.labelPlural>
+  <ra2_AlliedTanya.labelMale>male Tanya</ra2_AlliedTanya.labelMale>
+  <ra2_AlliedTanya.labelMalePlural>male Tanyas</ra2_AlliedTanya.labelMalePlural>
+  <ra2_AlliedTanya.labelFemale>female Tanya</ra2_AlliedTanya.labelFemale>
+  <ra2_AlliedTanya.labelFemalePlural>female Tanyas</ra2_AlliedTanya.labelFemalePlural>
+
+
+  <!--<ra2_GrizzlyTank.label>Grizzly Tank</ra2_GrizzlyTank.label>-->
+  <!--<ra2_GrizzlyTank.labelPlural>Grizzly Tank</ra2_GrizzlyTank.labelPlural>-->
 
 </LanguageData>

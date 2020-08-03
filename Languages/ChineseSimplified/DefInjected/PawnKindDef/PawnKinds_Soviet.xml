@@ -1,24 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-
   <ra2_RhinoTank.label>犀牛坦克</ra2_RhinoTank.label>
   <ra2_RhinoTank.labelPlural>犀牛坦克</ra2_RhinoTank.labelPlural>
-  
   <ra2_ApoTank.label>天启坦克</ra2_ApoTank.label>
   <ra2_ApoTank.labelPlural>天启坦克</ra2_ApoTank.labelPlural>
-
   <ra2_SovietConscript.label>动员兵</ra2_SovietConscript.label>
   <ra2_SovietConscript.labelPlural>动员兵</ra2_SovietConscript.labelPlural>
-  
   <ra2_SovietEngineer.label>工程师</ra2_SovietEngineer.label>
   <ra2_SovietEngineer.labelPlural>工程师</ra2_SovietEngineer.labelPlural>
-
   <ra2_SovietTeslaTrooper.label>磁爆步兵</ra2_SovietTeslaTrooper.label>
   <ra2_SovietTeslaTrooper.labelPlural>磁爆步兵</ra2_SovietTeslaTrooper.labelPlural>
-  
   <ra2_SovietDesolator.label>辐射工兵</ra2_SovietDesolator.label>
   <ra2_SovietDesolator.labelPlural>辐射工兵</ra2_SovietDesolator.labelPlural>
-  
-
-
 </LanguageData>

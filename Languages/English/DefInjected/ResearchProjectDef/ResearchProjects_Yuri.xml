@@ -1,14 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
+  <!--<Ra2YuriBarracks.label>Yuri Barracks</Ra2YuriBarracks.label>-->
+  <!--<Ra2YuriBarracks.description>Unlock Yuri Barracks</Ra2YuriBarracks.description>-->
+  <!--<Ra2YuriPsychicTech.label>Yuri Psychic Tech</Ra2YuriPsychicTech.label>-->
+  <!--<Ra2YuriPsychicTech.description>Unlock Yuri Psychic Tech</Ra2YuriPsychicTech.description>-->
 
-
-  
-  <Ra2YuriBarracks.label>Yuri Barracks</Ra2YuriBarracks.label>
-  <Ra2YuriBarracks.description>Unlock Yuri Barracks</Ra2YuriBarracks.description>
-  
-  <Ra2YuriPsychicTech.label>Yuri Psychic Tech</Ra2YuriPsychicTech.label>
-  <Ra2YuriPsychicTech.description>Unlock Yuri Psychic Tech</Ra2YuriPsychicTech.description>
-  
-
-  
 </LanguageData>

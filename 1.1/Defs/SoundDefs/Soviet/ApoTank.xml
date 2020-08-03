@@ -1,6 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-
   <SoundDef>
     <defName>ra2_apo_move</defName>
     <context>MapOnly</context>
@@ -21,28 +20,26 @@
       </li>
     </subSounds>
   </SoundDef>
-  
   <SoundDef>
-    <defName>ra2_apo_enter</defName>  
-    <eventNames />  
-    <maxSimultaneous>1</maxSimultaneous>  
+    <defName>ra2_apo_enter</defName>
+    <eventNames />
+    <maxSimultaneous>1</maxSimultaneous>
     <maxVoices>3</maxVoices>
     <subSounds>
       <li>
-        <onCamera>True</onCamera>      
+        <onCamera>True</onCamera>
         <grains>
           <li Class="AudioGrain_Folder">
             <clipFolderPath>ra2/Soviet/apotank/enter</clipFolderPath>
           </li>
-        </grains>      
+        </grains>
         <volumeRange>
-          <min>41</min>        
+          <min>41</min>
           <max>41</max>
         </volumeRange>
       </li>
     </subSounds>
-  </SoundDef>  
-  
+  </SoundDef>
   <SoundDef>
     <defName>ra2_apo_shot</defName>
     <context>MapOnly</context>
@@ -63,7 +60,6 @@
       </li>
     </subSounds>
   </SoundDef>
-  
   <SoundDef>
     <defName>ra2_apo_damageDef</defName>
     <context>MapOnly</context>
@@ -84,6 +80,4 @@
       </li>
     </subSounds>
   </SoundDef>
-  
-
 </Defs>

@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-
   <ThingDef ParentName="BuildingBase">
     <defName>ra2_GoldMiner</defName>
     <label>gold miner</label>
@@ -21,8 +20,8 @@
     <altitudeLayer>Building</altitudeLayer>
     <passability>Impassable</passability>
     <blockWind>true</blockWind>
-		<scatterableOnMapGen>false</scatterableOnMapGen>
-		<fillPercent>1</fillPercent>
+    <scatterableOnMapGen>false</scatterableOnMapGen>
+    <fillPercent>1</fillPercent>
     <blockLight>true</blockLight>
     <canOverlapZones>false</canOverlapZones>
     <statBases>
@@ -43,8 +42,8 @@
         <basePowerConsumption>500</basePowerConsumption>
         <transmitsPower>true</transmitsPower>
       </li>
-      <li Class="CompProperties_Breakdownable"/>
-	  <li Class="ra2.CompProperties_GoldMiner"/>
+      <li Class="CompProperties_Breakdownable" />
+      <li Class="ra2.CompProperties_GoldMiner" />
     </comps>
     <rotatable>false</rotatable>
     <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
@@ -53,13 +52,14 @@
       <li>ra2.PlaceWorker_OnGoldMineral</li>
     </placeWorkers>
     <building>
-			<ai_chillDestination>false</ai_chillDestination>
-			<soundAmbient>GeothermalPlant_Ambience</soundAmbient>
+      <ai_chillDestination>false</ai_chillDestination>
+      <soundAmbient>GeothermalPlant_Ambience</soundAmbient>
     </building>
     <constructEffect>ConstructMetal</constructEffect>
     <designationHotKey>Misc6</designationHotKey>
-    <researchPrerequisites><li>Ra2BaseResearch</li></researchPrerequisites>
+    <researchPrerequisites>
+      <li>Ra2BaseResearch</li>
+    </researchPrerequisites>
     <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
   </ThingDef>
-
 </Defs>

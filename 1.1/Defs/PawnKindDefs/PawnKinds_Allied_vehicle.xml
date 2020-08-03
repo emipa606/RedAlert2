@@ -8,7 +8,7 @@
     <defaultFactionType>ra2_Allied</defaultFactionType>
     <aiAvoidCover>true</aiAvoidCover>
     <itemQuality>Good</itemQuality>
-	<isFighter>false</isFighter>
+    <isFighter>false</isFighter>
     <lifeStages>
       <li>
         <bodyGraphicData>
@@ -29,5 +29,4 @@
       <li>GrizzlyGun</li>
     </weaponTags>
   </PawnKindDef>
- 
 </Defs>

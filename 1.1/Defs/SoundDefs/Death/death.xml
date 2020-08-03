@@ -1,6 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-
   <SoundDef>
     <defName>ra2_SovietConscript_death</defName>
     <context>MapOnly</context>
@@ -21,8 +20,7 @@
       </li>
     </subSounds>
   </SoundDef>
-  
-   <SoundDef>
+  <SoundDef>
     <defName>ra2_SovietDesolator_death</defName>
     <context>MapOnly</context>
     <eventNames />
@@ -42,8 +40,7 @@
       </li>
     </subSounds>
   </SoundDef>
-  
-   <SoundDef>
+  <SoundDef>
     <defName>ra2_SovietTeslaTrooper_death</defName>
     <context>MapOnly</context>
     <eventNames />
@@ -63,8 +60,7 @@
       </li>
     </subSounds>
   </SoundDef>
-  
-     <SoundDef>
+  <SoundDef>
     <defName>ra2_AlliedGI_death</defName>
     <context>MapOnly</context>
     <eventNames />
@@ -84,8 +80,7 @@
       </li>
     </subSounds>
   </SoundDef>
-  
-     <SoundDef>
+  <SoundDef>
     <defName>ra2_AlliedSniper_death</defName>
     <context>MapOnly</context>
     <eventNames />
@@ -105,8 +100,7 @@
       </li>
     </subSounds>
   </SoundDef>
-  
-     <SoundDef>
+  <SoundDef>
     <defName>ra2_AlliedSiegeCadre_death</defName>
     <context>MapOnly</context>
     <eventNames />
@@ -126,8 +120,7 @@
       </li>
     </subSounds>
   </SoundDef>
-  
-     <SoundDef>
+  <SoundDef>
     <defName>ra2_AlliedTanya_death</defName>
     <context>MapOnly</context>
     <eventNames />
@@ -147,8 +140,7 @@
       </li>
     </subSounds>
   </SoundDef>
-  
-     <SoundDef>
+  <SoundDef>
     <defName>ra2_Engineer_death</defName>
     <context>MapOnly</context>
     <eventNames />
@@ -168,8 +160,7 @@
       </li>
     </subSounds>
   </SoundDef>
-  
-     <SoundDef>
+  <SoundDef>
     <defName>ra2_Chrono_death</defName>
     <context>MapOnly</context>
     <eventNames />
@@ -189,7 +180,6 @@
       </li>
     </subSounds>
   </SoundDef>
-  
   <SoundDef>
     <defName>ra2_YuriInitiate_death</defName>
     <context>MapOnly</context>
@@ -210,7 +200,6 @@
       </li>
     </subSounds>
   </SoundDef>
-
   <SoundDef>
     <defName>ra2_YuriBrute_death</defName>
     <context>MapOnly</context>
@@ -231,7 +220,6 @@
       </li>
     </subSounds>
   </SoundDef>
-  
   <SoundDef>
     <defName>ra2_YuriYuri_death</defName>
     <context>MapOnly</context>
@@ -252,5 +240,4 @@
       </li>
     </subSounds>
   </SoundDef>
-  
 </Defs>

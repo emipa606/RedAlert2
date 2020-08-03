@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <ThingDef ParentName="BaseBullet">
     <defName>ra2_Bullet_Desolator</defName>
@@ -13,10 +13,8 @@
       <damageDef>DesolatorGun</damageDef>
       <damageAmountBase>0</damageAmountBase>
     </projectile>
-
   </ThingDef>
-
- <ThingDef ParentName="ra2_CanGetGunBase">
+  <ThingDef ParentName="ra2_CanGetGunBase">
     <defName>ra2_Gun_Desolator</defName>
     <label>desolator gun</label>
     <graphicData>
@@ -29,7 +27,7 @@
     <destroyOnDrop>true</destroyOnDrop>
     <tradeability>None</tradeability>
     <statBases>
-	  <Flammability>0</Flammability>
+      <Flammability>0</Flammability>
       <MarketValue>150</MarketValue>
       <AccuracyTouch>1.00</AccuracyTouch>
       <AccuracyShort>0.95</AccuracyShort>
@@ -38,11 +36,11 @@
       <RangedWeapon_Cooldown>0.2</RangedWeapon_Cooldown>
       <DeteriorationRate>0</DeteriorationRate>
     </statBases>
-		<equippedStatOffsets>
-            <ShootingAccuracyPawn>10.0</ShootingAccuracyPawn>
-			<MoveSpeed>-1</MoveSpeed>
-			<WorkSpeedGlobal>-0.20</WorkSpeedGlobal>
-		</equippedStatOffsets>
+    <equippedStatOffsets>
+      <ShootingAccuracyPawn>10.0</ShootingAccuracyPawn>
+      <MoveSpeed>-1</MoveSpeed>
+      <WorkSpeedGlobal>-0.20</WorkSpeedGlobal>
+    </equippedStatOffsets>
     <weaponTags>
       <li>ra2_Gun_Desolator</li>
     </weaponTags>
@@ -56,7 +54,7 @@
         <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
         <burstShotCount>1</burstShotCount>
         <soundCast>ra2_desolator_shot</soundCast>
-		<soundCastTail>ra2_nothing</soundCastTail>
+        <soundCastTail>ra2_nothing</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
@@ -80,7 +78,6 @@
       </li>
     </tools>
   </ThingDef>
-  
   <ThingDef ParentName="HatMakeableBase">
     <defName>ra2_Hat_Desolator</defName>
     <label>desolator hat</label>
@@ -89,26 +86,23 @@
       <texPath>Things/Pawn/Humanlike/Apparel/PowerArmorHelmet/PowerArmorHelmet</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-    
-
     <tradeability>None</tradeability>
     <recipeMaker>
-  
       <researchPrerequisite>Ra2SovietDesolatorSuit</researchPrerequisite>
     </recipeMaker>
     <costList>
       <Steel>500</Steel>
-	  <Plasteel>200</Plasteel>
+      <Plasteel>200</Plasteel>
       <ComponentIndustrial>3</ComponentIndustrial>
-	  <ComponentSpacer>5</ComponentSpacer>
+      <ComponentSpacer>5</ComponentSpacer>
     </costList>
     <statBases>
       <WorkToMake>7000</WorkToMake>
       <Mass>0.07</Mass>
       <ArmorRating_Blunt>0.03</ArmorRating_Blunt>
       <ArmorRating_Sharp>0.03</ArmorRating_Sharp>
-			<Insulation_Cold>40</Insulation_Cold>
-			<Insulation_Heat>3</Insulation_Heat>
+      <Insulation_Cold>40</Insulation_Cold>
+      <Insulation_Heat>3</Insulation_Heat>
     </statBases>
     <apparel>
       <bodyPartGroups>
@@ -119,7 +113,7 @@
         <li>Overhead</li>
       </layers>
       <tags>
-	    <li>ra2_Hat_Desolator</li>
+        <li>ra2_Hat_Desolator</li>
       </tags>
       <defaultOutfitTags>
         <li>Desolator</li>
@@ -131,78 +125,71 @@
           <weight>100</weight>
           <only>RGBA(0.33,1,0.33,1)</only>
         </li>
-
       </options>
     </colorGenerator>
   </ThingDef>
-  
-  
-  	<ThingDef ParentName="ApparelMakeableBase">
-		<defName>ra2_Parka_Desolator</defName>
-		<label>desolator parka</label>
-		<description>A thick parka for staying warm in even the coldest of temperatures.</description>
-		<graphicData>
-			<texPath>Things/Pawn/Humanlike/Apparel/PowerArmor/PowerArmor</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<thingCategories>
-			<li>Apparel</li>
-		</thingCategories>
-    
-        <tradeability>None</tradeability>
+  <ThingDef ParentName="ApparelMakeableBase">
+    <defName>ra2_Parka_Desolator</defName>
+    <label>desolator parka</label>
+    <description>A thick parka for staying warm in even the coldest of temperatures.</description>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/PowerArmor/PowerArmor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <thingCategories>
+      <li>Apparel</li>
+    </thingCategories>
+    <tradeability>None</tradeability>
     <recipeMaker>
-      
       <researchPrerequisite>Ra2SovietDesolatorSuit</researchPrerequisite>
     </recipeMaker>
     <costList>
       <Steel>800</Steel>
-	  <Plasteel>280</Plasteel>
+      <Plasteel>280</Plasteel>
       <ComponentIndustrial>3</ComponentIndustrial>
-	  <ComponentSpacer>5</ComponentSpacer>
+      <ComponentSpacer>5</ComponentSpacer>
     </costList>
     <statBases>
       <WorkToMake>7000</WorkToMake>
-          <MaxHitPoints>340</MaxHitPoints>
-          <Mass>15</Mass>
-          <ArmorRating_Blunt>0.35</ArmorRating_Blunt>
-          <ArmorRating_Sharp>0.65</ArmorRating_Sharp>
-          <ArmorRating_Heat>0.30</ArmorRating_Heat>
-			<Insulation_Cold>40</Insulation_Cold>
-			<Insulation_Heat>3</Insulation_Heat>
-		</statBases>
-		<equippedStatOffsets>
-			<MoveSpeed>-0.05</MoveSpeed>
-			<WorkSpeedGlobal>-0.20</WorkSpeedGlobal>
-		</equippedStatOffsets>
-		<apparel>
-			<bodyPartGroups>
-				<li>Torso</li>
-				<li>Shoulders</li>
-				<li>Arms</li>
-			</bodyPartGroups>
-			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/PowerArmor/PowerArmor</wornGraphicPath>
-			<layers>
-				<li>Shell</li>
-			</layers>
-			<tags>
-				<li>ra2_Parka_Desolator</li>
-			</tags>
-			<defaultOutfitTags>
-				<li>Desolator</li>
-			</defaultOutfitTags>
-		</apparel>
-		<colorGenerator Class="ColorGenerator_Options">
-			<options>
-				<li>
-					<weight>100</weight>
-					<only>RGBA(0.66,0.33,0.33,1)</only>
-				</li>
-			</options>
-		</colorGenerator>
-	</ThingDef>
-  
-  
-	<ThingDef ParentName="ApparelMakeableBase">
+      <MaxHitPoints>340</MaxHitPoints>
+      <Mass>15</Mass>
+      <ArmorRating_Blunt>0.35</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.65</ArmorRating_Sharp>
+      <ArmorRating_Heat>0.30</ArmorRating_Heat>
+      <Insulation_Cold>40</Insulation_Cold>
+      <Insulation_Heat>3</Insulation_Heat>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.05</MoveSpeed>
+      <WorkSpeedGlobal>-0.20</WorkSpeedGlobal>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/PowerArmor/PowerArmor</wornGraphicPath>
+      <layers>
+        <li>Shell</li>
+      </layers>
+      <tags>
+        <li>ra2_Parka_Desolator</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Desolator</li>
+      </defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>100</weight>
+          <only>RGBA(0.66,0.33,0.33,1)</only>
+        </li>
+      </options>
+    </colorGenerator>
+  </ThingDef>
+  <ThingDef ParentName="ApparelMakeableBase">
     <defName>ra2_Pants_Desolator</defName>
     <label>desolator pants</label>
     <description>A simple set of pants.</description>
@@ -210,29 +197,27 @@
       <texPath>Things/Pawn/Humanlike/Apparel/Pants/Pants</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-		<thingCategories>
-			<li>Apparel</li>
-		</thingCategories>
-    
+    <thingCategories>
+      <li>Apparel</li>
+    </thingCategories>
     <tradeability>None</tradeability>
     <recipeMaker>
-      
       <researchPrerequisite>Ra2SovietDesolatorSuit</researchPrerequisite>
     </recipeMaker>
     <costList>
       <Steel>700</Steel>
-	  <Plasteel>250</Plasteel>
+      <Plasteel>250</Plasteel>
       <ComponentIndustrial>3</ComponentIndustrial>
-	  <ComponentSpacer>5</ComponentSpacer>
+      <ComponentSpacer>5</ComponentSpacer>
     </costList>
     <statBases>
       <WorkToMake>7000</WorkToMake>
-			<MaxHitPoints>100</MaxHitPoints>
+      <MaxHitPoints>100</MaxHitPoints>
       <Mass>0.5</Mass>
       <ArmorRating_Blunt>0.03</ArmorRating_Blunt>
       <ArmorRating_Sharp>0.03</ArmorRating_Sharp>
-			<Insulation_Cold>40</Insulation_Cold>
-			<Insulation_Heat>3</Insulation_Heat>
+      <Insulation_Cold>40</Insulation_Cold>
+      <Insulation_Heat>3</Insulation_Heat>
     </statBases>
     <apparel>
       <bodyPartGroups>
@@ -248,14 +233,13 @@
         <li>Desolator</li>
       </defaultOutfitTags>
     </apparel>
-		<colorGenerator Class="ColorGenerator_Options">
-			<options>
-				<li>
-					<weight>100</weight>
-					<only>RGBA(0.66,0.33,0.33,1)</only>
-				</li>
-			</options>
-		</colorGenerator>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>100</weight>
+          <only>RGBA(0.66,0.33,0.33,1)</only>
+        </li>
+      </options>
+    </colorGenerator>
   </ThingDef>
-  
 </Defs>

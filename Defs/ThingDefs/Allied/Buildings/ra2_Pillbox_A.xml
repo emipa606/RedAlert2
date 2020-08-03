@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <ThingDef ParentName="ra2BuildingBase">
     <defName>ra2_Pillbox_A</defName>
@@ -12,7 +12,6 @@
         <rect>(0.2,0.2,0.6,0.6)</rect>
       </damageData>
     </graphicData>
-
     <altitudeLayer>Building</altitudeLayer>
     <stealable>false</stealable>
     <rotatable>false</rotatable>
@@ -26,18 +25,17 @@
     </statBases>
     <tickerType>Normal</tickerType>
     <comps>
-      <li Class="CompProperties_Forbiddable"/>
+      <li Class="CompProperties_Forbiddable" />
       <li Class="CompProperties_Explosive">
-                <explosiveRadius>1</explosiveRadius>
-                <explosiveDamageType>Bomb</explosiveDamageType>
+        <explosiveRadius>1</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
       </li>
       <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>
         <basePowerConsumption>200</basePowerConsumption>
         <shortCircuitInRain>false</shortCircuitInRain>
       </li>
-      <li Class="CompProperties_Flickable"/>
-      
+      <li Class="CompProperties_Flickable" />
     </comps>
     <description>Allied pillbox.</description>
     <passability>PassThroughOnly</passability>
@@ -46,13 +44,13 @@
     <castEdgeShadows>true</castEdgeShadows>
     <hasTooltip>true</hasTooltip>
     <costList>
-	  <ra2_GoldBar>400</ra2_GoldBar>
+      <ra2_GoldBar>400</ra2_GoldBar>
     </costList>
     <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
     <designationCategory>Security</designationCategory>
     <specialDisplayRadius>23</specialDisplayRadius>
     <building>
-			<ai_combatDangerous>true</ai_combatDangerous>
+      <ai_combatDangerous>true</ai_combatDangerous>
       <turretGunDef>ra2_Gun_pillbox_A</turretGunDef>
       <turretBurstCooldownTime>1.0</turretBurstCooldownTime>
       <turretTopGraphicPath>ra2/Building/ra2_tesla_top</turretTopGraphicPath>
@@ -60,10 +58,9 @@
     <designationHotKey>Misc2</designationHotKey>
     <researchPrerequisites>
       <li>GunTurrets</li>
-	  <li>Ra2AlliedPillbox</li>
+      <li>Ra2AlliedPillbox</li>
     </researchPrerequisites>
   </ThingDef>
-  
   <ThingDef ParentName="BaseBullet">
     <defName>ra2_Bullet_pillbox_a</defName>
     <label>improvised turret bullet</label>
@@ -77,7 +74,6 @@
       <speed>80</speed>
     </projectile>
   </ThingDef>
-
   <ThingDef ParentName="ra2_CanGetGunBase">
     <defName>ra2_Gun_pillbox_A</defName>
     <label>pillbox gun</label>
@@ -88,7 +84,6 @@
     <menuHidden>true</menuHidden>
     <description>Jury-rigged gun attached to a turret.</description>
     <soundInteract>Interact_Rifle</soundInteract>
-
     <tradeability>None</tradeability>
     <destroyOnDrop>true</destroyOnDrop>
     <useHitPoints>false</useHitPoints>
@@ -114,11 +109,9 @@
         <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
         <burstShotCount>3</burstShotCount>
         <soundCast>ra2_pillbox_A</soundCast>
-		<soundCastTail>ra2_nothing</soundCastTail>
+        <soundCastTail>ra2_nothing</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
   </ThingDef>
-  
-  
 </Defs>

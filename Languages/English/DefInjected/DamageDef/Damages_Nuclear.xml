@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Nuclear.label>Nuclear explosion</Nuclear.label>
+  <Nuclear.deathMessage>{0} was killed in a nuclear explosion</Nuclear.deathMessage>
+
+
+</LanguageData>

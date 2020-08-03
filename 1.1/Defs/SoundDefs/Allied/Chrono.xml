@@ -1,12 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-
   <SoundDef>
     <defName>ra2_Chrono_shot</defName>
     <context>MapOnly</context>
     <eventNames />
     <maxVoices>1</maxVoices>
-<!--    <maxSimultaneous>1</maxSimultaneous>-->
+    <!--    <maxSimultaneous>1</maxSimultaneous>-->
     <subSounds>
       <li>
         <grains>
@@ -21,7 +20,6 @@
       </li>
     </subSounds>
   </SoundDef>
-  
   <SoundDef>
     <defName>ra2_Chrono_move</defName>
     <context>MapOnly</context>
@@ -42,7 +40,6 @@
       </li>
     </subSounds>
   </SoundDef>
-  
   <SoundDef>
     <defName>ra2_Chrono_kill</defName>
     <context>MapOnly</context>
@@ -63,48 +60,44 @@
       </li>
     </subSounds>
   </SoundDef>
-  
-
-  
-   <SoundDef>
-    <defName>ra2_Chrono_select</defName>  
-    <eventNames />  
-    <maxSimultaneous>1</maxSimultaneous>  
+  <SoundDef>
+    <defName>ra2_Chrono_select</defName>
+    <eventNames />
+    <maxSimultaneous>1</maxSimultaneous>
     <maxVoices>2</maxVoices>
     <subSounds>
       <li>
-        <onCamera>True</onCamera>      
+        <onCamera>True</onCamera>
         <grains>
           <li Class="AudioGrain_Folder">
             <clipFolderPath>ra2/Allied/Chrono/select</clipFolderPath>
           </li>
-        </grains>      
+        </grains>
         <volumeRange>
-          <min>41</min>        
+          <min>41</min>
           <max>41</max>
         </volumeRange>
       </li>
     </subSounds>
-  </SoundDef>  
-
-   <SoundDef>
-    <defName>ra2_Chrono_movesay</defName>  
-    <eventNames />  
-    <maxSimultaneous>1</maxSimultaneous>  
+  </SoundDef>
+  <SoundDef>
+    <defName>ra2_Chrono_movesay</defName>
+    <eventNames />
+    <maxSimultaneous>1</maxSimultaneous>
     <maxVoices>2</maxVoices>
     <subSounds>
       <li>
-        <onCamera>True</onCamera>      
+        <onCamera>True</onCamera>
         <grains>
           <li Class="AudioGrain_Folder">
             <clipFolderPath>ra2/Allied/Chrono/movesay</clipFolderPath>
           </li>
-        </grains>      
+        </grains>
         <volumeRange>
-          <min>41</min>        
+          <min>41</min>
           <max>41</max>
         </volumeRange>
       </li>
     </subSounds>
-  </SoundDef>  
+  </SoundDef>
 </Defs>

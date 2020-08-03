@@ -1,7 +1,6 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-  
- <ThingDef ParentName="ResourceBase">
+  <ThingDef ParentName="ResourceBase">
     <defName>ra2_AlliedTechCore</defName>
     <label>Allied tech core</label>
     <description>It contains Allied tech.</description>
@@ -17,9 +16,9 @@
       <MarketValue>10000</MarketValue>
       <Mass>0.6</Mass>
       <Flammability>1.0</Flammability>
-			<DeteriorationRate>2.0</DeteriorationRate>
-	  <SellPriceFactor>0.01</SellPriceFactor>
-		</statBases>
+      <DeteriorationRate>2.0</DeteriorationRate>
+      <SellPriceFactor>0.01</SellPriceFactor>
+    </statBases>
     <intricate>true</intricate>
     <thingCategories>
       <li>Items</li>
@@ -28,8 +27,7 @@
       <li>ExoticMisc</li>
     </tradeTags>
   </ThingDef>
- 
- <ThingDef ParentName="ResourceBase">
+  <ThingDef ParentName="ResourceBase">
     <defName>ra2_AlliedTanyaNote</defName>
     <label>Allied tanya note</label>
     <description>It contains Tanya's info.</description>
@@ -45,8 +43,8 @@
       <MaxHitPoints>70</MaxHitPoints>
       <Mass>0.6</Mass>
       <Flammability>1.0</Flammability>
-			<DeteriorationRate>2.0</DeteriorationRate>
-		</statBases>
+      <DeteriorationRate>2.0</DeteriorationRate>
+    </statBases>
     <intricate>true</intricate>
     <thingCategories>
       <li>ResourcesRaw</li>
@@ -64,5 +62,4 @@
       </li>
     </comps>
   </ThingDef>
-
 </Defs>

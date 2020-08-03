@@ -1,9 +1,6 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-
-
-  
- <ThingDef ParentName="ResourceBase">
+  <ThingDef ParentName="ResourceBase">
     <defName>ra2_SovietApoGunItem</defName>
     <label>Apocalypse Tank Gun</label>
     <description>Apocalypse Tank's Gun.</description>
@@ -19,13 +16,12 @@
       <MarketValue>20000</MarketValue>
       <Mass>30</Mass>
       <Flammability>1.0</Flammability>
-			<DeteriorationRate>2.0</DeteriorationRate>
-	  <SellPriceFactor>0.01</SellPriceFactor>
-		</statBases>
+      <DeteriorationRate>2.0</DeteriorationRate>
+      <SellPriceFactor>0.01</SellPriceFactor>
+    </statBases>
     <intricate>true</intricate>
     <thingCategories>
       <li>ResourcesRaw</li>
     </thingCategories>
   </ThingDef>
-
 </Defs>

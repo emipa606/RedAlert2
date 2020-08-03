@@ -1,14 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
+  <!--<ra2_Bullet_rhino.label>Rhino tank shells</ra2_Bullet_rhino.label>-->
+  <!--<ra2_Gun_Rhino.label>Rhino tank gun</ra2_Gun_Rhino.label>-->
+  <!--<ra2_Gun_Rhino.description>Rhinoceros tank gun</ra2_Gun_Rhino.description>-->
+  <!--<ra2_Bullet_apo.label>Apocalypse Tank Shell</ra2_Bullet_apo.label>-->
+  <!--<ra2_Gun_Apo.label>Apocalypse Tank Gun</ra2_Gun_Apo.label>-->
+  <!--<ra2_Gun_Apo.description>Apocalypse Tank Gun</ra2_Gun_Apo.description>-->
 
-  <ra2_Bullet_rhino.label>Rhino tank shells</ra2_Bullet_rhino.label>
-
-  <ra2_Gun_Rhino.label>Rhino tank gun</ra2_Gun_Rhino.label>
-  <ra2_Gun_Rhino.description>Rhinoceros tank gun</ra2_Gun_Rhino.description>
-  
-  <ra2_Bullet_apo.label>Apocalypse Tank Shell</ra2_Bullet_apo.label>
-
-  <ra2_Gun_Apo.label>Apocalypse Tank Gun</ra2_Gun_Apo.label>
-  <ra2_Gun_Apo.description>Apocalypse Tank Gun</ra2_Gun_Apo.description>
-  
 </LanguageData>

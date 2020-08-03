@@ -1,9 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <ThingDef ParentName="ra2BuildingBase">
     <defName>ra2_EarthHammer</defName>
     <label>Earth Hammer System</label>
-    
     <thingClass>Building_TurretGun</thingClass>
     <graphicData>
       <texPath>ra2/Building/ra2_earthhammer</texPath>
@@ -27,18 +26,17 @@
     </statBases>
     <tickerType>Normal</tickerType>
     <comps>
-      <li Class="CompProperties_Forbiddable"/>
+      <li Class="CompProperties_Forbiddable" />
       <li Class="CompProperties_Explosive">
-                <explosiveRadius>3</explosiveRadius>
-                <explosiveDamageType>Bomb</explosiveDamageType>
+        <explosiveRadius>3</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
       </li>
       <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>
         <basePowerConsumption>1400</basePowerConsumption>
         <shortCircuitInRain>false</shortCircuitInRain>
       </li>
-      <li Class="CompProperties_Flickable"/>
- 
+      <li Class="CompProperties_Flickable" />
     </comps>
     <description>Earth hammer.</description>
     <passability>Impassable</passability>
@@ -48,13 +46,13 @@
     <staticSunShadowHeight>1.0</staticSunShadowHeight>
     <hasTooltip>true</hasTooltip>
     <costList>
-	  <ra2_GoldBar>1800</ra2_GoldBar>
+      <ra2_GoldBar>1800</ra2_GoldBar>
     </costList>
     <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
     <designationCategory>Security</designationCategory>
     <specialDisplayRadius>56</specialDisplayRadius>
     <building>
-			<ai_combatDangerous>true</ai_combatDangerous>
+      <ai_combatDangerous>true</ai_combatDangerous>
       <turretGunDef>ra2_Gun_EarthCrack</turretGunDef>
       <turretBurstCooldownTime>3</turretBurstCooldownTime>
       <turretTopGraphicPath>ra2/Building/ra2_tesla_top</turretTopGraphicPath>
@@ -64,8 +62,7 @@
       <li>Ra2SovietEarthHammer</li>
     </researchPrerequisites>
   </ThingDef>
-
-    <ThingDef ParentName="BaseBullet">
+  <ThingDef ParentName="BaseBullet">
     <defName>ra2_Bullet_EarthCrack</defName>
     <label>EarthCrack</label>
     <thingClass>Projectile_Explosive</thingClass>
@@ -78,13 +75,10 @@
       <damageDef>Earthquake</damageDef>
       <flyOverhead>true</flyOverhead>
       <damageAmountBase>78</damageAmountBase>
-			<explosionRadius>2.0</explosionRadius>
+      <explosionRadius>2.0</explosionRadius>
     </projectile>
-    
   </ThingDef>
-  
-  
-    <ThingDef ParentName="ra2_CanGetGunBase">
+  <ThingDef ParentName="ra2_CanGetGunBase">
     <defName>ra2_Gun_EarthCrack</defName>
     <label>EarthCrack Gun</label>
     <graphicData>
@@ -121,12 +115,11 @@
         <range>56</range>
         <minRange>8</minRange>
         <soundCast>ra2_nothing</soundCast>
-		<soundCastTail>ra2_nothing</soundCastTail>
+        <soundCastTail>ra2_nothing</soundCastTail>
         <muzzleFlashScale>14</muzzleFlashScale>
         <requireLineOfSight>false</requireLineOfSight>
         <forcedMissRadius>1</forcedMissRadius>
       </li>
     </verbs>
   </ThingDef>
-  
 </Defs>

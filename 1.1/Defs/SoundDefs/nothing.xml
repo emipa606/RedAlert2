@@ -1,6 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-
   <SoundDef>
     <defName>ra2_nothing</defName>
     <context>MapOnly</context>
@@ -22,5 +21,4 @@
       </li>
     </subSounds>
   </SoundDef>
-
 </Defs>

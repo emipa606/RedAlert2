@@ -1,20 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Patch>
-	<Operation Class="PatchOperationAdd">
-	 <xpath>*/ThingDef[defName = "HiTechResearchBench"]/comps/li/linkableFacilities</xpath>
-	 <value>
-        <li>ra2_SovietTech</li>
-		<li>ra2_AlliedTech</li>
-		<li>ra2_YuriTech</li>
-	 </value>
-	</Operation>
-
-	
-	
-	
-	
-	
-	
-	
-	
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName = "HiTechResearchBench"]/comps/li/linkableFacilities</xpath>
+    <value>
+      <li>ra2_SovietTech</li>
+      <li>ra2_AlliedTech</li>
+      <li>ra2_YuriTech</li>
+    </value>
+  </Operation>
 </Patch>

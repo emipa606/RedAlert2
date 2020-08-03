@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-   <ThingDef ParentName="ra2BuildingBase">
+  <ThingDef ParentName="ra2BuildingBase">
     <defName>ra2_YuriGrinder</defName>
     <label>grinder</label>
     <description>Turn pawn into gold bar.</description>
@@ -42,10 +42,10 @@
         <compClass>CompPowerTrader</compClass>
         <basePowerConsumption>400</basePowerConsumption>
       </li>
-	  <li>
-	    <compClass>ra2.Yuri.CompGrinder</compClass>
-	  </li>
-      <li Class="CompProperties_Breakdownable"/>
+      <li>
+        <compClass>ra2.Yuri.CompGrinder</compClass>
+      </li>
+      <li Class="CompProperties_Breakdownable" />
     </comps>
     <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
     <designationCategory>Misc</designationCategory>
@@ -56,7 +56,4 @@
     </placeWorkers>
     <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
   </ThingDef>
-
-
-  
 </Defs>

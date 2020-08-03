@@ -1,6 +1,5 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-
   <ThingDef ParentName="BasePawn" Name="ra2_BaseTank" Abstract="True">
     <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
     <statBases>
@@ -20,7 +19,5 @@
       <lifeExpectancy>2500</lifeExpectancy>
       <deathActionWorkerClass>DeathActionWorker_BigExplosion</deathActionWorkerClass>
     </race>
-
   </ThingDef>
-
 </Defs>

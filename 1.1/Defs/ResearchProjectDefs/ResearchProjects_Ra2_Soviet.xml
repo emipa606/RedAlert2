@@ -1,6 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-
   <ResearchProjectDef>
     <tab>RA2</tab>
     <defName>Ra2SovietBarracks</defName>
@@ -15,10 +14,9 @@
     <researchViewY>0.5</researchViewY>
     <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
     <requiredResearchFacilities>
-	  <li>ra2_SovietTech</li>
+      <li>ra2_SovietTech</li>
     </requiredResearchFacilities>
-  </ResearchProjectDef>  
-  
+  </ResearchProjectDef>
   <ResearchProjectDef>
     <tab>RA2</tab>
     <defName>Ra2SovietPillbox</defName>
@@ -33,10 +31,9 @@
     <researchViewY>0</researchViewY>
     <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
     <requiredResearchFacilities>
-	  <li>ra2_SovietTech</li>
+      <li>ra2_SovietTech</li>
     </requiredResearchFacilities>
   </ResearchProjectDef>
-  
   <ResearchProjectDef>
     <tab>RA2</tab>
     <defName>Ra2SovietADA</defName>
@@ -51,10 +48,9 @@
     <researchViewY>0.5</researchViewY>
     <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
     <requiredResearchFacilities>
-	  <li>ra2_SovietTech</li>
+      <li>ra2_SovietTech</li>
     </requiredResearchFacilities>
   </ResearchProjectDef>
-  
   <ResearchProjectDef>
     <tab>RA2</tab>
     <defName>Ra2SovietTesla</defName>
@@ -64,16 +60,15 @@
     <techLevel>Industrial</techLevel>
     <prerequisites>
       <li>Ra2SovietPillbox</li>
-	  <li>Ra2SovietTeslaTech</li>
+      <li>Ra2SovietTeslaTech</li>
     </prerequisites>
     <researchViewX>3</researchViewX>
     <researchViewY>0</researchViewY>
     <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
     <requiredResearchFacilities>
-	  <li>ra2_SovietTech</li>
+      <li>ra2_SovietTech</li>
     </requiredResearchFacilities>
   </ResearchProjectDef>
-  
   <ResearchProjectDef>
     <tab>RA2</tab>
     <defName>Ra2SovietEarthHammer</defName>
@@ -88,10 +83,9 @@
     <researchViewY>0</researchViewY>
     <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
     <requiredResearchFacilities>
-	  <li>ra2_SovietTech</li>
+      <li>ra2_SovietTech</li>
     </requiredResearchFacilities>
   </ResearchProjectDef>
-  
   <ResearchProjectDef>
     <tab>RA2</tab>
     <defName>Ra2SovietDesolatorSuit</defName>
@@ -107,10 +101,9 @@
     <researchViewY>1</researchViewY>
     <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
     <requiredResearchFacilities>
-	  <li>ra2_SovietTech</li>
+      <li>ra2_SovietTech</li>
     </requiredResearchFacilities>
   </ResearchProjectDef>
-  
   <ResearchProjectDef>
     <tab>RA2</tab>
     <defName>Ra2SovietApoTankGun</defName>
@@ -125,10 +118,9 @@
     <researchViewY>1</researchViewY>
     <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
     <requiredResearchFacilities>
-	  <li>ra2_SovietTech</li>
+      <li>ra2_SovietTech</li>
     </requiredResearchFacilities>
   </ResearchProjectDef>
-  
   <ResearchProjectDef>
     <tab>RA2</tab>
     <defName>Ra2SovietApoTankGunTurret</defName>
@@ -143,10 +135,9 @@
     <researchViewY>1</researchViewY>
     <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
     <requiredResearchFacilities>
-	  <li>ra2_SovietTech</li>
+      <li>ra2_SovietTech</li>
     </requiredResearchFacilities>
   </ResearchProjectDef>
-  
   <ResearchProjectDef>
     <tab>RA2</tab>
     <defName>Ra2SovietTeslaTech</defName>
@@ -161,10 +152,9 @@
     <researchViewY>0</researchViewY>
     <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
     <requiredResearchFacilities>
-	  <li>ra2_SovietTech</li>
+      <li>ra2_SovietTech</li>
     </requiredResearchFacilities>
   </ResearchProjectDef>
-  
   <ResearchProjectDef>
     <tab>RA2</tab>
     <defName>Ra2SovietNuclearTech</defName>
@@ -179,10 +169,9 @@
     <researchViewY>1</researchViewY>
     <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
     <requiredResearchFacilities>
-	  <li>ra2_SovietTech</li>
+      <li>ra2_SovietTech</li>
     </requiredResearchFacilities>
   </ResearchProjectDef>
-  
   <ResearchProjectDef>
     <tab>RA2</tab>
     <defName>Ra2SovietNuclearMissle</defName>
@@ -197,8 +186,7 @@
     <researchViewY>0.5</researchViewY>
     <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
     <requiredResearchFacilities>
-	  <li>ra2_SovietTech</li>
+      <li>ra2_SovietTech</li>
     </requiredResearchFacilities>
   </ResearchProjectDef>
-  
 </Defs>

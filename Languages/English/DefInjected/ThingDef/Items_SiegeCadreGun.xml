@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <ra2_Bullet_SiegeCadre.label>Prism(small)</ra2_Bullet_SiegeCadre.label>
+
+  <ra2_Gun_SiegeCadre.label>Prism siege gun</ra2_Gun_SiegeCadre.label>
+  <ra2_Gun_SiegeCadre.description>Portable Prism Gun,the damage is less than Prism Tower</ra2_Gun_SiegeCadre.description>
+  <ra2_Gun_SiegeCadre.tools.0.label>grip</ra2_Gun_SiegeCadre.tools.0.label>
+  <ra2_Gun_SiegeCadre.tools.1.label>barrel</ra2_Gun_SiegeCadre.tools.1.label>
+
+  <ra2_Hat_SiegeCadre.label>Siege Cadre's Helmet</ra2_Hat_SiegeCadre.label>
+  <ra2_Hat_SiegeCadre.description>Siege Cadre's standard Helmet。</ra2_Hat_SiegeCadre.description>
+
+  <ra2_Parka_SiegeCadre.label>Siege Cadre's Suit (top)</ra2_Parka_SiegeCadre.label>
+  <ra2_Parka_SiegeCadre.description>Siege Cadre's standard clothes</ra2_Parka_SiegeCadre.description>
+
+  <ra2_Pants_SiegeCadre.label>Siege Cadre's Suit (below)</ra2_Pants_SiegeCadre.label>
+  <ra2_Pants_SiegeCadre.description>Siege Cadre's standard clothes</ra2_Pants_SiegeCadre.description>
+
+
+</LanguageData>

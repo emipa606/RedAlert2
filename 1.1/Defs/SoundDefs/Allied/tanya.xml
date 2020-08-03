@@ -1,6 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-
   <SoundDef>
     <defName>ra2_tanya_shot</defName>
     <context>MapOnly</context>
@@ -21,47 +20,44 @@
       </li>
     </subSounds>
   </SoundDef>
-  
-   <SoundDef>
-    <defName>ra2_tanya_enter</defName>  
-    <eventNames />  
-    <maxSimultaneous>1</maxSimultaneous>  
+  <SoundDef>
+    <defName>ra2_tanya_enter</defName>
+    <eventNames />
+    <maxSimultaneous>1</maxSimultaneous>
     <maxVoices>2</maxVoices>
     <subSounds>
       <li>
-        <onCamera>True</onCamera>      
+        <onCamera>True</onCamera>
         <grains>
           <li Class="AudioGrain_Folder">
             <clipFolderPath>ra2/Allied/Tanya/enter</clipFolderPath>
           </li>
-        </grains>      
+        </grains>
         <volumeRange>
-          <min>41</min>        
+          <min>41</min>
           <max>41</max>
         </volumeRange>
       </li>
     </subSounds>
-  </SoundDef>  
-  
-   <SoundDef>
-    <defName>ra2_tanya_select</defName>  
-    <eventNames />  
-    <maxSimultaneous>1</maxSimultaneous>  
+  </SoundDef>
+  <SoundDef>
+    <defName>ra2_tanya_select</defName>
+    <eventNames />
+    <maxSimultaneous>1</maxSimultaneous>
     <maxVoices>2</maxVoices>
     <subSounds>
       <li>
-        <onCamera>True</onCamera>      
+        <onCamera>True</onCamera>
         <grains>
           <li Class="AudioGrain_Folder">
             <clipFolderPath>ra2/Allied/Tanya/select</clipFolderPath>
           </li>
-        </grains>      
+        </grains>
         <volumeRange>
-          <min>41</min>        
+          <min>41</min>
           <max>41</max>
         </volumeRange>
       </li>
     </subSounds>
-  </SoundDef>  
-
+  </SoundDef>
 </Defs>

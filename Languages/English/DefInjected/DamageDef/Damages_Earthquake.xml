@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Earthquake.label>Earthquake</Earthquake.label>
+  <Earthquake.deathMessage>{0} was killed in an Earthquake</Earthquake.deathMessage>
+
+
+</LanguageData>

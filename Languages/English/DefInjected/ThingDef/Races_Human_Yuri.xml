@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Brute.label>brute</Brute.label>
+  <Brute.description>A strong human, mostly unmodified by gene engineering and mostly unchanged by evolutionary pressures on non-Earth planets.</Brute.description>
+  <Brute.tools.0.label>left fist</Brute.tools.0.label>
+  <Brute.tools.1.label>right fist</Brute.tools.1.label>
+  <Brute.tools.2.label>teeth</Brute.tools.2.label>
+  <Brute.tools.3.label>head</Brute.tools.3.label>
+
+
+</LanguageData>

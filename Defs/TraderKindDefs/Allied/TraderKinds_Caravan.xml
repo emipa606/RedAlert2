@@ -15,14 +15,12 @@
       <!--Special-->
       <li Class="StockGenerator_SingleDef">
         <thingDef>ra2_AlliedTechCore</thingDef>
-	    <price>Expensive</price>
+        <price>Expensive</price>
         <countRange>
           <min>1</min>
           <max>1</max>
         </countRange>
       </li>
-
-
       <!--vanilla-->
       <li Class="StockGenerator_SingleDef">
         <thingDef>ComponentIndustrial</thingDef>
@@ -38,8 +36,6 @@
           <max>16</max>
         </countRange>
       </li>
-
-
       <li Class="StockGenerator_SingleDef">
         <thingDef>Beer</thingDef>
         <totalPriceRange>
@@ -47,20 +43,12 @@
           <max>100</max>
         </totalPriceRange>
       </li>
-
-
       <li Class="StockGenerator_BuyWeirdOrganic" />
       <li Class="StockGenerator_WeaponsRanged" />
       <li Class="StockGenerator_BuyExpensiveSimple" />
-
     </stockGenerators>
   </TraderKindDef>
-  
-  
-  
-  
-  
-    <TraderKindDef>
+  <TraderKindDef>
     <defName>ra2_Trader_Resources_Allied</defName>
     <label>resources trader</label>
     <commonality>1.2</commonality>
@@ -136,8 +124,6 @@
           <max>100</max>
         </totalPriceRange>
       </li>
-
-
       <li Class="StockGenerator_Clothes">
         <countRange>
           <min>3</min>
@@ -147,15 +133,9 @@
       <li Class="StockGenerator_Category">
         <categoryDef>Drugs</categoryDef>
       </li>
-
-
       <li Class="StockGenerator_BuyArt" />
       <li Class="StockGenerator_BuyWeirdOrganic" />
-
       <li Class="StockGenerator_WeaponsRanged" />
-
-
-
     </stockGenerators>
   </TraderKindDef>
 </Defs>

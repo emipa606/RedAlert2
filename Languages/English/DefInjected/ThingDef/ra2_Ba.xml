@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <ra2_AlliedBarracks.label>Allied Barracks</ra2_AlliedBarracks.label>
+  <ra2_AlliedBarracks.description>It can train Allied soldiers.</ra2_AlliedBarracks.description>
+
+  <ra2_SovietBarracks.label>Soviet Barracks</ra2_SovietBarracks.label>
+  <ra2_SovietBarracks.description>It can train Soviet soldiers.</ra2_SovietBarracks.description>
+
+  <ra2_YuriBarracks.label>Yuri Barracks</ra2_YuriBarracks.label>
+  <ra2_YuriBarracks.description>It can train Yuri soldiers.</ra2_YuriBarracks.description>
+
+
+</LanguageData>

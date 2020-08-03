@@ -1,13 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-
-  <ra2_GoldMineral.label>Gold Mineral</ra2_GoldMineral.label>
-  <ra2_GoldMineral.description>Natural gold sources</ra2_GoldMineral.description>
-
-  <ra2_GoldMiner.label>Ore Refinery</ra2_GoldMiner.label>
-  <ra2_GoldMiner.description>Gold ores can be mined from gold mineral and processed into gold bars</ra2_GoldMiner.description>
-  <ra2_GoldMiner_Blueprint.label>Ore Refinery(BluePrint)</ra2_GoldMiner_Blueprint.label>
-  <ra2_GoldMiner_Frame.label>Ore Refinery(Building)</ra2_GoldMiner_Frame.label>
-  <ra2_GoldMiner_Frame.description>Gold ores can be mined from gold mineral and processed into gold bars</ra2_GoldMiner_Frame.description>
+  <!--<ra2_GoldMineral.label>Gold Mineral</ra2_GoldMineral.label>-->
+  <!--<ra2_GoldMineral.description>Natural gold sources</ra2_GoldMineral.description>-->
+  <!--<ra2_GoldMiner.label>Ore Refinery</ra2_GoldMiner.label>-->
+  <!--<ra2_GoldMiner.description>Gold ores can be mined from gold mineral and processed into gold bars</ra2_GoldMiner.description>-->
+  <!--<ra2_GoldMiner_Blueprint.label>Ore Refinery(BluePrint)</ra2_GoldMiner_Blueprint.label>-->
+  <!--<ra2_GoldMiner_Frame.label>Ore Refinery(Building)</ra2_GoldMiner_Frame.label>-->
+  <!--<ra2_GoldMiner_Frame.description>Gold ores can be mined from gold mineral and processed into gold bars</ra2_GoldMiner_Frame.description>-->
 
 </LanguageData>

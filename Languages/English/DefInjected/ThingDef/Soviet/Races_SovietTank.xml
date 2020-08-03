@@ -1,21 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-
-  <ra2_Tank_Rhino.label>Rhino Tank</ra2_Tank_Rhino.label>
-  <ra2_Tank_Rhino.description>Tanks produced by the Soviet Union.</ra2_Tank_Rhino.description>
-  <ra2_Tank_Rhino.tools.0.label>body</ra2_Tank_Rhino.tools.0.label>
+  <!--<ra2_Tank_Rhino.label>Rhino Tank</ra2_Tank_Rhino.label>-->
+  <!--<ra2_Tank_Rhino.description>Tanks produced by the Soviet Union.</ra2_Tank_Rhino.description>-->
+  <!--<ra2_Tank_Rhino.tools.0.label>body</ra2_Tank_Rhino.tools.0.label>-->
   <!-- Flesh Type: Mechanoid -->
-  <ra2_Tank_Rhino_Corpse.label>the wreckage of Rhino Tank</ra2_Tank_Rhino_Corpse.label>
-  <ra2_Tank_Rhino_Corpse.description>the wreckage of Rhino Tank</ra2_Tank_Rhino_Corpse.description>
-
+  <!--<ra2_Tank_Rhino_Corpse.label>the wreckage of Rhino Tank</ra2_Tank_Rhino_Corpse.label>-->
+  <!--<ra2_Tank_Rhino_Corpse.description>the wreckage of Rhino Tank</ra2_Tank_Rhino_Corpse.description>-->
   <!-- Scyther -->
-
-  <ra2_Tank_Apo.label>Apocalypse Tank</ra2_Tank_Apo.label>
-  <ra2_Tank_Apo.description>The Apocalypse Monster of the Soviet Union, don't fight against him. Just run.</ra2_Tank_Apo.description>
-  <ra2_Tank_Apo.tools.0.label>body</ra2_Tank_Apo.tools.0.label>
+  <!--<ra2_Tank_Apo.label>Apocalypse Tank</ra2_Tank_Apo.label>-->
+  <!--<ra2_Tank_Apo.description>The Apocalypse Monster of the Soviet Union, don't fight against him. Just run.</ra2_Tank_Apo.description>-->
+  <!--<ra2_Tank_Apo.tools.0.label>body</ra2_Tank_Apo.tools.0.label>-->
   <!-- Flesh Type: Mechanoid -->
-  <ra2_Tank_Apo_Corpse.label>the wreckage of Apocalypse Tank</ra2_Tank_Apo_Corpse.label>
-  <ra2_Tank_Apo_Corpse.description>the wreckage of Apocalypse Tank</ra2_Tank_Apo_Corpse.description>
-
+  <!--<ra2_Tank_Apo_Corpse.label>the wreckage of Apocalypse Tank</ra2_Tank_Apo_Corpse.label>-->
+  <!--<ra2_Tank_Apo_Corpse.description>the wreckage of Apocalypse Tank</ra2_Tank_Apo_Corpse.description>-->
 
 </LanguageData>

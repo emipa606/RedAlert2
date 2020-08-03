@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <ThingDef ParentName="BuildingNaturalBase">
     <defName>ra2_GoldMineral</defName>
@@ -12,17 +12,17 @@
       <drawSize>(1,1)</drawSize>
     </graphicData>
     <altitudeLayer>Floor</altitudeLayer>
-		<rotatable>false</rotatable>
+    <rotatable>false</rotatable>
     <destroyable>true</destroyable>
     <useHitPoints>false</useHitPoints>
     <tickerType>Normal</tickerType>
     <selectable>true</selectable>
-	<comps>
-	  <li Class="CompProperties_Glower">
+    <comps>
+      <li Class="CompProperties_Glower">
         <glowRadius>3</glowRadius>
         <glowColor>(217,112,33,0)</glowColor>
       </li>
-	</comps>
+    </comps>
     <size>(1,1)</size>
     <neverOverlapFloors>true</neverOverlapFloors>
     <blockPlants>true</blockPlants>

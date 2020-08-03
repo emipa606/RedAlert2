@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <ThingDef ParentName="ra2BuildingBase">
     <defName>ra2_Tesla</defName>
@@ -12,7 +12,6 @@
         <rect>(0.2,0.2,0.6,0.6)</rect>
       </damageData>
     </graphicData>
-
     <altitudeLayer>BuildingOnTop</altitudeLayer>
     <stealable>false</stealable>
     <rotatable>false</rotatable>
@@ -28,20 +27,19 @@
     <comps>
       <li Class="ra2.CompProperties_TeslaCoil">
         <compClass>ra2.CompTeslaCoil</compClass>
-		<size>(1.5,2.5)</size>
-		<speed>4</speed>
+        <size>(1.5,2.5)</size>
+        <speed>4</speed>
       </li>
-      <li Class="CompProperties_Forbiddable"/>
+      <li Class="CompProperties_Forbiddable" />
       <li Class="CompProperties_Explosive">
-                <explosiveRadius>2</explosiveRadius>
-                <explosiveDamageType>Bomb</explosiveDamageType>
+        <explosiveRadius>2</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
       </li>
       <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>
         <basePowerConsumption>450</basePowerConsumption>
       </li>
-      <li Class="CompProperties_Flickable"/>
- 
+      <li Class="CompProperties_Flickable" />
     </comps>
     <description>Soviet tesla coil.</description>
     <passability>Impassable</passability>
@@ -51,13 +49,13 @@
     <staticSunShadowHeight>0.6</staticSunShadowHeight>
     <hasTooltip>true</hasTooltip>
     <costList>
-	  <ra2_GoldBar>1000</ra2_GoldBar>
+      <ra2_GoldBar>1000</ra2_GoldBar>
     </costList>
     <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
     <designationCategory>Security</designationCategory>
     <specialDisplayRadius>29</specialDisplayRadius>
     <building>
-			<ai_combatDangerous>true</ai_combatDangerous>
+      <ai_combatDangerous>true</ai_combatDangerous>
       <turretGunDef>ra2_Gun_Tesla</turretGunDef>
       <turretBurstCooldownTime>3</turretBurstCooldownTime>
       <turretTopGraphicPath>ra2/Building/ra2_tesla_top</turretTopGraphicPath>
@@ -67,7 +65,6 @@
       <li>Ra2SovietTesla</li>
     </researchPrerequisites>
   </ThingDef>
-  
   <ThingDef ParentName="BaseBullet">
     <defName>ra2_Bullet_Tesla</defName>
     <label>electric arc</label>
@@ -80,10 +77,8 @@
       <speed>200</speed>
       <damageDef>Burn</damageDef>
       <damageAmountBase>15</damageAmountBase>
-
     </projectile>
   </ThingDef>
-
   <ThingDef ParentName="ra2_CanGetGunBase">
     <defName>ra2_Gun_Tesla</defName>
     <label>tesla coil</label>
@@ -129,5 +124,4 @@
       </li>
     </verbs>
   </ThingDef>
-  
 </Defs>

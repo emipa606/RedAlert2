@@ -1,11 +1,8 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-
   <TraitDef>
     <defName>ra2_MakeSoldier</defName>
-
     <commonality>0.001</commonality>
-
     <disabledWorkTags>
 			Cleaning,
 			ManualDumb,
@@ -26,9 +23,7 @@
       <li>
         <label>Just a Soldier</label>
         <description>NAME Just a Soldier.</description>
-	  </li>
+      </li>
     </degreeDatas>
   </TraitDef>
-  
-  
 </Defs>

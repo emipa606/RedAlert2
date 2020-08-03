@@ -1,8 +1,6 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-
-
-  <ThingDef Name = "ra2_Tank_Grizzly" ParentName="ra2_BaseTank">
+  <ThingDef Name="ra2_Tank_Grizzly" ParentName="ra2_BaseTank">
     <defName>ra2_Tank_Grizzly</defName>
     <label>Grizzly heavy tank</label>
     <description>Heavy combat mechanoids that glide on dozens of tiny legs. Their heavy armor and firepower makes them very effective against bunched-up static defenders. They are somewhat vulnerable to mobile hit-and-run tactics.</description>
@@ -50,9 +48,7 @@
       <Steel>240</Steel>
       <Plasteel>150</Plasteel>
       <ComponentIndustrial>6</ComponentIndustrial>
-	  <Chemfuel>600</Chemfuel>
+      <Chemfuel>600</Chemfuel>
     </butcherProducts>
   </ThingDef>
-
-
 </Defs>

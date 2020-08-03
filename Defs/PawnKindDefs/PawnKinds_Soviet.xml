@@ -4,10 +4,10 @@
     <race>Human</race>
     <defaultFactionType>ra2_Soviet</defaultFactionType>
     <backstoryCategories>
-	   <li>Civil</li>
-	</backstoryCategories>
+      <li>Civil</li>
+    </backstoryCategories>
     <chemicalAddictionChance>0</chemicalAddictionChance>
-	<baseRecruitDifficulty>1.0</baseRecruitDifficulty>
+    <baseRecruitDifficulty>1.0</baseRecruitDifficulty>
     <invNutrition>4.8</invNutrition>
     <itemQuality>Normal</itemQuality>
     <backstoryCryptosleepCommonality>0.25</backstoryCryptosleepCommonality>
@@ -17,7 +17,8 @@
       <max>3.5</max>
     </gearHealthRange>
     <apparelTags>
-      <li></li>
+      <li>
+      </li>
     </apparelTags>
     <apparelMoney>
       <min>20000</min>
@@ -36,7 +37,6 @@
       <max>2</max>
     </combatEnhancingDrugsCount>
     <combatEnhancingDrugsChance>0</combatEnhancingDrugsChance>
-
     <inventoryOptions>
       <skipChance>0.7</skipChance>
       <subOptionsChooseOne>
@@ -61,10 +61,7 @@
     </apparelRequired>
     <aiAvoidCover>true</aiAvoidCover>
     <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
-
   </PawnKindDef>
-  
-  
   <PawnKindDef ParentName="ra2_SovietHumanBase">
     <defName>ra2_SovietConscript</defName>
     <label>conscript</label>
@@ -79,12 +76,11 @@
     <apparelRequired>
       <li>ra2_Hat_Conscript</li>
       <li>ra2_Parka_Conscript</li>
-	  <li>ra2_Shirt_Conscript</li>
-	  <li>ra2_Pants_Conscript</li>
+      <li>ra2_Shirt_Conscript</li>
+      <li>ra2_Pants_Conscript</li>
     </apparelRequired>
     <forceNormalGearQuality>true</forceNormalGearQuality>
   </PawnKindDef>
-  
   <PawnKindDef ParentName="ra2_SovietHumanBase">
     <defName>ra2_SovietTeslaTrooper</defName>
     <label>teslatrooper</label>
@@ -99,11 +95,10 @@
     <apparelRequired>
       <li>ra2_Hat_TeslaTrooper</li>
       <li>ra2_Parka_TeslaTrooper</li>
-	  <li>ra2_Pants_TeslaTrooper</li>
+      <li>ra2_Pants_TeslaTrooper</li>
     </apparelRequired>
     <forceNormalGearQuality>true</forceNormalGearQuality>
   </PawnKindDef>
-  
   <PawnKindDef ParentName="ra2_SovietHumanBase">
     <defName>ra2_SovietDesolator</defName>
     <label>desolator</label>
@@ -118,20 +113,18 @@
     <apparelRequired>
       <li>ra2_Hat_Desolator</li>
       <li>ra2_Parka_Desolator</li>
-	  <li>ra2_Pants_Desolator</li>
+      <li>ra2_Pants_Desolator</li>
     </apparelRequired>
     <forceNormalGearQuality>true</forceNormalGearQuality>
   </PawnKindDef>
-  
-  
   <PawnKindDef Name="ra2_SovietEngineerBase" Abstract="True">
     <race>Human</race>
     <defaultFactionType>ra2_Soviet</defaultFactionType>
     <backstoryCategories>
-	   <li>Civil</li>
-	</backstoryCategories>
+      <li>Civil</li>
+    </backstoryCategories>
     <chemicalAddictionChance>0</chemicalAddictionChance>
-	<baseRecruitDifficulty>1.0</baseRecruitDifficulty>
+    <baseRecruitDifficulty>1.0</baseRecruitDifficulty>
     <invNutrition>4.8</invNutrition>
     <itemQuality>Normal</itemQuality>
     <backstoryCryptosleepCommonality>0.25</backstoryCryptosleepCommonality>
@@ -141,7 +134,8 @@
       <max>3.5</max>
     </gearHealthRange>
     <apparelTags>
-      <li></li>
+      <li>
+      </li>
     </apparelTags>
     <apparelMoney>
       <min>20000</min>
@@ -160,7 +154,6 @@
       <max>2</max>
     </combatEnhancingDrugsCount>
     <combatEnhancingDrugsChance>0</combatEnhancingDrugsChance>
-
     <inventoryOptions>
       <skipChance>0.5</skipChance>
       <subOptionsChooseOne>
@@ -187,8 +180,6 @@
     <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
     <factionLeader>true</factionLeader>
   </PawnKindDef>
-  
-  
   <PawnKindDef ParentName="ra2_SovietEngineerBase">
     <defName>ra2_SovietEngineer</defName>
     <label>soviet engineer</label>
@@ -204,11 +195,9 @@
     <apparelRequired>
       <li>ra2_Hat_Engineer</li>
       <li>ra2_Parka_Engineer</li>
-	  <li>ra2_Shirt_Engineer</li>
-	  <li>ra2_Pants_Engineer</li>
+      <li>ra2_Shirt_Engineer</li>
+      <li>ra2_Pants_Engineer</li>
     </apparelRequired>
-
     <forceNormalGearQuality>true</forceNormalGearQuality>
   </PawnKindDef>
-
 </Defs>

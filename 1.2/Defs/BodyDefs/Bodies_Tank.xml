@@ -49,15 +49,15 @@
         </li>
         <li>
           <def>ra2_tankarmor</def>
-          <coverage>1.0</coverage>
+          <coverage>0.99</coverage>
           <parts>
             <li>
               <def>ra2_tankarmor</def>
-              <coverage>1.0</coverage>
+              <coverage>0.99</coverage>
               <parts>
                 <li>
                   <def>ra2_tankarmor</def>
-                  <coverage>1.0</coverage>
+                  <coverage>0.99</coverage>
                 </li>
               </parts>
             </li>

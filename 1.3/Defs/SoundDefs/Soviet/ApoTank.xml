@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <SoundDef>
+    <defName>ra2_apo_move</defName>
+    <context>MapOnly</context>
+    <eventNames />
+    <maxVoices>2</maxVoices>
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>ra2/Soviet/apotank/move</clipFolderPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>50</min>
+          <max>65</max>
+        </volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  <SoundDef>
+    <defName>ra2_apo_enter</defName>
+    <eventNames />
+    <maxSimultaneous>1</maxSimultaneous>
+    <maxVoices>3</maxVoices>
+    <subSounds>
+      <li>
+        <onCamera>True</onCamera>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>ra2/Soviet/apotank/enter</clipFolderPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>41</min>
+          <max>41</max>
+        </volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  <SoundDef>
+    <defName>ra2_apo_shot</defName>
+    <context>MapOnly</context>
+    <eventNames />
+    <maxVoices>3</maxVoices>
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>ra2/Soviet/apotank/shot</clipFolderPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>50</min>
+          <max>65</max>
+        </volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  <SoundDef>
+    <defName>ra2_apo_damageDef</defName>
+    <context>MapOnly</context>
+    <eventNames />
+    <maxVoices>5</maxVoices>
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>ra2/Soviet/apotank/damageDef</clipFolderPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>50</min>
+          <max>65</max>
+        </volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+</Defs>

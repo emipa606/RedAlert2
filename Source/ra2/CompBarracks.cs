@@ -1,9 +1,6 @@
-﻿using ra2.Yuri;
+﻿using System.Collections.Generic;
+using ra2.Yuri;
 using RimWorld;
-using RimWorld.Planet;
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using Verse;
 using Verse.Sound;
@@ -13,167 +10,154 @@ namespace ra2
     // Token: 0x0200042C RID: 1068
     public class CompBarracks : ThingComp
     {
+        private int ticks;
 
-        public CompProperties_Barracks Props
-        {
-            get
-            {
-                return (CompProperties_Barracks)this.props;
-            }
-        }
+        // Token: 0x04000B61 RID: 2913
+        private List<string> trainPawns = new List<string>();
 
-        
+        public CompProperties_Barracks Props => (CompProperties_Barracks) props;
+
 
         public override string CompInspectStringExtra()
         {
             string str;
-            
-            if (this.trainPawns.Count > 0)
+
+            if (trainPawns.Count > 0)
             {
-                PawnKindDef pkd = DefDatabase<PawnKindDef>.GetNamed(this.trainPawns[0],true);
-                str = "BarracksTraining".Translate() +pkd.label+ ":" + ((this.ticks*1f)/(0.01*trainTimeCalculate(this.trainPawns[0]))).ToString("f2") + "%"+"\n"+"BarracksLeft".Translate()+"("+(this.trainPawns.Count-1)+")";
+                var pkd = DefDatabase<PawnKindDef>.GetNamed(trainPawns[0]);
+                str = "BarracksTraining".Translate() + pkd.label + ":" +
+                      (ticks * 1f / (0.01 * trainTimeCalculate(trainPawns[0]))).ToString("f2") + "%" + "\n" +
+                      "BarracksLeft".Translate() + "(" + (trainPawns.Count - 1) + ")";
             }
-            else {
-            
+            else
+            {
                 str = "BarracksEmpty".Translate();
             }
-            return str;//+ base.CompInspectStringExtra();
+
+            return str; //+ base.CompInspectStringExtra();
         }
 
 
         // Token: 0x06001290 RID: 4752 RVA: 0x0008E4E3 File Offset: 0x0008C8E3
-        public override void PostSpawnSetup(bool respawningAfterLoad)
-        {
-            base.PostSpawnSetup(respawningAfterLoad);
-           
-        }
 
         public override void Initialize(CompProperties props)
         {
             base.Initialize(props);
-            this.ticks = 0;
-            this.trainPawns = new List<string>();
+            ticks = 0;
+            trainPawns = new List<string>();
         }
 
         public override void PostExposeData()
         {
-            Scribe_Values.Look<int>(ref this.ticks, "ticks", 0, false);
+            Scribe_Values.Look(ref ticks, "ticks");
             //Scribe_Values.Look<List<String>>(ref this.trainPawns, "trainPawns", new List<string>(), false);
-            Scribe_Collections.Look<String>(ref this.trainPawns, true, "trainPawns",LookMode.Undefined, new object[0]);
+            Scribe_Collections.Look(ref trainPawns, true, "trainPawns");
         }
 
         // Token: 0x06001291 RID: 4753 RVA: 0x0008E500 File Offset: 0x0008C900
         public override void CompTick()
         {
             base.CompTick();
-            
-            CompPowerTrader compPowerTrader = ThingCompUtility.TryGetComp<CompPowerTrader>(this.parent);
 
-                if (compPowerTrader != null && compPowerTrader.PowerOn)
-                {
-              //  Log.Warning("1");
-                 if (this.trainPawns.Count > 0)
-                 {
-                  //  Log.Warning("2");
-                    this.ticks++;
+            var compPowerTrader = parent.TryGetComp<CompPowerTrader>();
 
-                    if (getPawnCost(this.trainPawns[0]) > 0f && this.ticks >= trainTimeCalculate(this.trainPawns[0]))
-                    {
-                        trainPawnDone(this.trainPawns[0]);
-                    }
+            if (compPowerTrader == null || !compPowerTrader.PowerOn)
+            {
+                return;
+            }
 
-                 }
-                 
-               
-                }
-         
-               //String firstPawn = trainPawns[0];
+            //  Log.Warning("1");
+            if (trainPawns.Count <= 0)
+            {
+                return;
+            }
 
-            
+            //  Log.Warning("2");
+            ticks++;
 
+            if (getPawnCost(trainPawns[0]) > 0f && ticks >= trainTimeCalculate(trainPawns[0]))
+            {
+                trainPawnDone(trainPawns[0]);
+            }
+
+            //String firstPawn = trainPawns[0];
         }
 
-        private float trainTimeCalculate(String pawn) {
+        private float trainTimeCalculate(string pawn)
+        {
             if (!Settings.useGameSpeed)
             {
                 return 6 * getPawnCost(pawn);
             }
-            else {
-                switch (pawn)
-                {
-                    case "ra2_SovietConscript":
-                        return 60f;
-                    case "ra2_SovietTeslaTrooper":
-                        return 120f;
-                    case "ra2_SovietDesolator":
-                        return 300f;
-                    case "ra2_AlliedGI":
-                        return 60f;
-                    case "ra2_AlliedSiegeCadre":
-                        return 120f;
-                    case "ra2_AlliedSniper":
-                        return 300f;
-                    case "ra2_AlliedChrono":
-                        return 600f;
-                    case "ra2_AlliedTanya":
-                        return 900f;
-                    case "ra2_YuriInitiate":
-                        return 60f;
-                    case "ra2_YuriBrute":
-                        return 240f;
-                    case "ra2_YuriYuri":
-                        return 540f;
 
-                }
+            switch (pawn)
+            {
+                case "ra2_SovietConscript":
+                    return 60f;
+                case "ra2_SovietTeslaTrooper":
+                    return 120f;
+                case "ra2_SovietDesolator":
+                    return 300f;
+                case "ra2_AlliedGI":
+                    return 60f;
+                case "ra2_AlliedSiegeCadre":
+                    return 120f;
+                case "ra2_AlliedSniper":
+                    return 300f;
+                case "ra2_AlliedChrono":
+                    return 600f;
+                case "ra2_AlliedTanya":
+                    return 900f;
+                case "ra2_YuriInitiate":
+                    return 60f;
+                case "ra2_YuriBrute":
+                    return 240f;
+                case "ra2_YuriYuri":
+                    return 540f;
             }
-
-
 
 
             return 0f;
         }
-
-        // Token: 0x04000B61 RID: 2913
-        List<String> trainPawns = new List<string>();
-        private int ticks=0;
         // Token: 0x04000B62 RID: 2914
         //  public Building Barracks;
 
 
-
-
-        private void canTrain(CompRefuelable cr,String def,float amount) {
-
+        private void canTrain(CompRefuelable cr, string def, float amount)
+        {
             if (cr != null && cr.Fuel >= amount)
             {
-                SoundStarter.PlayOneShotOnCamera(DefDatabase<SoundDef>.GetNamed(this.parent.def.defName + "_Training", true));
-                this.trainPawns.Add(def);
+                DefDatabase<SoundDef>.GetNamed(parent.def.defName + "_Training").PlayOneShotOnCamera();
+                trainPawns.Add(def);
                 cr.ConsumeFuel(amount);
             }
-            else {
-                SoundStarter.PlayOneShotOnCamera(DefDatabase<SoundDef>.GetNamed("ra2_Click", true));
+            else
+            {
+                DefDatabase<SoundDef>.GetNamed("ra2_Click").PlayOneShotOnCamera();
             }
         }
 
 
-        private void trainPawnDone(String def) {
-
-            PawnGenerationRequest request = new PawnGenerationRequest(DefDatabase<PawnKindDef>.GetNamed(def, true), Faction.OfPlayer, PawnGenerationContext.NonPlayer, -1, false, false, false, false, true, true, 1f, false, true, true, false, false, false, false, false, 0, null, 1, null, null, null, null, null, null);
-            Pawn item = PawnGenerator.GeneratePawn(request);
-            Pawn_StoryTracker ps = item.story;
+        private void trainPawnDone(string def)
+        {
+            var request = new PawnGenerationRequest(DefDatabase<PawnKindDef>.GetNamed(def), Faction.OfPlayer,
+                PawnGenerationContext.NonPlayer, -1, false, false, false, false, true, true, 1f, false, true, true,
+                false);
+            var item = PawnGenerator.GeneratePawn(request);
+            var ps = item.story;
             ps.childhood = null;
             ps.adulthood = null;
             ps.traits.allTraits = new List<Trait>();
-            ps.traits.GainTrait(new Trait(DefDatabase<TraitDef>.GetNamed("ra2_MakeSoldier", true)));
+            ps.traits.GainTrait(new Trait(DefDatabase<TraitDef>.GetNamed("ra2_MakeSoldier")));
             ps.traits.GainTrait(new Trait(TraitDefOf.Psychopath));
 
-            
-            Pawn_WorkSettings pws = item.workSettings;
+
+            var pws = item.workSettings;
             pws.DisableAll();
-            Pawn_PlayerSettings pps = item.playerSettings;
+            var pps = item.playerSettings;
             pps.hostilityResponse = HostilityResponseMode.Attack;
-           
-            NameTriple triple = NameTriple.FromString(item.kindDef.label.Replace(" ", ""));
+
+            var triple = NameTriple.FromString(item.kindDef.label.Replace(" ", ""));
             item.Name = triple;
             item.inventory.DestroyAll();
 
@@ -181,36 +165,41 @@ namespace ra2
             YuriSoldierMakeUp.tryMakeUp(item);
 
 
+            DefDatabase<SoundDef>.GetNamed(parent.def.defName + "_UnitReady").PlayOneShotOnCamera();
 
-            SoundStarter.PlayOneShotOnCamera(DefDatabase<SoundDef>.GetNamed(this.parent.def.defName + "_UnitReady", true));
 
+            var loc = CellFinder.RandomClosewalkCellNear(parent.Position, parent.Map, 3);
 
-            IntVec3 loc = CellFinder.RandomClosewalkCellNear(this.parent.Position, this.parent.Map, 3, null);
+            Pawn unused;
 
-            Pawn pp;
-
-            if (this.trainPawns[0] != "ra2_AlliedTanya")
-                pp = (Pawn)(GenSpawn.Spawn(item, loc, this.parent.Map, WipeMode.Vanish));
-            else {
-               // bool flag = true;
-                if (getAllTanya().Count > 0) {
-                    foreach (Pawn tanya in getAllTanya()) {
-                        tanya.Destroy(DestroyMode.Vanish);
-                    }
-
-                }
-                  pp = (Pawn)(GenSpawn.Spawn(getTanya(), loc, this.parent.Map, WipeMode.Vanish));
+            if (trainPawns[0] != "ra2_AlliedTanya")
+            {
+                unused = (Pawn) GenSpawn.Spawn(item, loc, parent.Map);
             }
-        
+            else
+            {
+                // bool flag = true;
+                if (getAllTanya().Count > 0)
+                {
+                    foreach (var tanya in getAllTanya())
+                    {
+                        tanya.Destroy();
+                    }
+                }
 
-            this.trainPawns.Remove(this.trainPawns[0]);
-            this.ticks = 0;
+                unused = (Pawn) GenSpawn.Spawn(getTanya(), loc, parent.Map);
+            }
+
+
+            trainPawns.Remove(trainPawns[0]);
+            ticks = 0;
         }
 
-    
 
-        private float getPawnCost(String def) {
-            switch (def) {
+        private float getPawnCost(string def)
+        {
+            switch (def)
+            {
                 case "ra2_SovietConscript":
                     return 50f;
                 case "ra2_SovietTeslaTrooper":
@@ -233,89 +222,86 @@ namespace ra2
                     return 500f;
                 case "ra2_YuriYuri":
                     return 1200f;
-
             }
+
             return 0f;
         }
 
         public override IEnumerable<Gizmo> CompGetGizmosExtra()
         {
-            String baDef = this.parent.def.defName;
-            CompRefuelable cr = this.parent.TryGetComp<CompRefuelable>();
+            var baDef = parent.def.defName;
+            var cr = parent.TryGetComp<CompRefuelable>();
 
             if (baDef.Equals("ra2_SovietBarracks"))
             {
                 yield return CAction(cr, "Soviet", "Conscript");
                 yield return CAction(cr, "Soviet", "TeslaTrooper");
                 yield return CAction(cr, "Soviet", "Desolator");
-
-            } else if (baDef.Equals("ra2_YuriBarracks")) {
+            }
+            else if (baDef.Equals("ra2_YuriBarracks"))
+            {
                 yield return CAction(cr, "Yuri", "Initiate");
                 yield return CAction(cr, "Yuri", "Brute");
-                if (DefDatabase<ResearchProjectDef>.GetNamed("Ra2YuriPsychicTech", true).IsFinished)
+                if (DefDatabase<ResearchProjectDef>.GetNamed("Ra2YuriPsychicTech").IsFinished)
+                {
                     yield return CAction(cr, "Yuri", "Yuri");
+                }
             }
-            else
-                 if (baDef.Equals("ra2_AlliedBarracks")) {
+            else if (baDef.Equals("ra2_AlliedBarracks"))
+            {
                 yield return CAction(cr, "Allied", "GI");
                 yield return CAction(cr, "Allied", "SiegeCadre");
                 yield return CAction(cr, "Allied", "Sniper");
                 yield return CAction(cr, "Allied", "Chrono");
 
 
-                if (DefDatabase<ResearchProjectDef>.GetNamed("Ra2AlliedTanya", true).IsFinished)
+                if (DefDatabase<ResearchProjectDef>.GetNamed("Ra2AlliedTanya").IsFinished)
+                {
                     yield return CAction(cr, "Allied", "Tanya");
-
-
-            
-
-
+                }
             }
-                yield break;
         }
 
 
-
-        private Command_Action CAction(CompRefuelable cr, String faction, String def) {
-            bool canClick = cr.Fuel>=getPawnCost("ra2_"+faction+def)?true:false;
+        private Command_Action CAction(CompRefuelable cr, string faction, string def)
+        {
+            var canClick = cr.Fuel >= getPawnCost("ra2_" + faction + def);
             return new Command_Action
             {
-                
-                icon = ContentFinder<Texture2D>.Get("ra2/Things/Misc/Icon/ra2_" + faction +  def, true),
+                icon = ContentFinder<Texture2D>.Get("ra2/Things/Misc/Icon/ra2_" + faction + def),
                 disabled = !canClick,
-                defaultDesc = getPawnCost("ra2_"+faction+def)+"$",
-                defaultLabel = "ra2_Train".Translate() + DefDatabase<PawnKindDef>.GetNamed("ra2_"+faction+def, true).label,
-                action = delegate
-                {
-                    canTrain(cr, "ra2_"+faction+def, getPawnCost("ra2_"+faction+def));
-                }
-
+                defaultDesc = getPawnCost("ra2_" + faction + def) + "$",
+                defaultLabel =
+                    "ra2_Train".Translate() + DefDatabase<PawnKindDef>.GetNamed("ra2_" + faction + def).label,
+                action = delegate { canTrain(cr, "ra2_" + faction + def, getPawnCost("ra2_" + faction + def)); }
             };
-            
-            }
+        }
 
 
         private Pawn getTanya()
         {
-            PawnGenerationRequest request = new PawnGenerationRequest(DefDatabase<PawnKindDef>.GetNamed("ra2_AlliedTanya", true), Faction.OfPlayer, PawnGenerationContext.NonPlayer, -1, false, false, false, false, true, true, 1f, false, true, true, false, false, false, false, false, 0, null, 1, null, null, null, null, null, null, null, Gender.Female, null, null);
-            Pawn item = PawnGenerator.GeneratePawn(request);
+            var request = new PawnGenerationRequest(DefDatabase<PawnKindDef>.GetNamed("ra2_AlliedTanya"),
+                Faction.OfPlayer, PawnGenerationContext.NonPlayer, -1, false, false, false, false, true, true, 1f,
+                false, true, true, false, false, false, false, false, 0, 0, null, 1, null, null, null, null, null, null,
+                null, Gender.Female);
+            var item = PawnGenerator.GeneratePawn(request);
 
-            Pawn_StoryTracker ps = item.story;
-            HairDef hair = DefDatabase<HairDef>.GetNamed("Curly");
+            var ps = item.story;
+            var hair = DefDatabase<HairDef>.GetNamed("Curly");
             ps.childhood = null;
             ps.adulthood = null;
             ps.traits.allTraits = new List<Trait>();
-            ps.traits.GainTrait(new Trait(DefDatabase<TraitDef>.GetNamed("ra2_MakeSoldier", true)));
+            ps.traits.GainTrait(new Trait(DefDatabase<TraitDef>.GetNamed("ra2_MakeSoldier")));
             ps.traits.GainTrait(new Trait(TraitDefOf.Psychopath));
-            Pawn_WorkSettings pws = item.workSettings;
+            var pws = item.workSettings;
             pws.DisableAll();
 
-            NameTriple triple = NameTriple.FromString(item.kindDef.label);
+            var triple = NameTriple.FromString(item.kindDef.label);
             triple.ResolveMissingPieces("Adams".Translate());
             item.Name = triple;
 
-            Pawn_SkillTracker skt = item.skills;
-            foreach (SkillRecord sr in skt.skills)
+            var skt = item.skills;
+            foreach (var sr in skt.skills)
             {
                 sr.Level = 20;
             }
@@ -323,35 +309,35 @@ namespace ra2
             item.inventory.DestroyAll();
             ps.bodyType = BodyTypeDefOf.Female;
             ps.hairDef = hair;
-            ps.hairColor = new UnityEngine.Color(1, 0.8f, 0);
+            ps.hairColor = new Color(1, 0.8f, 0);
 
             //st.SkinColor = new UnityEngine.Color(0.98f,0.76f,0.71f);
             ps.melanin = 0f;
 
 
-            Pawn_EquipmentTracker pe = item.equipment;
+            var pe = item.equipment;
             pe.Remove(pe.Primary);
-            pe.AddEquipment((ThingWithComps)ThingMaker.MakeThing(DefDatabase<ThingDef>.GetNamed("ra2_Gun_Tanya", true)));
+            pe.AddEquipment((ThingWithComps) ThingMaker.MakeThing(DefDatabase<ThingDef>.GetNamed("ra2_Gun_Tanya")));
 
 
             //item.story = st;
             return item;
         }
 
-        private List<Pawn> getAllTanya() {
-            List<Pawn> result = new List<Pawn>();
-            
-            foreach (Pawn ppod in PawnsFinder.AllMapsCaravansAndTravelingTransportPods_Alive_Colonists) {
-                if (ppod.kindDef.defName == "ra2_AlliedTanya") {
+        private List<Pawn> getAllTanya()
+        {
+            var result = new List<Pawn>();
+
+            foreach (var ppod in PawnsFinder.AllMapsCaravansAndTravelingTransportPods_Alive_Colonists)
+            {
+                if (ppod.kindDef.defName == "ra2_AlliedTanya")
+                {
                     result.Add(ppod);
                 }
             }
-           
-        
+
 
             return result;
         }
-    
-
     }
 }

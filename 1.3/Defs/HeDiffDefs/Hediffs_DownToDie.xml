@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <HediffDef>
+    <defName>Hediffs_DownToDie</defName>
+    <hediffClass>HediffWithComps</hediffClass>
+    <defaultLabelColor>(1, 0, 0)</defaultLabelColor>
+    <isBad>false</isBad>
+    <label>down to die</label>
+    <description>down to die</description>
+    <maxSeverity>1.0</maxSeverity>
+    <comps>
+      <li Class="ra2.HediffCompProperties_DownToDie" />
+    </comps>
+  </HediffDef>
+</Defs>

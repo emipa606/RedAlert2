@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <FactionDef ParentName="FactionBase">
+    <defName>ra2_Allied</defName>
+    <label>Allied</label>
+    <description>Allied Force.</description>
+    <pawnsPlural>Soldiers</pawnsPlural>
+    <listOrderPriority>20</listOrderPriority>
+    <settlementGenerationWeight>1</settlementGenerationWeight>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <maxCountAtGameStart>1</maxCountAtGameStart>
+    <canMakeRandomly>true</canMakeRandomly>
+    <canSiege>false</canSiege>
+    <canStageAttacks>true</canStageAttacks>
+    <leaderTitle>Commander</leaderTitle>
+    <fixedName>Allied Army</fixedName>
+    <factionIconPath>ra2/World/AlliedIcon</factionIconPath>
+    <colorSpectrum>
+      <li>(1, 1, 1)</li>
+    </colorSpectrum>
+    <techLevel>Ultra</techLevel>
+    <backstoryFilters>
+      <li>
+        <categories>
+          <li>Outlander</li>
+        </categories>
+      </li>
+    </backstoryFilters>
+    <allowedCultures>
+      <li>Rustican</li>
+    </allowedCultures>
+    <caravanTraderKinds>
+      <li>ra2_Trader_Resources_Allied</li>
+      <li>ra2_Trader_Expensive_Allied</li>
+    </caravanTraderKinds>
+    <visitorTraderKinds>
+      <li>ra2_Trader_Visitor_Allied</li>
+    </visitorTraderKinds>
+    <baseTraderKinds>
+      <li>ra2_Trader_FactionBase_Allied</li>
+    </baseTraderKinds>
+    <allowedArrivalTemperatureRange>
+      <min>-40</min>
+      <max>45</max>
+    </allowedArrivalTemperatureRange>
+    <pawnGroupMakers>
+      <li>
+        <kindDef>Combat</kindDef>
+        <options>
+          <ra2_AlliedGI>100</ra2_AlliedGI>
+          <ra2_AlliedSiegeCadre>30</ra2_AlliedSiegeCadre>
+          <ra2_GrizzlyTank>6</ra2_GrizzlyTank>
+          <ra2_AlliedSniper>5</ra2_AlliedSniper>
+          <ra2_AlliedEngineer>1</ra2_AlliedEngineer>
+        </options>
+      </li>
+      <li>
+        <kindDef>Peaceful</kindDef>
+        <options>
+          <ra2_AlliedGI>100</ra2_AlliedGI>
+          <ra2_AlliedSiegeCadre>30</ra2_AlliedSiegeCadre>
+        </options>
+      </li>
+      <li>
+        <kindDef>Trader</kindDef>
+        <traders>
+          <ra2_AlliedEngineer>1</ra2_AlliedEngineer>
+        </traders>
+        <carriers>
+          <Muffalo>1</Muffalo>
+          <Dromedary>1</Dromedary>
+        </carriers>
+        <guards>
+          <ra2_AlliedGI>100</ra2_AlliedGI>
+          <ra2_AlliedSiegeCadre>30</ra2_AlliedSiegeCadre>
+          <ra2_GrizzlyTank>3</ra2_GrizzlyTank>
+          <ra2_AlliedSniper>4</ra2_AlliedSniper>
+        </guards>
+      </li>
+      <li>
+        <kindDef>Settlement</kindDef>
+        <options>
+          <ra2_AlliedGI>100</ra2_AlliedGI>
+          <ra2_AlliedSiegeCadre>30</ra2_AlliedSiegeCadre>
+          <ra2_GrizzlyTank>3</ra2_GrizzlyTank>
+          <ra2_AlliedEngineer>5</ra2_AlliedEngineer>
+        </options>
+      </li>
+    </pawnGroupMakers>
+    <settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+    <autoFlee>false</autoFlee>
+    <earliestRaidDays>60</earliestRaidDays>
+    <rescueesCanJoin>false</rescueesCanJoin>
+    <maxPawnCostPerTotalPointsCurve>
+      <points>
+        <li>(0,35)</li>
+        <li>(70, 50)</li>
+        <li>(700, 100)</li>
+        <li>(1300, 150)</li>
+        <li>(100000, 10000)</li>
+      </points>
+    </maxPawnCostPerTotalPointsCurve>
+    <factionNameMaker>NamerFactionOutlander</factionNameMaker>
+    <settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+  </FactionDef>
+</Defs>

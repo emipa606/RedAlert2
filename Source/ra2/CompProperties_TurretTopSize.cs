@@ -1,18 +1,17 @@
-﻿namespace ra2
-{
-    using System;
-    using UnityEngine;
-    using Verse;
+﻿using UnityEngine;
+using Verse;
 
+namespace ra2
+{
     public class CompProperties_TurretTopSize : CompProperties
     {
+        public string soundShoot = null;
         public Vector3 topSize = Vector3.one;
-        public String soundShoot = null;
 
 
         public CompProperties_TurretTopSize()
         {
-            base.compClass = typeof(CompTurretTopSize);
+            compClass = typeof(CompTurretTopSize);
         }
     }
 }

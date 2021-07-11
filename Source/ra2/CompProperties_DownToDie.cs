@@ -1,12 +1,12 @@
-﻿namespace ra2 { 
-   
-    using Verse;
+﻿using Verse;
 
+namespace ra2
+{
     public class CompProperties_DownToDie : CompProperties
     {
         public CompProperties_DownToDie()
         {
-            base.compClass = typeof(CompDownToDie);
+            compClass = typeof(CompDownToDie);
         }
     }
 }

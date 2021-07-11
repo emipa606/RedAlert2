@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 using UnityEngine;
 using Verse;
 
@@ -11,32 +9,35 @@ namespace ra2.Yuri
         // Token: 0x06004769 RID: 18281 RVA: 0x00216080 File Offset: 0x00214480
         public override void DrawGhost(ThingDef def, IntVec3 center, Rot4 rot, Color ghostCol, Thing thing = null)
         {
-            Map currentMap = Find.CurrentMap;
+            var unused = Find.CurrentMap;
             // drawit(center.ToVector3()+new Vector3(0.5f,0,1),7f, MaterialPool.MatFrom(GenDraw.LineTexPath, ShaderDatabase.Transparent, Color.red));
-            GenDraw.DrawFieldEdges(CellsAround(center,Find.CurrentMap), Color.magenta);
+            GenDraw.DrawFieldEdges(CellsAround(center, Find.CurrentMap), Color.magenta);
         }
 
         public List<IntVec3> CellsAround(IntVec3 pos, Map map)
         {
-            List<IntVec3> result = new List<IntVec3>();
+            var result = new List<IntVec3>();
             if (!pos.InBounds(map))
             {
                 return result;
             }
-            Region region = pos.GetRegion(map, RegionType.Set_All);
+
+            var region = pos.GetRegion(map, RegionType.Set_All);
             if (region == null)
             {
-                    return result;
+                return result;
             }
-            RegionTraverser.BreadthFirstTraverse(region, (Region from, Region r) => r.door == null, delegate (Region r)
+
+            RegionTraverser.BreadthFirstTraverse(region, (_, r) => r.door == null, delegate(Region r)
             {
-                foreach (IntVec3 item in r.Cells)
+                foreach (var item in r.Cells)
                 {
                     if (item.InHorDistOf(pos, 6f))
                     {
                         result.Add(item);
                     }
                 }
+
                 return false;
             }, 13, RegionType.Set_All);
             return result;

@@ -1,10 +1,4 @@
-﻿using HarmonyLib;
-using System;
-using System.Collections.Generic;
-using System.Text;
-using Verse;
-
-namespace ra2
+﻿namespace ra2
 {
     // Token: 0x02000007 RID: 7
     //[HarmonyPatch(typeof(Projectile), "DeSpawn", new Type[] { typeof(DestroyMode) })]

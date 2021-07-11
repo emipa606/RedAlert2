@@ -1,21 +1,10 @@
 ﻿using UnityEngine;
 using Verse;
 
-namespace ra2 {
+namespace ra2
+{
     public class TurretTop_CustomSize
     {
-
-        private Building_CustomTurretGun parentTurret;
-        private Building_AirDefense parentDefense;
-
-        private float curRotationInt;
-
-        private int ticksUntilIdleTurn;
-
-        private int idleTurnTicksLeft;
-
-        private bool idleTurnClockwise;
-
         private const float IdleTurnDegreesPerTick = 0.26f;
 
         private const int IdleTurnDuration = 140;
@@ -23,89 +12,101 @@ namespace ra2 {
         private const int IdleTurnIntervalMin = 150;
 
         private const int IdleTurnIntervalMax = 350;
+        private readonly Building_AirDefense parentDefense;
 
-        private float CurRotation
-        {
-            get
-            {
-                return this.curRotationInt;
-            }
-            set
-            {
-                this.curRotationInt = value;
-                if (this.curRotationInt > 360.0)
-                {
-                    this.curRotationInt -= 360f;
-                }
-                if (this.curRotationInt < 0.0)
-                {
-                    this.curRotationInt += 360f;
-                }
-            }
-        }
+        private readonly Building_CustomTurretGun parentTurret;
+
+        private float curRotationInt;
+
+        private bool idleTurnClockwise;
+
+        private int idleTurnTicksLeft;
+
+        private int ticksUntilIdleTurn;
 
         public TurretTop_CustomSize(Building_CustomTurretGun ParentTurret)
         {
-            this.parentTurret = ParentTurret;
+            parentTurret = ParentTurret;
         }
+
         public TurretTop_CustomSize(Building_AirDefense ParentAD)
         {
-            this.parentDefense = ParentAD;
+            parentDefense = ParentAD;
+        }
+
+        private float CurRotation
+        {
+            get => curRotationInt;
+            set
+            {
+                curRotationInt = value;
+                if (curRotationInt > 360.0)
+                {
+                    curRotationInt -= 360f;
+                }
+
+                if (curRotationInt < 0.0)
+                {
+                    curRotationInt += 360f;
+                }
+            }
         }
 
         public void TurretTopTick()
         {
-            bool airmode = (parentDefense!=null &&parentTurret==null);
+            var airmode = parentDefense != null && parentTurret == null;
 
-            LocalTargetInfo currentTarget = airmode?this.parentDefense.nowTarget:this.parentTurret.CurrentTarget;
+            var currentTarget = airmode ? parentDefense.nowTarget : parentTurret.CurrentTarget;
 
-            if (airmode?currentTarget!=null:currentTarget.IsValid)
+            if (airmode ? currentTarget != null : currentTarget.IsValid)
             {
-                IntVec3 cell = currentTarget.Cell;
-                float num2 = this.CurRotation = (cell.ToVector3Shifted() - (airmode?this.parentDefense.DrawPos:this.parentTurret.DrawPos)).AngleFlat();
-                this.ticksUntilIdleTurn = Rand.RangeInclusive(150, 350);
+                var cell = currentTarget.Cell;
+                var unused = CurRotation =
+                    (cell.ToVector3Shifted() - (airmode ? parentDefense.DrawPos : parentTurret.DrawPos)).AngleFlat();
+                ticksUntilIdleTurn = Rand.RangeInclusive(150, 350);
             }
-            else if (this.ticksUntilIdleTurn > 0)
+            else if (ticksUntilIdleTurn > 0)
             {
-                this.ticksUntilIdleTurn--;
-                if (this.ticksUntilIdleTurn == 0)
+                ticksUntilIdleTurn--;
+                if (ticksUntilIdleTurn != 0)
                 {
-                    if (Rand.Value < 0.5)
-                    {
-                        this.idleTurnClockwise = true;
-                    }
-                    else
-                    {
-                        this.idleTurnClockwise = false;
-                    }
-                    this.idleTurnTicksLeft = 140;
+                    return;
                 }
+
+                idleTurnClockwise = Rand.Value < 0.5;
+
+                idleTurnTicksLeft = 140;
             }
             else
             {
-                if (this.idleTurnClockwise)
+                if (idleTurnClockwise)
                 {
-                    this.CurRotation += 0.26f;
+                    CurRotation += 0.26f;
                 }
                 else
                 {
-                    this.CurRotation -= 0.26f;
+                    CurRotation -= 0.26f;
                 }
-                this.idleTurnTicksLeft--;
-                if (this.idleTurnTicksLeft <= 0)
+
+                idleTurnTicksLeft--;
+                if (idleTurnTicksLeft <= 0)
                 {
-                    this.ticksUntilIdleTurn = Rand.RangeInclusive(150, 350);
+                    ticksUntilIdleTurn = Rand.RangeInclusive(150, 350);
                 }
             }
         }
 
         public void DrawTurret()
         {
-            bool airmode = (parentDefense != null && parentTurret == null);
-            
-            Matrix4x4 matrix4x = default(Matrix4x4);
-            matrix4x.SetTRS((airmode? this.parentDefense.DrawPos:this.parentTurret.DrawPos) + Altitudes.AltIncVect, this.CurRotation.ToQuat(), (airmode?this.parentDefense.TopSizeComp:this.parentTurret.TopSizeComp) == null ? Vector3.one : (airmode? this.parentDefense.TopSizeComp.Props.topSize:this.parentTurret.TopSizeComp.Props.topSize));
-            Graphics.DrawMesh(MeshPool.plane20, matrix4x, (airmode? this.parentDefense.def.building.turretTopMat:this.parentTurret.def.building.turretTopMat), 0);
+            var airmode = parentDefense != null && parentTurret == null;
+
+            var matrix4x = default(Matrix4x4);
+            matrix4x.SetTRS((airmode ? parentDefense.DrawPos : parentTurret.DrawPos) + Altitudes.AltIncVect,
+                CurRotation.ToQuat(),
+                (airmode ? parentDefense.TopSizeComp : parentTurret.TopSizeComp) == null ? Vector3.one :
+                airmode ? parentDefense.TopSizeComp.Props.topSize : parentTurret.TopSizeComp.Props.topSize);
+            Graphics.DrawMesh(MeshPool.plane20, matrix4x,
+                airmode ? parentDefense.def.building.turretTopMat : parentTurret.def.building.turretTopMat, 0);
         }
     }
 }

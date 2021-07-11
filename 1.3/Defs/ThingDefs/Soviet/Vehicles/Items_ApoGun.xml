@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="BaseBullet">
+    <defName>ra2_Bullet_apo</defName>
+    <label>Apo bullet</label>
+    <graphicData>
+      <texPath>ra2/Projectile/Bullet_Tank</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <damageDef>ApoDamage</damageDef>
+      <flyOverhead>false</flyOverhead>
+      <damageAmountBase>80</damageAmountBase>
+      <explosionRadius>5</explosionRadius>
+      <speed>70</speed>
+      <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+      <soundExplode>ra2_apo_damageDef</soundExplode>
+      <soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
+      <soundAmbient>MortarRound_Ambient</soundAmbient>
+    </projectile>
+  </ThingDef>
+  <ThingDef ParentName="ra2_CanGetGunBase">
+    <defName>ra2_Gun_Apo</defName>
+    <label>apo gun</label>
+    <graphicData>
+      <texPath>ra2/Things/Weapon/Soviet/Vehicle/AtankWeapon</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <description>Apo's gun.</description>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <destroyOnDrop>true</destroyOnDrop>
+    <useHitPoints>false</useHitPoints>
+    <tradeability>None</tradeability>
+    <statBases>
+      <Flammability>0</Flammability>
+      <MarketValue>150</MarketValue>
+      <Mass>1</Mass>
+      <AccuracyTouch>0.80</AccuracyTouch>
+      <AccuracyShort>0.64</AccuracyShort>
+      <AccuracyMedium>0.41</AccuracyMedium>
+      <AccuracyLong>0.22</AccuracyLong>
+      <RangedWeapon_Cooldown>0.66</RangedWeapon_Cooldown>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.15</MoveSpeed>
+      <WorkSpeedGlobal>-0.20</WorkSpeedGlobal>
+    </equippedStatOffsets>
+    <weaponTags>
+      <li>ApoTankGun</li>
+    </weaponTags>
+    <verbs>
+      <li>
+        <forcedMissRadius>1</forcedMissRadius>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>ra2_Bullet_apo</defaultProjectile>
+        <warmupTime>3</warmupTime>
+        <range>39</range>
+        <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
+        <burstShotCount>2</burstShotCount>
+        <soundCast>ra2_apo_shot</soundCast>
+        <muzzleFlashScale>9</muzzleFlashScale>
+        <stopBurstWithoutLos>false</stopBurstWithoutLos>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+      </li>
+    </verbs>
+  </ThingDef>
+</Defs>

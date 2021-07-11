@@ -1,6 +1,4 @@
-﻿using System;
-using RimWorld;
-using UnityEngine;
+﻿using RimWorld;
 using Verse;
 
 namespace ra2
@@ -8,111 +6,86 @@ namespace ra2
     // Token: 0x02001013 RID: 4115
     public class Verb_Chrono : Verb
     {
-
-    
-
         // Token: 0x0600640B RID: 25611 RVA: 0x001B46FC File Offset: 0x001B2AFC
-        public override void WarmupComplete()
+
+        private void hitThing()
         {
-            base.WarmupComplete();
-           // Find.BattleLog.Add(new BattleLogEntry_RangedFire(this.caster, (!this.currentTarget.HasThing) ? null : this.currentTarget.Thing, (base.EquipmentSource == null) ? null : base.EquipmentSource.def, null, this.ShotsPerBurst > 1));
-        }
-
-        private void hitThing() {
-           
- 
-
-
-                foreach (Apparel ap in this.CasterPawn.apparel.WornApparel)
+            foreach (var ap in CasterPawn.apparel.WornApparel)
+            {
+                if (ap.def.defName != "ra2_Hat_Chrono")
                 {
-                    if (ap.def.defName == "ra2_Hat_Chrono")
-                    {
-                        Comp_RemovingGun crg = ap.TryGetComp<Comp_RemovingGun>();
-                        crg.resolveHitBuilding(this.currentTarget.Thing);
-                        break;
-                    }
+                    continue;
                 }
-     
-       
 
-
+                var crg = ap.TryGetComp<Comp_RemovingGun>();
+                crg.resolveHitBuilding(currentTarget.Thing);
+                break;
+            }
         }
-        
+
         // Token: 0x0600640C RID: 25612 RVA: 0x001B4770 File Offset: 0x001B2B70
         protected override bool TryCastShot()
         {
-            if (this.currentTarget.HasThing && this.currentTarget.Thing.Map != this.caster.Map)
+            if (currentTarget.HasThing && currentTarget.Thing.Map != caster.Map)
             {
                 return false;
             }
 
-            ShootLine shootLine;
-            bool flag = base.TryFindShootLineFromTo(this.caster.Position, this.currentTarget, out shootLine);
-            if (this.verbProps.stopBurstWithoutLos && !flag)
+            var shootLine = new ShootLine();
+            if (verbProps.stopBurstWithoutLos && !TryFindShootLineFromTo(caster.Position, currentTarget, out shootLine))
             {
                 return false;
             }
-            if (base.EquipmentSource != null)
+
+            var comp = EquipmentSource?.GetComp<CompChangeableProjectile>();
+            comp?.Notify_ProjectileLaunched();
+
+            var compMannable = caster.TryGetComp<CompMannable>();
+            if (compMannable?.ManningPawn != null)
             {
-                CompChangeableProjectile comp = base.EquipmentSource.GetComp<CompChangeableProjectile>();
-                if (comp != null)
-                {
-                    comp.Notify_ProjectileLaunched();
-                }
             }
-            Thing launcher = this.caster;
-            Thing equipment = base.EquipmentSource;
-            CompMannable compMannable = this.caster.TryGetComp<CompMannable>();
-            if (compMannable != null && compMannable.ManningPawn != null)
-            {
-                launcher = compMannable.ManningPawn;
-                equipment = this.caster;
-            }
-            Vector3 drawPos = this.caster.DrawPos;
 
 
             SpawnBeam();
             hitThing();
 
 
-
-
-            ShotReport shotReport = ShotReport.HitReportFor(this.caster, this, this.currentTarget);
-            Thing randomCoverToMissInto = shotReport.GetRandomCoverToMissInto();
-            ThingDef targetCoverDef = (randomCoverToMissInto == null) ? null : randomCoverToMissInto.def;
+            var shotReport = ShotReport.HitReportFor(caster, this, currentTarget);
+            var randomCoverToMissInto = shotReport.GetRandomCoverToMissInto();
+            var unused = randomCoverToMissInto?.def;
             if (!Rand.Chance(shotReport.AimOnTargetChance_IgnoringPosture))
             {
                 shootLine.ChangeDestToMissWild(shotReport.AimOnTargetChance_StandardTarget);
 
-                ProjectileHitFlags projectileHitFlags2 = ProjectileHitFlags.NonTargetWorld;
-                if (Rand.Chance(0.5f) && this.canHitNonTargetPawnsNow)
+                var nonTargetWorld = ProjectileHitFlags.NonTargetWorld;
+                if (Rand.Chance(0.5f) && canHitNonTargetPawnsNow)
                 {
-                    projectileHitFlags2 |= ProjectileHitFlags.NonTargetPawns;
+                    nonTargetWorld |= ProjectileHitFlags.NonTargetPawns;
                 }
-               
+
                 return true;
             }
 
-            if (this.currentTarget.Thing != null && this.currentTarget.Thing.def.category == ThingCategory.Pawn && !Rand.Chance(shotReport.PassCoverChance))
+            if (currentTarget.Thing != null && currentTarget.Thing.def.category == ThingCategory.Pawn &&
+                !Rand.Chance(shotReport.PassCoverChance))
             {
-     
-                ProjectileHitFlags projectileHitFlags3 = ProjectileHitFlags.NonTargetWorld;
-                if (this.canHitNonTargetPawnsNow)
+                var projectileHitFlags3 = ProjectileHitFlags.NonTargetWorld;
+                if (canHitNonTargetPawnsNow)
                 {
                     projectileHitFlags3 |= ProjectileHitFlags.NonTargetPawns;
                 }
-                
+
                 return true;
             }
 
 
-            ProjectileHitFlags projectileHitFlags4 = ProjectileHitFlags.IntendedTarget;
-            if (this.canHitNonTargetPawnsNow)
+            var projectileHitFlags4 = ProjectileHitFlags.IntendedTarget;
+            if (canHitNonTargetPawnsNow)
             {
                 projectileHitFlags4 |= ProjectileHitFlags.NonTargetPawns;
             }
 
-            if (!this.currentTarget.HasThing || this.currentTarget.Thing.def.Fillage == FillCategory.Full)
+            if (!currentTarget.HasThing || currentTarget.Thing.def.Fillage == FillCategory.Full)
             {
                 projectileHitFlags4 |= ProjectileHitFlags.NonTargetWorld;
             }
@@ -121,18 +94,16 @@ namespace ra2
         }
 
 
-
         private void SpawnBeam()
         {
-       
-            ChronoBeam cb = ThingMaker.MakeThing(DefDatabase<ThingDef>.GetNamed("ChronoBeam",true), null) as ChronoBeam;
-            bool flag = cb == null;
-            if (!flag)
+            var cb = ThingMaker.MakeThing(DefDatabase<ThingDef>.GetNamed("ChronoBeam")) as ChronoBeam;
+            if (cb == null)
             {
-                
-                cb.Setup(this.caster,this.currentTarget);
-                GenSpawn.Spawn(cb, IntVec3Utility.ToIntVec3(this.caster.Position.ToVector3()), this.caster.Map, 0);
+                return;
             }
+
+            cb.Setup(caster, currentTarget);
+            GenSpawn.Spawn(cb, caster.Position.ToVector3().ToIntVec3(), caster.Map);
         }
 
 
@@ -143,17 +114,20 @@ namespace ra2
             {
                 return false;
             }
-            if (base.CasterIsPawn)
+
+            if (!base.CasterIsPawn)
             {
-                Pawn casterPawn = base.CasterPawn;
-                if (casterPawn.Faction != Faction.OfPlayer && casterPawn.mindState.MeleeThreatStillThreat && casterPawn.mindState.meleeThreat.Position.AdjacentTo8WayOrInside(casterPawn.Position))
-                {
-                    return false;
-                }
+                return true;
             }
+
+            var casterPawn = base.CasterPawn;
+            if (casterPawn.Faction != Faction.OfPlayer && casterPawn.mindState.MeleeThreatStillThreat &&
+                casterPawn.mindState.meleeThreat.Position.AdjacentTo8WayOrInside(casterPawn.Position))
+            {
+                return false;
+            }
+
             return true;
         }
-       
     }
-    
 }

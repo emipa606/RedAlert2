@@ -1,9 +1,7 @@
-﻿namespace ra2
-{
-    using System;
-    using UnityEngine;
-    using Verse;
+﻿using Verse;
 
+namespace ra2
+{
     public class ProjectileEnd
     {
         public Thing launcher;
@@ -11,10 +9,9 @@
 
         public ProjectileEnd(Projectile s, Thing l)
         {
-            this.shell = s;
+            shell = s;
 
-            this.launcher = l;
-
+            launcher = l;
         }
     }
 }

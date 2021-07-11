@@ -1,163 +1,167 @@
-﻿namespace ra2
-{
-    using RimWorld;
-    using System;
-    using Verse;
-    using Verse.Sound;
+﻿using RimWorld;
+using Verse;
+using Verse.Sound;
 
+namespace ra2
+{
     public class HediffComp_DownToDie : HediffComp
     {
-   
+        public HediffCompProperties_DownToDie Props =>
+            (HediffCompProperties_DownToDie) props;
+
 
         public override void CompPostTick(ref float severityAdjustment)
         {
             base.CompPostTick(ref severityAdjustment);
 
 
-
-           
-             {
-
-                Pawn_EquipmentTracker pe = base.Pawn.equipment;
-                Pawn_ApparelTracker pa = base.Pawn.apparel;
-                if (base.Pawn.Faction == Faction.OfPlayer)
+            {
+                var pe = Pawn.equipment;
+                var pa = Pawn.apparel;
+                if (Pawn.Faction == Faction.OfPlayer)
                 {
-                  
-                    if (base.Pawn.kindDef.defName == "ra2_AlliedTanya")
+                    if (Pawn.kindDef.defName == "ra2_AlliedTanya")
                     {
-                       
                     }
-                   else if (pe.Primary==null|| pe.Primary.def != getDefaultGun(base.Pawn.kindDef.defName)) {
-
-                        
-                      
-
-
-
-                       
-                            pe.Remove(pe.Primary);
-                            pe.AddEquipment((ThingWithComps)ThingMaker.MakeThing(getDefaultGun(base.Pawn.kindDef.defName)));
-
-
-
+                    else if (pe.Primary == null || pe.Primary.def != getDefaultGun(Pawn.kindDef.defName))
+                    {
+                        pe.Remove(pe.Primary);
+                        pe.AddEquipment((ThingWithComps) ThingMaker.MakeThing(getDefaultGun(Pawn.kindDef.defName)));
                     }
 
-                    if (base.Pawn.kindDef.defName == "ra2_AlliedChrono")
+                    if (Pawn.kindDef.defName == "ra2_AlliedChrono")
                     {
-                        bool hasHat = false;
-                        foreach (Apparel ap in base.Pawn.apparel.WornApparel)
+                        var hasHat = false;
+                        foreach (var ap in Pawn.apparel.WornApparel)
                         {
-                            if (ap.def.defName == "ra2_Hat_Chrono")
+                            if (ap.def.defName != "ra2_Hat_Chrono")
                             {
-                                hasHat = true;
-                                break;
+                                continue;
                             }
+
+                            hasHat = true;
+                            break;
                         }
+
                         if (!hasHat)
                         {
-                            base.Pawn.apparel.Wear((Apparel)ThingMaker.MakeThing(DefDatabase<ThingDef>.GetNamed("ra2_Hat_Chrono", true)));
+                            Pawn.apparel.Wear(
+                                (Apparel) ThingMaker.MakeThing(DefDatabase<ThingDef>.GetNamed("ra2_Hat_Chrono")));
                         }
                     }
 
-                    if (pa.WornApparel == null) {
-                        pa.Wear((Apparel)ThingMaker.MakeThing(DefDatabase<ThingDef>.GetNamed("ra2_Belt",true)));
-                    }
-
-                        bool hasBelt = false;
-                        foreach (Apparel ap in pa.WornApparel) {
-                            if (ap.def.defName.Equals("ra2_Belt")) {
-                                hasBelt = true;
-                                break;
-                            }
-                        }
-                        if (!hasBelt) {
-                        pa.Wear((Apparel)ThingMaker.MakeThing(DefDatabase<ThingDef>.GetNamed("ra2_Belt", true)));
-                    }
-                    
-                }
-
-            }
-
-            if (base.Pawn.apparel.WornApparel.Find(x => x.TryGetComp<CompDownToDie>() != null) == null)
-            {
-                base.Pawn.health.RemoveHediff(base.parent);
-            }
-
-        
-            if ((base.Pawn.Downed && !base.Pawn.Dead)||base.Pawn.IsPrisoner) {
-                //Apparel ap = base.Pawn.apparel.WornApparel.Find(x => x.TryGetComp<CompDownToDie>() != null);
-                //ap.Destroy(DestroyMode.Vanish);
-                //base.Pawn.apparel.Remove(ap);
-                DamageInfo dinfo = new DamageInfo(DamageDefOf.Crush, 100, 0,0, null, null, null, DamageInfo.SourceCategory.ThingOrUnknown);
-                HediffSet bodypart = base.Pawn.health.hediffSet;
-                foreach (BodyPartRecord record in bodypart.GetNotMissingParts(BodyPartHeight.Undefined, BodyPartDepth.Undefined))
-                {
-                    if (record.def.tags.Contains(BodyPartTagDefOf.BloodPumpingSource))
+                    if (pa.WornApparel == null)
                     {
+                        pa.Wear((Apparel) ThingMaker.MakeThing(DefDatabase<ThingDef>.GetNamed("ra2_Belt")));
+                    }
 
-                        dinfo.SetHitPart(record);
+                    var hasBelt = false;
+                    foreach (var ap in pa.WornApparel)
+                    {
+                        if (!ap.def.defName.Equals("ra2_Belt"))
+                        {
+                            continue;
+                        }
+
+                        hasBelt = true;
                         break;
                     }
+
+                    if (!hasBelt)
+                    {
+                        pa.Wear((Apparel) ThingMaker.MakeThing(DefDatabase<ThingDef>.GetNamed("ra2_Belt")));
+                    }
+                }
+            }
+
+            if (Pawn.apparel.WornApparel.Find(x => x.TryGetComp<CompDownToDie>() != null) == null)
+            {
+                Pawn.health.RemoveHediff(parent);
+            }
+
+
+            if ((!Pawn.Downed || Pawn.Dead) && !Pawn.IsPrisoner)
+            {
+                return;
+            }
+
+            //Apparel ap = base.Pawn.apparel.WornApparel.Find(x => x.TryGetComp<CompDownToDie>() != null);
+            //ap.Destroy(DestroyMode.Vanish);
+            //base.Pawn.apparel.Remove(ap);
+            var dinfo = new DamageInfo(DamageDefOf.Crush, 100, 0, 0);
+            var bodypart = Pawn.health.hediffSet;
+            foreach (var record in bodypart.GetNotMissingParts())
+            {
+                if (!record.def.tags.Contains(BodyPartTagDefOf.BloodPumpingSource))
+                {
+                    continue;
                 }
 
-                    base.Pawn.TakeDamage(dinfo);
-                
-            }  
-          
+                dinfo.SetHitPart(record);
+                break;
+            }
+
+            Pawn.TakeDamage(dinfo);
         }
 
         public override void Notify_PawnDied()
         {
             base.Notify_PawnDied();
-            string pk = base.Pawn.kindDef.defName;
-           // Log.Warning(pk);
-           // if (pk.EqualsIgnoreCase("ra2_sovietdesolator")||pk.EqualsIgnoreCase("ra2_sovietteslatrooper")|| pk.EqualsIgnoreCase("ra2_alliedsiegecadre")|| pk.EqualsIgnoreCase("ra2_alliedsniper")||pk.EqualsIgnoreCase("ra2_AlliedChrono")|| pk.EqualsIgnoreCase("ra2_yuriyuri")|| pk.EqualsIgnoreCase("ra2_yuribrute")) {
-          //      base.Pawn.apparel.DestroyAll();
-          //  }
-            SoundDef death = DefDatabase<SoundDef>.GetNamed(pk+"_death",false);
-            if (pk.EndsWith("Engineer")) {
+            var pk = Pawn.kindDef.defName;
+            // Log.Warning(pk);
+            // if (pk.EqualsIgnoreCase("ra2_sovietdesolator")||pk.EqualsIgnoreCase("ra2_sovietteslatrooper")|| pk.EqualsIgnoreCase("ra2_alliedsiegecadre")|| pk.EqualsIgnoreCase("ra2_alliedsniper")||pk.EqualsIgnoreCase("ra2_AlliedChrono")|| pk.EqualsIgnoreCase("ra2_yuriyuri")|| pk.EqualsIgnoreCase("ra2_yuribrute")) {
+            //      base.Pawn.apparel.DestroyAll();
+            //  }
+            var death = DefDatabase<SoundDef>.GetNamed(pk + "_death", false);
+            if (pk.EndsWith("Engineer"))
+            {
                 death = DefDatabase<SoundDef>.GetNamed("ra2_Engineer_death", false);
-            }else if (pk.EndsWith("Chrono"))
+            }
+            else if (pk.EndsWith("Chrono"))
             {
                 death = DefDatabase<SoundDef>.GetNamed("ra2_Chrono_death", false);
-
             }
 
-            if (death != null && this.Pawn.MapHeld!=null)
+            if (death != null && Pawn.MapHeld != null)
             {
-                SoundStarter.PlayOneShot(death, new TargetInfo(base.Pawn.Position, this.Pawn.MapHeld, true));
-                
+                death.PlayOneShot(new TargetInfo(Pawn.Position, Pawn.MapHeld, true));
             }
-            if (base.Pawn.Faction == Faction.OfPlayer)
+
+            if (Pawn.Faction != Faction.OfPlayer)
             {
-                try {
-                    if (Pawn.kindDef.defName.StartsWith("ra2_Soviet"))
-                    {
-                        SoundDef.Named("ra2_SovietBarracks_UnitLost").PlayOneShotOnCamera();
-                    }
-                    else if (Pawn.kindDef.defName.StartsWith("ra2_Allied"))
-                    {
-                        SoundDef.Named("ra2_AlliedBarracks_UnitLost").PlayOneShotOnCamera();
-                    }
-                    else if (Pawn.kindDef.defName.StartsWith("ra2_Yuri"))
-                    {
-                        SoundDef.Named("ra2_YuriBarracks_UnitLost").PlayOneShotOnCamera();
-                    }
-
-                } catch (Exception e) { }
-                base.Pawn.Corpse.Destroy(DestroyMode.Vanish);
-
+                return;
             }
-           
-         
-  
+
+            try
+            {
+                if (Pawn.kindDef.defName.StartsWith("ra2_Soviet"))
+                {
+                    SoundDef.Named("ra2_SovietBarracks_UnitLost").PlayOneShotOnCamera();
+                }
+                else if (Pawn.kindDef.defName.StartsWith("ra2_Allied"))
+                {
+                    SoundDef.Named("ra2_AlliedBarracks_UnitLost").PlayOneShotOnCamera();
+                }
+                else if (Pawn.kindDef.defName.StartsWith("ra2_Yuri"))
+                {
+                    SoundDef.Named("ra2_YuriBarracks_UnitLost").PlayOneShotOnCamera();
+                }
+            }
+            catch
+            {
+                // ignored
+            }
+
+            Pawn.Corpse.Destroy();
         }
 
 
-        private ThingDef getDefaultGun(string def) {
-            string gundef= "ra2_Gun_Conscript";
-            switch (def) {
-                case "ra2_SovietConscript" :
+        private ThingDef getDefaultGun(string def)
+        {
+            var gundef = "ra2_Gun_Conscript";
+            switch (def)
+            {
+                case "ra2_SovietConscript":
                     gundef = "ra2_Gun_Conscript";
                     break;
                 case "ra2_SovietTeslaTrooper":
@@ -187,21 +191,10 @@
                 case "ra2_YuriYuri":
                     gundef = "ra2_Gun_Yuri";
                     break;
-
-
             }
-                
 
 
-            return DefDatabase<ThingDef>.GetNamed(gundef,true);
+            return DefDatabase<ThingDef>.GetNamed(gundef);
         }
-
-
-
-        public HediffCompProperties_DownToDie Props =>
-            ((HediffCompProperties_DownToDie)base.props);
-
-      
-}
-
+    }
 }

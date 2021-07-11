@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Verse;
+﻿using Verse;
 
 namespace ra2
 {
@@ -9,7 +6,7 @@ namespace ra2
     {
         public CompProperties_Barracks()
         {
-            base.compClass = typeof(CompBarracks);
+            compClass = typeof(CompBarracks);
         }
     }
 }

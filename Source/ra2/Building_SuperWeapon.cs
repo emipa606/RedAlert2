@@ -1,81 +1,78 @@
-﻿using RimWorld;
-using RimWorld.Planet;
-using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Collections.Generic;
 using System.Text;
+using RimWorld;
+using RimWorld.Planet;
 using UnityEngine;
 using Verse;
-using Verse.Sound;
 
 namespace ra2
 {
-    public enum SuperWeaponType {
-        Soviet,
-        Allied,
-        Yuri
-    }
-
-    public class Building_SuperWeapon:Building
+    public class Building_SuperWeapon : Building
     {
-        public bool canFire = false;
-        public int ticks = 0;
-        private int MaxLaunchDistance = 350;
-       // private SuperWeaponType type;
+        private readonly int MaxLaunchDistance = 350;
+
+        public bool canFire;
+        // private SuperWeaponType type;
 
         protected StunHandler stunner;
+        public int ticks;
 
 
-        public Building_SuperWeapon(){
-            this.stunner = new StunHandler(this);
-           // this.type = getType();
-            
+        public Building_SuperWeapon()
+        {
+            stunner = new StunHandler(this);
+            // this.type = getType();
         }
 
 
         public override string GetInspectString()
         {
-            StringBuilder sb = new StringBuilder();
-            int left = (36000 - this.ticks) / 60;
+            var sb = new StringBuilder();
+            var left = (36000 - ticks) / 60;
             sb.Append(base.GetInspectString());
             if (!canFire)
             {
-                sb.Append("\n"+"LeftSuperWeaponTime".Translate() + ":" + left/60 + "m"+ (left%60)+"s");
+                sb.Append("\n" + "LeftSuperWeaponTime".Translate() + ":" + (left / 60) + "m" + (left % 60) + "s");
             }
-            else {
-                sb.Append("\n"+"ReadytoLaunch".Translate());
+            else
+            {
+                sb.Append("\n" + "ReadytoLaunch".Translate());
             }
-          
-
-
 
 
             // String sb = base.GetInspectString() + "\n" + Translator.Translate("restoreBullet") + ":" + this.restoreBullet + "\n" + Translator.Translate("restoreProgress") + ":" + (this.ticks);
             return sb.ToString();
-
         }
-        private bool hasPower() {
-            CompPowerTrader powerComp = this.TryGetComp<CompPowerTrader>();
-            if ((((powerComp == null) || powerComp.PowerOn) && this.Spawned))
+
+        private bool hasPower()
+        {
+            var powerComp = this.TryGetComp<CompPowerTrader>();
+            if (powerComp != null && !powerComp.PowerOn || !Spawned)
             {
-                if (!stunner.Stunned)
-                {
-                    return true;
-                }
+                return false;
             }
+
+            if (!stunner.Stunned)
+            {
+                return true;
+            }
+
             return false;
         }
 
-        private bool canTickAdd() {
-            CompPowerTrader powerComp = this.TryGetComp<CompPowerTrader>();
-            if ((((powerComp == null) || powerComp.PowerOn) &&this.Spawned))
+        private bool canTickAdd()
+        {
+            var powerComp = this.TryGetComp<CompPowerTrader>();
+            if (powerComp != null && !powerComp.PowerOn || !Spawned)
             {
-                if (!stunner.Stunned)
-                {
-                    return !canFire;
-                }
+                return false;
             }
-          //  if (canFire) return false;
+
+            if (!stunner.Stunned)
+            {
+                return !canFire;
+            }
+            //  if (canFire) return false;
 
             return false;
         }
@@ -83,34 +80,44 @@ namespace ra2
         public override void ExposeData()
         {
             base.ExposeData();
-            Scribe_Values.Look<int>(ref this.ticks, "ticks", 0, false);
-            Scribe_Values.Look<bool>(ref this.canFire, "canFire", false, false);
+            Scribe_Values.Look(ref ticks, "ticks");
+            Scribe_Values.Look(ref canFire, "canFire");
             //Scribe_Values.Look<SuperWeaponType>(ref this.type, "canFire", SuperWeaponType.Soviet, false);
         }
 
         public override void Tick()
         {
             base.Tick();
-            if (canTickAdd()) ticks++;
-
-
-
-
-
-            if (ticks > 36000) {
-                canFire = true;
-                ticks = 0;
+            if (canTickAdd())
+            {
+                ticks++;
             }
-            
+
+
+            if (ticks <= 36000)
+            {
+                return;
+            }
+
+            canFire = true;
+            ticks = 0;
         }
 
         private SuperWeaponType getType()
         {
-            if (this.def.defName == "ra2_SovietSuperWeapon") return SuperWeaponType.Soviet;
-            else if (this.def.defName == "ra2_AlliedSuperWeapon") return SuperWeaponType.Allied;
+            if (def.defName == "ra2_SovietSuperWeapon")
+            {
+                return SuperWeaponType.Soviet;
+            }
+
+            if (def.defName == "ra2_AlliedSuperWeapon")
+            {
+                return SuperWeaponType.Allied;
+            }
 
             return SuperWeaponType.Soviet;
         }
+
         public override IEnumerable<Gizmo> GetGizmos()
         {
             /*
@@ -125,8 +132,8 @@ namespace ra2
                     defaultLabel = "fill",
                     action = delegate
                     {
-                        this.canFire = true;
-                        this.ticks = 0;
+                        canFire = true;
+                        ticks = 0;
                     }
                 };
                 yield return new Command_Action
@@ -134,9 +141,8 @@ namespace ra2
                     defaultLabel = "AlmostDone",
                     action = delegate
                     {
-                        this.ticks = 34819;
-                        this.canFire = false;
-                       
+                        ticks = 34819;
+                        canFire = false;
                     }
                 };
             }
@@ -145,37 +151,30 @@ namespace ra2
             {
                 defaultLabel = ("SuperWeaponDesc." + getType()).Translate(),
                 defaultDesc = ("SuperWeaponDesc." + getType()).Translate(),
-                icon = ContentFinder<Texture2D>.Get("ra2/World/ra2_SuperWeaponIcon_"+getType()),
-                disabled=!canFire || !hasPower(),
-                action = delegate
-                {
-                    this.StartChoosingDestination();
-                }
+                icon = ContentFinder<Texture2D>.Get("ra2/World/ra2_SuperWeaponIcon_" + getType()),
+                disabled = !canFire || !hasPower(),
+                action = StartChoosingDestination
             };
-
-
-            yield break;
-
-
         }
 
         private void StartChoosingDestination()
         {
             CameraJumper.TryJump(CameraJumper.GetWorldTarget(this));
             Find.WorldSelector.ClearSelection();
-            int tile = base.Map.Tile;
-            Find.WorldTargeter.BeginTargeting(new Func<GlobalTargetInfo, bool>(this.ChoseWorldTarget), true, null, true, delegate
+            var tile = Map.Tile;
+            Find.WorldTargeter.BeginTargeting(ChoseWorldTarget, true, null, true, delegate
             {
-                if (this.MaxLaunchDistance < 200)
+                if (MaxLaunchDistance < 200)
                 {
-                    GenDraw.DrawWorldRadiusRing(tile, this.MaxLaunchDistance);
+                    GenDraw.DrawWorldRadiusRing(tile, MaxLaunchDistance);
                 }
-            }, delegate (GlobalTargetInfo target)
+            }, delegate(GlobalTargetInfo target)
             {
                 if (!target.IsValid)
                 {
                     return "SWeaponTargetInvalid".Translate();
                 }
+
                 /*
                 int num = Find.WorldGrid.TraversalDistanceBetween(tile, target.Tile, true, int.MaxValue);
                 if (this.MaxLaunchDistance < 200 && num > this.MaxLaunchDistance)
@@ -191,9 +190,10 @@ namespace ra2
         {
             if (!target.IsValid)
             {
-                Messages.Message("SWeaponTargetInvalid".Translate(), MessageTypeDefOf.RejectInput, true);
+                Messages.Message("SWeaponTargetInvalid".Translate(), MessageTypeDefOf.RejectInput);
                 return false;
             }
+
             /*
             int num = Find.WorldGrid.TraversalDistanceBetween(base.Map.Tile, target.Tile, true, int.MaxValue);
             if (this.MaxLaunchDistance < 200 && num > this.MaxLaunchDistance)
@@ -202,19 +202,19 @@ namespace ra2
                 return false;
             }
             */
-            MapParent mapParent = target.WorldObject as MapParent;
-            if (mapParent != null && mapParent.HasMap)
+            if (target.WorldObject is MapParent {HasMap: true} mapParent)
             {
-                Map map = mapParent.Map;
+                var map = mapParent.Map;
                 Current.Game.CurrentMap = map;
-                Targeter targeter = Find.Targeter;
-                Action actionWhenFinished = delegate
+                var targeter = Find.Targeter;
+
+                void ActionWhenFinished()
                 {
-                    if (Find.Maps.Contains(base.Map))
+                    if (Find.Maps.Contains(Map))
                     {
-                        Current.Game.CurrentMap = base.Map;
+                        Current.Game.CurrentMap = Map;
                     }
-                };
+                }
                 /*
                 int range = 0;
                 switch (getType()) {
@@ -224,40 +224,43 @@ namespace ra2
                 }
                 */
 
-                Texture2D ic = ContentFinder<Texture2D>.Get("ra2/World/ra2_SuperWeaponIcon_" + getType());
-                TargetingParameters tg = new TargetingParameters();
-                tg.canTargetLocations = true;
-                tg.canTargetItems = true;
-                tg.canTargetBuildings = true;
-                tg.canTargetPawns = true;
-                tg.canTargetFires = true;
-                targeter.BeginTargeting(tg, delegate (LocalTargetInfo x)
+                var ic = ContentFinder<Texture2D>.Get("ra2/World/ra2_SuperWeaponIcon_" + getType());
+                var tg = new TargetingParameters
+                {
+                    canTargetLocations = true,
+                    canTargetItems = true,
+                    canTargetBuildings = true,
+                    canTargetPawns = true,
+                    canTargetFires = true
+                };
+                targeter.BeginTargeting(tg, delegate(LocalTargetInfo x)
                 {
                     //GenDraw.DrawRadiusRing(UI.MouseCell(), range);
-                    this.TryLaunch(x.ToGlobalTargetInfo(map));
-                }, null, actionWhenFinished, ic);
+                    TryLaunch(x.ToGlobalTargetInfo(map));
+                }, null, ActionWhenFinished, ic);
                 return true;
             }
-            this.TryLaunch(target);
+
+            TryLaunch(target);
             return true;
         }
 
         public void TryLaunch(GlobalTargetInfo target)
         {
-            if (!this.Spawned)
+            if (!Spawned)
             {
-                Log.Error("Tried to launch  but it's unspawned.", false);
+                Log.Error("Tried to launch  but it's unspawned.");
                 return;
             }
-           
 
 
-            Map map = this.Map;
-            int num = Find.WorldGrid.TraversalDistanceBetween(map.Tile, target.Tile, true, int.MaxValue);
-            if (num > this.MaxLaunchDistance)
+            var map = Map;
+            var num = Find.WorldGrid.TraversalDistanceBetween(map.Tile, target.Tile);
+            if (num > MaxLaunchDistance)
             {
                 return;
             }
+
             //this.Transporter.TryRemoveLord(map);
             //  int groupID = this.Transporter.groupID;
             // float amount = Mathf.Max(CompLaunchable.FuelNeededToLaunchAtDist((float)num), 1f);
@@ -270,21 +273,23 @@ namespace ra2
             //     fuelingPortSource.TryGetComp<CompRefuelable>().ConsumeFuel(amount);
             //  }
             //  ThingOwner directlyHeldThings = compTransporter.GetDirectlyHeldThings();
-            this.canFire = false;
-            this.ticks = 0;
+            canFire = false;
+            ticks = 0;
 
-            if(getType() == SuperWeaponType.Soviet)
-            SuperWeaponAction.Soviet(target,this.Position,map);
+            if (getType() == SuperWeaponType.Soviet)
+            {
+                SuperWeaponAction.Soviet(target, Position, map);
+            }
             else if (getType() == SuperWeaponType.Allied)
-                SuperWeaponAction.Allied(target, this.Position, map,target.Tile);
-
-
+            {
+                SuperWeaponAction.Allied(target, Position, map, target.Tile);
+            }
 
 
             //   }
             CameraJumper.TryHideWorld();
         }
-        //public static readonly Texture2D TargeterMouseAttachment = ContentFinder<Texture2D>.Get("ra2/World/SovietIcon", true);
 
+        //public static readonly Texture2D TargeterMouseAttachment = ContentFinder<Texture2D>.Get("ra2/World/SovietIcon", true);
     }
 }

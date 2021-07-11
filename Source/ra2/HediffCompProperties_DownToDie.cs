@@ -1,13 +1,12 @@
-﻿namespace ra2
-{
-    using System;
-    using Verse;
+﻿using Verse;
 
+namespace ra2
+{
     public class HediffCompProperties_DownToDie : HediffCompProperties
     {
         public HediffCompProperties_DownToDie()
         {
-            base.compClass = typeof(HediffComp_DownToDie);
+            compClass = typeof(HediffComp_DownToDie);
         }
     }
 }

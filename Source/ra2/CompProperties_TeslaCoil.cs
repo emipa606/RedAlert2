@@ -1,9 +1,8 @@
-﻿namespace ra2
-{
-    using RimWorld;
-    using UnityEngine;
-    using Verse;
+﻿using UnityEngine;
+using Verse;
 
+namespace ra2
+{
     public class CompProperties_TeslaCoil : CompProperties
     {
         public Vector2 size;
@@ -11,9 +10,7 @@
 
         public CompProperties_TeslaCoil()
         {
-
-            base.compClass = typeof(CompTeslaCoil);
+            compClass = typeof(CompTeslaCoil);
         }
     }
 }
-

@@ -1,6 +1,4 @@
-﻿using System;
-using RimWorld;
-using UnityEngine;
+﻿using RimWorld;
 using Verse;
 
 namespace ra2.Yuri
@@ -8,39 +6,36 @@ namespace ra2.Yuri
     // Token: 0x02001013 RID: 4115
     public class Verb_Yuri : Verb
     {
-
-
-
         // Token: 0x0600640B RID: 25611 RVA: 0x001B46FC File Offset: 0x001B2AFC
-        public override void WarmupComplete()
-        {
-            base.WarmupComplete();
-            // Find.BattleLog.Add(new BattleLogEntry_RangedFire(this.caster, (!this.currentTarget.HasThing) ? null : this.currentTarget.Thing, (base.EquipmentSource == null) ? null : base.EquipmentSource.def, null, this.ShotsPerBurst > 1));
-        }
 
         private bool hitThing(Pawn becontroler)
         {
-            return ModBaseRa2.Instance._controlstorage.ControlSomeone(this.CasterPawn,becontroler);
+            return ModBaseRa2.Instance._controlstorage.ControlSomeone(CasterPawn, becontroler);
         }
 
         // Token: 0x0600640C RID: 25612 RVA: 0x001B4770 File Offset: 0x001B2B70
         protected override bool TryCastShot()
         {
-            if (this.currentTarget.HasThing && this.currentTarget.Thing.Map != this.caster.Map)
+            if (currentTarget.HasThing && currentTarget.Thing.Map != caster.Map)
             {
                 return false;
             }
-            if (!(this.currentTarget.Thing is Pawn)) { return false; }
 
-            if (!ModBaseRa2.Instance._controlstorage.canBeControled(this.currentTarget.Thing as Pawn)) {
-                return false;
-            }
-            ShootLine shootLine;
-            bool flag = base.TryFindShootLineFromTo(this.caster.Position, this.currentTarget, out shootLine);
-            if (this.verbProps.stopBurstWithoutLos && !flag)
+            if (!(currentTarget.Thing is Pawn))
             {
                 return false;
             }
+
+            if (!ModBaseRa2.Instance._controlstorage.canBeControled(currentTarget.Thing as Pawn))
+            {
+                return false;
+            }
+
+            if (verbProps.stopBurstWithoutLos && !TryFindShootLineFromTo(caster.Position, currentTarget, out _))
+            {
+                return false;
+            }
+
             /*
             if (base.EquipmentSource != null)
             {
@@ -51,22 +46,20 @@ namespace ra2.Yuri
                 }
             }
             */
-            Thing launcher = this.caster;
-            Thing equipment = base.EquipmentSource;
-            Vector3 drawPos = this.caster.DrawPos;
+            var unused = caster;
+            Thing unused1 = EquipmentSource;
 
 
             //SpawnBeam();
-           bool succ= hitThing(this.currentTarget.Thing as Pawn);
+            var succ = hitThing(currentTarget.Thing as Pawn);
 
-            if (!succ) return false;
+            if (!succ)
+            {
+                return false;
+            }
 
             return true;
         }
-
-
-
-
 
 
         // Token: 0x06006410 RID: 25616 RVA: 0x001B4C60 File Offset: 0x001B3060
@@ -76,14 +69,19 @@ namespace ra2.Yuri
             {
                 return false;
             }
-            if (base.CasterIsPawn)
+
+            if (!base.CasterIsPawn)
             {
-                Pawn casterPawn = base.CasterPawn;
-                if (casterPawn.Faction != Faction.OfPlayer && casterPawn.mindState.MeleeThreatStillThreat && casterPawn.mindState.meleeThreat.Position.AdjacentTo8WayOrInside(casterPawn.Position))
-                {
-                    return false;
-                }
+                return true;
             }
+
+            var casterPawn = base.CasterPawn;
+            if (casterPawn.Faction != Faction.OfPlayer && casterPawn.mindState.MeleeThreatStillThreat &&
+                casterPawn.mindState.meleeThreat.Position.AdjacentTo8WayOrInside(casterPawn.Position))
+            {
+                return false;
+            }
+
             return true;
         }
     }

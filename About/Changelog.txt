@@ -1,5 +1,8 @@
 # Changelog for RedAlert2
 
+1.0.4.0 - Added confiurable at game-start option
+
+
 1.0.3.0 - Mod updated for 1.3 and passed autotests
 
 

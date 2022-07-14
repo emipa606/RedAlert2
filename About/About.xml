@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
   <name>Red Alert 2 (Continued)</name>
   <packageId>Mlie.RedAlert2</packageId>
@@ -29,22 +29,26 @@
     <li>UnlimitedHugs.HugsLib</li>
     <li>syrchalis.traitvalue</li>
   </loadAfter>
-  <description>[img]https://i.imgur.com/WAEzk68.png[/img]
+  <description>[img]https://i.imgur.com/buuPQel.png[/img]
 Update of AKreedz mod
 https://steamcommunity.com/sharedfiles/filedetails/?id=1499370491
 
 - Added support for [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2451324814][SYR] Trait Value[/url]
 
-[img]https://i.imgur.com/7Gzt3Rg.png[/img]
+[img]https://i.imgur.com/pufA0kM.png[/img]
 
 [table]
 	[tr]
 		[td][url=https://invite.gg/Mlie][img]https://i.imgur.com/zdzzBrc.png[/img][/url][/td]
 		[td][url=https://github.com/emipa606/RedAlert2][img]https://i.imgur.com/kTkpTOE.png[/img][/url][/td]
-	[/tr]
+    [/tr]
+    [tr]
+        [td][img]https://i.imgur.com/WjDSfUn.png[/img][/td]
+        [td][img]https://i.imgur.com/Be8E2qJ.png[/img][/td]
+    [/tr]
 [/table]
 	
-[img]https://i.imgur.com/NOW7jU1.png[/img]
+[img]https://i.imgur.com/Z4GOv8H.png[/img]
 
 [h1]Github:[/h1]
 https://github.com/AKreedz/ra2inRW
@@ -114,7 +118,7 @@ Support language: English,Simplified Chinese
   *Yuri technological table
   *Faction tech core:drop by Engineer,or trade with other Faction.(If you have Misc. MapGen FactionBase MOD,you can also attack the Soviet/Allied factionbase to get Faction tech core)
   *Apocalypse Tank Gun:drop by Apocalypse Tank
-  *Tanya&apos;s Note:drop by Tanya,read it can unlock Barracks Tanya
+  *Tanya's Note:drop by Tanya,read it can unlock Barracks Tanya
 
 [h1]Other function:[/h1]
   *Soviet army will raid with BGM
@@ -127,7 +131,7 @@ Support language: English,Simplified Chinese
   ...
   
 
-used part of Turret Collection MOD&apos;s code,url:https://steamcommunity.com/sharedfiles/filedetails/?id=868519399
+used part of Turret Collection MOD's code,url:https://steamcommunity.com/sharedfiles/filedetails/?id=868519399
 
 一个简单的红色警戒2 MOD
 (含有部分心灵终结MOD的内容)
@@ -197,7 +201,7 @@ Emmmmmm....
 使用了部分 炮塔集合MOD 的代码，链接:https://steamcommunity.com/sharedfiles/filedetails/?id=868519399
 
 
-[img]https://i.imgur.com/Rs6T6cr.png[/img]
+[img]https://i.imgur.com/PwoNOj4.png[/img]
 [list]
 [*] See if the the error persists if you just have this mod and its requirements active.
 [*] If not, try adding your other mods until it happens again.
@@ -206,6 +210,5 @@ Emmmmmm....
 [*] Do not report errors by making a discussion-thread, I get no notification of that.
 [*] If you have the solution for a problem, please post it to the GitHub repository.
 [/list]
-
 </description>
 </ModMetaData>

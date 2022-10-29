@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="ra2BuildingBase">
+    <defName>ra2_AlliedBarracks</defName>
+    <label>Allied Barracks</label>
+    <description>Barracks.</description>
+    <researchPrerequisites>
+      <li>Ra2AlliedBarracks</li>
+    </researchPrerequisites>
+    <graphicData>
+      <texPath>ra2/Building/ra2_AlliedBarracks</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(8,8)</drawSize>
+      <shadowData>
+        <volume>(2.7,1,1.8)</volume>
+      </shadowData>
+      <damageData>
+        <rect>(0.3,0.1,2.4,1.8)</rect>
+      </damageData>
+    </graphicData>
+    <tickerType>Normal</tickerType>
+    <costList>
+      <ra2_GoldBar>500</ra2_GoldBar>
+      <ComponentIndustrial>3</ComponentIndustrial>
+    </costList>
+    <altitudeLayer>BuildingOnTop</altitudeLayer>
+    <useHitPoints>True</useHitPoints>
+    <statBases>
+      <WorkToBuild>4500</WorkToBuild>
+      <MaxHitPoints>500</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <Cleanliness>-20</Cleanliness>
+    </statBases>
+    <size>(5,3)</size>
+    <designationCategory>Production</designationCategory>
+    <fillPercent>1</fillPercent>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <surfaceType>Item</surfaceType>
+    <canOverlapZones>false</canOverlapZones>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>250</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable" />
+      <li Class="ra2.CompProperties_Barracks" />
+      <li Class="CompProperties_Refuelable">
+        <fuelLabel>Gold Bar Store</fuelLabel>
+        <fuelGizmoLabel>Gold Bar</fuelGizmoLabel>
+        <fuelCapacity>10000.0</fuelCapacity>
+        <targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>
+        <initialConfigurableTargetFuelLevel>1000</initialConfigurableTargetFuelLevel>
+        <fuelFilter>
+          <thingDefs>
+            <li>ra2_GoldBar</li>
+          </thingDefs>
+        </fuelFilter>
+        <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+        <autoRefuelPercent>100</autoRefuelPercent>
+        <showFuelGizmo>true</showFuelGizmo>
+        <drawOutOfFuelOverlay>true</drawOutOfFuelOverlay>
+        <drawFuelGaugeInMap>false</drawFuelGaugeInMap>
+      </li>
+    </comps>
+    <designationHotKey>Misc5</designationHotKey>
+  </ThingDef>
+</Defs>

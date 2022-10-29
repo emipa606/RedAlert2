@@ -1,10 +1,9 @@
 ﻿using Verse;
 
-namespace ra2
+namespace ra2;
+
+public class CompTurretTopSize : ThingComp
 {
-    public class CompTurretTopSize : ThingComp
-    {
-        public CompProperties_TurretTopSize Props =>
-            (CompProperties_TurretTopSize) props;
-    }
+    public CompProperties_TurretTopSize Props =>
+        (CompProperties_TurretTopSize)props;
 }

@@ -1,12 +1,11 @@
 ﻿using Verse;
 
-namespace ra2
+namespace ra2;
+
+public class HediffCompProperties_DownToDie : HediffCompProperties
 {
-    public class HediffCompProperties_DownToDie : HediffCompProperties
+    public HediffCompProperties_DownToDie()
     {
-        public HediffCompProperties_DownToDie()
-        {
-            compClass = typeof(HediffComp_DownToDie);
-        }
+        compClass = typeof(HediffComp_DownToDie);
     }
 }

@@ -1,17 +1,19 @@
 ﻿using Verse;
 
-namespace ra2
+namespace ra2;
+
+public class Projectile_Sniper : Projectile_Line
 {
-    public class Projectile_Sniper : Projectile_Line
+    protected override void Impact(Thing hitThing, bool blockedByShield = false)
     {
-        protected override void Impact(Thing hitThing)
+        if (hitThing is Pawn p)
         {
-            if (hitThing is Pawn p)
+            var harmType = canBeHarm(p);
+
+
+            switch (harmType)
             {
-                var harmType = canBeHarm(p);
-
-
-                if (harmType == 1)
+                case 1:
                 {
                     var entry = new BattleLogEntry_RangedImpact(launcher, hitThing, intendedTarget.Thing,
                         equipmentDef, def, targetCoverDef);
@@ -27,8 +29,9 @@ namespace ra2
 
 
                     hitThing.TakeDamage(dinfo).AssociateWithLog(entry);
+                    break;
                 }
-                else if (harmType == 2)
+                case 2:
                 {
                     var entry = new BattleLogEntry_RangedImpact(launcher, hitThing, intendedTarget.Thing,
                         equipmentDef, def, targetCoverDef);
@@ -44,21 +47,16 @@ namespace ra2
 
 
                     hitThing.TakeDamage(dinfo).AssociateWithLog(entry);
+                    break;
                 }
             }
-
-            base.Impact(hitThing);
         }
 
-        private int canBeHarm(Pawn p)
-        {
-            if (p.kindDef.RaceProps.IsMechanoid)
-            {
-                return 2;
-            }
+        base.Impact(hitThing, blockedByShield);
+    }
 
-
-            return 1;
-        }
+    private int canBeHarm(Pawn p)
+    {
+        return p.kindDef.RaceProps.IsMechanoid ? 2 : 1;
     }
 }

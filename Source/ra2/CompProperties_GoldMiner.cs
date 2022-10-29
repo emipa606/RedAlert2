@@ -1,12 +1,11 @@
 ﻿using Verse;
 
-namespace ra2
+namespace ra2;
+
+public class CompProperties_GoldMiner : CompProperties
 {
-    public class CompProperties_GoldMiner : CompProperties
+    public CompProperties_GoldMiner()
     {
-        public CompProperties_GoldMiner()
-        {
-            compClass = typeof(CompGoldMiner);
-        }
+        compClass = typeof(CompGoldMiner);
     }
 }

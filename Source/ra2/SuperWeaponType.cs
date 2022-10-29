@@ -1,9 +1,8 @@
-﻿namespace ra2
+﻿namespace ra2;
+
+public enum SuperWeaponType
 {
-    public enum SuperWeaponType
-    {
-        Soviet,
-        Allied,
-        Yuri
-    }
+    Soviet,
+    Allied,
+    Yuri
 }

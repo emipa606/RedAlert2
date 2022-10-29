@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="BuildingNaturalBase">
+    <defName>ra2_GoldMineral</defName>
+    <label>gold mineral</label>
+    <description>A natural source of high-pressure steam. Geothermal generators can harness the steam power. Rooms built over this will rapidly cook.</description>
+    <thingClass>ra2.Building_GoldMineral</thingClass>
+    <graphicData>
+      <texPath>ra2/Building/GoldMineral</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>Transparent</shaderType>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+    <altitudeLayer>Floor</altitudeLayer>
+    <rotatable>false</rotatable>
+    <destroyable>true</destroyable>
+    <useHitPoints>false</useHitPoints>
+    <tickerType>Normal</tickerType>
+    <selectable>true</selectable>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>3</glowRadius>
+        <glowColor>(217,112,33,0)</glowColor>
+      </li>
+    </comps>
+    <size>(1,1)</size>
+    <neverOverlapFloors>true</neverOverlapFloors>
+    <blockPlants>true</blockPlants>
+    <building>
+      <isEdifice>false</isEdifice>
+      <claimable>false</claimable>
+      <deconstructible>false</deconstructible>
+    </building>
+  </ThingDef>
+</Defs>

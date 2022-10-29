@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <SoundDef>
+    <defName>ra2_conscript_shot</defName>
+    <context>MapOnly</context>
+    <eventNames />
+    <maxVoices>2</maxVoices>
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>ra2/Soviet/conscript/iconatta</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>50</min>
+          <max>65</max>
+        </volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+</Defs>

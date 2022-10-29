@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="ra2BuildingBase">
+    <defName>ra2_YuriGrinder</defName>
+    <label>grinder</label>
+    <description>Turn pawn into gold bar.</description>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+    <thingClass>Building</thingClass>
+    <researchPrerequisites>
+      <li>Ra2YuriBarracks</li>
+    </researchPrerequisites>
+    <graphicData>
+      <texPath>ra2/Building/ra2_YuriGrinder</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(10,10)</drawSize>
+      <shadowData>
+        <volume>(3.5,0.75,3.4)</volume>
+        <offset>(0,0,0)</offset>
+      </shadowData>
+      <damageData>
+        <rect>(0,0.6,4,2.8)</rect>
+      </damageData>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <altitudeLayer>BuildingOnTop</altitudeLayer>
+    <passability>Impassable</passability>
+    <fillPercent>0.5</fillPercent>
+    <canOverlapZones>false</canOverlapZones>
+    <statBases>
+      <MaxHitPoints>500</MaxHitPoints>
+      <WorkToBuild>2500</WorkToBuild>
+      <Flammability>0.2</Flammability>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <size>(5,3)</size>
+    <costList>
+      <ra2_GoldBar>800</ra2_GoldBar>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>400</basePowerConsumption>
+      </li>
+      <li>
+        <compClass>ra2.Yuri.CompGrinder</compClass>
+      </li>
+      <li Class="CompProperties_Breakdownable" />
+    </comps>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <designationCategory>Misc</designationCategory>
+    <designationHotKey>Misc5</designationHotKey>
+    <constructEffect>ConstructMetal</constructEffect>
+    <placeWorkers>
+      <li>ra2.Yuri.PlaceWorker_ShowGrinderRadius</li>
+    </placeWorkers>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+  </ThingDef>
+</Defs>

@@ -1,12 +1,11 @@
 ﻿using Verse;
 
-namespace ra2
+namespace ra2;
+
+public class CompProperties_Barracks : CompProperties
 {
-    public class CompProperties_Barracks : CompProperties
+    public CompProperties_Barracks()
     {
-        public CompProperties_Barracks()
-        {
-            compClass = typeof(CompBarracks);
-        }
+        compClass = typeof(CompBarracks);
     }
 }

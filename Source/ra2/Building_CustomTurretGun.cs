@@ -1,55 +1,54 @@
 ﻿using RimWorld;
 using Verse;
 
-namespace ra2
+namespace ra2;
+
+public class Building_CustomTurretGun : Building_TurretGun
 {
-    public class Building_CustomTurretGun : Building_TurretGun
+    protected new TurretTop_CustomSize top;
+    protected CompTurretTopSize topSizeComp;
+
+    public Building_CustomTurretGun()
     {
-        protected new TurretTop_CustomSize top;
-        protected CompTurretTopSize topSizeComp;
+        top = new TurretTop_CustomSize(this);
+    }
 
-        public Building_CustomTurretGun()
+
+    public bool IsStun => stunner.Stunned;
+
+
+    public CompTurretTopSize TopSizeComp =>
+        topSizeComp;
+
+    public override void Draw()
+    {
+        top.DrawTurret();
+        Comps_PostDraw();
+    }
+
+
+    public override void SpawnSetup(Map map, bool respawningAfterLoad)
+    {
+        base.SpawnSetup(map, respawningAfterLoad);
+        topSizeComp = GetComp<CompTurretTopSize>();
+    }
+
+
+    public override void Tick()
+    {
+        base.Tick();
+
+
+        if (powerComp is { PowerOn: false } || mannableComp is { MannedNow: false } ||
+            !Spawned)
         {
-            top = new TurretTop_CustomSize(this);
+            return;
         }
 
-
-        public bool IsStun => stunner.Stunned;
-
-
-        public CompTurretTopSize TopSizeComp =>
-            topSizeComp;
-
-        public override void Draw()
+        GunCompEq.verbTracker.VerbsTick();
+        if (!stunner.Stunned && GunCompEq.PrimaryVerb.state != VerbState.Bursting)
         {
-            top.DrawTurret();
-            Comps_PostDraw();
-        }
-
-
-        public override void SpawnSetup(Map map, bool respawningAfterLoad)
-        {
-            base.SpawnSetup(map, respawningAfterLoad);
-            topSizeComp = GetComp<CompTurretTopSize>();
-        }
-
-
-        public override void Tick()
-        {
-            base.Tick();
-
-
-            if (powerComp != null && !powerComp.PowerOn || mannableComp != null && !mannableComp.MannedNow ||
-                !Spawned)
-            {
-                return;
-            }
-
-            GunCompEq.verbTracker.VerbsTick();
-            if (!stunner.Stunned && GunCompEq.PrimaryVerb.state != VerbState.Bursting)
-            {
-                top.TurretTopTick();
-            }
+            top.TurretTopTick();
         }
     }
 }

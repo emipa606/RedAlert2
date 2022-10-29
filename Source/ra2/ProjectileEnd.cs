@@ -1,17 +1,16 @@
 ﻿using Verse;
 
-namespace ra2
+namespace ra2;
+
+public class ProjectileEnd
 {
-    public class ProjectileEnd
+    public Thing launcher;
+    public Projectile shell;
+
+    public ProjectileEnd(Projectile s, Thing l)
     {
-        public Thing launcher;
-        public Projectile shell;
+        shell = s;
 
-        public ProjectileEnd(Projectile s, Thing l)
-        {
-            shell = s;
-
-            launcher = l;
-        }
+        launcher = l;
     }
 }

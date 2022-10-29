@@ -1,25 +1,16 @@
 # RedAlert2
 
-![Image](https://i.imgur.com/WAEzk68.png)
+![Image](https://i.imgur.com/buuPQel.png)
 
 Update of AKreedz mod
 https://steamcommunity.com/sharedfiles/filedetails/?id=1499370491
 
 - Added support for https://steamcommunity.com/sharedfiles/filedetails/?id=2451324814][SYR] Trait Value
 
-![Image](https://i.imgur.com/7Gzt3Rg.png)
+![Image](https://i.imgur.com/pufA0kM.png)
 
-
-[table]
-	[tr]
-		[td]https://invite.gg/Mlie]![Image](https://i.imgur.com/zdzzBrc.png)
-[/td]
-		[td]https://github.com/emipa606/RedAlert2]![Image](https://i.imgur.com/kTkpTOE.png)
-[/td]
-	[/tr]
-[/table]
 	
-![Image](https://i.imgur.com/NOW7jU1.png)
+![Image](https://i.imgur.com/Z4GOv8H.png)
 
 
 # Github:
@@ -98,7 +89,7 @@ Support language: English,Simplified Chinese
   *Yuri technological table
   *Faction tech core:drop by Engineer,or trade with other Faction.(If you have Misc. MapGen FactionBase MOD,you can also attack the Soviet/Allied factionbase to get Faction tech core)
   *Apocalypse Tank Gun:drop by Apocalypse Tank
-  *Tanya&apos;s Note:drop by Tanya,read it can unlock Barracks Tanya
+  *Tanya's Note:drop by Tanya,read it can unlock Barracks Tanya
 
 # Other function:
 
@@ -113,7 +104,7 @@ Support language: English,Simplified Chinese
   ...
   
 
-used part of Turret Collection MOD&apos;s code,url:https://steamcommunity.com/sharedfiles/filedetails/?id=868519399
+used part of Turret Collection MOD's code,url:https://steamcommunity.com/sharedfiles/filedetails/?id=868519399
 
 一个简单的红色警戒2 MOD
 (含有部分心灵终结MOD的内容)
@@ -183,7 +174,7 @@ Emmmmmm....
 使用了部分 炮塔集合MOD 的代码，链接:https://steamcommunity.com/sharedfiles/filedetails/?id=868519399
 
 
-![Image](https://i.imgur.com/Rs6T6cr.png)
+![Image](https://i.imgur.com/PwoNOj4.png)
 
 
 

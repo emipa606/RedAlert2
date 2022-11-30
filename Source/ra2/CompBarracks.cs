@@ -138,8 +138,8 @@ public class CompBarracks : ThingComp
             allowAddictions: false);
         var item = PawnGenerator.GeneratePawn(request);
         var ps = item.story;
-        ps.Childhood = null;
-        ps.Adulthood = null;
+        //ps.Childhood = null;
+        //ps.Adulthood = null;
         ps.traits.allTraits = new List<Trait>();
         ps.traits.GainTrait(new Trait(DefDatabase<TraitDef>.GetNamed("ra2_MakeSoldier")));
         ps.traits.GainTrait(new Trait(TraitDefOf.Psychopath));

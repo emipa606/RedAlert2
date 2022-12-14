@@ -57,9 +57,7 @@
       <li Class="CompProperties_UseEffect">
         <compClass>ra2.CompUseEffect_TanyaNote</compClass>
       </li>
-      <li Class="CompProperties_UseEffect">
-        <compClass>CompUseEffect_DestroySelf</compClass>
-      </li>
+      <li Class="CompProperties_UseEffectDestroySelf" />
     </comps>
   </ThingDef>
 </Defs>

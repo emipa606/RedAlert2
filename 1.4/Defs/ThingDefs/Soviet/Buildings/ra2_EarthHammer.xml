@@ -113,7 +113,7 @@
         <warmupTime>10</warmupTime>
         <range>56</range>
         <minRange>8</minRange>
-        <soundCast>ra2_nothing</soundCast>
+        <soundCast>ra2_hammerDefence</soundCast>
         <soundCastTail>ra2_nothing</soundCastTail>
         <muzzleFlashScale>14</muzzleFlashScale>
         <requireLineOfSight>false</requireLineOfSight>

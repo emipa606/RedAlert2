@@ -1,5 +1,8 @@
 # Changelog for RedAlert2
 
+1.4.4 - Added sound for the soviet Hammer turret, thanks rrrrrrr
+
+
 1.4.3 - Fixed the Destroy Self-change in 1.4
 
 

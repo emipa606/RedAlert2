@@ -15,9 +15,8 @@ public class CompUseEffect_TanyaNote : CompUseEffect
         }
     }
 
-    public override bool CanBeUsedBy(Pawn p, out string failReason)
+    public override AcceptanceReport CanBeUsedBy(Pawn p)
     {
-        failReason = null;
         return true;
     }
 

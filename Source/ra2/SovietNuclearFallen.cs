@@ -9,12 +9,6 @@ public class SovietNuclearFallen : ThingWithComps
 
     public IntVec3 targetCell;
 
-    public override void Draw()
-    {
-        //base.Draw();
-        base.DrawAt(DrawPos, true);
-    }
-
     public override void Tick()
     {
         base.Tick();

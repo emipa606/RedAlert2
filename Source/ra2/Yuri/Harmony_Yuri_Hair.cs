@@ -1,39 +1,34 @@
-﻿using System;
-using HarmonyLib;
+﻿using HarmonyLib;
 using RimWorld;
 using Verse;
 
 namespace ra2.Yuri;
 
 // 尤里光头以及狂兽人肤色预定
-[HarmonyPatch(typeof(Pawn_HealthTracker), "HealthTick", new Type[] { })]
+[HarmonyPatch(typeof(Pawn_HealthTracker), nameof(Pawn_HealthTracker.HealthTick))]
 public static class Harmony_Yuri_Hair
 {
-    public static void Postfix(Pawn_HealthTracker __instance)
+    public static void Postfix(Pawn ___pawn)
     {
-        var traverse = Traverse.Create(__instance);
-
-        var pawn = traverse.Field("pawn").GetValue<Pawn>();
-
-        if (pawn.kindDef.defName.EqualsIgnoreCase("ra2_yuriyuri"))
+        if (___pawn.kindDef.defName.EqualsIgnoreCase("ra2_yuriyuri"))
         {
-            if (pawn.story == null)
+            if (___pawn.story == null)
             {
                 return;
             }
 
-            pawn.story.hairDef = DefDatabase<HairDef>.GetNamed("Shaved");
-            pawn.story.bodyType = BodyTypeDefOf.Thin;
-            pawn.gender = Gender.Male;
+            ___pawn.story.hairDef = DefDatabase<HairDef>.GetNamed("Shaved");
+            ___pawn.story.bodyType = BodyTypeDefOf.Thin;
+            ___pawn.gender = Gender.Male;
         }
-        else if (pawn.kindDef.defName.EqualsIgnoreCase("ra2_yuribrute"))
+        else if (___pawn.kindDef.defName.EqualsIgnoreCase("ra2_yuribrute"))
         {
-            if (pawn.story == null)
+            if (___pawn.story == null)
             {
                 return;
             }
 
-            pawn.story.bodyType = BodyTypeDefOf.Hulk;
+            ___pawn.story.bodyType = BodyTypeDefOf.Hulk;
         }
     }
 }

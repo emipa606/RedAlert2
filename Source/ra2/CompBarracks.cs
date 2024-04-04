@@ -11,7 +11,7 @@ public class CompBarracks : ThingComp
 {
     private int ticks;
 
-    private List<string> trainPawns = new List<string>();
+    private List<string> trainPawns = [];
 
     public CompProperties_Barracks Props => (CompProperties_Barracks)props;
 
@@ -39,14 +39,14 @@ public class CompBarracks : ThingComp
     {
         base.Initialize(props);
         ticks = 0;
-        trainPawns = new List<string>();
+        trainPawns = [];
     }
 
     public override void PostExposeData()
     {
         Scribe_Values.Look(ref ticks, "ticks");
         //Scribe_Values.Look<List<String>>(ref this.trainPawns, "trainPawns", new List<string>(), false);
-        Scribe_Collections.Look(ref trainPawns, true, "trainPawns");
+        Scribe_Collections.Look(ref trainPawns, "trainPawns", true);
     }
 
     public override void CompTick()
@@ -134,13 +134,13 @@ public class CompBarracks : ThingComp
     private void trainPawnDone(string def)
     {
         var request = new PawnGenerationRequest(DefDatabase<PawnKindDef>.GetNamed(def), Faction.OfPlayer,
-            PawnGenerationContext.NonPlayer, -1, false, false, false, true, true, 1f, false, true, allowFood: true,
+            PawnGenerationContext.NonPlayer, -1, false, false, false, true, true, allowFood: true,
             allowAddictions: false);
         var item = PawnGenerator.GeneratePawn(request);
         var ps = item.story;
         //ps.Childhood = null;
         //ps.Adulthood = null;
-        ps.traits.allTraits = new List<Trait>();
+        ps.traits.allTraits = [];
         ps.traits.GainTrait(new Trait(DefDatabase<TraitDef>.GetNamed("ra2_MakeSoldier")));
         ps.traits.GainTrait(new Trait(TraitDefOf.Psychopath));
 
@@ -163,11 +163,9 @@ public class CompBarracks : ThingComp
 
         var loc = CellFinder.RandomClosewalkCellNear(parent.Position, parent.Map, 3);
 
-        Pawn unused;
-
         if (trainPawns[0] != "ra2_AlliedTanya")
         {
-            unused = (Pawn)GenSpawn.Spawn(item, loc, parent.Map);
+            _ = (Pawn)GenSpawn.Spawn(item, loc, parent.Map);
         }
         else
         {
@@ -180,7 +178,7 @@ public class CompBarracks : ThingComp
                 }
             }
 
-            unused = (Pawn)GenSpawn.Spawn(getTanya(), loc, parent.Map);
+            _ = (Pawn)GenSpawn.Spawn(getTanya(), loc, parent.Map);
         }
 
 
@@ -268,7 +266,7 @@ public class CompBarracks : ThingComp
         return new Command_Action
         {
             icon = ContentFinder<Texture2D>.Get($"ra2/Things/Misc/Icon/ra2_{faction}{def}"),
-            disabled = !canClick,
+            Disabled = !canClick,
             defaultDesc = $"{getPawnCost($"ra2_{faction}{def}")}$",
             defaultLabel =
                 "ra2_Train".Translate() + DefDatabase<PawnKindDef>.GetNamed($"ra2_{faction}{def}").label,
@@ -280,8 +278,8 @@ public class CompBarracks : ThingComp
     private Pawn getTanya()
     {
         var request = new PawnGenerationRequest(DefDatabase<PawnKindDef>.GetNamed("ra2_AlliedTanya"),
-            Faction.OfPlayer, PawnGenerationContext.NonPlayer, -1, false, false, false, true, true, 1f,
-            false, true, allowFood: true, allowAddictions: false, inhabitant: false, certainlyBeenInCryptosleep: false,
+            Faction.OfPlayer, PawnGenerationContext.NonPlayer, -1, false, false, false, true, true, allowFood: true,
+            allowAddictions: false, inhabitant: false, certainlyBeenInCryptosleep: false,
             forceRedressWorldPawnIfFormerColonist: false, worldPawnFactionDoesntMatter: false, biocodeWeaponChance: 0,
             biocodeApparelChance: 0, extraPawnForExtraRelationChance: null, relationWithExtraPawnChanceFactor: 1,
             validatorPreGear: null, validatorPostGear: null, forcedTraits: null, prohibitedTraits: null,
@@ -293,7 +291,7 @@ public class CompBarracks : ThingComp
         var hair = DefDatabase<HairDef>.GetNamed("Curly");
         ps.Childhood = null;
         ps.Adulthood = null;
-        ps.traits.allTraits = new List<Trait>();
+        ps.traits.allTraits = [];
         ps.traits.GainTrait(new Trait(DefDatabase<TraitDef>.GetNamed("ra2_MakeSoldier")));
         ps.traits.GainTrait(new Trait(TraitDefOf.Psychopath));
         var pws = item.workSettings;

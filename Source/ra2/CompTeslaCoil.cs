@@ -70,8 +70,8 @@ public class CompTeslaCoil : ThingComp
 
         var f = spinPosition + (6.283185f * 1 / 9f);
         var x = Mathf.Abs(4f * Mathf.Sin(f));
-        var unused = f % 6.283185f < 3.141593f;
-        var unused1 = new Vector2(x, 1f);
+        _ = f % 6.283185f < 3.141593f;
+        _ = new Vector2(x, 1f);
         var s = new Vector3(Props.size.x, 1f, Props.size.y);
         var matrix = new Matrix4x4();
         matrix.SetTRS(vector, parent.Rotation.AsQuat, s);
@@ -101,16 +101,6 @@ public class CompTeslaCoil : ThingComp
     private bool hasPower()
     {
         var power = parent.TryGetComp<CompPowerTrader>();
-        if (power is { PowerOn: true })
-        {
-            return true;
-        }
-
-        if (parent is Building_CustomTurretGun { IsStun: true })
-        {
-            return false;
-        }
-
-        return false;
+        return power is { PowerOn: true };
     }
 }

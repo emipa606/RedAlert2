@@ -11,20 +11,21 @@ namespace ra2;
 
 public class Building_AirDefense : Building
 {
+    private static readonly SoundDef dropPod_Open = SoundDef.Named("DropPod_Open");
+
+    public readonly List<IntVec3> airCells = [];
+
+    protected readonly StunHandler stunner;
     private readonly int ticksAirInterval = 120;
 
-    public List<IntVec3> airCells = new List<IntVec3>();
 
-    private List<Thing> airThings = new List<Thing>();
+    protected readonly TurretTop_CustomSize top;
+
+    private List<Thing> airThings = [];
 
     public LocalTargetInfo nowTarget;
 
-    protected StunHandler stunner;
-
     private int ticks;
-
-
-    protected TurretTop_CustomSize top;
     protected CompTurretTopSize topSizeComp;
 
     public Building_AirDefense()
@@ -138,6 +139,11 @@ public class Building_AirDefense : Building
         list.Clear();
         foreach (var intVec in intVecs)
         {
+            if (intVec.InBounds(Map))
+            {
+                continue;
+            }
+
             foreach (var thing in Map.thingGrid.ThingsListAt(intVec)
                          .Where(x => x != null))
             {
@@ -168,7 +174,11 @@ public class Building_AirDefense : Building
         var num = GenRadial.NumCellsInRadius(range);
         for (var i = 0; i < num; i++)
         {
-            airCells.Add(pos + GenRadial.RadialPattern[i]);
+            var newCell = pos + GenRadial.RadialPattern[i];
+            if (newCell.InBounds(map))
+            {
+                airCells.Add(newCell);
+            }
         }
 
 
@@ -265,7 +275,7 @@ public class Building_AirDefense : Building
                 GenPlace.TryPlaceThing(tt, dp.Position, Map, ThingPlaceMode.Near);
 
 
-                SoundDefOf.DropPod_Open.PlayOneShot(new TargetInfo(tt));
+                dropPod_Open.PlayOneShot(new TargetInfo(tt));
             }
 
             for (var i = 0; i < 3; i++)
@@ -388,8 +398,7 @@ public class Building_AirDefense : Building
         }
     }
 
-
-    public override void Draw()
+    protected override void DrawAt(Vector3 drawLoc, bool flip = false)
     {
         top.DrawTurret();
         Comps_PostDraw();

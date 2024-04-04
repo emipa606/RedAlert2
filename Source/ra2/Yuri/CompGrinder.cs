@@ -88,7 +88,7 @@ public class CompGrinder : ThingComp
         {
             defaultLabel = "GrinderAction".Translate(),
             icon = ContentFinder<Texture2D>.Get("UI/Buttons/TradeMode"),
-            disabled = ticks > 0 || !hasPower(),
+            Disabled = ticks > 0 || !hasPower(),
             action = delegate
             {
                 var pp = (parent as Building)?.def.PlaceWorkers[0] as PlaceWorker_ShowGrinderRadius;

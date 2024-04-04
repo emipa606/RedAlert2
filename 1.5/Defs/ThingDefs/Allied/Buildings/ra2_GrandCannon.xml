@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="ra2BuildingBase">
+    <defName>ra2_GrandCannon</defName>
+    <label>Grand Cannon</label>
+    <thingClass>ra2.Building_CustomTurretGun</thingClass>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <graphicData>
+      <texPath>ra2/Building/ra2_GrandCannon_bottom</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(10,10)</drawSize>
+      <damageData>
+        <rect>(0.2,0.2,0.6,0.6)</rect>
+      </damageData>
+    </graphicData>
+    <uiIconPath>ra2/Building/ra2_GrandCannon_UI</uiIconPath>
+    <uiIconScale>4</uiIconScale>
+    <constructEffect>ConstructMetal</constructEffect>
+    <altitudeLayer>BuildingOnTop</altitudeLayer>
+    <stealable>false</stealable>
+    <rotatable>false</rotatable>
+    <size>(6,6)</size>
+    <statBases>
+      <MaxHitPoints>2500</MaxHitPoints>
+      <Flammability>0.3</Flammability>
+      <WorkToBuild>3000</WorkToBuild>
+      <Mass>1000</Mass>
+      <Beauty>-20</Beauty>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <comps>
+      <li Class="CompProperties_Forbiddable" />
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>3</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+      </li>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>1400</basePowerConsumption>
+        <shortCircuitInRain>false</shortCircuitInRain>
+      </li>
+      <li Class="ra2.CompProperties_TurretTopSize">
+        <topSize>(10,10,10)</topSize>
+      </li>
+      <li Class="CompProperties_Flickable" />
+    </comps>
+    <description>Grand Cannon.</description>
+    <passability>Impassable</passability>
+    <pathCost>50</pathCost>
+    <fillPercent>0.4</fillPercent>
+    <disableImpassableShotOverConfigError>true</disableImpassableShotOverConfigError>
+    <castEdgeShadows>true</castEdgeShadows>
+    <staticSunShadowHeight>1.0</staticSunShadowHeight>
+    <hasTooltip>true</hasTooltip>
+    <costList>
+      <ra2_GoldBar>1800</ra2_GoldBar>
+    </costList>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <designationCategory>Security</designationCategory>
+    <specialDisplayRadius>56</specialDisplayRadius>
+    <building>
+      <ai_combatDangerous>true</ai_combatDangerous>
+      <turretGunDef>ra2_Gun_GrandCannon</turretGunDef>
+      <turretBurstCooldownTime>3</turretBurstCooldownTime>
+    </building>
+    <designationHotKey>Misc2</designationHotKey>
+    <researchPrerequisites>
+      <li>Ra2AlliedGrandCannon</li>
+    </researchPrerequisites>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>ra2_Bullet_GrandCannon</defName>
+    <label>GrandCannon</label>
+    <thingClass>Projectile_Explosive</thingClass>
+    <graphicData>
+      <texPath>Things/Projectile/Rocket_Big</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <projectile>
+      <speed>100</speed>
+      <damageDef>Bomb</damageDef>
+      <flyOverhead>true</flyOverhead>
+      <damageAmountBase>78</damageAmountBase>
+      <explosionRadius>2.0</explosionRadius>
+    </projectile>
+  </ThingDef>
+  <ThingDef ParentName="ra2_CanGetGunBase">
+    <defName>ra2_Gun_GrandCannon</defName>
+    <label>Grand Cannon</label>
+    <graphicData>
+      <texPath>ra2/Building/ra2_GrandCannon_top</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <description>GrandCannon use this.</description>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <tradeability>None</tradeability>
+    <destroyOnDrop>true</destroyOnDrop>
+    <useHitPoints>false</useHitPoints>
+    <statBases>
+      <Mass>1</Mass>
+      <AccuracyTouch>1</AccuracyTouch>
+      <AccuracyShort>1</AccuracyShort>
+      <AccuracyMedium>1</AccuracyMedium>
+      <AccuracyLong>1</AccuracyLong>
+      <RangedWeapon_Cooldown>6</RangedWeapon_Cooldown>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>ra2_Bullet_GrandCannon</defaultProjectile>
+        <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+        <burstShotCount>1</burstShotCount>
+        <accuracyTouch>1.00</accuracyTouch>
+        <accuracyShort>1.00</accuracyShort>
+        <accuracyMedium>1.00</accuracyMedium>
+        <accuracyLong>1.00</accuracyLong>
+        <warmupTime>10</warmupTime>
+        <range>56</range>
+        <minRange>12</minRange>
+        <soundCast>ra2_GrandCannon</soundCast>
+        <soundCastTail>ra2_nothing</soundCastTail>
+        <muzzleFlashScale>14</muzzleFlashScale>
+        <requireLineOfSight>false</requireLineOfSight>
+        <forcedMissRadius>1</forcedMissRadius>
+      </li>
+    </verbs>
+  </ThingDef>
+</Defs>

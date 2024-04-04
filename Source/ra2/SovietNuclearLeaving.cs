@@ -57,7 +57,7 @@ public class SovietNuclearLeaving : ThingWithComps
         {
             Messages.Message("SWeaponDestoryBase".Translate(), MessageTypeDefOf.NeutralEvent);
             var worldObject = Find.WorldObjects.WorldObjectAt<WorldObject>(destinationTile);
-            if (worldObject?.Faction != null && !worldObject.Faction.IsPlayer)
+            if (worldObject?.Faction is { IsPlayer: false })
             {
                 worldObject.Faction.TryAffectGoodwillWith(Faction.OfPlayer, -999);
             }

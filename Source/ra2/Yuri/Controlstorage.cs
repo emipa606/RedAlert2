@@ -50,10 +50,9 @@ public class Controlstorage : UtilityWorldObject, IExposable
             return;
         }
 
-        var temp = becontroler;
         ControlerAndBeControler.Remove(controler);
         BeControlerAndControler.Remove(becontroler);
-        temp.SetFaction(BeControlerAndBeforeFaction.TryGetValue(becontroler));
+        becontroler.SetFaction(BeControlerAndBeforeFaction.TryGetValue(becontroler));
         BeControlerAndBeforeFaction.Remove(becontroler);
         SoundDef.Named("ra2_yuri_nocontrol").PlayOneShot(becontroler);
         if (becontroler.Dead)
@@ -62,7 +61,7 @@ public class Controlstorage : UtilityWorldObject, IExposable
         }
 
 
-        if (temp.AnimalOrWildMan() || temp.Faction == Faction.OfPlayer)
+        if (becontroler.AnimalOrWildMan() || becontroler.Faction == Faction.OfPlayer)
         {
             return;
         }
@@ -74,7 +73,7 @@ public class Controlstorage : UtilityWorldObject, IExposable
         }
         else if (!becontroler.AnimalOrWildMan())
         {
-            var unused = LordMaker.MakeNewLord(controler.Faction,
+            _ = LordMaker.MakeNewLord(controler.Faction,
                 new LordJob_AssaultColony(controler.Faction), becontroler.Map, becontrolers);
         }
     }
@@ -208,7 +207,7 @@ public class Controlstorage : UtilityWorldObject, IExposable
                 becontroler.GetLord().Cleanup();
             }
 
-            var unused = LordMaker.MakeNewLord(tmpf,
+            _ = LordMaker.MakeNewLord(tmpf,
                 new LordJob_DefendBase(becontroler.Faction, becontroler.Position), becontroler.Map,
                 becontrolers);
         }

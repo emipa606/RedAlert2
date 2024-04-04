@@ -18,11 +18,6 @@ public class Projectile_Custom : Projectile
         Scribe_Values.Look(ref ticksToDetonation, "ticksToDetonation");
     }
 
-    public override void SpawnSetup(Map map, bool respawningAfterLoad)
-    {
-        base.SpawnSetup(map, respawningAfterLoad);
-    }
-
     public override void Tick()
     {
         base.Tick();

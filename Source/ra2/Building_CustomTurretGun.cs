@@ -1,11 +1,12 @@
 ﻿using RimWorld;
+using UnityEngine;
 using Verse;
 
 namespace ra2;
 
 public class Building_CustomTurretGun : Building_TurretGun
 {
-    protected new TurretTop_CustomSize top;
+    protected new readonly TurretTop_CustomSize top;
     protected CompTurretTopSize topSizeComp;
 
     public Building_CustomTurretGun()
@@ -14,13 +15,13 @@ public class Building_CustomTurretGun : Building_TurretGun
     }
 
 
-    public bool IsStun => stunner.Stunned;
+    public bool IsStun => IsStunned;
 
 
     public CompTurretTopSize TopSizeComp =>
         topSizeComp;
 
-    public override void Draw()
+    protected override void DrawAt(Vector3 drawLoc, bool flip = false)
     {
         top.DrawTurret();
         Comps_PostDraw();
@@ -46,7 +47,7 @@ public class Building_CustomTurretGun : Building_TurretGun
         }
 
         GunCompEq.verbTracker.VerbsTick();
-        if (!stunner.Stunned && GunCompEq.PrimaryVerb.state != VerbState.Bursting)
+        if (!IsStunned && GunCompEq.PrimaryVerb.state != VerbState.Bursting)
         {
             top.TurretTopTick();
         }

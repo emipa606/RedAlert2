@@ -43,7 +43,7 @@ public static class YuriSoldierMakeUp
         }
 
         pawn.story.bodyType = BodyTypeDefOf.Hulk;
-        pawn.story.traits.GainTrait(new Trait(TraitDefOf.Cannibal));
+        pawn.story.traits.GainTrait(new Trait(TraitDef.Named("Cannibal")));
     }
 
 

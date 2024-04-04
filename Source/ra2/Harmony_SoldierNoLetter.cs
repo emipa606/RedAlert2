@@ -5,8 +5,9 @@ using Verse;
 
 namespace ra2;
 
-[HarmonyPatch(typeof(LetterStack), "ReceiveLetter", typeof(TaggedString), typeof(TaggedString), typeof(LetterDef),
-    typeof(LookTargets), typeof(Faction), typeof(Quest), typeof(List<ThingDef>), typeof(string))]
+[HarmonyPatch(typeof(LetterStack), nameof(LetterStack.ReceiveLetter), typeof(TaggedString), typeof(TaggedString),
+    typeof(LetterDef), typeof(LookTargets), typeof(Faction), typeof(Quest), typeof(List<ThingDef>), typeof(string),
+    typeof(int), typeof(bool))]
 public static class Harmony_SoldierNoLetter
 {
     public static bool Prefix(LetterDef textLetterDef, ref LookTargets lookTargets)

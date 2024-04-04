@@ -11,30 +11,32 @@ namespace ra2;
 
 public class SovietNuclearStrike : ThingWithComps
 {
-    private static List<Thing> thingsToAffect = new List<Thing>();
+    private static List<Thing> thingsToAffect = [];
 
-    private static readonly List<IntVec3> openCells = new List<IntVec3>();
+    private static readonly List<IntVec3> openCells = [];
 
-    private static readonly List<IntVec3> adjWallCells = new List<IntVec3>();
+    private static readonly List<IntVec3> adjWallCells = [];
 
-    private readonly List<IntVec3> cellsToAffect = new List<IntVec3>();
+    private static readonly ThingDef burnedTree = ThingDef.Named("BurnedTree");
 
-    private readonly List<Thing> damagedThings = new List<Thing>();
+    public readonly int BlastRadius = 20;
+
+    private readonly List<IntVec3> cellsToAffect = [];
+
+    private readonly List<Thing> damagedThings = [];
 
     private readonly int duration = 6000;
 
     private readonly int range = 56;
 
-    public int BlastRadius = 20;
+    public readonly int shockwave = 20;
+
+    public readonly float Yield = 250f;
 
 
     public IntVec3 landPos;
 
-    public int shockwave = 20;
-
     private int startTick;
-
-    public float Yield = 250f;
 
     protected int TicksPassed => Find.TickManager.TicksGame - startTick;
 
@@ -46,10 +48,10 @@ public class SovietNuclearStrike : ThingWithComps
         Scribe_Values.Look(ref startTick, "startTick");
     }
 
-    public override void Draw()
+    protected override void DrawAt(Vector3 drawLoc, bool flip = false)
     {
         Comps_PostDraw();
-        WorldRendererUtility.DrawQuadTangentialToPlanet(DrawPos, MRC(0f, BlastRadius, 5f, 0f, shockwave), 0.008f,
+        WorldRendererUtility.DrawQuadTangentialToPlanet(drawLoc, MRC(0f, BlastRadius, 5f, 0f, shockwave), 0.008f,
             GraphicDatabase.Get<Graphic_Single>("ra2/Things/Misc/Nuclear/flash", ShaderDatabase.MoteGlow,
                 new Vector2(20f, 20f), Color.white).MatSingle);
     }
@@ -411,9 +413,9 @@ public class SovietNuclearStrike : ThingWithComps
                         {
                             plant.Destroy();
                             if (plant.def.plant.IsTree && plant.LifeStage != PlantLifeStage.Sowing &&
-                                plant.def != ThingDefOf.BurnedTree)
+                                plant.def != burnedTree)
                             {
-                                ((DeadPlant)GenSpawn.Spawn(ThingDefOf.BurnedTree, plant.Position, Map))
+                                ((DeadPlant)GenSpawn.Spawn(burnedTree, plant.Position, Map))
                                     .Growth = plant.Growth;
                             }
                         }
@@ -502,7 +504,7 @@ public class SovietNuclearStrike : ThingWithComps
                 Find.WorldObjects.Remove(settlementBase);
             }
 
-            var unused = Rand.Value;
+            _ = Rand.Value;
 
             return false;
         });

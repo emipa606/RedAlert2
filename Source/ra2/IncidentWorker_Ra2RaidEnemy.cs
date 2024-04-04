@@ -15,7 +15,7 @@ public static class IncidentWorker_Ra2RaidEnemy
         var builder = new StringBuilder();
         if (parms.faction.def.defName.EqualsIgnoreCase("ra2_soviet"))
         {
-            Find.MusicManagerPlay.ForceStartSong(DefDatabase<SongDef>.GetNamed("ra2_soviet_music"), false);
+            Find.MusicManagerPlay.ForcePlaySong(DefDatabase<SongDef>.GetNamed("ra2_soviet_music"), false);
 
             // Log.Warning("your points is :"+ parms.points);
             if (parms.points >= 600)
@@ -44,7 +44,7 @@ public static class IncidentWorker_Ra2RaidEnemy
 
         if (parms.faction.def.defName.EqualsIgnoreCase("ra2_allied"))
         {
-            Find.MusicManagerPlay.ForceStartSong(DefDatabase<SongDef>.GetNamed("ra2_allied_music"), false);
+            Find.MusicManagerPlay.ForcePlaySong(DefDatabase<SongDef>.GetNamed("ra2_allied_music"), false);
 
             if (parms.points >= 600)
             {
@@ -73,7 +73,7 @@ public static class IncidentWorker_Ra2RaidEnemy
 
             DefDatabase<SoundDef>.GetNamed("ra2_tanya_enter").PlayOneShotOnCamera((Map)parms.target);
 
-            var text = "DangerousunitMsg".Translate(parms.faction.Name, item.Name);
+            var text = "DangerousunitMsg".Translate(parms.faction.Name, item.Name.ToString());
             builder.AppendLine(text);
             builder.AppendLine("TanyaWeaponUse".Translate() + ":" + DefDatabase<ThingDef>
                 .GetNamed(result > 33 ? "ra2_Gun_Tanya" : "ra2_TanyaC4Bomb").label);
@@ -90,7 +90,7 @@ public static class IncidentWorker_Ra2RaidEnemy
             return false;
         }
 
-        Find.MusicManagerPlay.ForceStartSong(DefDatabase<SongDef>.GetNamed("ra2_yuri_music"), false);
+        Find.MusicManagerPlay.ForcePlaySong(DefDatabase<SongDef>.GetNamed("ra2_yuri_music"), false);
 
         // Log.Warning("your points is :"+ parms.points);
         if (parms.points >= 500)

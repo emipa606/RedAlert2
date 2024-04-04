@@ -12,7 +12,7 @@ public class CompAlliedSuperWeapon : ThingComp
 {
     private readonly string path = "ra2/Projectile/Lighting";
     private bool canFire;
-    private List<Texture2D> list = new List<Texture2D>();
+    private List<Texture2D> list = [];
     private Material oldt;
     private Building_SuperWeapon pb;
     private int ticktime;
@@ -20,13 +20,7 @@ public class CompAlliedSuperWeapon : ThingComp
     private bool hasPower()
     {
         var cpt = parent.TryGetComp<CompPowerTrader>();
-        if (cpt is { PowerOn: true })
-        {
-            return true;
-        }
-
-
-        return false;
+        return cpt is { PowerOn: true };
     }
 
     public override void CompTick()

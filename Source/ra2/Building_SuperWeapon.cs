@@ -10,11 +10,11 @@ namespace ra2;
 public class Building_SuperWeapon : Building
 {
     private readonly int MaxLaunchDistance = 350;
-
-    public bool canFire;
     // private SuperWeaponType type;
 
-    protected StunHandler stunner;
+    protected readonly StunHandler stunner;
+
+    public bool canFire;
     public int ticks;
 
 
@@ -150,7 +150,7 @@ public class Building_SuperWeapon : Building
             defaultLabel = ("SuperWeaponDesc." + getType()).Translate(),
             defaultDesc = ("SuperWeaponDesc." + getType()).Translate(),
             icon = ContentFinder<Texture2D>.Get($"ra2/World/ra2_SuperWeaponIcon_{getType()}"),
-            disabled = !canFire || !hasPower(),
+            Disabled = !canFire || !hasPower(),
             action = StartChoosingDestination
         };
     }
@@ -185,14 +185,6 @@ public class Building_SuperWeapon : Building
             Current.Game.CurrentMap = map;
             var targeter = Find.Targeter;
 
-            void ActionWhenFinished()
-            {
-                if (Find.Maps.Contains(Map))
-                {
-                    Current.Game.CurrentMap = Map;
-                }
-            }
-
             var ic = ContentFinder<Texture2D>.Get($"ra2/World/ra2_SuperWeaponIcon_{getType()}");
             var tg = new TargetingParameters
             {
@@ -208,6 +200,14 @@ public class Building_SuperWeapon : Building
                 TryLaunch(x.ToGlobalTargetInfo(map));
             }, null, ActionWhenFinished, ic);
             return true;
+
+            void ActionWhenFinished()
+            {
+                if (Find.Maps.Contains(Map))
+                {
+                    Current.Game.CurrentMap = Map;
+                }
+            }
         }
 
         TryLaunch(target);

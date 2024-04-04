@@ -4,5 +4,5 @@ namespace ra2;
 
 public class BulletStore
 {
-    public static List<ProjectileEnd> theBullet = new List<ProjectileEnd>();
+    public static readonly List<ProjectileEnd> theBullet = [];
 }

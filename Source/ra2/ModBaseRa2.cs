@@ -9,7 +9,7 @@ namespace ra2;
 public class ModBaseRa2 : ModBase
 {
     public static Settings settings;
-    private static readonly List<Action> TickActions = new List<Action>();
+    private static readonly List<Action> TickActions = [];
     public Controlstorage _controlstorage;
 
     public ModBaseRa2()

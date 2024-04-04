@@ -5,15 +5,13 @@ using Verse;
 namespace ra2;
 
 //remove ra2 soldier's interaction
-[HarmonyPatch(typeof(Pawn_InteractionsTracker), "CanInteractNowWith", typeof(Pawn), typeof(InteractionDef))]
-public static class HarmonyTest
+[HarmonyPatch(typeof(Pawn_InteractionsTracker), nameof(Pawn_InteractionsTracker.CanInteractNowWith), typeof(Pawn),
+    typeof(InteractionDef))]
+public static class Harmony_Pawn_InteractionsTracker
 {
-    public static void Postfix(Pawn_InteractionsTracker __instance, Pawn recipient, ref bool __result)
+    public static void Postfix(Pawn recipient, ref bool __result, Pawn ___pawn)
     {
-        var traverse = Traverse.Create(__instance);
-        var value3 = traverse.Field("pawn").GetValue<Pawn>();
-
-        if (recipient.kindDef.defName.StartsWith("ra2") || value3.kindDef.defName.StartsWith("ra2"))
+        if (recipient.kindDef.defName.StartsWith("ra2") || ___pawn.kindDef.defName.StartsWith("ra2"))
         {
             //Log.Warning(recipient.kindDef.defName + "/" + value3.kindDef.defName + "/" + __result);
             __result = false;

@@ -61,7 +61,7 @@ public class TurretTop_CustomSize
         if (airmode ? currentTarget != null : currentTarget.IsValid)
         {
             var cell = currentTarget.Cell;
-            var unused = CurRotation =
+            _ = CurRotation =
                 (cell.ToVector3Shifted() - (airmode ? parentDefense.DrawPos : parentTurret.DrawPos)).AngleFlat();
             ticksUntilIdleTurn = Rand.RangeInclusive(150, 350);
         }

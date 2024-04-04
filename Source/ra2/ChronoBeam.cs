@@ -13,10 +13,10 @@ public class ChronoBeam : Thing
 
     public float Opacity => (float)Math.Sin(Math.Pow(1.0 - (1.0 * ticks / 60), 6) * 3.1415926535897931);
 
-    protected void ComputeDrawingParameters(Thing caster, LocalTargetInfo currentTarget)
+    protected void ComputeDrawingParameters(Thing thing, LocalTargetInfo localTargetInfo)
     {
-        var shoter = caster.Position.ToVector3() + new Vector3(0, 0, 0.5f);
-        var target = currentTarget.Cell.ToVector3() + new Vector3(0, 0, 0.5f);
+        var shoter = thing.Position.ToVector3() + new Vector3(0, 0, 0.5f);
+        var target = localTargetInfo.Cell.ToVector3() + new Vector3(0, 0, 0.5f);
 
         var pos = ((shoter + target) / 2f) + new Vector3(0, 2f, 0);
         var z = (target - shoter).MagnitudeHorizontal();
@@ -32,7 +32,7 @@ public class ChronoBeam : Thing
             FadedMaterialPool.FadedVersionOf(MaterialPool.MatFrom("ra2/Projectile/ChronoBeam"), Opacity), 0);
     }
 
-    public override void Draw()
+    protected override void DrawAt(Vector3 drawLoc, bool flip = false)
     {
         ComputeDrawingParameters(caster, currentTarget);
     }
@@ -48,10 +48,10 @@ public class ChronoBeam : Thing
         }
     }
 
-    public void Setup(Thing caster, LocalTargetInfo currentTarget)
+    public void Setup(Thing thing, LocalTargetInfo localTargetInfo)
     {
-        this.caster = caster;
-        this.currentTarget = currentTarget;
+        caster = thing;
+        currentTarget = localTargetInfo;
     }
 
     public override void ExposeData()

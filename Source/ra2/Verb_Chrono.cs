@@ -48,10 +48,10 @@ public class Verb_Chrono : Verb
 
         var shotReport = ShotReport.HitReportFor(caster, this, currentTarget);
         var randomCoverToMissInto = shotReport.GetRandomCoverToMissInto();
-        var unused = randomCoverToMissInto?.def;
+        _ = randomCoverToMissInto?.def;
         if (!Rand.Chance(shotReport.AimOnTargetChance_IgnoringPosture))
         {
-            shootLine.ChangeDestToMissWild(shotReport.AimOnTargetChance_StandardTarget);
+            shootLine.ChangeDestToMissWild_NewTemp(shotReport.AimOnTargetChance_StandardTarget, false, caster.Map);
 
             var nonTargetWorld = ProjectileHitFlags.NonTargetWorld;
             if (Rand.Chance(0.5f) && canHitNonTargetPawnsNow)
@@ -81,7 +81,8 @@ public class Verb_Chrono : Verb
             intendedTarget |= ProjectileHitFlags.NonTargetPawns;
         }
 
-        if (!currentTarget.HasThing || currentTarget.Thing.def.Fillage == FillCategory.Full)
+        if (currentTarget.Thing != null &&
+            (!currentTarget.HasThing || currentTarget.Thing.def.Fillage == FillCategory.Full))
         {
             intendedTarget |= ProjectileHitFlags.NonTargetWorld;
         }

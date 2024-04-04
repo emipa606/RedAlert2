@@ -57,8 +57,8 @@ public class CompSovietPower : CompPowerPlant
 
         var f = spinPosition + (6.283185f * 1 / 9f);
         var x = Mathf.Abs(4f * Mathf.Sin(f));
-        var unused = f % 6.283185f < 3.141593f;
-        var unused1 = new Vector2(x, 1f);
+        _ = f % 6.283185f < 3.141593f;
+        _ = new Vector2(x, 1f);
         var s = new Vector3(0.8f, 1f, 1.1f);
         var matrix = new Matrix4x4();
         matrix.SetTRS(vector, parent.Rotation.AsQuat, s);

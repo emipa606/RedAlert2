@@ -4,46 +4,67 @@ using Verse;
 
 namespace ra2;
 
-[HarmonyPatch(typeof(PawnRenderer), "DrawEquipmentAiming", typeof(Thing), typeof(Vector3), typeof(float))]
-public static class Harmony_Tank_WeaponSize
+[HarmonyPatch(typeof(PawnRenderUtility), nameof(PawnRenderUtility.DrawEquipmentAndApparelExtras))]
+public static class Harmony_DrawEquipment
 {
-    public static bool Prefix(PawnRenderer __instance, Thing eq, Vector3 drawLoc, float aimAngle)
+    public static bool Prefix(Pawn pawn, Vector3 drawPos)
     {
-        var traverse = Traverse.Create(__instance);
-        var pp = traverse.Field("pawn").GetValue<Pawn>();
-        if (!pp.kindDef.defName.EqualsIgnoreCase("ra2_rhinotank") &&
-            !pp.kindDef.defName.EqualsIgnoreCase("ra2_grizzlytank") &&
-            !pp.kindDef.defName.EqualsIgnoreCase("ra2_apotank"))
+        if (!pawn.kindDef.defName.EqualsIgnoreCase("ra2_rhinotank") &&
+            !pawn.kindDef.defName.EqualsIgnoreCase("ra2_grizzlytank") &&
+            !pawn.kindDef.defName.EqualsIgnoreCase("ra2_apotank"))
         {
             return true;
         }
 
-        if (pp.stances.curStance is Stance_Busy { neverAimWeapon: false, focusTarg.IsValid: true })
+        if (pawn.kindDef.defName.StartsWith("ra2_Yuri"))
         {
-            drawLoc -= new Vector3(0f, 0f, 0.4f).RotatedBy(aimAngle);
+            return false;
+        }
+
+        var num = 0f;
+        var aimAngle = 0f;
+        if (pawn.stances.curStance is Stance_Busy stance_Busy && !stance_Busy.neverAimWeapon == false &&
+            stance_Busy.focusTarg.IsValid)
+        {
+            var vector = stance_Busy.focusTarg.HasThing
+                ? stance_Busy.focusTarg.Thing.DrawPos
+                : stance_Busy.focusTarg.Cell.ToVector3Shifted();
+            if ((vector - pawn.DrawPos).MagnitudeHorizontalSquared() > 0.001f)
+            {
+                num = (vector - pawn.DrawPos).AngleFlat();
+            }
+
+            var currentEffectiveVerb = pawn.CurrentEffectiveVerb;
+            if (currentEffectiveVerb != null && currentEffectiveVerb.AimAngleOverride.HasValue)
+            {
+                num = currentEffectiveVerb.AimAngleOverride.Value;
+            }
+
+            aimAngle = num;
+            drawPos += new Vector3(0f, 0f, 0.4f + pawn.equipment.Primary.def.equippedDistanceOffset).RotatedBy(num);
         }
         else
         {
-            if (pp.Rotation == Rot4.South)
+            if (pawn.Rotation == Rot4.South)
             {
-                drawLoc -= new Vector3(0f, 0f, -0.22f);
+                drawPos -= new Vector3(0f, 0f, -0.22f);
             }
-            else if (pp.Rotation == Rot4.North)
+            else if (pawn.Rotation == Rot4.North)
             {
-                drawLoc -= new Vector3(0f, 0f, -0.11f);
+                drawPos -= new Vector3(0f, 0f, -0.11f);
             }
-            else if (pp.Rotation == Rot4.East)
+            else if (pawn.Rotation == Rot4.East)
             {
-                drawLoc -= new Vector3(0.2f, 0f, -0.22f);
+                drawPos -= new Vector3(0.2f, 0f, -0.22f);
             }
-            else if (pp.Rotation == Rot4.West)
+            else if (pawn.Rotation == Rot4.West)
             {
-                drawLoc -= new Vector3(-0.2f, 0f, -0.22f);
+                drawPos -= new Vector3(-0.2f, 0f, -0.22f);
             }
         }
 
-        var num = aimAngle - 90f;
-
+        num = aimAngle - 90f;
+        var eq = pawn.equipment.Primary;
 
         Mesh mesh;
         switch (aimAngle)
@@ -64,10 +85,10 @@ public static class Harmony_Tank_WeaponSize
         }
 
         num %= 360f;
-        if (!pp.TargetCurrentlyAimingAt.IsValid)
+        if (!pawn.TargetCurrentlyAimingAt.IsValid)
         {
             //Log.Warning(pp.Rotation+"/");
-            switch (pp.Rotation.AsInt)
+            switch (pawn.Rotation.AsInt)
             {
                 case 0:
                     num = -90f;
@@ -101,10 +122,10 @@ public static class Harmony_Tank_WeaponSize
         }
 
         var matrix = new Matrix4x4();
-        var s = new Vector3(pp.kindDef.lifeStages[0].bodyGraphicData.drawSize.x, 1,
-            pp.kindDef.lifeStages[0].bodyGraphicData.drawSize.y); //new Vector3(5,1,5);
-        matrix.SetTRS(drawLoc + new Vector3(0, 1, 0), num.ToQuat(), s);
-        // Graphics.DrawMesh(mesh, drawLoc, Quaternion.AngleAxis(num, Vector3.up), matSingle, 0);
+        var s = new Vector3(pawn.kindDef.lifeStages[0].bodyGraphicData.drawSize.x, 1,
+            pawn.kindDef.lifeStages[0].bodyGraphicData.drawSize.y); //new Vector3(5,1,5);
+        matrix.SetTRS(drawPos + new Vector3(0, 1, 0), num.ToQuat(), s);
+        // Graphics.DrawMesh(mesh, drawPos, Quaternion.AngleAxis(num, Vector3.up), matSingle, 0);
         Graphics.DrawMesh(mesh, matrix, matSingle, 0);
         return false;
     }

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef Name="ra2_CanGetGunBase" Abstract="True" ParentName="BaseGun">
+    <statBases>
+      <Flammability>0.0</Flammability>
+      <Mass>7</Mass>
+    </statBases>
+  </ThingDef>
+</Defs>

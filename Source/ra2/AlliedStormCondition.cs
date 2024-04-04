@@ -11,7 +11,7 @@ public class AlliedStormCondition : ThingWithComps //GameCondition
     // private static readonly IntRange AreaRadiusRange = new IntRange(10,35);
 
     private static readonly IntRange TicksBetweenStrikes = new IntRange(20, 60);
-    private readonly List<IntVec3> canATKCells = new List<IntVec3>();
+    private readonly List<IntVec3> canATKCells = [];
 
     private int areaRadius;
 

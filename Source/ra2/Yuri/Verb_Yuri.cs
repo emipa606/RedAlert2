@@ -32,19 +32,13 @@ public class Verb_Yuri : Verb
             return false;
         }
 
-        var unused = caster;
+        _ = caster;
         Thing unused1 = EquipmentSource;
 
 
         //SpawnBeam();
-        var succ = hitThing(currentTarget.Thing as Pawn);
 
-        if (!succ)
-        {
-            return false;
-        }
-
-        return true;
+        return hitThing(currentTarget.Thing as Pawn);
     }
 
 

@@ -8,7 +8,7 @@ public class PlaceWorker_ShowGrinderRadius : PlaceWorker
 {
     public override void DrawGhost(ThingDef def, IntVec3 center, Rot4 rot, Color ghostCol, Thing thing = null)
     {
-        var unused = Find.CurrentMap;
+        _ = Find.CurrentMap;
         // drawit(center.ToVector3()+new Vector3(0.5f,0,1),7f, MaterialPool.MatFrom(GenDraw.LineTexPath, ShaderDatabase.Transparent, Color.red));
         GenDraw.DrawFieldEdges(CellsAround(center, Find.CurrentMap), Color.magenta);
     }

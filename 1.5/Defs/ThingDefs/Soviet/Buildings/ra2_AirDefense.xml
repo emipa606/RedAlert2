@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="ra2BuildingBase">
+    <defName>ra2_SovietAirDefense</defName>
+    <label>Soviet Flak Cannon</label>
+    <thingClass>ra2.Building_AirDefense</thingClass>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <researchPrerequisites>
+      <li>Ra2SovietADA</li>
+    </researchPrerequisites>
+    <graphicData>
+      <texPath>ra2/Building/ra2_sentinel_bottom</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shadowData>
+        <volume>(0.8, 0.3, 0.3)</volume>
+        <offset>(0,0,-0.25)</offset>
+      </shadowData>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <uiIconPath>ra2/Building/ra2_SovietAirDefense_UI</uiIconPath>
+    <uiIconScale>2</uiIconScale>
+    <altitudeLayer>Building</altitudeLayer>
+    <size>(2,2)</size>
+    <statBases>
+      <MaxHitPoints>400</MaxHitPoints>
+      <WorkToBuild>2500</WorkToBuild>
+      <Flammability>1.0</Flammability>
+      <Mass>8</Mass>
+      <Beauty>6</Beauty>
+    </statBases>
+    <description>It will hit enemy's Drop Pod and mortar shells.</description>
+    <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+    <fillPercent>0.15</fillPercent>
+    <costList>
+      <ra2_GoldBar>700</ra2_GoldBar>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>400</basePowerConsumption>
+        <shortCircuitInRain>false</shortCircuitInRain>
+      </li>
+      <li Class="CompProperties_Flickable" />
+      <li Class="CompProperties_Breakdownable" />
+      <li Class="ra2.CompProperties_TurretTopSize">
+        <topSize>(3,3,3)</topSize>
+        <soundShoot>ra2_SovietAirDefense_shot</soundShoot>
+      </li>
+    </comps>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <pathCost>8</pathCost>
+    <designationCategory>Security</designationCategory>
+    <rotatable>false</rotatable>
+    <specialDisplayRadius>20</specialDisplayRadius>
+    <tickerType>Normal</tickerType>
+    <constructionSkillPrerequisite>7</constructionSkillPrerequisite>
+    <building>
+      <ai_combatDangerous>true</ai_combatDangerous>
+      <turretGunDef>ra2_SovietAirDefense_Gun</turretGunDef>
+      <turretBurstCooldownTime>3</turretBurstCooldownTime>
+    </building>
+  </ThingDef>
+  <ThingDef ParentName="ra2_CanGetGunBase">
+    <defName>ra2_SovietAirDefense_Gun</defName>
+    <label>Soviet Flak Cannon gun</label>
+    <graphicData>
+      <texPath>ra2/Building/ra2_sovietAirDefense_top</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <description>It will hit enemy's Drop Pod and mortar shells.</description>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <tradeability>None</tradeability>
+    <destroyOnDrop>true</destroyOnDrop>
+    <useHitPoints>false</useHitPoints>
+    <statBases>
+      <Mass>1</Mass>
+      <AccuracyTouch>0.80</AccuracyTouch>
+      <AccuracyShort>0.64</AccuracyShort>
+      <AccuracyMedium>0.41</AccuracyMedium>
+      <AccuracyLong>0.22</AccuracyLong>
+      <RangedWeapon_Cooldown>0.66</RangedWeapon_Cooldown>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <weaponTags>
+      <li>TurretGun</li>
+    </weaponTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>ra2_Bullet_pillbox</defaultProjectile>
+        <warmupTime>1</warmupTime>
+        <range>23</range>
+        <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
+        <burstShotCount>3</burstShotCount>
+        <soundCast>ra2_pillbox</soundCast>
+        <soundCastTail>ra2_nothing</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+  </ThingDef>
+</Defs>

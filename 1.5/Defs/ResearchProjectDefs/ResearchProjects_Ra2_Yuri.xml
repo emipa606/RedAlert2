@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ResearchProjectDef>
+    <tab>RA2</tab>
+    <defName>Ra2YuriBarracks</defName>
+    <label>Yuri Barracks</label>
+    <description>Learn to build Yuri barracks.</description>
+    <baseCost>1000</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>Ra2BaseResearch</li>
+    </prerequisites>
+    <researchViewX>0.5</researchViewX>
+    <researchViewY>3</researchViewY>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>ra2_YuriTech</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <tab>RA2</tab>
+    <defName>Ra2YuriPsychicTech</defName>
+    <label>Yuri Psychic Tech</label>
+    <description>Learn Psychic Tech.</description>
+    <baseCost>1000</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>Ra2YuriBarracks</li>
+    </prerequisites>
+    <researchViewX>2</researchViewX>
+    <researchViewY>3.5</researchViewY>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>ra2_YuriTech</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+</Defs>

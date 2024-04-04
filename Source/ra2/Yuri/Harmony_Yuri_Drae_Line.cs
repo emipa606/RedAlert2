@@ -1,12 +1,11 @@
-﻿using System;
-using HarmonyLib;
+﻿using HarmonyLib;
 using RimWorld;
 using UnityEngine;
 using Verse;
 
 namespace ra2.Yuri;
 
-[HarmonyPatch(typeof(SelectionDrawer), "DrawSelectionOverlays", new Type[] { })]
+[HarmonyPatch(typeof(SelectionDrawer), nameof(SelectionDrawer.DrawSelectionOverlays))]
 public static class Harmony_Yuri_Drae_Line
 {
     public static void Postfix()
@@ -36,12 +35,11 @@ public static class Harmony_Yuri_Drae_Line
             }
             else if (ModBaseRa2.Instance._controlstorage.ControlerAndBeControler.ContainsKey(key))
             {
-                var controler = key;
                 var becontroler =
-                    ModBaseRa2.Instance._controlstorage.ControlerAndBeControler.TryGetValue(controler);
-                if (controler.Map == becontroler.Map)
+                    ModBaseRa2.Instance._controlstorage.ControlerAndBeControler.TryGetValue(key);
+                if (key.Map == becontroler.Map)
                 {
-                    HighDrawLineBetween(becontroler.Position.ToVector3(), controler.Position.ToVector3(),
+                    HighDrawLineBetween(becontroler.Position.ToVector3(), key.Position.ToVector3(),
                         MaterialPool.MatFrom(GenDraw.LineTexPath, ShaderDatabase.Transparent,
                             Color.magenta));
                 }

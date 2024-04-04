@@ -23,7 +23,7 @@ public class InitiateBullet : Projectile
             var dinfo = new DamageInfo(damageDef, amount, armorPenetration, y, instigator, null, thingDef,
                 DamageInfo.SourceCategory.ThingOrUnknown, intendedTarget.Thing);
             hitThing.TakeDamage(dinfo).AssociateWithLog(battleLogEntry_RangedImpact);
-            if (hitThing is Pawn { stances: { } } pawn && pawn.BodySize <= def.projectile.StoppingPower + 0.001f)
+            if (hitThing is Pawn { stances: not null } pawn && pawn.BodySize <= def.projectile.StoppingPower + 0.001f)
             {
                 pawn.stances.stagger.StaggerFor(95);
             }

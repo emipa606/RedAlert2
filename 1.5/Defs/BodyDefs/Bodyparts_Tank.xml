@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <BodyPartDef ParentName="MechanicalCentipedeRingBase">
+    <defName>ra2_tankarmorcore</defName>
+    <label>tank armor core</label>
+    <hitPoints>125</hitPoints>
+  </BodyPartDef>
+  <BodyPartDef>
+    <defName>ra2_tankarmor</defName>
+    <label>tank armor</label>
+    <hitPoints>150</hitPoints>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <solid>true</solid>
+    <bleedRate>0</bleedRate>
+    <alive>false</alive>
+  </BodyPartDef>
+  <BodyPartDef>
+    <defName>ra2_tankinnerarmor</defName>
+    <label>tank inner armor</label>
+    <hitPoints>150</hitPoints>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <solid>true</solid>
+    <bleedRate>0</bleedRate>
+    <alive>false</alive>
+  </BodyPartDef>
+  <BodyPartDef>
+    <defName>ra2_tankcore</defName>
+    <label>tank core</label>
+    <hitPoints>150</hitPoints>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <solid>true</solid>
+    <alive>false</alive>
+    <bleedRate>0</bleedRate>
+    <tags>
+      <li>ConsciousnessSource</li>
+      <li>BloodPumpingSource</li>
+      <li>BloodFiltrationSource</li>
+    </tags>
+  </BodyPartDef>
+</Defs>

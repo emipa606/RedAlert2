@@ -70,6 +70,7 @@ public class Comp_RemovingGun : ThingComp
                 hitTime = 0;
                 break;
             case > 0 when ticks % 5 == 0 && lastHitBuild != null:
+            {
                 ChronoMoteMaker.ThrowCell(lastHitBuild.TrueCenter().ToIntVec3(), lastHitBuild.Map,
                     DefDatabase<ThingDef>.GetNamed("Mote_BlastEMP"), new Color(1, 1, 1),
                     lastHitBuild is Pawn pawn
@@ -77,6 +78,7 @@ public class Comp_RemovingGun : ThingComp
                             (int)pawn.RaceProps.baseBodySize)
                         : lastHitBuild.def.size);
                 break;
+            }
         }
 
 

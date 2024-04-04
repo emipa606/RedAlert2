@@ -108,7 +108,7 @@ public class AmazingBelt : Apparel
                 activateSound = DefDatabase<SoundDef>.GetNamed("ra2_Chrono_select"),
                 targetingParams = tp,
                 hotKey = KeyBindingDefOf.Misc4,
-                disabled = !Wearer.drafter.Drafted || Wearer.stances.stunner.Stunned,
+                Disabled = !Wearer.drafter.Drafted || Wearer.stances.stunner.Stunned,
                 aimIcon = ContentFinder<Texture2D>.Get("ra2/Things/Misc/ChTeleport"),
                 action = delegate(LocalTargetInfo target)
                 {
@@ -184,7 +184,7 @@ public class AmazingBelt : Apparel
             {
                 defaultLabel = "YuriExpTitle".Translate(),
                 icon = ContentFinder<Texture2D>.Get("ra2/Things/Misc/yuriExpIcon"),
-                disabled = !canCast,
+                Disabled = !canCast,
                 caster = Wearer,
                 hotKey = KeyBindingDefOf.Misc4,
                 action = delegate

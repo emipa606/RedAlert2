@@ -36,7 +36,7 @@ public static class SuperWeaponAction
 
 
             var worldObject = Find.WorldObjects.WorldObjectAt<WorldObject>(destinationTile);
-            if (worldObject?.Faction != null && !worldObject.Faction.IsPlayer)
+            if (worldObject?.Faction is { IsPlayer: false })
             {
                 worldObject.Faction.TryAffectGoodwillWith(Faction.OfPlayer, -999);
             }
@@ -76,7 +76,7 @@ public static class SuperWeaponAction
             asc.centerLocation = targetCell.ToIntVec2;
 
             asc.SingleMap = mapParent.Map;
-            var unused = SoundInfo.InMap(new TargetInfo(asc.centerLocation.ToIntVec3, asc.SingleMap));
+            _ = SoundInfo.InMap(new TargetInfo(asc.centerLocation.ToIntVec3, asc.SingleMap));
             SoundDef.Named("ra2_StormAppear").PlayOneShotOnCamera(mapParent.Map); //.PlayOneShot(info);
 
 

@@ -9,9 +9,7 @@ using Verse.Sound;
 
 namespace ra2;
 
-[HarmonyPatch(typeof(Pawn), "GetGizmos", new Type[]
-{
-})]
+[HarmonyPatch(typeof(Pawn), nameof(Pawn.GetGizmos))]
 public static class Harmony_TeleportTogether
 {
     public static void Postfix(Pawn __instance, ref IEnumerable<Gizmo> __result)
@@ -83,7 +81,7 @@ public static class Harmony_TeleportTogether
             canTargetSelf = false
         };
 
-        command_Target.disabled = pawn.stances.stunner.Stunned || !pawn.drafter.Drafted;
+        command_Target.Disabled = pawn.stances.stunner.Stunned || !pawn.drafter.Drafted;
         command_Target.targetingParams = tp;
         command_Target.hotKey = KeyBindingDefOf.Misc4;
         command_Target.icon = ContentFinder<Texture2D>.Get("ra2/Things/Misc/ChTeleport");

@@ -5,7 +5,7 @@ using Verse;
 
 namespace ra2;
 
-public class IntermittentGoldMiner
+public class IntermittentGoldMiner(Thing parent)
 {
     private const int MinTicksBetweenSprays = 500;
 
@@ -17,8 +17,6 @@ public class IntermittentGoldMiner
 
     private const float SprayThickness = 0.6f;
 
-    private readonly Thing parent;
-
     public Action endSprayCallback;
 
     private int sprayTicksLeft;
@@ -27,17 +25,12 @@ public class IntermittentGoldMiner
 
     private int ticksUntilSpray = 500;
 
-    public IntermittentGoldMiner(Thing parent)
-    {
-        this.parent = parent;
-    }
-
     public void GoldMinerTick()
     {
         if (sprayTicksLeft > 0)
         {
             sprayTicksLeft--;
-            if (Rand.Value < 0.6f)
+            if (Rand.Value < SprayThickness)
             {
                 FleckMaker.ThrowAirPuffUp(parent.TrueCenter() + new Vector3(-0.5f, 0, 3.8f), parent.Map);
                 FleckMaker.ThrowAirPuffUp(parent.TrueCenter() + new Vector3(-1f, 0, 3.8f), parent.Map);
@@ -55,7 +48,7 @@ public class IntermittentGoldMiner
 
             endSprayCallback?.Invoke();
 
-            ticksUntilSpray = Rand.RangeInclusive(500, 2000);
+            ticksUntilSpray = Rand.RangeInclusive(MinTicksBetweenSprays, MaxTicksBetweenSprays);
         }
         else
         {
@@ -67,7 +60,7 @@ public class IntermittentGoldMiner
 
             startSprayCallback?.Invoke();
 
-            sprayTicksLeft = Rand.RangeInclusive(200, 500);
+            sprayTicksLeft = Rand.RangeInclusive(MinSprayDuration, MaxSprayDuration);
         }
     }
 }

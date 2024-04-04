@@ -34,7 +34,7 @@ public class Projectile_BuildingLine : Projectile_Custom
         lineMatrix.SetTRS(pos, ExactRotation, s);
     }
 
-    public override void Draw()
+    protected override void DrawAt(Vector3 drawLoc, bool flip = false)
     {
         Graphics.DrawMesh(MeshPool.plane10, lineMatrix,
             FadedMaterialPool.FadedVersionOf(def.DrawMatSingle, LineBrightness), 0);

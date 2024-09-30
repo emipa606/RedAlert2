@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
   <DesolatorGun.label>辐射</DesolatorGun.label>
   <DesolatorGun.deathMessage>{0}死于辐射。</DesolatorGun.deathMessage>

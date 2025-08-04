@@ -8,9 +8,9 @@ namespace ra2;
 public class Comp_RemovingGun : ThingComp
 {
     // public Thing nowHitBuild;
-    public int hitTime;
-    public Thing lastHitBuild;
-    public int ticks;
+    private int hitTime;
+    private Thing lastHitBuild;
+    private int ticks;
 
 
     public override void Initialize(CompProperties props)

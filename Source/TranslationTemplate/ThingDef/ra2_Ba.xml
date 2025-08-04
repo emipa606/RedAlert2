@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Allied Barracks -->
+  <ra2_AlliedBarracks.label>Allied Barracks</ra2_AlliedBarracks.label>
+  <!-- EN: Barracks. -->
+  <ra2_AlliedBarracks.description>Barracks.</ra2_AlliedBarracks.description>
+  <!-- EN: Gold Bar -->
+  <ra2_AlliedBarracks.comps.CompRefuelable.fuelGizmoLabel>Gold Bar</ra2_AlliedBarracks.comps.CompRefuelable.fuelGizmoLabel>
+  <!-- EN: Gold Bar Store -->
+  <ra2_AlliedBarracks.comps.CompRefuelable.fuelLabel>Gold Bar Store</ra2_AlliedBarracks.comps.CompRefuelable.fuelLabel>
+  <!-- EN: Soviet Barracks -->
+  <ra2_SovietBarracks.label>Soviet Barracks</ra2_SovietBarracks.label>
+  <!-- EN: Barracks. -->
+  <ra2_SovietBarracks.description>Barracks.</ra2_SovietBarracks.description>
+  <!-- EN: Gold Bar -->
+  <ra2_SovietBarracks.comps.CompRefuelable.fuelGizmoLabel>Gold Bar</ra2_SovietBarracks.comps.CompRefuelable.fuelGizmoLabel>
+  <!-- EN: Gold Bar Store -->
+  <ra2_SovietBarracks.comps.CompRefuelable.fuelLabel>Gold Bar Store</ra2_SovietBarracks.comps.CompRefuelable.fuelLabel>
+  <!-- EN: Yuri Barracks -->
+  <ra2_YuriBarracks.label>Yuri Barracks</ra2_YuriBarracks.label>
+  <!-- EN: Barracks. -->
+  <ra2_YuriBarracks.description>Barracks.</ra2_YuriBarracks.description>
+  <!-- EN: Gold Bar -->
+  <ra2_YuriBarracks.comps.CompRefuelable.fuelGizmoLabel>Gold Bar</ra2_YuriBarracks.comps.CompRefuelable.fuelGizmoLabel>
+  <!-- EN: Gold Bar Store -->
+  <ra2_YuriBarracks.comps.CompRefuelable.fuelLabel>Gold Bar Store</ra2_YuriBarracks.comps.CompRefuelable.fuelLabel>
+</LanguageData>

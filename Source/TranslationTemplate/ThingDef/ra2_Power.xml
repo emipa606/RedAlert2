@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: tesla reactor -->
+  <ra2_SovietGenerator.label>tesla reactor</ra2_SovietGenerator.label>
+  <!-- EN: Produces electricity from sunlight. Does not work in the dark or under artificial light. -->
+  <ra2_SovietGenerator.description>Produces electricity from sunlight. Does not work in the dark or under artificial light.</ra2_SovietGenerator.description>
+  <!-- EN: Nuclear Reactor -->
+  <ra2_SovietGenerator_Nuclear.label>Nuclear Reactor</ra2_SovietGenerator_Nuclear.label>
+  <!-- EN: Produces electricity from sunlight. Does not work in the dark or under artificial light. -->
+  <ra2_SovietGenerator_Nuclear.description>Produces electricity from sunlight. Does not work in the dark or under artificial light.</ra2_SovietGenerator_Nuclear.description>
+</LanguageData>

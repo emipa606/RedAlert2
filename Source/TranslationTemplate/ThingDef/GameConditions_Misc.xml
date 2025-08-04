@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: nuclear missle Strike -->
+  <AlliedStorm.label>nuclear missle Strike</AlliedStorm.label>
+  <!-- EN: Weather Machine -->
+  <ra2_AlliedSuperWeapon.label>Weather Machine</ra2_AlliedSuperWeapon.label>
+  <!-- EN: Super Weapon. -->
+  <ra2_AlliedSuperWeapon.description>Super Weapon.</ra2_AlliedSuperWeapon.description>
+</LanguageData>

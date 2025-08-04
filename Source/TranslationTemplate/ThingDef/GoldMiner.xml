@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: gold miner -->
+  <ra2_GoldMiner.label>gold miner</ra2_GoldMiner.label>
+  <!-- EN: Produces electricity from geothermal steam geysers. Must be placed on a steam geyser. -->
+  <ra2_GoldMiner.description>Produces electricity from geothermal steam geysers. Must be placed on a steam geyser.</ra2_GoldMiner.description>
+</LanguageData>

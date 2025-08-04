@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Yuri Barracks -->
+  <Ra2YuriBarracks.label>Yuri Barracks</Ra2YuriBarracks.label>
+  <!-- EN: Learn to build Yuri barracks. -->
+  <Ra2YuriBarracks.description>Learn to build Yuri barracks.</Ra2YuriBarracks.description>
+  <!-- EN: Yuri Psychic Tech -->
+  <Ra2YuriPsychicTech.label>Yuri Psychic Tech</Ra2YuriPsychicTech.label>
+  <!-- EN: Learn Psychic Tech. -->
+  <Ra2YuriPsychicTech.description>Learn Psychic Tech.</Ra2YuriPsychicTech.description>
+</LanguageData>

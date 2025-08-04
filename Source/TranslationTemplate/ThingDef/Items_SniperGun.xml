@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Sniper fire -->
+  <ra2_Bullet_Sniper.label>Sniper fire</ra2_Bullet_Sniper.label>
+  <!-- EN: Sniper gun -->
+  <ra2_Gun_Sniper.label>Sniper gun</ra2_Gun_Sniper.label>
+  <!-- EN: Sniper's gun. -->
+  <ra2_Gun_Sniper.description>Sniper's gun.</ra2_Gun_Sniper.description>
+  <!-- EN: grip -->
+  <ra2_Gun_Sniper.tools.grip.label>grip</ra2_Gun_Sniper.tools.grip.label>
+  <!-- EN: barrel -->
+  <ra2_Gun_Sniper.tools.barrel.label>barrel</ra2_Gun_Sniper.tools.barrel.label>
+  <!-- EN: Sniper gun -->
+  <ra2_Gun_Sniper.verbs.Verb_Shoot.label>Sniper gun</ra2_Gun_Sniper.verbs.Verb_Shoot.label>
+  <!-- EN: Sniper hat -->
+  <ra2_Hat_Sniper.label>Sniper hat</ra2_Hat_Sniper.label>
+  <!-- EN: Sniper's hat. -->
+  <ra2_Hat_Sniper.description>Sniper's hat.</ra2_Hat_Sniper.description>
+  <!-- EN: Sniper pants -->
+  <ra2_Pants_Sniper.label>Sniper pants</ra2_Pants_Sniper.label>
+  <!-- EN: A simple set of pants. -->
+  <ra2_Pants_Sniper.description>A simple set of pants.</ra2_Pants_Sniper.description>
+  <!-- EN: Sniper parka -->
+  <ra2_Parka_Sniper.label>Sniper parka</ra2_Parka_Sniper.label>
+  <!-- EN: A thick parka for staying warm in even the coldest of temperatures. -->
+  <ra2_Parka_Sniper.description>A thick parka for staying warm in even the coldest of temperatures.</ra2_Parka_Sniper.description>
+</LanguageData>

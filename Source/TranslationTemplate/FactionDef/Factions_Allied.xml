@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Allied -->
+  <ra2_Allied.label>Allied</ra2_Allied.label>
+  <!-- EN: Allied Force. -->
+  <ra2_Allied.description>Allied Force.</ra2_Allied.description>
+  <!-- EN: Allied Army -->
+  <ra2_Allied.fixedName>Allied Army</ra2_Allied.fixedName>
+  <!-- EN: Commander -->
+  <ra2_Allied.leaderTitle>Commander</ra2_Allied.leaderTitle>
+  <!-- EN: {0} from {1} are attacking your {2}. -->
+  <ra2_Allied.messageDefendersAttacking>{0} from {1} are attacking your {2}.</ra2_Allied.messageDefendersAttacking>
+  <!-- EN: member -->
+  <ra2_Allied.pawnSingular>member</ra2_Allied.pawnSingular>
+  <!-- EN: Soldiers -->
+  <ra2_Allied.pawnsPlural>Soldiers</ra2_Allied.pawnsPlural>
+</LanguageData>

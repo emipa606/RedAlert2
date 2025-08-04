@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: tanya gun -->
+  <TanyaGun.label>tanya gun</TanyaGun.label>
+  <!-- EN: {0} was killed by Tanya. -->
+  <TanyaGun.deathMessage>{0} was killed by Tanya.</TanyaGun.deathMessage>
+</LanguageData>

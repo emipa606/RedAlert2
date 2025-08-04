@@ -20,13 +20,13 @@ public static class SuperWeaponAction
         GenSpawn.Spawn(leavingMissle, pos, map);
     }
 
-    public static void Allied(GlobalTargetInfo target, IntVec3 pos, Map map, int tile)
+    public static void Allied(GlobalTargetInfo target, IntVec3 pos, Map map, PlanetTile tile)
     {
         // map.GameConditionManager.ConditionIsActive(GameConditionDef.Named("ra2_AlliedStorm"));
         AlliedBooom(tile, target.Cell);
     }
 
-    public static void AlliedBooom(int destinationTile, IntVec3 targetCell)
+    private static void AlliedBooom(int destinationTile, IntVec3 targetCell)
     {
         if (!Find.WorldObjects.AnyMapParentAt(destinationTile))
         {

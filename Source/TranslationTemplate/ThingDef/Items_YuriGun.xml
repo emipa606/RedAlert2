@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Yuri Control -->
+  <ra2_Gun_Yuri.label>Yuri Control</ra2_Gun_Yuri.label>
+  <!-- EN: Yuri's control. -->
+  <ra2_Gun_Yuri.description>Yuri's control.</ra2_Gun_Yuri.description>
+  <!-- EN: grip -->
+  <ra2_Gun_Yuri.tools.grip.label>grip</ra2_Gun_Yuri.tools.grip.label>
+  <!-- EN: Yuri Control -->
+  <ra2_Gun_Yuri.verbs.Verb_Yuri.label>Yuri Control</ra2_Gun_Yuri.verbs.Verb_Yuri.label>
+  <!-- EN: Yuri pants -->
+  <ra2_Pants_Yuri.label>Yuri pants</ra2_Pants_Yuri.label>
+  <!-- EN: A simple set of pants. -->
+  <ra2_Pants_Yuri.description>A simple set of pants.</ra2_Pants_Yuri.description>
+  <!-- EN: Yuri parka -->
+  <ra2_Parka_Yuri.label>Yuri parka</ra2_Parka_Yuri.label>
+  <!-- EN: A thick parka for staying warm in even the coldest of temperatures. -->
+  <ra2_Parka_Yuri.description>A thick parka for staying warm in even the coldest of temperatures.</ra2_Parka_Yuri.description>
+  <!-- EN: Yuri shirt -->
+  <ra2_Shirt_Yuri.label>Yuri shirt</ra2_Shirt_Yuri.label>
+  <!-- EN: A thick parka for staying warm in even the coldest of temperatures. -->
+  <ra2_Shirt_Yuri.description>A thick parka for staying warm in even the coldest of temperatures.</ra2_Shirt_Yuri.description>
+</LanguageData>

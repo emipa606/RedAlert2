@@ -6,8 +6,7 @@ namespace ra2;
 
 public class Building_CustomTurretGun : Building_TurretGun
 {
-    protected new readonly TurretTop_CustomSize top;
-    protected CompTurretTopSize topSizeComp;
+    private new readonly TurretTop_CustomSize top;
 
     public Building_CustomTurretGun()
     {
@@ -18,8 +17,7 @@ public class Building_CustomTurretGun : Building_TurretGun
     public bool IsStun => IsStunned;
 
 
-    public CompTurretTopSize TopSizeComp =>
-        topSizeComp;
+    public CompTurretTopSize TopSizeComp { get; private set; }
 
     protected override void DrawAt(Vector3 drawLoc, bool flip = false)
     {
@@ -31,11 +29,11 @@ public class Building_CustomTurretGun : Building_TurretGun
     public override void SpawnSetup(Map map, bool respawningAfterLoad)
     {
         base.SpawnSetup(map, respawningAfterLoad);
-        topSizeComp = GetComp<CompTurretTopSize>();
+        TopSizeComp = GetComp<CompTurretTopSize>();
     }
 
 
-    public override void Tick()
+    protected override void Tick()
     {
         base.Tick();
 

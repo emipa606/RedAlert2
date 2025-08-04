@@ -78,7 +78,7 @@ public class Projectile_Tanya : Projectile
     }
 
 
-    private int canBeHarm(Pawn p)
+    private static int canBeHarm(Pawn p)
     {
         if (p.kindDef.RaceProps.IsMechanoid)
         {

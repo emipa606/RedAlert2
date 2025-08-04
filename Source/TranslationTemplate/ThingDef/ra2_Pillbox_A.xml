@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: improvised turret bullet -->
+  <ra2_Bullet_pillbox_a.label>improvised turret bullet</ra2_Bullet_pillbox_a.label>
+  <!-- EN: pillbox gun -->
+  <ra2_Gun_pillbox_A.label>pillbox gun</ra2_Gun_pillbox_A.label>
+  <!-- EN: Jury-rigged gun attached to a turret. -->
+  <ra2_Gun_pillbox_A.description>Jury-rigged gun attached to a turret.</ra2_Gun_pillbox_A.description>
+  <!-- EN: pillbox gun -->
+  <ra2_Gun_pillbox_A.verbs.Verb_Shoot.label>pillbox gun</ra2_Gun_pillbox_A.verbs.Verb_Shoot.label>
+  <!-- EN: Allied Pillbox -->
+  <ra2_Pillbox_A.label>Allied Pillbox</ra2_Pillbox_A.label>
+  <!-- EN: Allied pillbox. -->
+  <ra2_Pillbox_A.description>Allied pillbox.</ra2_Pillbox_A.description>
+</LanguageData>

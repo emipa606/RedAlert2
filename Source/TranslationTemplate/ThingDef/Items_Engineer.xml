@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: engineer hat -->
+  <ra2_Hat_Engineer.label>engineer hat</ra2_Hat_Engineer.label>
+  <!-- EN: Engineer's hat. -->
+  <ra2_Hat_Engineer.description>Engineer's hat.</ra2_Hat_Engineer.description>
+  <!-- EN: Engineer_A hat -->
+  <ra2_Hat_Engineer_A.label>Engineer_A hat</ra2_Hat_Engineer_A.label>
+  <!-- EN: Engineer_A's hat. -->
+  <ra2_Hat_Engineer_A.description>Engineer_A's hat.</ra2_Hat_Engineer_A.description>
+  <!-- EN: Engineer_Y hat -->
+  <ra2_Hat_Engineer_Y.label>Engineer_Y hat</ra2_Hat_Engineer_Y.label>
+  <!-- EN: Engineer_Y's hat. -->
+  <ra2_Hat_Engineer_Y.description>Engineer_Y's hat.</ra2_Hat_Engineer_Y.description>
+  <!-- EN: Engineer pants -->
+  <ra2_Pants_Engineer.label>Engineer pants</ra2_Pants_Engineer.label>
+  <!-- EN: A simple set of pants. -->
+  <ra2_Pants_Engineer.description>A simple set of pants.</ra2_Pants_Engineer.description>
+  <!-- EN: Engineer_A pants -->
+  <ra2_Pants_Engineer_A.label>Engineer_A pants</ra2_Pants_Engineer_A.label>
+  <!-- EN: A simple set of pants. -->
+  <ra2_Pants_Engineer_A.description>A simple set of pants.</ra2_Pants_Engineer_A.description>
+  <!-- EN: Engineer_Y pants -->
+  <ra2_Pants_Engineer_Y.label>Engineer_Y pants</ra2_Pants_Engineer_Y.label>
+  <!-- EN: A simple set of pants. -->
+  <ra2_Pants_Engineer_Y.description>A simple set of pants.</ra2_Pants_Engineer_Y.description>
+  <!-- EN: engineer parka -->
+  <ra2_Parka_Engineer.label>engineer parka</ra2_Parka_Engineer.label>
+  <!-- EN: A thick parka for staying warm in even the coldest of temperatures. -->
+  <ra2_Parka_Engineer.description>A thick parka for staying warm in even the coldest of temperatures.</ra2_Parka_Engineer.description>
+  <!-- EN: Engineer_A parka -->
+  <ra2_Parka_Engineer_A.label>Engineer_A parka</ra2_Parka_Engineer_A.label>
+  <!-- EN: A thick parka for staying warm in even the coldest of temperatures. -->
+  <ra2_Parka_Engineer_A.description>A thick parka for staying warm in even the coldest of temperatures.</ra2_Parka_Engineer_A.description>
+  <!-- EN: Engineer_Y parka -->
+  <ra2_Parka_Engineer_Y.label>Engineer_Y parka</ra2_Parka_Engineer_Y.label>
+  <!-- EN: A thick parka for staying warm in even the coldest of temperatures. -->
+  <ra2_Parka_Engineer_Y.description>A thick parka for staying warm in even the coldest of temperatures.</ra2_Parka_Engineer_Y.description>
+  <!-- EN: Engineer shirt -->
+  <ra2_Shirt_Engineer.label>Engineer shirt</ra2_Shirt_Engineer.label>
+  <!-- EN: A thick parka for staying warm in even the coldest of temperatures. -->
+  <ra2_Shirt_Engineer.description>A thick parka for staying warm in even the coldest of temperatures.</ra2_Shirt_Engineer.description>
+  <!-- EN: Engineer_A shirt -->
+  <ra2_Shirt_Engineer_A.label>Engineer_A shirt</ra2_Shirt_Engineer_A.label>
+  <!-- EN: A thick parka for staying warm in even the coldest of temperatures. -->
+  <ra2_Shirt_Engineer_A.description>A thick parka for staying warm in even the coldest of temperatures.</ra2_Shirt_Engineer_A.description>
+  <!-- EN: Engineer_Y shirt -->
+  <ra2_Shirt_Engineer_Y.label>Engineer_Y shirt</ra2_Shirt_Engineer_Y.label>
+  <!-- EN: A thick parka for staying warm in even the coldest of temperatures. -->
+  <ra2_Shirt_Engineer_Y.description>A thick parka for staying warm in even the coldest of temperatures.</ra2_Shirt_Engineer_Y.description>
+</LanguageData>

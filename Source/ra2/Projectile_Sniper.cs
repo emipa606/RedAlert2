@@ -55,7 +55,7 @@ public class Projectile_Sniper : Projectile_Line
         base.Impact(hitThing, blockedByShield);
     }
 
-    private int canBeHarm(Pawn p)
+    private static int canBeHarm(Pawn p)
     {
         return p.kindDef.RaceProps.IsMechanoid ? 2 : 1;
     }

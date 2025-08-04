@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Yuri tech machine -->
+  <ra2_YuriTech.label>Yuri tech machine</ra2_YuriTech.label>
+  <!-- EN: Increases research speed. Needs to be placed near hi-tech research bench. One research bench can be linked to only one multi-analyzer. -->
+  <ra2_YuriTech.description>Increases research speed. Needs to be placed near hi-tech research bench. One research bench can be linked to only one multi-analyzer.</ra2_YuriTech.description>
+</LanguageData>

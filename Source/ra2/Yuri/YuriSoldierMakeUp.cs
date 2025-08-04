@@ -12,7 +12,7 @@ public static class YuriSoldierMakeUp
     }
 
 
-    public static void makeUpYuriHair(Pawn pawn)
+    private static void makeUpYuriHair(Pawn pawn)
     {
         if (!pawn.kindDef.defName.EqualsIgnoreCase("ra2_yuriyuri"))
         {
@@ -30,7 +30,7 @@ public static class YuriSoldierMakeUp
     }
 
 
-    public static void makeUpBrute(Pawn pawn)
+    private static void makeUpBrute(Pawn pawn)
     {
         if (!pawn.kindDef.defName.EqualsIgnoreCase("ra2_yuribrute"))
         {

@@ -37,7 +37,7 @@ public class CompAlliedSuperWeapon : ThingComp
     }
 
 
-    public Material getShellMat()
+    private Material getShellMat()
     {
         // Material result = MaterialPool.MatFrom(path + "0");
         if (ticktime < 34910 && !canFire)
@@ -45,12 +45,7 @@ public class CompAlliedSuperWeapon : ThingComp
             return oldt;
         }
 
-        if (!hasPower())
-        {
-            return oldt;
-        }
-
-        if (ticktime % 4 != 0 && oldt != null)
+        if (!hasPower() || ticktime % 4 != 0 && oldt != null)
         {
             return oldt;
         }

@@ -10,7 +10,7 @@ namespace ra2;
 
 public static class IncidentWorker_Ra2RaidEnemy
 {
-    public static bool TryExecuteWorker(IncidentParms parms)
+    public static void TryExecuteWorker(IncidentParms parms)
     {
         var builder = new StringBuilder();
         if (parms.faction.def.defName.EqualsIgnoreCase("ra2_soviet"))
@@ -25,7 +25,7 @@ public static class IncidentWorker_Ra2RaidEnemy
 
             if (!(parms.points >= 3600))
             {
-                return true;
+                return;
             }
 
             var apoTank = spawnSpecialPawn(parms, "ra2_ApoTank");
@@ -39,7 +39,7 @@ public static class IncidentWorker_Ra2RaidEnemy
             //  Messages.Message(text+apoTank,MessageTypeDefOf.PawnDeath);
 
 
-            return true;
+            return;
         }
 
         if (parms.faction.def.defName.EqualsIgnoreCase("ra2_allied"))
@@ -53,7 +53,7 @@ public static class IncidentWorker_Ra2RaidEnemy
 
             if (!(parms.points >= 3600))
             {
-                return true;
+                return;
             }
 
             var item = getTanya(parms);
@@ -82,12 +82,12 @@ public static class IncidentWorker_Ra2RaidEnemy
                 pp);
 
 
-            return true;
+            return;
         }
 
         if (!parms.faction.def.defName.EqualsIgnoreCase("ra2_yuri"))
         {
-            return false;
+            return;
         }
 
         Find.MusicManagerPlay.ForcePlaySong(DefDatabase<SongDef>.GetNamed("ra2_yuri_music"), false);
@@ -97,8 +97,6 @@ public static class IncidentWorker_Ra2RaidEnemy
         {
             spawnSpecialPawn(parms, "ra2_YuriEngineer");
         }
-
-        return true;
     }
 
 

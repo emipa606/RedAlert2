@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: GrandCannon -->
+  <ra2_Bullet_GrandCannon.label>GrandCannon</ra2_Bullet_GrandCannon.label>
+  <!-- EN: Grand Cannon -->
+  <ra2_GrandCannon.label>Grand Cannon</ra2_GrandCannon.label>
+  <!-- EN: Grand Cannon. -->
+  <ra2_GrandCannon.description>Grand Cannon.</ra2_GrandCannon.description>
+  <!-- EN: Grand Cannon -->
+  <ra2_Gun_GrandCannon.label>Grand Cannon</ra2_Gun_GrandCannon.label>
+  <!-- EN: GrandCannon use this. -->
+  <ra2_Gun_GrandCannon.description>GrandCannon use this.</ra2_Gun_GrandCannon.description>
+  <!-- EN: Grand Cannon -->
+  <ra2_Gun_GrandCannon.verbs.Verb_Shoot.label>Grand Cannon</ra2_Gun_GrandCannon.verbs.Verb_Shoot.label>
+</LanguageData>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Rhino bullet -->
+  <ra2_Bullet_rhino.label>Rhino bullet</ra2_Bullet_rhino.label>
+  <!-- EN: rhino gun -->
+  <ra2_Gun_Rhino.label>rhino gun</ra2_Gun_Rhino.label>
+  <!-- EN: Rhino's gun. -->
+  <ra2_Gun_Rhino.description>Rhino's gun.</ra2_Gun_Rhino.description>
+  <!-- EN: rhino gun -->
+  <ra2_Gun_Rhino.verbs.Verb_Shoot.label>rhino gun</ra2_Gun_Rhino.verbs.Verb_Shoot.label>
+</LanguageData>

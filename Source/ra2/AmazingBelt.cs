@@ -10,7 +10,7 @@ namespace ra2;
 
 public class AmazingBelt : Apparel
 {
-    public int ticks;
+    private int ticks;
 
     private bool tanyaHandWeapon()
     {
@@ -18,7 +18,7 @@ public class AmazingBelt : Apparel
         return pe.Primary != null && pe.Primary.def.defName != "ra2_TanyaC4Bomb";
     }
 
-    public List<IntVec3> CellsAround(IntVec3 pos, Map map, int range)
+    private static List<IntVec3> CellsAround(IntVec3 pos, int range)
     {
         var result = new List<IntVec3>();
         var num = GenRadial.NumCellsInRadius(range);
@@ -43,7 +43,7 @@ public class AmazingBelt : Apparel
         // Scribe_Deep.Look<int>(ref this.ticks,"ticks",0,false);
     }
 
-    public override void Tick()
+    protected override void Tick()
     {
         base.Tick();
 
@@ -191,7 +191,7 @@ public class AmazingBelt : Apparel
                 {
                     var pawn = Wearer;
                     var df = DefDatabase<DamageDef>.GetNamed("YuriExp");
-                    foreach (var cell in CellsAround(pawn.Position, pawn.Map, 7))
+                    foreach (var cell in CellsAround(pawn.Position, 7))
                     {
                         // if (!cell.IsValid) continue;
                         var list = pawn.Map.thingGrid.ThingsListAt(cell);

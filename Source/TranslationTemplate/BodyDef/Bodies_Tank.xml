@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: rhino heavy tank -->
+  <ra2_Rhino_Body.label>rhino heavy tank</ra2_Rhino_Body.label>
+  <!-- EN: left sight sensor -->
+  <ra2_Rhino_Body.corePart.parts.ra2_tankinnerarmor.parts.left_sight_sensor.customLabel>left sight sensor</ra2_Rhino_Body.corePart.parts.ra2_tankinnerarmor.parts.left_sight_sensor.customLabel>
+  <!-- EN: right sight sensor -->
+  <ra2_Rhino_Body.corePart.parts.ra2_tankinnerarmor.parts.right_sight_sensor.customLabel>right sight sensor</ra2_Rhino_Body.corePart.parts.ra2_tankinnerarmor.parts.right_sight_sensor.customLabel>
+  <!-- EN: left hearing sensor -->
+  <ra2_Rhino_Body.corePart.parts.ra2_tankinnerarmor.parts.left_hearing_sensor.customLabel>left hearing sensor</ra2_Rhino_Body.corePart.parts.ra2_tankinnerarmor.parts.left_hearing_sensor.customLabel>
+  <!-- EN: right hearing sensor -->
+  <ra2_Rhino_Body.corePart.parts.ra2_tankinnerarmor.parts.right_hearing_sensor.customLabel>right hearing sensor</ra2_Rhino_Body.corePart.parts.ra2_tankinnerarmor.parts.right_hearing_sensor.customLabel>
+</LanguageData>

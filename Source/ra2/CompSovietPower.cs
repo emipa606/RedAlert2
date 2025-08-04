@@ -32,7 +32,7 @@ public class CompSovietPower : CompPowerPlant
     }
 
 
-    public Material getMat()
+    private Material getMat()
     {
         var speed = 4;
         var index = ticktime / speed % 4;

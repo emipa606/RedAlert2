@@ -6,14 +6,14 @@ namespace ra2;
 
 public class ChronoBeam : Thing
 {
-    public Thing caster;
-    public LocalTargetInfo currentTarget;
-    public Matrix4x4 lineMatrix;
-    public int ticks;
+    private Thing caster;
+    private LocalTargetInfo currentTarget;
+    private Matrix4x4 lineMatrix;
+    private int ticks;
 
-    public float Opacity => (float)Math.Sin(Math.Pow(1.0 - (1.0 * ticks / 60), 6) * 3.1415926535897931);
+    private float Opacity => (float)Math.Sin(Math.Pow(1.0 - (1.0 * ticks / 60), 6) * 3.1415926535897931);
 
-    protected void ComputeDrawingParameters(Thing thing, LocalTargetInfo localTargetInfo)
+    private void ComputeDrawingParameters(Thing thing, LocalTargetInfo localTargetInfo)
     {
         var shoter = thing.Position.ToVector3() + new Vector3(0, 0, 0.5f);
         var target = localTargetInfo.Cell.ToVector3() + new Vector3(0, 0, 0.5f);
@@ -26,7 +26,7 @@ public class ChronoBeam : Thing
         Draws();
     }
 
-    public void Draws()
+    private void Draws()
     {
         Graphics.DrawMesh(MeshPool.plane10, lineMatrix,
             FadedMaterialPool.FadedVersionOf(MaterialPool.MatFrom("ra2/Projectile/ChronoBeam"), Opacity), 0);
@@ -37,7 +37,7 @@ public class ChronoBeam : Thing
         ComputeDrawingParameters(caster, currentTarget);
     }
 
-    public override void Tick()
+    protected override void Tick()
     {
         // int num = this.ticks;
         // this.ticks = num + 1;

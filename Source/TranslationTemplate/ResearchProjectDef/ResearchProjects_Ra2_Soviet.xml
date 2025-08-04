@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Soviet Flak Cannon -->
+  <Ra2SovietADA.label>Soviet Flak Cannon</Ra2SovietADA.label>
+  <!-- EN: Learn to build soviet flak cannon. -->
+  <Ra2SovietADA.description>Learn to build soviet flak cannon.</Ra2SovietADA.description>
+  <!-- EN: Soviet Portable Apocalypse Tank Gun -->
+  <Ra2SovietApoTankGun.label>Soviet Portable Apocalypse Tank Gun</Ra2SovietApoTankGun.label>
+  <!-- EN: Learn to create Portable Apocalypse Tank Gun. -->
+  <Ra2SovietApoTankGun.description>Learn to create Portable Apocalypse Tank Gun.</Ra2SovietApoTankGun.description>
+  <!-- EN: Soviet Portable Apocalypse Tank Turret -->
+  <Ra2SovietApoTankGunTurret.label>Soviet Portable Apocalypse Tank Turret</Ra2SovietApoTankGunTurret.label>
+  <!-- EN: Learn to create Apocalypse Tank turret(unfinished). -->
+  <Ra2SovietApoTankGunTurret.description>Learn to create Apocalypse Tank turret(unfinished).</Ra2SovietApoTankGunTurret.description>
+  <!-- EN: Soviet Barracks -->
+  <Ra2SovietBarracks.label>Soviet Barracks</Ra2SovietBarracks.label>
+  <!-- EN: Learn to build soviet barracks. -->
+  <Ra2SovietBarracks.description>Learn to build soviet barracks.</Ra2SovietBarracks.description>
+  <!-- EN: Soviet Desolator Suit -->
+  <Ra2SovietDesolatorSuit.label>Soviet Desolator Suit</Ra2SovietDesolatorSuit.label>
+  <!-- EN: Learn to create Desolator suit. -->
+  <Ra2SovietDesolatorSuit.description>Learn to create Desolator suit.</Ra2SovietDesolatorSuit.description>
+  <!-- EN: Soviet EarthHammer -->
+  <Ra2SovietEarthHammer.label>Soviet EarthHammer</Ra2SovietEarthHammer.label>
+  <!-- EN: Learn to build soviet earth hammer. -->
+  <Ra2SovietEarthHammer.description>Learn to build soviet earth hammer.</Ra2SovietEarthHammer.description>
+  <!-- EN: Soviet Super Weapon -->
+  <Ra2SovietNuclearMissle.label>Soviet Super Weapon</Ra2SovietNuclearMissle.label>
+  <!-- EN: Learn to build nuclear silo. -->
+  <Ra2SovietNuclearMissle.description>Learn to build nuclear silo.</Ra2SovietNuclearMissle.description>
+  <!-- EN: Soviet Nuclear Tech -->
+  <Ra2SovietNuclearTech.label>Soviet Nuclear Tech</Ra2SovietNuclearTech.label>
+  <!-- EN: Learn Nuclear Tech. -->
+  <Ra2SovietNuclearTech.description>Learn Nuclear Tech.</Ra2SovietNuclearTech.description>
+  <!-- EN: Soviet Pillbox -->
+  <Ra2SovietPillbox.label>Soviet Pillbox</Ra2SovietPillbox.label>
+  <!-- EN: Learn to build soviet pillbox. -->
+  <Ra2SovietPillbox.description>Learn to build soviet pillbox.</Ra2SovietPillbox.description>
+  <!-- EN: Soviet Tesla Coil -->
+  <Ra2SovietTesla.label>Soviet Tesla Coil</Ra2SovietTesla.label>
+  <!-- EN: Learn to build soviet tesla coil. -->
+  <Ra2SovietTesla.description>Learn to build soviet tesla coil.</Ra2SovietTesla.description>
+  <!-- EN: Soviet Tesla Tech -->
+  <Ra2SovietTeslaTech.label>Soviet Tesla Tech</Ra2SovietTeslaTech.label>
+  <!-- EN: Learn Tesla Tech. -->
+  <Ra2SovietTeslaTech.description>Learn Tesla Tech.</Ra2SovietTeslaTech.description>
+</LanguageData>

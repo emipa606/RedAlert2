@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: C4 -->
+  <Proj_C4Bomb.label>C4</Proj_C4Bomb.label>
+  <!-- EN: tanya laser -->
+  <ra2_Bullet_Tanya.label>tanya laser</ra2_Bullet_Tanya.label>
+  <!-- EN: tanya gun -->
+  <ra2_Gun_Tanya.label>tanya gun</ra2_Gun_Tanya.label>
+  <!-- EN: tanya's gun -->
+  <ra2_Gun_Tanya.description>tanya's gun</ra2_Gun_Tanya.description>
+  <!-- EN: grip -->
+  <ra2_Gun_Tanya.tools.grip.label>grip</ra2_Gun_Tanya.tools.grip.label>
+  <!-- EN: barrel -->
+  <ra2_Gun_Tanya.tools.barrel.label>barrel</ra2_Gun_Tanya.tools.barrel.label>
+  <!-- EN: tanya gun -->
+  <ra2_Gun_Tanya.verbs.Verb_Shoot.label>tanya gun</ra2_Gun_Tanya.verbs.Verb_Shoot.label>
+  <!-- EN: C4 -->
+  <ra2_TanyaC4Bomb.label>C4</ra2_TanyaC4Bomb.label>
+  <!-- EN: C4,break down everything. -->
+  <ra2_TanyaC4Bomb.description>C4,break down everything.</ra2_TanyaC4Bomb.description>
+  <!-- EN: place Cfour -->
+  <ra2_TanyaC4Bomb.verbs.place_Cfour.label>place Cfour</ra2_TanyaC4Bomb.verbs.place_Cfour.label>
+</LanguageData>

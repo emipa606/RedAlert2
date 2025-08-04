@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Allied tech machine -->
+  <ra2_AlliedTech.label>Allied tech machine</ra2_AlliedTech.label>
+  <!-- EN: Increases research speed. Needs to be placed near hi-tech research bench. One research bench can be linked to only one multi-analyzer. -->
+  <ra2_AlliedTech.description>Increases research speed. Needs to be placed near hi-tech research bench. One research bench can be linked to only one multi-analyzer.</ra2_AlliedTech.description>
+</LanguageData>

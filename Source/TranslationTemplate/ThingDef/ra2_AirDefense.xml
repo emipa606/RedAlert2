@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Allied Patriot missiles -->
+  <ra2_AlliedAirDefense.label>Allied Patriot missiles</ra2_AlliedAirDefense.label>
+  <!-- EN: It will hit enemy's Drop Pod and mortar shells. -->
+  <ra2_AlliedAirDefense.description>It will hit enemy's Drop Pod and mortar shells.</ra2_AlliedAirDefense.description>
+  <!-- EN: Allied Patriot missiles gun -->
+  <ra2_AlliedAirDefense_Gun.label>Allied Patriot missiles gun</ra2_AlliedAirDefense_Gun.label>
+  <!-- EN: It will hit enemy's Drop Pod and mortar shells. -->
+  <ra2_AlliedAirDefense_Gun.description>It will hit enemy's Drop Pod and mortar shells.</ra2_AlliedAirDefense_Gun.description>
+  <!-- EN: Allied Patriot missiles gun -->
+  <ra2_AlliedAirDefense_Gun.verbs.Verb_Shoot.label>Allied Patriot missiles gun</ra2_AlliedAirDefense_Gun.verbs.Verb_Shoot.label>
+  <!-- EN: Soviet Flak Cannon -->
+  <ra2_SovietAirDefense.label>Soviet Flak Cannon</ra2_SovietAirDefense.label>
+  <!-- EN: It will hit enemy's Drop Pod and mortar shells. -->
+  <ra2_SovietAirDefense.description>It will hit enemy's Drop Pod and mortar shells.</ra2_SovietAirDefense.description>
+  <!-- EN: Soviet Flak Cannon gun -->
+  <ra2_SovietAirDefense_Gun.label>Soviet Flak Cannon gun</ra2_SovietAirDefense_Gun.label>
+  <!-- EN: It will hit enemy's Drop Pod and mortar shells. -->
+  <ra2_SovietAirDefense_Gun.description>It will hit enemy's Drop Pod and mortar shells.</ra2_SovietAirDefense_Gun.description>
+  <!-- EN: Soviet Flak Cannon gun -->
+  <ra2_SovietAirDefense_Gun.verbs.Verb_Shoot.label>Soviet Flak Cannon gun</ra2_SovietAirDefense_Gun.verbs.Verb_Shoot.label>
+</LanguageData>

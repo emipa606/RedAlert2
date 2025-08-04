@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Apo bullet -->
+  <ra2_Bullet_apo.label>Apo bullet</ra2_Bullet_apo.label>
+  <!-- EN: apo gun -->
+  <ra2_Gun_Apo.label>apo gun</ra2_Gun_Apo.label>
+  <!-- EN: Apo's gun. -->
+  <ra2_Gun_Apo.description>Apo's gun.</ra2_Gun_Apo.description>
+  <!-- EN: apo gun -->
+  <ra2_Gun_Apo.verbs.Verb_Shoot.label>apo gun</ra2_Gun_Apo.verbs.Verb_Shoot.label>
+  <!-- EN: apo type gun -->
+  <ra2_Gun_Apo_Type.label>apo type gun</ra2_Gun_Apo_Type.label>
+  <!-- EN: Apo's gun. -->
+  <ra2_Gun_Apo_Type.description>Apo's gun.</ra2_Gun_Apo_Type.description>
+  <!-- EN: apo type gun -->
+  <ra2_Gun_Apo_Type.verbs.Verb_Shoot.label>apo type gun</ra2_Gun_Apo_Type.verbs.Verb_Shoot.label>
+</LanguageData>

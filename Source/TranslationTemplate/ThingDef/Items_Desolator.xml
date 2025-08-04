@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: desolator fire -->
+  <ra2_Bullet_Desolator.label>desolator fire</ra2_Bullet_Desolator.label>
+  <!-- EN: desolator gun -->
+  <ra2_Gun_Desolator.label>desolator gun</ra2_Gun_Desolator.label>
+  <!-- EN: Desolator's gun. -->
+  <ra2_Gun_Desolator.description>Desolator's gun.</ra2_Gun_Desolator.description>
+  <!-- EN: grip -->
+  <ra2_Gun_Desolator.tools.grip.label>grip</ra2_Gun_Desolator.tools.grip.label>
+  <!-- EN: barrel -->
+  <ra2_Gun_Desolator.tools.barrel.label>barrel</ra2_Gun_Desolator.tools.barrel.label>
+  <!-- EN: desolator gun -->
+  <ra2_Gun_Desolator.verbs.Verb_Shoot.label>desolator gun</ra2_Gun_Desolator.verbs.Verb_Shoot.label>
+  <!-- EN: desolator hat -->
+  <ra2_Hat_Desolator.label>desolator hat</ra2_Hat_Desolator.label>
+  <!-- EN: Desolator's hat. -->
+  <ra2_Hat_Desolator.description>Desolator's hat.</ra2_Hat_Desolator.description>
+  <!-- EN: desolator pants -->
+  <ra2_Pants_Desolator.label>desolator pants</ra2_Pants_Desolator.label>
+  <!-- EN: A simple set of pants. -->
+  <ra2_Pants_Desolator.description>A simple set of pants.</ra2_Pants_Desolator.description>
+  <!-- EN: desolator parka -->
+  <ra2_Parka_Desolator.label>desolator parka</ra2_Parka_Desolator.label>
+  <!-- EN: A thick parka for staying warm in even the coldest of temperatures. -->
+  <ra2_Parka_Desolator.description>A thick parka for staying warm in even the coldest of temperatures.</ra2_Parka_Desolator.description>
+</LanguageData>

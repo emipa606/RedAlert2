@@ -77,7 +77,7 @@ public class CompBarracks : ThingComp
         //String firstPawn = trainPawns[0];
     }
 
-    private float trainTimeCalculate(string pawn)
+    private static float trainTimeCalculate(string pawn)
     {
         if (!Settings.useGameSpeed)
         {
@@ -187,7 +187,7 @@ public class CompBarracks : ThingComp
     }
 
 
-    private float getPawnCost(string def)
+    private static float getPawnCost(string def)
     {
         switch (def)
         {
@@ -275,7 +275,7 @@ public class CompBarracks : ThingComp
     }
 
 
-    private Pawn getTanya()
+    private static Pawn getTanya()
     {
         var request = new PawnGenerationRequest(DefDatabase<PawnKindDef>.GetNamed("ra2_AlliedTanya"),
             Faction.OfPlayer, PawnGenerationContext.NonPlayer, -1, false, false, false, true, true, allowFood: true,
@@ -325,11 +325,11 @@ public class CompBarracks : ThingComp
         return item;
     }
 
-    private List<Pawn> getAllTanya()
+    private static List<Pawn> getAllTanya()
     {
         var result = new List<Pawn>();
 
-        foreach (var ppod in PawnsFinder.AllMapsCaravansAndTravelingTransportPods_Alive_Colonists)
+        foreach (var ppod in PawnsFinder.AllMapsCaravansAndTravellingTransporters_Alive_Colonists)
         {
             if (ppod.kindDef.defName == "ra2_AlliedTanya")
             {

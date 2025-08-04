@@ -10,10 +10,10 @@ namespace ra2.Yuri;
 public class Controlstorage : UtilityWorldObject, IExposable
 
 {
-    public Dictionary<Pawn, Faction> BeControlerAndBeforeFaction = new Dictionary<Pawn, Faction>();
-    public Dictionary<Pawn, Pawn> BeControlerAndControler = new Dictionary<Pawn, Pawn>();
+    private Dictionary<Pawn, Faction> BeControlerAndBeforeFaction = new();
+    public Dictionary<Pawn, Pawn> BeControlerAndControler = new();
 
-    public Dictionary<Pawn, Pawn> ControlerAndBeControler = new Dictionary<Pawn, Pawn>();
+    public Dictionary<Pawn, Pawn> ControlerAndBeControler = new();
 
     public override void ExposeData()
     {
@@ -29,7 +29,7 @@ public class Controlstorage : UtilityWorldObject, IExposable
     }
 
     //清除二人关系
-    public void remove2pawnRelation(Pawn controler, Pawn becontroler)
+    private void remove2pawnRelation(Pawn controler, Pawn becontroler)
     {
         var check1 = false;
         var check2 = false;
@@ -79,7 +79,7 @@ public class Controlstorage : UtilityWorldObject, IExposable
     }
 
     //添加二人关系
-    public void add2pawnRelation(Pawn controler, Pawn becontroler)
+    private void add2pawnRelation(Pawn controler, Pawn becontroler)
     {
         ControlerAndBeControler.Add(controler, becontroler);
         BeControlerAndControler.Add(becontroler, controler);
@@ -87,7 +87,7 @@ public class Controlstorage : UtilityWorldObject, IExposable
     }
 
     //检查是否能被控制
-    public bool canBeControled(Pawn becontroler)
+    public static bool canBeControled(Pawn becontroler)
     {
         if (becontroler.kindDef.defName.EqualsIgnoreCase("ra2_yuriyuri"))
         {
@@ -95,12 +95,7 @@ public class Controlstorage : UtilityWorldObject, IExposable
         }
 
         var result = becontroler.def.statBases.GetStatValueFromList(StatDefOf.PsychicSensitivity, 1.0f);
-        if (result == 0)
-        {
-            return false;
-        }
-
-        return true;
+        return result != 0;
     }
 
     //检查控制者是否存在,并看看被控制者是否存在
@@ -145,13 +140,13 @@ public class Controlstorage : UtilityWorldObject, IExposable
     }
 
     //检查控制者是否有控制人
-    public bool hasControledSomeone(Pawn controler)
+    private bool hasControledSomeone(Pawn controler)
     {
         return controler != null && ControlerAndBeControler.ContainsKey(controler);
     }
 
     //检查即将被控制者是否已经有所属
-    public bool hasBecontrolerAlreadyBecontroled(Pawn becontroler)
+    private bool hasBecontrolerAlreadyBecontroled(Pawn becontroler)
     {
         return becontroler != null && BeControlerAndControler.ContainsKey(becontroler);
     }
@@ -208,7 +203,7 @@ public class Controlstorage : UtilityWorldObject, IExposable
             }
 
             _ = LordMaker.MakeNewLord(tmpf,
-                new LordJob_DefendBase(becontroler.Faction, becontroler.Position), becontroler.Map,
+                new LordJob_DefendBase(becontroler.Faction, becontroler.Position, 0), becontroler.Map,
                 becontrolers);
         }
         else

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Yuri -->
+  <ra2_Yuri.label>Yuri</ra2_Yuri.label>
+  <!-- EN: Yuri Force. -->
+  <ra2_Yuri.description>Yuri Force.</ra2_Yuri.description>
+  <!-- EN: Yuri Army -->
+  <ra2_Yuri.fixedName>Yuri Army</ra2_Yuri.fixedName>
+  <!-- EN: Commander -->
+  <ra2_Yuri.leaderTitle>Commander</ra2_Yuri.leaderTitle>
+  <!-- EN: {0} from {1} are attacking your {2}. -->
+  <ra2_Yuri.messageDefendersAttacking>{0} from {1} are attacking your {2}.</ra2_Yuri.messageDefendersAttacking>
+  <!-- EN: member -->
+  <ra2_Yuri.pawnSingular>member</ra2_Yuri.pawnSingular>
+  <!-- EN: Soldiers -->
+  <ra2_Yuri.pawnsPlural>Soldiers</ra2_Yuri.pawnsPlural>
+</LanguageData>

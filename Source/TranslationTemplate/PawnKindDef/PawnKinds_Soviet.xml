@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: conscript -->
+  <ra2_SovietConscript.label>conscript</ra2_SovietConscript.label>
+  <!-- EN: desolator -->
+  <ra2_SovietDesolator.label>desolator</ra2_SovietDesolator.label>
+  <!-- EN: soviet engineer -->
+  <ra2_SovietEngineer.label>soviet engineer</ra2_SovietEngineer.label>
+  <!-- EN: teslatrooper -->
+  <ra2_SovietTeslaTrooper.label>teslatrooper</ra2_SovietTeslaTrooper.label>
+</LanguageData>

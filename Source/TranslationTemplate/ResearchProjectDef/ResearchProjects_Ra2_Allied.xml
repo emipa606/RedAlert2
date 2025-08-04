@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Aiiled Patriot Missiles -->
+  <Ra2AlliedADA.label>Aiiled Patriot Missiles</Ra2AlliedADA.label>
+  <!-- EN: Learn to build allied patriot missiles. -->
+  <Ra2AlliedADA.description>Learn to build allied patriot missiles.</Ra2AlliedADA.description>
+  <!-- EN: Aiiled Barracks -->
+  <Ra2AlliedBarracks.label>Aiiled Barracks</Ra2AlliedBarracks.label>
+  <!-- EN: Learn to build allied barracks. -->
+  <Ra2AlliedBarracks.description>Learn to build allied barracks.</Ra2AlliedBarracks.description>
+  <!-- EN: Allied GrandCannon -->
+  <Ra2AlliedGrandCannon.label>Allied GrandCannon</Ra2AlliedGrandCannon.label>
+  <!-- EN: Learn to build Allied GrandCannon. -->
+  <Ra2AlliedGrandCannon.description>Learn to build Allied GrandCannon.</Ra2AlliedGrandCannon.description>
+  <!-- EN: Allied Pillbox -->
+  <Ra2AlliedPillbox.label>Allied Pillbox</Ra2AlliedPillbox.label>
+  <!-- EN: Learn to build Allied pillbox. -->
+  <Ra2AlliedPillbox.description>Learn to build Allied pillbox.</Ra2AlliedPillbox.description>
+  <!-- EN: Allied Prism Tower -->
+  <Ra2AlliedPrism.label>Allied Prism Tower</Ra2AlliedPrism.label>
+  <!-- EN: Learn to build Allied Prism Tower. -->
+  <Ra2AlliedPrism.description>Learn to build Allied Prism Tower.</Ra2AlliedPrism.description>
+  <!-- EN: Allied Tanya -->
+  <Ra2AlliedTanya.label>Allied Tanya</Ra2AlliedTanya.label>
+  <!-- EN: Learn to Train Tanya(Limit 1). -->
+  <Ra2AlliedTanya.description>Learn to Train Tanya(Limit 1).</Ra2AlliedTanya.description>
+  <!-- EN: Allied Super Weapon -->
+  <Ra2AlliedWeatherMachine.label>Allied Super Weapon</Ra2AlliedWeatherMachine.label>
+  <!-- EN: Learn to build weather machine. -->
+  <Ra2AlliedWeatherMachine.description>Learn to build weather machine.</Ra2AlliedWeatherMachine.description>
+  <!-- EN: Allied Weather Tech -->
+  <Ra2AlliedWeatherTech.label>Allied Weather Tech</Ra2AlliedWeatherTech.label>
+  <!-- EN: Learn Weather Tech. -->
+  <Ra2AlliedWeatherTech.description>Learn Weather Tech.</Ra2AlliedWeatherTech.description>
+</LanguageData>

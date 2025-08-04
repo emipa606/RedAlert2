@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: electric arc -->
+  <ra2_Bullet_TeslaTrooper.label>electric arc</ra2_Bullet_TeslaTrooper.label>
+  <!-- EN: teslatrooper gun -->
+  <ra2_Gun_TeslaTrooper.label>teslatrooper gun</ra2_Gun_TeslaTrooper.label>
+  <!-- EN: Conscript's gun. -->
+  <ra2_Gun_TeslaTrooper.description>Conscript's gun.</ra2_Gun_TeslaTrooper.description>
+  <!-- EN: grip -->
+  <ra2_Gun_TeslaTrooper.tools.grip.label>grip</ra2_Gun_TeslaTrooper.tools.grip.label>
+  <!-- EN: barrel -->
+  <ra2_Gun_TeslaTrooper.tools.barrel.label>barrel</ra2_Gun_TeslaTrooper.tools.barrel.label>
+  <!-- EN: teslatrooper gun -->
+  <ra2_Gun_TeslaTrooper.verbs.Verb_Shoot.label>teslatrooper gun</ra2_Gun_TeslaTrooper.verbs.Verb_Shoot.label>
+  <!-- EN: teslatrooper hat -->
+  <ra2_Hat_TeslaTrooper.label>teslatrooper hat</ra2_Hat_TeslaTrooper.label>
+  <!-- EN: Conscript's hat. -->
+  <ra2_Hat_TeslaTrooper.description>Conscript's hat.</ra2_Hat_TeslaTrooper.description>
+  <!-- EN: teslatrooper pants -->
+  <ra2_Pants_TeslaTrooper.label>teslatrooper pants</ra2_Pants_TeslaTrooper.label>
+  <!-- EN: A simple set of pants. -->
+  <ra2_Pants_TeslaTrooper.description>A simple set of pants.</ra2_Pants_TeslaTrooper.description>
+  <!-- EN: teslatrooper parka -->
+  <ra2_Parka_TeslaTrooper.label>teslatrooper parka</ra2_Parka_TeslaTrooper.label>
+  <!-- EN: A thick parka for staying warm in even the coldest of temperatures. -->
+  <ra2_Parka_TeslaTrooper.description>A thick parka for staying warm in even the coldest of temperatures.</ra2_Parka_TeslaTrooper.description>
+</LanguageData>

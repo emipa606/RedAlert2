@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: apocalypse tank -->
+  <ra2_Tank_Apo.label>apocalypse tank</ra2_Tank_Apo.label>
+  <!-- EN: Heavy combat mechanoids that glide on dozens of tiny legs. Their heavy armor and firepower makes them very effective against bunched-up static defenders. They are somewhat vulnerable to mobile hit-and-run tactics. -->
+  <ra2_Tank_Apo.description>Heavy combat mechanoids that glide on dozens of tiny legs. Their heavy armor and firepower makes them very effective against bunched-up static defenders. They are somewhat vulnerable to mobile hit-and-run tactics.</ra2_Tank_Apo.description>
+  <!-- EN: head -->
+  <ra2_Tank_Apo.tools.head.label>head</ra2_Tank_Apo.tools.head.label>
+  <!-- EN: rhino heavy tank -->
+  <ra2_Tank_Rhino.label>rhino heavy tank</ra2_Tank_Rhino.label>
+  <!-- EN: Heavy combat mechanoids that glide on dozens of tiny legs. Their thick carpace and firepower makes them very effective against bunched-up static defenders. They are somewhat vulnerable to mobile hit-and-run tactics. -->
+  <ra2_Tank_Rhino.description>Heavy combat mechanoids that glide on dozens of tiny legs. Their thick carpace and firepower makes them very effective against bunched-up static defenders. They are somewhat vulnerable to mobile hit-and-run tactics.</ra2_Tank_Rhino.description>
+  <!-- EN: head -->
+  <ra2_Tank_Rhino.tools.head.label>head</ra2_Tank_Rhino.tools.head.label>
+</LanguageData>

@@ -13,7 +13,7 @@ public class SovietNuclearLeaving : ThingWithComps
     public int destinationTile = -1;
 
     //public IntVec3 targetCell;
-    public Vector3 ExactPosition = Vector3.zero;
+    private Vector3 ExactPosition = Vector3.zero;
 
     private MapParent mapParent;
     private float speed = 0.001f;
@@ -23,7 +23,7 @@ public class SovietNuclearLeaving : ThingWithComps
     public override Vector3 DrawPos => ExactPosition;
 
 
-    public override void Tick()
+    protected override void Tick()
     {
         base.Tick();
         if (ExactPosition == Vector3.zero)
@@ -51,7 +51,7 @@ public class SovietNuclearLeaving : ThingWithComps
     }
 
 
-    public void Booom()
+    private void Booom()
     {
         if (!Find.WorldObjects.AnyMapParentAt(destinationTile))
         {

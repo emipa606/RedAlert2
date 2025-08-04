@@ -27,7 +27,7 @@ public class CompTeslaCoil : ThingComp
     private int ticktime;
 
 
-    public CompProperties_TeslaCoil Props => (CompProperties_TeslaCoil)props;
+    private CompProperties_TeslaCoil Props => (CompProperties_TeslaCoil)props;
 
     private void ClearCache()
     {
@@ -43,7 +43,7 @@ public class CompTeslaCoil : ThingComp
     }
 
 
-    public Material getMat()
+    private Material getMat()
     {
         // int speed = this.Props.speed;
         //int index = ((this.ticktime)/speed) %4 ;

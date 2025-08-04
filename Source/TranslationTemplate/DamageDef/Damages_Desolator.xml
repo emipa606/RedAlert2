@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: desolator gun -->
+  <DesolatorGun.label>desolator gun</DesolatorGun.label>
+  <!-- EN: {0} died of radiation. -->
+  <DesolatorGun.deathMessage>{0} died of radiation.</DesolatorGun.deathMessage>
+</LanguageData>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: chrono beam -->
+  <ChronoBeam.label>chrono beam</ChronoBeam.label>
+  <!-- EN: Chrono gun -->
+  <ra2_Gun_Chrono.label>Chrono gun</ra2_Gun_Chrono.label>
+  <!-- EN: Chrono's gun. -->
+  <ra2_Gun_Chrono.description>Chrono's gun.</ra2_Gun_Chrono.description>
+  <!-- EN: grip -->
+  <ra2_Gun_Chrono.tools.grip.label>grip</ra2_Gun_Chrono.tools.grip.label>
+  <!-- EN: barrel -->
+  <ra2_Gun_Chrono.tools.barrel.label>barrel</ra2_Gun_Chrono.tools.barrel.label>
+  <!-- EN: Chrono gun -->
+  <ra2_Gun_Chrono.verbs.Verb_Chrono.label>Chrono gun</ra2_Gun_Chrono.verbs.Verb_Chrono.label>
+  <!-- EN: Chrono hat -->
+  <ra2_Hat_Chrono.label>Chrono hat</ra2_Hat_Chrono.label>
+  <!-- EN: Chrono's hat. -->
+  <ra2_Hat_Chrono.description>Chrono's hat.</ra2_Hat_Chrono.description>
+  <!-- EN: Chrono pants -->
+  <ra2_Pants_Chrono.label>Chrono pants</ra2_Pants_Chrono.label>
+  <!-- EN: A simple set of pants. -->
+  <ra2_Pants_Chrono.description>A simple set of pants.</ra2_Pants_Chrono.description>
+  <!-- EN: Chrono parka -->
+  <ra2_Parka_Chrono.label>Chrono parka</ra2_Parka_Chrono.label>
+  <!-- EN: A thick parka for staying warm in even the coldest of temperatures. -->
+  <ra2_Parka_Chrono.description>A thick parka for staying warm in even the coldest of temperatures.</ra2_Parka_Chrono.description>
+</LanguageData>

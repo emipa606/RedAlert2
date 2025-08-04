@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="BaseBullet">
+    <defName>ra2_Bullet_rhino</defName>
+    <label>Rhino bullet</label>
+    <graphicData>
+      <texPath>ra2/Projectile/Bullet_Tank</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <damageDef>Bomb</damageDef>
+      <flyOverhead>false</flyOverhead>
+      <damageAmountBase>25</damageAmountBase>
+      <explosionRadius>1</explosionRadius>
+      <speed>70</speed>
+      <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+      <soundExplode>MortarBomb_Explode</soundExplode>
+      <soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
+    </projectile>
+    <comps>
+      <li Class="CompProperties_AmbientSound">
+        <sound>MortarRound_Ambient</sound>
+      </li>
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="ra2_CanGetGunBase">
+    <defName>ra2_Gun_Rhino</defName>
+    <label>rhino gun</label>
+    <graphicData>
+      <texPath>ra2/Things/Weapon/Soviet/Vehicle/RtankWeapon</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <description>Rhino's gun.</description>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <destroyOnDrop>true</destroyOnDrop>
+    <useHitPoints>false</useHitPoints>
+    <tradeability>None</tradeability>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.05</MoveSpeed>
+      <WorkSpeedGlobal>-0.20</WorkSpeedGlobal>
+    </equippedStatOffsets>
+    <statBases>
+      <Flammability>0</Flammability>
+      <MarketValue>150</MarketValue>
+      <Mass>1</Mass>
+      <AccuracyTouch>0.70</AccuracyTouch>
+      <AccuracyShort>0.54</AccuracyShort>
+      <AccuracyMedium>0.31</AccuracyMedium>
+      <AccuracyLong>0.12</AccuracyLong>
+      <RangedWeapon_Cooldown>0.66</RangedWeapon_Cooldown>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <weaponTags>
+      <li>RhinoGun</li>
+    </weaponTags>
+    <verbs>
+      <li>
+        <forcedMissRadius>1</forcedMissRadius>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>ra2_Bullet_rhino</defaultProjectile>
+        <warmupTime>3</warmupTime>
+        <range>30</range>
+        <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
+        <burstShotCount>1</burstShotCount>
+        <soundCast>ra2_rhino_shot</soundCast>
+        <muzzleFlashScale>9</muzzleFlashScale>
+        <stopBurstWithoutLos>false</stopBurstWithoutLos>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+      </li>
+    </verbs>
+  </ThingDef>
+</Defs>

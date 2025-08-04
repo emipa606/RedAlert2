@@ -22,7 +22,7 @@ public class Verb_Yuri : Verb
             return false;
         }
 
-        if (!ModBaseRa2.Instance._controlstorage.canBeControled(pawn))
+        if (!Controlstorage.canBeControled(pawn))
         {
             return false;
         }

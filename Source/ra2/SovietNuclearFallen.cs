@@ -9,7 +9,7 @@ public class SovietNuclearFallen : ThingWithComps
 
     public IntVec3 targetCell;
 
-    public override void Tick()
+    protected override void Tick()
     {
         base.Tick();
         Position -= new IntVec3(0, 0, 1);

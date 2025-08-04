@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: tank armor -->
+  <ra2_tankarmor.label>tank armor</ra2_tankarmor.label>
+  <!-- EN: tank armor core -->
+  <ra2_tankarmorcore.label>tank armor core</ra2_tankarmorcore.label>
+  <!-- EN: body ring -->
+  <ra2_tankarmorcore.labelShort>body ring</ra2_tankarmorcore.labelShort>
+  <!-- EN: tank core -->
+  <ra2_tankcore.label>tank core</ra2_tankcore.label>
+  <!-- EN: tank inner armor -->
+  <ra2_tankinnerarmor.label>tank inner armor</ra2_tankinnerarmor.label>
+</LanguageData>

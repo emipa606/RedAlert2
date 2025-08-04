@@ -69,7 +69,7 @@ public class Projectile_Desolator : Projectile_Line
         base.Impact(hitThing, blockedByShield);
     }
 
-    private int canBeHarm(Pawn p)
+    private static int canBeHarm(Pawn p)
     {
         if (p.kindDef.RaceProps.IsMechanoid)
         {

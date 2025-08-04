@@ -18,7 +18,7 @@ public class Projectile_Custom : Projectile
         Scribe_Values.Look(ref ticksToDetonation, "ticksToDetonation");
     }
 
-    public override void Tick()
+    protected override void Tick()
     {
         base.Tick();
         if (ticksToDetonation <= 0)
@@ -122,7 +122,7 @@ public class Projectile_Custom : Projectile
         GenExplosion.DoExplosion(position, map, explosionRadius, damageDef, instigator, damageAmountBase,
             ArmorPenetration, soundExplode, thingDef, projectile, intendedTarget.Thing, postExplosionSpawnThingDef,
             postExplosionSpawnChance, postExplosionSpawnThingCount,
-            def.projectile.postExplosionGasType,
+            def.projectile.postExplosionGasType, null, 0,
             def.projectile.applyDamageToExplosionCellsNeighbors, preExplosionSpawnThingDef,
             def.projectile.preExplosionSpawnChance, def.projectile.preExplosionSpawnThingCount,
             def.projectile.explosionChanceToStartFire, def.projectile.explosionDamageFalloff);

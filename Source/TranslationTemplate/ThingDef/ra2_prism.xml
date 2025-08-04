@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: prism -->
+  <ra2_Bullet_Prism.label>prism</ra2_Bullet_Prism.label>
+  <!-- EN: Prism Tower -->
+  <ra2_Gun_Prism.label>Prism Tower</ra2_Gun_Prism.label>
+  <!-- EN: Prism Tower -->
+  <ra2_Gun_Prism.description>Prism Tower</ra2_Gun_Prism.description>
+  <!-- EN: Prism Tower -->
+  <ra2_Gun_Prism.verbs.Verb_Shoot.label>Prism Tower</ra2_Gun_Prism.verbs.Verb_Shoot.label>
+  <!-- EN: Prism Tower -->
+  <ra2_Prism.label>Prism Tower</ra2_Prism.label>
+  <!-- EN: Allied Prism Tower. -->
+  <ra2_Prism.description>Allied Prism Tower.</ra2_Prism.description>
+</LanguageData>

@@ -20,7 +20,7 @@ public class CompUseEffect_TanyaNote : CompUseEffect
         return true;
     }
 
-    private void FinishInstantly(ResearchProjectDef proj)
+    private static void FinishInstantly(ResearchProjectDef proj)
     {
         Find.ResearchManager.FinishProject(proj);
         Messages.Message("MessageResearchProjectFinishedByItem".Translate(proj.label),

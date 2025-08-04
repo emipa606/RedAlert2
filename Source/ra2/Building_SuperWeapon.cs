@@ -12,7 +12,7 @@ public class Building_SuperWeapon : Building
     private readonly int MaxLaunchDistance = 350;
     // private SuperWeaponType type;
 
-    protected readonly StunHandler stunner;
+    private readonly StunHandler stunner;
 
     public bool canFire;
     public int ticks;
@@ -52,12 +52,7 @@ public class Building_SuperWeapon : Building
             return false;
         }
 
-        if (!stunner.Stunned)
-        {
-            return true;
-        }
-
-        return false;
+        return !stunner.Stunned;
     }
 
     private bool canTickAdd()
@@ -85,7 +80,7 @@ public class Building_SuperWeapon : Building
         //Scribe_Values.Look<SuperWeaponType>(ref this.type, "canFire", SuperWeaponType.Soviet, false);
     }
 
-    public override void Tick()
+    protected override void Tick()
     {
         base.Tick();
         if (canTickAdd())
@@ -171,7 +166,7 @@ public class Building_SuperWeapon : Building
             : null);
     }
 
-    public bool ChoseWorldTarget(GlobalTargetInfo target)
+    private bool ChoseWorldTarget(GlobalTargetInfo target)
     {
         if (!target.IsValid)
         {
@@ -214,7 +209,7 @@ public class Building_SuperWeapon : Building
         return true;
     }
 
-    public void TryLaunch(GlobalTargetInfo target)
+    private void TryLaunch(GlobalTargetInfo target)
     {
         if (!Spawned)
         {

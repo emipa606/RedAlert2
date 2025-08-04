@@ -37,7 +37,7 @@ public class Projectile_SiegeCadre : Projectile_Line
         }
     }
 
-    private int canBeHarm(Pawn p)
+    private static int canBeHarm(Pawn p)
     {
         if (p.kindDef.RaceProps.IsMechanoid)
         {

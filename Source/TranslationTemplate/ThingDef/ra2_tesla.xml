@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: electric arc -->
+  <ra2_Bullet_Tesla.label>electric arc</ra2_Bullet_Tesla.label>
+  <!-- EN: tesla coil -->
+  <ra2_Gun_Tesla.label>tesla coil</ra2_Gun_Tesla.label>
+  <!-- EN: tesla coil -->
+  <ra2_Gun_Tesla.description>tesla coil</ra2_Gun_Tesla.description>
+  <!-- EN: tesla coil -->
+  <ra2_Gun_Tesla.verbs.Verb_Shoot.label>tesla coil</ra2_Gun_Tesla.verbs.Verb_Shoot.label>
+  <!-- EN: Tesla coil -->
+  <ra2_Tesla.label>Tesla coil</ra2_Tesla.label>
+  <!-- EN: Soviet tesla coil. -->
+  <ra2_Tesla.description>Soviet tesla coil.</ra2_Tesla.description>
+</LanguageData>

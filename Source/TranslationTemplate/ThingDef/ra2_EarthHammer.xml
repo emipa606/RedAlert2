@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: EarthCrack -->
+  <ra2_Bullet_EarthCrack.label>EarthCrack</ra2_Bullet_EarthCrack.label>
+  <!-- EN: Earth Hammer System -->
+  <ra2_EarthHammer.label>Earth Hammer System</ra2_EarthHammer.label>
+  <!-- EN: Earth hammer. -->
+  <ra2_EarthHammer.description>Earth hammer.</ra2_EarthHammer.description>
+  <!-- EN: EarthCrack Gun -->
+  <ra2_Gun_EarthCrack.label>EarthCrack Gun</ra2_Gun_EarthCrack.label>
+  <!-- EN: EarthHammer use this. -->
+  <ra2_Gun_EarthCrack.description>EarthHammer use this.</ra2_Gun_EarthCrack.description>
+  <!-- EN: EarthCrack Gun -->
+  <ra2_Gun_EarthCrack.verbs.Verb_Shoot.label>EarthCrack Gun</ra2_Gun_EarthCrack.verbs.Verb_Shoot.label>
+</LanguageData>

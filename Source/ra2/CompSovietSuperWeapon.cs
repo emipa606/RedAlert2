@@ -28,7 +28,7 @@ public class CompSovietSuperWeapon : ThingComp
     }
 
 
-    public Material getShellMat()
+    private Material getShellMat()
     {
         var result = MaterialPool.MatFrom($"{path}0");
 

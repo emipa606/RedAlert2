@@ -10,7 +10,7 @@ public class AlliedStormCondition : ThingWithComps //GameCondition
 
     // private static readonly IntRange AreaRadiusRange = new IntRange(10,35);
 
-    private static readonly IntRange TicksBetweenStrikes = new IntRange(20, 60);
+    private static readonly IntRange TicksBetweenStrikes = new(20, 60);
     private readonly List<IntVec3> canATKCells = [];
 
     private int areaRadius;
@@ -39,10 +39,10 @@ public class AlliedStormCondition : ThingWithComps //GameCondition
         base.SpawnSetup(map, respawningAfterLoad);
         //this.areaRadius = AlliedStormCondition.AreaRadiusRange.RandomInRange;
         //this.FindGoodCenterLocation();
-        CellsAround(centerLocation.ToIntVec3, map);
+        CellsAround(centerLocation.ToIntVec3);
     }
 
-    public override void Tick()
+    protected override void Tick()
     {
         base.Tick();
         if (ticks < 120)
@@ -72,7 +72,7 @@ public class AlliedStormCondition : ThingWithComps //GameCondition
         }
     }
 
-    public void CellsAround(IntVec3 pos, Map map)
+    private void CellsAround(IntVec3 pos)
     {
         canATKCells.Clear();
 
@@ -86,7 +86,7 @@ public class AlliedStormCondition : ThingWithComps //GameCondition
         // return this.airCells;
     }
 
-    public void End()
+    private void End()
     {
         Destroy();
     }

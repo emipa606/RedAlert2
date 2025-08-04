@@ -143,7 +143,7 @@ public class CompGrinder : ThingComp
         };
     }
 
-    public void ThrowSparks(Vector3 loc, Map map)
+    private void ThrowSparks(Vector3 loc, Map map)
     {
         if (!loc.ShouldSpawnMotesAt(map) || map.moteCounter.SaturatedLowPriority)
         {

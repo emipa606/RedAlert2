@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Nuclear Silo -->
+  <ra2_SovietSuperWeapon.label>Nuclear Silo</ra2_SovietSuperWeapon.label>
+  <!-- EN: Super Weapon. -->
+  <ra2_SovietSuperWeapon.description>Super Weapon.</ra2_SovietSuperWeapon.description>
+  <!-- EN: nuclear missle (fallen) -->
+  <SovietNuclearFallen.label>nuclear missle (fallen)</SovietNuclearFallen.label>
+  <!-- EN: nuclear missle (leaving) -->
+  <SovietNuclearLeaving.label>nuclear missle (leaving)</SovietNuclearLeaving.label>
+  <!-- EN: nuclear missle Strike -->
+  <SovietNuclearStrike.label>nuclear missle Strike</SovietNuclearStrike.label>
+</LanguageData>

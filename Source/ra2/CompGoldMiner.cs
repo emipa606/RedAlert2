@@ -20,11 +20,8 @@ public class CompGoldMiner : ThingComp
     public override void CompTick()
     {
         base.CompTick();
-        if (goldMineral == null)
-        {
-            goldMineral = (Building_GoldMineral)parent.Map.thingGrid.ThingAt(
-                parent.Position + new IntVec3(0, 0, -2), DefDatabase<ThingDef>.GetNamed("ra2_GoldMineral"));
-        }
+        goldMineral ??= (Building_GoldMineral)parent.Map.thingGrid.ThingAt(
+            parent.Position + new IntVec3(0, 0, -2), DefDatabase<ThingDef>.GetNamed("ra2_GoldMineral"));
 
         if (goldMineral == null)
         {
@@ -43,9 +40,9 @@ public class CompGoldMiner : ThingComp
         steamSprayer.GoldMinerTick();
     }
 
-    public override void PostDeSpawn(Map map)
+    public override void PostDeSpawn(Map map, DestroyMode mode = DestroyMode.Vanish)
     {
-        base.PostDeSpawn(map);
+        base.PostDeSpawn(map, mode);
         if (goldMineral != null)
         {
             goldMineral.harvester = null;

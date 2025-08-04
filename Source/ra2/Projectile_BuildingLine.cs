@@ -8,10 +8,10 @@ public class Projectile_BuildingLine : Projectile_Custom
 {
     private int age;
 
-    public Matrix4x4 lineMatrix;
-    public Vector3 lineScale = new Vector3(1f, 1f, 1f);
+    private Matrix4x4 lineMatrix;
+    public Vector3 lineScale = new(1f, 1f, 1f);
 
-    protected float LineBrightness
+    private float LineBrightness
     {
         get
         {
@@ -25,7 +25,7 @@ public class Projectile_BuildingLine : Projectile_Custom
     }
 
 
-    protected void ComputeDrawingParameters()
+    private void ComputeDrawingParameters()
     {
         var pos = ((origin + destination) / 2f) + new Vector3(0, 2f, 1);
         var z = (destination - origin).MagnitudeHorizontal();
@@ -50,7 +50,7 @@ public class Projectile_BuildingLine : Projectile_Custom
         base.Impact(hitThing, blockedByShield);
     }
 
-    public override void Tick()
+    protected override void Tick()
     {
         if (age == 0)
         {

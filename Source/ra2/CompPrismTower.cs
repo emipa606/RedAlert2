@@ -22,7 +22,7 @@ public class CompPrismTower : ThingComp
     private int ticktime;
 
 
-    public CompProperties_PrismTower Props => (CompProperties_PrismTower)props;
+    private CompProperties_PrismTower Props => (CompProperties_PrismTower)props;
 
     private void ClearCache()
     {
@@ -38,7 +38,7 @@ public class CompPrismTower : ThingComp
     }
 
 
-    public Material getMat()
+    private Material getMat()
     {
         var speed = Props.speed;
         var index = ticktime / speed % 12;

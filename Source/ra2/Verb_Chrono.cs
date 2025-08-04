@@ -51,7 +51,7 @@ public class Verb_Chrono : Verb
         _ = randomCoverToMissInto?.def;
         if (!Rand.Chance(shotReport.AimOnTargetChance_IgnoringPosture))
         {
-            shootLine.ChangeDestToMissWild_NewTemp(shotReport.AimOnTargetChance_StandardTarget, false, caster.Map);
+            shootLine.ChangeDestToMissWild(shotReport.AimOnTargetChance_StandardTarget, false, caster.Map);
 
             var nonTargetWorld = ProjectileHitFlags.NonTargetWorld;
             if (Rand.Chance(0.5f) && canHitNonTargetPawnsNow)

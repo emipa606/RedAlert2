@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Chrono -->
+  <ra2_AlliedChrono.label>Chrono</ra2_AlliedChrono.label>
+  <!-- EN: soviet engineer -->
+  <ra2_AlliedEngineer.label>soviet engineer</ra2_AlliedEngineer.label>
+  <!-- EN: GI -->
+  <ra2_AlliedGI.label>GI</ra2_AlliedGI.label>
+  <!-- EN: SiegeCadre -->
+  <ra2_AlliedSiegeCadre.label>SiegeCadre</ra2_AlliedSiegeCadre.label>
+  <!-- EN: Sniper -->
+  <ra2_AlliedSniper.label>Sniper</ra2_AlliedSniper.label>
+  <!-- EN: Tanya -->
+  <ra2_AlliedTanya.label>Tanya</ra2_AlliedTanya.label>
+</LanguageData>

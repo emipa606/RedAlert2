@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Yuri Mind Explode -->
+  <YuriExp.label>Yuri Mind Explode</YuriExp.label>
+  <!-- EN: {0} was killed by Yuri. -->
+  <YuriExp.deathMessage>{0} was killed by Yuri.</YuriExp.deathMessage>
+</LanguageData>

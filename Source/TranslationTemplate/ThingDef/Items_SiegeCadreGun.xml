@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: electric arc -->
+  <ra2_Bullet_SiegeCadre.label>electric arc</ra2_Bullet_SiegeCadre.label>
+  <!-- EN: SiegeCadre gun -->
+  <ra2_Gun_SiegeCadre.label>SiegeCadre gun</ra2_Gun_SiegeCadre.label>
+  <!-- EN: SiegeCadre's gun. -->
+  <ra2_Gun_SiegeCadre.description>SiegeCadre's gun.</ra2_Gun_SiegeCadre.description>
+  <!-- EN: grip -->
+  <ra2_Gun_SiegeCadre.tools.grip.label>grip</ra2_Gun_SiegeCadre.tools.grip.label>
+  <!-- EN: barrel -->
+  <ra2_Gun_SiegeCadre.tools.barrel.label>barrel</ra2_Gun_SiegeCadre.tools.barrel.label>
+  <!-- EN: SiegeCadre gun -->
+  <ra2_Gun_SiegeCadre.verbs.Verb_Shoot.label>SiegeCadre gun</ra2_Gun_SiegeCadre.verbs.Verb_Shoot.label>
+  <!-- EN: SiegeCadre hat -->
+  <ra2_Hat_SiegeCadre.label>SiegeCadre hat</ra2_Hat_SiegeCadre.label>
+  <!-- EN: SiegeCadre's hat. -->
+  <ra2_Hat_SiegeCadre.description>SiegeCadre's hat.</ra2_Hat_SiegeCadre.description>
+  <!-- EN: SiegeCadre pants -->
+  <ra2_Pants_SiegeCadre.label>SiegeCadre pants</ra2_Pants_SiegeCadre.label>
+  <!-- EN: A simple set of pants. -->
+  <ra2_Pants_SiegeCadre.description>A simple set of pants.</ra2_Pants_SiegeCadre.description>
+  <!-- EN: SiegeCadre parka -->
+  <ra2_Parka_SiegeCadre.label>SiegeCadre parka</ra2_Parka_SiegeCadre.label>
+  <!-- EN: A thick parka for staying warm in even the coldest of temperatures. -->
+  <ra2_Parka_SiegeCadre.description>A thick parka for staying warm in even the coldest of temperatures.</ra2_Parka_SiegeCadre.description>
+</LanguageData>

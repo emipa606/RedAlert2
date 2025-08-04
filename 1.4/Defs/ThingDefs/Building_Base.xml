@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Defs>
-  <ThingDef Name="ra2BuildingBase" ParentName="BuildingBase" Abstract="true">
-    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
-  </ThingDef>
-</Defs>

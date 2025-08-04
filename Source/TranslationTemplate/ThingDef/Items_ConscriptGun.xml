@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: conscript bullet -->
+  <ra2_Bullet_conscript.label>conscript bullet</ra2_Bullet_conscript.label>
+  <!-- EN: conscript gun -->
+  <ra2_Gun_Conscript.label>conscript gun</ra2_Gun_Conscript.label>
+  <!-- EN: Conscript's gun. -->
+  <ra2_Gun_Conscript.description>Conscript's gun.</ra2_Gun_Conscript.description>
+  <!-- EN: grip -->
+  <ra2_Gun_Conscript.tools.grip.label>grip</ra2_Gun_Conscript.tools.grip.label>
+  <!-- EN: barrel -->
+  <ra2_Gun_Conscript.tools.barrel.label>barrel</ra2_Gun_Conscript.tools.barrel.label>
+  <!-- EN: conscript gun -->
+  <ra2_Gun_Conscript.verbs.Verb_Shoot.label>conscript gun</ra2_Gun_Conscript.verbs.Verb_Shoot.label>
+  <!-- EN: conscript hat -->
+  <ra2_Hat_Conscript.label>conscript hat</ra2_Hat_Conscript.label>
+  <!-- EN: Conscript's hat. -->
+  <ra2_Hat_Conscript.description>Conscript's hat.</ra2_Hat_Conscript.description>
+  <!-- EN: Conscript pants -->
+  <ra2_Pants_Conscript.label>Conscript pants</ra2_Pants_Conscript.label>
+  <!-- EN: A simple set of pants. -->
+  <ra2_Pants_Conscript.description>A simple set of pants.</ra2_Pants_Conscript.description>
+  <!-- EN: conscript parka -->
+  <ra2_Parka_Conscript.label>conscript parka</ra2_Parka_Conscript.label>
+  <!-- EN: A thick parka for staying warm in even the coldest of temperatures. -->
+  <ra2_Parka_Conscript.description>A thick parka for staying warm in even the coldest of temperatures.</ra2_Parka_Conscript.description>
+  <!-- EN: conscript shirt -->
+  <ra2_Shirt_Conscript.label>conscript shirt</ra2_Shirt_Conscript.label>
+  <!-- EN: A thick parka for staying warm in even the coldest of temperatures. -->
+  <ra2_Shirt_Conscript.description>A thick parka for staying warm in even the coldest of temperatures.</ra2_Shirt_Conscript.description>
+</LanguageData>

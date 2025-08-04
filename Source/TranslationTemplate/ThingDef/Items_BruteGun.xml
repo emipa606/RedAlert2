@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Brute gun -->
+  <ra2_Gun_Brute.label>Brute gun</ra2_Gun_Brute.label>
+  <!-- EN: Brute's gun. -->
+  <ra2_Gun_Brute.description>Brute's gun.</ra2_Gun_Brute.description>
+  <!-- EN: barrel -->
+  <ra2_Gun_Brute.tools.barrel.label>barrel</ra2_Gun_Brute.tools.barrel.label>
+  <!-- EN: Brute pants -->
+  <ra2_Pants_Brute.label>Brute pants</ra2_Pants_Brute.label>
+  <!-- EN: A simple set of pants. -->
+  <ra2_Pants_Brute.description>A simple set of pants.</ra2_Pants_Brute.description>
+</LanguageData>

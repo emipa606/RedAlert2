@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Initiate bullet -->
+  <ra2_Bullet_Initiate.label>Initiate bullet</ra2_Bullet_Initiate.label>
+  <!-- EN: Initiate gun -->
+  <ra2_Gun_Initiate.label>Initiate gun</ra2_Gun_Initiate.label>
+  <!-- EN: Initiate's gun. -->
+  <ra2_Gun_Initiate.description>Initiate's gun.</ra2_Gun_Initiate.description>
+  <!-- EN: grip -->
+  <ra2_Gun_Initiate.tools.grip.label>grip</ra2_Gun_Initiate.tools.grip.label>
+  <!-- EN: barrel -->
+  <ra2_Gun_Initiate.tools.barrel.label>barrel</ra2_Gun_Initiate.tools.barrel.label>
+  <!-- EN: Initiate gun -->
+  <ra2_Gun_Initiate.verbs.Verb_Shoot.label>Initiate gun</ra2_Gun_Initiate.verbs.Verb_Shoot.label>
+  <!-- EN: Initiate hat -->
+  <ra2_Hat_Initiate.label>Initiate hat</ra2_Hat_Initiate.label>
+  <!-- EN: Initiate's hat. -->
+  <ra2_Hat_Initiate.description>Initiate's hat.</ra2_Hat_Initiate.description>
+  <!-- EN: Initiate pants -->
+  <ra2_Pants_Initiate.label>Initiate pants</ra2_Pants_Initiate.label>
+  <!-- EN: A simple set of pants. -->
+  <ra2_Pants_Initiate.description>A simple set of pants.</ra2_Pants_Initiate.description>
+  <!-- EN: Initiate parka -->
+  <ra2_Parka_Initiate.label>Initiate parka</ra2_Parka_Initiate.label>
+  <!-- EN: A thick parka for staying warm in even the coldest of temperatures. -->
+  <ra2_Parka_Initiate.description>A thick parka for staying warm in even the coldest of temperatures.</ra2_Parka_Initiate.description>
+</LanguageData>

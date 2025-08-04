@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: GI bullet -->
+  <ra2_Bullet_GI.label>GI bullet</ra2_Bullet_GI.label>
+  <!-- EN: GI gun -->
+  <ra2_Gun_GI.label>GI gun</ra2_Gun_GI.label>
+  <!-- EN: GI's gun. -->
+  <ra2_Gun_GI.description>GI's gun.</ra2_Gun_GI.description>
+  <!-- EN: grip -->
+  <ra2_Gun_GI.tools.grip.label>grip</ra2_Gun_GI.tools.grip.label>
+  <!-- EN: barrel -->
+  <ra2_Gun_GI.tools.barrel.label>barrel</ra2_Gun_GI.tools.barrel.label>
+  <!-- EN: GI gun -->
+  <ra2_Gun_GI.verbs.Verb_Shoot.label>GI gun</ra2_Gun_GI.verbs.Verb_Shoot.label>
+  <!-- EN: GI hat -->
+  <ra2_Hat_GI.label>GI hat</ra2_Hat_GI.label>
+  <!-- EN: GI's hat. -->
+  <ra2_Hat_GI.description>GI's hat.</ra2_Hat_GI.description>
+  <!-- EN: GI pants -->
+  <ra2_Pants_GI.label>GI pants</ra2_Pants_GI.label>
+  <!-- EN: A simple set of pants. -->
+  <ra2_Pants_GI.description>A simple set of pants.</ra2_Pants_GI.description>
+  <!-- EN: GI parka -->
+  <ra2_Parka_GI.label>GI parka</ra2_Parka_GI.label>
+  <!-- EN: A thick parka for staying warm in even the coldest of temperatures. -->
+  <ra2_Parka_GI.description>A thick parka for staying warm in even the coldest of temperatures.</ra2_Parka_GI.description>
+  <!-- EN: GI shirt -->
+  <ra2_Shirt_GI.label>GI shirt</ra2_Shirt_GI.label>
+  <!-- EN: A thick parka for staying warm in even the coldest of temperatures. -->
+  <ra2_Shirt_GI.description>A thick parka for staying warm in even the coldest of temperatures.</ra2_Shirt_GI.description>
+</LanguageData>

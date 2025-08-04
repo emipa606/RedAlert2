@@ -13,20 +13,19 @@ public class Building_AirDefense : Building
 {
     private static readonly SoundDef dropPod_Open = SoundDef.Named("DropPod_Open");
 
-    public readonly List<IntVec3> airCells = [];
+    private readonly List<IntVec3> airCells = [];
 
-    protected readonly StunHandler stunner;
+    private readonly StunHandler stunner;
     private readonly int ticksAirInterval = 120;
 
 
-    protected readonly TurretTop_CustomSize top;
+    private readonly TurretTop_CustomSize top;
 
     private List<Thing> airThings = [];
 
     public LocalTargetInfo nowTarget;
 
     private int ticks;
-    protected CompTurretTopSize topSizeComp;
 
     public Building_AirDefense()
     {
@@ -73,12 +72,11 @@ public class Building_AirDefense : Building
         }
     }
 
-    private int range => 20;
+    private static int range => 20;
     private bool underRoof => Position.Roofed(Map);
 
 
-    public CompTurretTopSize TopSizeComp =>
-        topSizeComp;
+    public CompTurretTopSize TopSizeComp { get; private set; }
 
     public override string GetInspectString()
     {
@@ -96,7 +94,7 @@ public class Building_AirDefense : Building
         return sb.ToString();
     }
 
-    public override void Tick()
+    protected override void Tick()
     {
         base.Tick();
         doTurretTick();
@@ -167,7 +165,7 @@ public class Building_AirDefense : Building
     }
 
 
-    public List<IntVec3> AirCellsAround(IntVec3 pos, Map map)
+    private List<IntVec3> AirCellsAround(IntVec3 pos, Map map)
     {
         airCells.Clear();
 
@@ -233,7 +231,7 @@ public class Building_AirDefense : Building
         //  Log.Warning(t + " is air target");
     }
 
-    public void destoryAir(Thing t)
+    private void destoryAir(Thing t)
     {
         if (t is DropPodIncoming dp)
         {
@@ -350,7 +348,7 @@ public class Building_AirDefense : Building
                     }
                 }
 
-                return false;
+                break;
             }
         }
 
@@ -359,7 +357,7 @@ public class Building_AirDefense : Building
     }
 
 
-    public List<Pawn> isPlayerInside(Thing t)
+    private List<Pawn> isPlayerInside(Thing t)
     {
         var result = new List<Pawn>();
         if (t is not DropPodIncoming dp)
@@ -407,6 +405,6 @@ public class Building_AirDefense : Building
     public override void SpawnSetup(Map map, bool respawningAfterLoad)
     {
         base.SpawnSetup(map, respawningAfterLoad);
-        topSizeComp = GetComp<CompTurretTopSize>();
+        TopSizeComp = GetComp<CompTurretTopSize>();
     }
 }

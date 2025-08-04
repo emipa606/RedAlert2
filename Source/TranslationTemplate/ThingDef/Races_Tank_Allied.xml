@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Grizzly heavy tank -->
+  <ra2_Tank_Grizzly.label>Grizzly heavy tank</ra2_Tank_Grizzly.label>
+  <!-- EN: Heavy combat mechanoids that glide on dozens of tiny legs. Their heavy armor and firepower makes them very effective against bunched-up static defenders. They are somewhat vulnerable to mobile hit-and-run tactics. -->
+  <ra2_Tank_Grizzly.description>Heavy combat mechanoids that glide on dozens of tiny legs. Their heavy armor and firepower makes them very effective against bunched-up static defenders. They are somewhat vulnerable to mobile hit-and-run tactics.</ra2_Tank_Grizzly.description>
+  <!-- EN: head -->
+  <ra2_Tank_Grizzly.tools.head.label>head</ra2_Tank_Grizzly.tools.head.label>
+</LanguageData>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Soviet -->
+  <ra2_Soviet.label>Soviet</ra2_Soviet.label>
+  <!-- EN: Soviet Force. -->
+  <ra2_Soviet.description>Soviet Force.</ra2_Soviet.description>
+  <!-- EN: Soviet Army -->
+  <ra2_Soviet.fixedName>Soviet Army</ra2_Soviet.fixedName>
+  <!-- EN: Commander -->
+  <ra2_Soviet.leaderTitle>Commander</ra2_Soviet.leaderTitle>
+  <!-- EN: {0} from {1} are attacking your {2}. -->
+  <ra2_Soviet.messageDefendersAttacking>{0} from {1} are attacking your {2}.</ra2_Soviet.messageDefendersAttacking>
+  <!-- EN: member -->
+  <ra2_Soviet.pawnSingular>member</ra2_Soviet.pawnSingular>
+  <!-- EN: Soldiers -->
+  <ra2_Soviet.pawnsPlural>Soldiers</ra2_Soviet.pawnsPlural>
+</LanguageData>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: grizzly bullet -->
+  <ra2_Bullet_grizzly.label>grizzly bullet</ra2_Bullet_grizzly.label>
+  <!-- EN: grizzly gun -->
+  <ra2_Gun_grizzly.label>grizzly gun</ra2_Gun_grizzly.label>
+  <!-- EN: grizzly's gun. -->
+  <ra2_Gun_grizzly.description>grizzly's gun.</ra2_Gun_grizzly.description>
+  <!-- EN: grizzly gun -->
+  <ra2_Gun_grizzly.verbs.Verb_Shoot.label>grizzly gun</ra2_Gun_grizzly.verbs.Verb_Shoot.label>
+</LanguageData>

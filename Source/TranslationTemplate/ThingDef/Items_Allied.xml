@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Allied tanya note -->
+  <ra2_AlliedTanyaNote.label>Allied tanya note</ra2_AlliedTanyaNote.label>
+  <!-- EN: It contains Tanya's info. -->
+  <ra2_AlliedTanyaNote.description>It contains Tanya's info.</ra2_AlliedTanyaNote.description>
+  <!-- EN: Read -->
+  <ra2_AlliedTanyaNote.comps.CompUsable.useLabel>Read</ra2_AlliedTanyaNote.comps.CompUsable.useLabel>
+  <!-- EN: Allied tech core -->
+  <ra2_AlliedTechCore.label>Allied tech core</ra2_AlliedTechCore.label>
+  <!-- EN: It contains Allied tech. -->
+  <ra2_AlliedTechCore.description>It contains Allied tech.</ra2_AlliedTechCore.description>
+</LanguageData>

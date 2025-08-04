@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: radiation damage -->
+  <Hediffs_DesolatorGun.label>radiation damage</Hediffs_DesolatorGun.label>
+  <!-- EN: radiation damage -->
+  <Hediffs_DesolatorGun.description>radiation damage</Hediffs_DesolatorGun.description>
+  <!-- EN: a radiation wound -->
+  <Hediffs_DesolatorGun.labelNoun>a radiation wound</Hediffs_DesolatorGun.labelNoun>
+  <!-- EN: {0} in the {1} -->
+  <Hediffs_DesolatorGun.labelNounPretty>{0} in the {1}</Hediffs_DesolatorGun.labelNounPretty>
+</LanguageData>

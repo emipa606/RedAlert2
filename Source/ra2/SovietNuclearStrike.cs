@@ -19,7 +19,7 @@ public class SovietNuclearStrike : ThingWithComps
 
     private static readonly ThingDef burnedTree = ThingDef.Named("BurnedTree");
 
-    public readonly int BlastRadius = 20;
+    private readonly int BlastRadius = 20;
 
     private readonly List<IntVec3> cellsToAffect = [];
 
@@ -29,16 +29,16 @@ public class SovietNuclearStrike : ThingWithComps
 
     private readonly int range = 56;
 
-    public readonly int shockwave = 20;
+    private readonly int shockwave = 20;
 
-    public readonly float Yield = 250f;
+    private readonly float Yield = 250f;
 
 
     public IntVec3 landPos;
 
     private int startTick;
 
-    protected int TicksPassed => Find.TickManager.TicksGame - startTick;
+    private int TicksPassed => Find.TickManager.TicksGame - startTick;
 
     protected int TicksLeft => duration - TicksPassed;
 
@@ -56,14 +56,14 @@ public class SovietNuclearStrike : ThingWithComps
                 new Vector2(20f, 20f), Color.white).MatSingle);
     }
 
-    public static float MRC(float InputRangeA, float InputRangeB, float OutputRangeA, float OutputRangeB,
+    private static float MRC(float InputRangeA, float InputRangeB, float OutputRangeA, float OutputRangeB,
         float Value)
     {
         var pct = Mathf.Clamp(GetRangePct(InputRangeA, InputRangeB, Value), 0f, 1f);
         return GetRangeValue(OutputRangeA, OutputRangeB, pct);
     }
 
-    public static float GetRangePct(float RangeA, float RangeB, float Value)
+    private static float GetRangePct(float RangeA, float RangeB, float Value)
     {
         if (RangeA == RangeB)
         {
@@ -73,12 +73,12 @@ public class SovietNuclearStrike : ThingWithComps
         return (Value - RangeA) / (RangeB - RangeA);
     }
 
-    public static float GetRangeValue(float RangeA, float RangeB, float Pct)
+    private static float GetRangeValue(float RangeA, float RangeB, float Pct)
     {
         return Mathf.Lerp(RangeA, RangeB, Pct);
     }
 
-    public override void Tick()
+    protected override void Tick()
     {
         base.Tick();
         if (startTick == 0 && Spawned)
@@ -92,7 +92,7 @@ public class SovietNuclearStrike : ThingWithComps
         }
     }
 
-    public virtual void StartStrike()
+    protected virtual void StartStrike()
     {
         if (!Spawned)
         {
@@ -130,14 +130,14 @@ public class SovietNuclearStrike : ThingWithComps
         LongEventHandler.QueueLongEvent(LeaveAsh, "Detonating", false, null);
 
         GenExplosion.DoExplosion(landPos, Map, range, DefDatabase<DamageDef>.GetNamed("Nuclear"), this, 1, -1, null,
-            null, null, null, null, 0, 1, null, true);
+            null, null, null, null, 0, 1, null, null, 0, true);
         if (Find.CurrentMap == Map)
         {
             SoundDef.Named("ra2_NuclearExplode").PlayOneShotOnCamera();
         }
     }
 
-    public float DamageAt(IntVec3 c)
+    private float DamageAt(IntVec3 c)
     {
         var num = Position.DistanceTo(c);
         if (num < 1f)
@@ -149,9 +149,9 @@ public class SovietNuclearStrike : ThingWithComps
         return 500f - (1f * num);
     }
 
-    public void StripRoofs()
+    private void StripRoofs()
     {
-        foreach (var c in CellsAround(landPos, Map, range))
+        foreach (var c in CellsAround(landPos, range))
         {
             if (!c.IsValid)
             {
@@ -165,7 +165,7 @@ public class SovietNuclearStrike : ThingWithComps
         }
     }
 
-    public List<IntVec3> CellsAround(IntVec3 pos, Map map, int range)
+    private static List<IntVec3> CellsAround(IntVec3 pos, int range)
     {
         var result = new List<IntVec3>();
 
@@ -179,14 +179,14 @@ public class SovietNuclearStrike : ThingWithComps
         return result;
     }
 
-    public void GetCells()
+    private void GetCells()
     {
         cellsToAffect.Clear();
         damagedThings.Clear();
         openCells.Clear();
         adjWallCells.Clear();
         var map = Map;
-        var cells = CellsAround(landPos, Map, range);
+        var cells = CellsAround(landPos, range);
 
 
         foreach (var intVec in cells)
@@ -230,7 +230,7 @@ public class SovietNuclearStrike : ThingWithComps
         cellsToAffect.AddRange(openCells.Concat(adjWallCells));
     }
 
-    public void Flash()
+    private void Flash()
     {
         foreach (var intVec in GenRadial.RadialCellsAround(Position, Yield / 10f, true))
         {
@@ -257,7 +257,7 @@ public class SovietNuclearStrike : ThingWithComps
         }
     }
 
-    public void BlastWaveThing()
+    private void BlastWaveThing()
     {
         foreach (var intVec in cellsToAffect)
         {
@@ -304,7 +304,7 @@ public class SovietNuclearStrike : ThingWithComps
         }
     }
 
-    public void BlastWavePawn()
+    private void BlastWavePawn()
     {
         foreach (var intVec in cellsToAffect)
         {
@@ -353,7 +353,7 @@ public class SovietNuclearStrike : ThingWithComps
         }
     }
 
-    public void BlastWaveLeaves()
+    private void BlastWaveLeaves()
     {
         foreach (var intVec in cellsToAffect)
         {
@@ -435,7 +435,7 @@ public class SovietNuclearStrike : ThingWithComps
         }
     }
 
-    public void BurnSurface()
+    private void BurnSurface()
     {
         foreach (var intVec in cellsToAffect)
         {
@@ -466,7 +466,7 @@ public class SovietNuclearStrike : ThingWithComps
         }
     }
 
-    public void LeaveAsh()
+    private void LeaveAsh()
     {
         foreach (var intVec in cellsToAffect)
         {
@@ -483,9 +483,9 @@ public class SovietNuclearStrike : ThingWithComps
         }
     }
 
-    public void GenShockwave(int center, int radius)
+    public void GenShockwave(PlanetTile center, int radius)
     {
-        Find.WorldFloodFiller.FloodFill(center, _ => true, delegate(int tile, int dist)
+        Find.World.Tile.Layer.Filler.FloodFill(center, _ => true, delegate(PlanetTile tile, int dist)
         {
             if (dist > radius + 1)
             {
@@ -497,7 +497,7 @@ public class SovietNuclearStrike : ThingWithComps
                 return false;
             }
 
-            Find.WorldGrid.tiles[tile].biome = BiomeDefOf.Tundra;
+            Find.WorldGrid.Surface.Tiles[tile].PrimaryBiome = BiomeDefOf.Tundra;
             var settlementBase = Find.WorldObjects.SettlementBases.FirstOrDefault(x => x.Tile == tile);
             if (settlementBase != null)
             {

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<TabulaRasa.UpdateDef Abstract="true" Name="RedAlert2_UpdateInfoBase">
+		<linkUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2027695878</linkUrl>
+		<banner>UpdateInfo/RedAlert2</banner>
+	</TabulaRasa.UpdateDef>
+	<TabulaRasa.UpdateDef ParentName="RedAlert2_UpdateInfoBase" MayRequire="neronix17.toolbox">
+		<defName>RedAlert2_1_5_1</defName>
+		<date>2025/8/4</date>
+		<content>This mod has been re-released for the new version of the game. This version will remain but will not be updated further.</content>
+	</TabulaRasa.UpdateDef>
+</Defs>
+

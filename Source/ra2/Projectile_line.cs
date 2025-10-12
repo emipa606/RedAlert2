@@ -58,5 +58,9 @@ public class Projectile_Line : Projectile_Custom
 
         base.Tick();
         age++;
+        if (LineBrightness <= 0)
+        {
+            Destroy();
+        }
     }
 }

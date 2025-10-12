@@ -7,8 +7,9 @@
   "Patches": true,
   "Defs": true,
   "Assemblies": true,
-  "LinesOfCode": 173124,
-  "LinesOfXML": 418320,
-  "CodeBaseSize": 91,
-  "LastXmlCleaning": "2025-08-04T21:29:04.063839+02:00"
+  "LinesOfCode": 174243,
+  "LinesOfXML": 327562,
+  "CodeBaseSize": 90,
+  "LastXmlCleaning": "2025-10-12T20:00:54.8203556+02:00",
+  "SearchTags": " yuri"
 }

@@ -278,19 +278,12 @@ public class CompBarracks : ThingComp
     private static Pawn getTanya()
     {
         var request = new PawnGenerationRequest(DefDatabase<PawnKindDef>.GetNamed("ra2_AlliedTanya"),
-            Faction.OfPlayer, PawnGenerationContext.NonPlayer, -1, false, false, false, true, true, allowFood: true,
-            allowAddictions: false, inhabitant: false, certainlyBeenInCryptosleep: false,
-            forceRedressWorldPawnIfFormerColonist: false, worldPawnFactionDoesntMatter: false, biocodeWeaponChance: 0,
-            biocodeApparelChance: 0, extraPawnForExtraRelationChance: null, relationWithExtraPawnChanceFactor: 1,
-            validatorPreGear: null, validatorPostGear: null, forcedTraits: null, prohibitedTraits: null,
-            minChanceToRedressWorldPawn: null, fixedBiologicalAge: null,
-            fixedChronologicalAge: null, fixedGender: Gender.Female);
+            Faction.OfPlayer, PawnGenerationContext.NonPlayer, -1, mustBeCapableOfViolence: true,
+            allowAddictions: false, fixedGender: Gender.Female);
         var item = PawnGenerator.GeneratePawn(request);
 
         var ps = item.story;
         var hair = DefDatabase<HairDef>.GetNamed("Curly");
-        ps.Childhood = null;
-        ps.Adulthood = null;
         ps.traits.allTraits = [];
         ps.traits.GainTrait(new Trait(DefDatabase<TraitDef>.GetNamed("ra2_MakeSoldier")));
         ps.traits.GainTrait(new Trait(TraitDefOf.Psychopath));

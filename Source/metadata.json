@@ -7,9 +7,10 @@
   "Patches": true,
   "Defs": true,
   "Assemblies": true,
-  "LinesOfCode": 174243,
+  "LinesOfCode": 173653,
   "LinesOfXML": 327562,
   "CodeBaseSize": 90,
-  "LastXmlCleaning": "2025-10-12T20:00:54.8203556+02:00",
-  "SearchTags": " yuri"
+  "LastXmlCleaning": "2025-10-29T13:43:21.3053553+01:00",
+  "SearchTags": " yuri",
+  "RimWorldBaseId": 22909
 }

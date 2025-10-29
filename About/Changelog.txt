@@ -1,5 +1,8 @@
 # Changelog for RedAlert2
 
+1.6.2 - Fixed spawning of tanya
+
+
 1.6.1 - Electric Arcs should no longer stay on the map forever
 
 

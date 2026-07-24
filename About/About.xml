@@ -2,7 +2,7 @@
 <ModMetaData>
   <name>Red Alert 2 (Continued)</name>
   <packageId>Mlie.RedAlert2</packageId>
-  <author>Mlie</author>
+  <author>AKreedz</author>
   <url>https://github.com/emipa606/RedAlert2</url>
   <supportedVersions>
     <li>1.6</li>
@@ -26,7 +26,7 @@
     <li>UnlimitedHugs.HugsLib</li>
     <li>syrchalis.traitvalue</li>
   </loadAfter>
-  <description>[img]https://i.postimg.cc/1X4HT06h/Info.png[/img]
+  <description>[img]https://img.litet.net/logos/Info.png[/img]
 Update of AKreedz mod
 https://steamcommunity.com/sharedfiles/filedetails/?id=1499370491
 
@@ -35,20 +35,20 @@ To avoid doubling the size of the mod, it was re-released using only Asset Bundl
 
 - Added support for [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2451324814][SYR] Trait Value[/url]
 
-[img]https://i.postimg.cc/8csH3dWV/Notice.png[/img]
+[img]https://img.litet.net/logos/Notice.png[/img]
 
 [table]
 	[tr]
-		[td][url=https://discord.gg/h5TY6DA][img]https://i.postimg.cc/T1h9SjbF/Discord.png[/img][/url][/td]
-		[td][url=https://github.com/emipa606/RedAlert2][img]https://i.postimg.cc/fykKF7X4/Github.png[/img][/url][/td]
+		[td][url=https://discord.gg/h5TY6DA][img]https://img.litet.net/logos/Discord.png[/img][/url][/td]
+		[td][url=https://github.com/emipa606/RedAlert2][img]https://img.litet.net/logos/Github.png[/img][/url][/td]
     [/tr]
     [tr]
-        [td][img]https://i.postimg.cc/MHXD40RW/Safe-To-Add.png[/img][/td]
-        [td][img]https://i.postimg.cc/brdTM0bP/Remove-May-Work.png[/img][/td]
+        [td][img]https://img.litet.net/logos/SafeToAdd.png[/img][/td]
+        [td][img]https://img.litet.net/logos/RemoveMayWork.png[/img][/td]
     [/tr]
 [/table]
 	
-[img]https://i.postimg.cc/hvhrw8xB/Original-Description.png[/img]
+[img]https://img.litet.net/logos/OriginalDescription.png[/img]
 
 [h1]Github:[/h1]
 https://github.com/AKreedz/ra2inRW
@@ -201,7 +201,7 @@ Emmmmmm....
 使用了部分 炮塔集合MOD 的代码，链接:https://steamcommunity.com/sharedfiles/filedetails/?id=868519399
 
 
-[img]https://i.postimg.cc/x8qR7GH9/Reporting-Issues.png[/img]
+[img]https://img.litet.net/logos/ReportingIssues.png[/img]
 [list]
 [*] See if the the error persists if you just have this mod and its requirements active.
 [*] If not, try adding your other mods until it happens again.
@@ -212,6 +212,6 @@ Emmmmmm....
 [*] Use [url=https://github.com/RimSort/RimSort/releases/latest]RimSort[/url] to sort your mods
 [/list] 
 
-[url=https://steamcommunity.com/sharedfiles/filedetails/changelog/3542181858][img]https://img.shields.io/github/v/release/emipa606/RedAlert2?label=latest%20version&amp;style=plastic&amp;color=9f1111&amp;labelColor=black[/img][/url] | tags:  yuri</description>
-  <modVersion IgnoreIfNoMatchingField="True">1.6.2</modVersion>
+[url=https://steamcommunity.com/sharedfiles/filedetails/changelog/3542181858][img]https://img.shields.io/github/v/release/emipa606/RedAlert2?label=latest%20version&amp;style=plastic&amp;color=9f1111&amp;labelColor=black[/img][/url] | tags: yuri</description>
+  <modVersion IgnoreIfNoMatchingField="True">1.6.3</modVersion>
 </ModMetaData>

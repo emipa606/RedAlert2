@@ -1,6 +1,6 @@
 # [Red Alert 2 (Continued)](https://steamcommunity.com/sharedfiles/filedetails/?id=3542181858)
 
-![Image](https://i.postimg.cc/1X4HT06h/Info.png)
+![Image](https://img.litet.net/logos/Info.png)
 
 Update of AKreedz mod
 https://steamcommunity.com/sharedfiles/filedetails/?id=1499370491
@@ -10,9 +10,9 @@ To avoid doubling the size of the mod, it was re-released using only Asset Bundl
 
 - Added support for [[SYR] Trait Value](https://steamcommunity.com/sharedfiles/filedetails/?id=2451324814)
 
-![Image](https://i.postimg.cc/8csH3dWV/Notice.png)
+![Image](https://img.litet.net/logos/Notice.png)
 	
-![Image](https://i.postimg.cc/hvhrw8xB/Original-Description.png)
+![Image](https://img.litet.net/logos/OriginalDescription.png)
 
 # Github:
 
@@ -175,7 +175,7 @@ Emmmmmm....
 使用了部分 炮塔集合MOD 的代码，链接:https://steamcommunity.com/sharedfiles/filedetails/?id=868519399
 
 
-![Image](https://i.postimg.cc/x8qR7GH9/Reporting-Issues.png)
+![Image](https://img.litet.net/logos/ReportingIssues.png)
 
 
 
@@ -189,4 +189,4 @@ Emmmmmm....
 
  
 
-[![Image](https://img.shields.io/github/v/release/emipa606/RedAlert2?label=latest%20version&style=plastic&color=9f1111&labelColor=black)](https://steamcommunity.com/sharedfiles/filedetails/changelog/3542181858) | tags:  yuri
+[![Image](https://img.shields.io/github/v/release/emipa606/RedAlert2?label=latest%20version&style=plastic&color=9f1111&labelColor=black)](https://steamcommunity.com/sharedfiles/filedetails/changelog/3542181858) | tags: yuri
